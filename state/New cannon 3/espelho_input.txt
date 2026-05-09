@@ -1,0 +1,2803 @@
+# Vamos gerar um arquivo Python com o "Modelo V.E.E.B" integrado às analogias (vogais,
+consoantes, verbos, substantivos, adjetivos).
+
+from textwrap import dedent
+
+code = dedent('''
+# -*- coding: utf-8 -*-
+"""
+PROJETO V.E.E.B — Modelo Didático em Python
+V.E.E.B = Vibração • Energia • Estrutura • Base
+
+Este script ensina Python do zero usando analogias:
+- Vogais (A, E, I, O, U): Atribuir, Escolher, Iterar, Organizar, Unir
+- Consoantes: ferramentas/peças (Booleanos, Comentários, Definições, etc.)
+- Verbos / Substantivos / Adjetivos: metáfora gramatical do código
+
+Rodando:
+python veeb_model.py
+"""
+
+from typing import Dict, List
+
+# ------------------------------------------------------------
+# 0) Tabela de analogias
+# ------------------------------------------------------------
+
+VOGAIS = {
+"A": "Atribuição (variáveis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "Iteração (for/while)",
+"O": "Organizar (funções)",
+"U": "Unir (listas/dicionários)",
+}
+
+CONSOANTES = {
+"B": "Booleanos (True/False)",
+"C": "Comentários (# explicações)",
+"D": "Definições (def)",
+"F": "Funções built-in (print, len, ... )",
+"L": "Loops (for, while)",
+"M": "Módulos (import ...)",
+"P": "Parâmetros (entradas da função)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+}
+
+# ------------------------------------------------------------
+# 1) Vogais na prática (funções pedagógicas)
+# ------------------------------------------------------------
+
+def A_atribuir(nome: str, idade: int, ativo: bool = True, cor: str = "azul", tamanho: str =
+"médio") -> Dict:
+\"\"\"A — Atribuição: guarda dados básicos (substantivos + adjetivos).\"\"\"
+# Substantivos: nome, idade, perfil
+# Adjetivos: ativo, cor, tamanho
+perfil = {
+"nome": nome,
+"idade": idade,
+"ativo": ativo,
+"cor": cor,
+"tamanho": tamanho,
+}
+return perfil
+
+def E_escolher(perfil: Dict) -> str:
+\"\"\"E — Escolha: decide caminhos com base em uma condição (if/else).\"\"\"
+if perfil["idade"] >= 18:
+return "maior_de_idade"
+else:
+return "menor_de_idade"
+
+def I_iterar(freq: int) -> List[int]:
+\"\"\"I — Iteração: gera passos conforme a 'vibração' (frequência).\"\"\"
+passos = []
+for i in range(1, freq + 1):
+passos.append(i) # movimento iterativo
+return passos
+
+def O_organizar(registros: List[Dict]) -> Dict:
+\"\"\"O — Organizar: agrega e resume (funções reutilizáveis).\"\"\"
+total_passos = sum(reg["energia"] for reg in registros)
+return {
+"qtd_registros": len(registros),
+"soma_energia": total_passos,
+"media_energia": total_passos / len(registros) if registros else 0.0,
+}
+
+def U_unir(perfil: Dict, resumo: Dict) -> Dict:
+\"\"\"U — Unir: junta coleções (listas/dicionários) em um estado final.\"\"\"
+estado = {**perfil, **resumo}
+return estado
+
+# ------------------------------------------------------------
+# 2) V.E.E.B em código
+# ------------------------------------------------------------
+def veeb_simular(nome: str, idade: int, vibracao_freq: int = 3) -> Dict:
+\"\"\"
+V — Vibração: controla quantas iterações executamos (freq).
+E — Energia: cresce a cada passo e abastece o sistema.
+E — Estrutura: registros (lista de dicionários) guardam o movimento.
+B — Base: estado final consolidado (snapshot).
+\"\"\"
+# A (Atribuição) — substantivos + adjetivos
+perfil = A_atribuir(nome=nome, idade=idade, ativo=True, cor="azul", tamanho="médio")
+
+# E (Escolha)
+classificacao = E_escolher(perfil)
+
+# I (Iteração) — vibração controla os passos
+passos = I_iterar(vibracao_freq)
+
+# Estrutura de dados (unir registros)
+registros = []
+energia = 0
+for passo in passos:
+energia += passo # energia sobe com o movimento
+registros.append({
+"passo": passo,
+"energia": energia,
+"classificacao": classificacao,
+})
+
+# O (Organizar) — resumo dos registros
+resumo = O_organizar(registros)
+
+# U (Unir) — salva um estado "Base"
+base = U_unir(perfil, resumo)
+
+# Informação adicional: gramatical
+verbos = ["print", "len", "append", "sum", "return"]
+substantivos = ["perfil", "registros", "passos", "energia", "base"]
+adjetivos = ["ativo=True", "cor='azul'", "tamanho='médio'"]
+
+resultado = {
+"VOGAIS": VOGAIS,
+"CONSOANTES": CONSOANTES,
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+"gramatica": {
+"verbos": verbos,
+"substantivos": substantivos,
+"adjetivos": adjetivos,
+}
+}
+return resultado
+
+# ------------------------------------------------------------
+# 3) Demonstração
+# ------------------------------------------------------------
+
+def mostrar_tabelas_de_analogias():
+print("=== Vogais (pilares) ===")
+for k, v in VOGAIS.items():
+print(f"{k}: {v}")
+print("\\n=== Consoantes (ferramentas) ===")
+for k, v in CONSOANTES.items():
+print(f"{k}: {v}")
+print()
+
+def demo():
+# Exemplo simples usando valores padrão
+mostrar_tabelas_de_analogias()
+resultado = veeb_simular(nome="Maria", idade=19, vibracao_freq=4)
+
+# Impressões didáticas
+print("=== Perfil (A) ===")
+print(resultado["perfil"])
+
+print("\\n=== Classificação (E) ===")
+print(resultado["classificacao"])
+
+print("\\n=== Passos (I) ===")
+print(resultado["passos"])
+
+print("\\n=== Registros (estrutura) ===")
+for reg in resultado["registros"]:
+print(reg)
+
+print("\\n=== Resumo (O) ===")
+print(resultado["resumo"])
+
+print("\\n=== Base (U) ===")
+print(resultado["base"])
+
+print("\\n=== Gramática do Código ===")
+print("Verbos:", ", ".join(resultado["gramatica"]["verbos"]))
+print("Substantivos:", ", ".join(resultado["gramatica"]["substantivos"]))
+print("Adjetivos:", ", ".join(resultado["gramatica"]["adjetivos"]))
+
+if __name__ == "__main__":
+demo()
+''')
+
+path = "/mnt/data/veeb_model.py"
+with open(path, "w", encoding="utf-8") as f:
+f.write(code)
+
+path
+
+
+
+
+# -*- coding: utf-8 -*-
+"""
+PROJETO V.E.E.B — Modelo Didático em Python (Refatorado)
+V.E.E.B = Vibração • Energia • Estrutura • Base
+
+Inclui todas as consoantes do alfabeto com analogias aplicadas ao Python.
+"""
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import Dict, List, Any
+
+class Classification(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Profile:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "médio"
+
+@dataclass(frozen=True)
+class Record:
+passo: int
+energia: int
+classificacao: Classification
+
+@dataclass(frozen=True)
+class Summary:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+@dataclass(frozen=True)
+class Result:
+vogais: Dict[str, str]
+consoantes: Dict[str, str]
+perfil: Profile
+classificacao: Classification
+passos: List[int]
+registros: List[Record]
+resumo: Summary
+base: Dict[str, Any]
+gramatica: Dict[str, List[str]]
+
+VOGAIS = {
+"A": "Atribuição (variáveis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "Iteração (for/while)",
+"O": "Organizar (funções)",
+"U": "Unir (listas/dicionários)",
+}
+
+# Todas as consoantes com analogias
+CONSOANTES = {
+"B": "Booleanos (True/False)",
+"C": "Comentários (# explicações)",
+"D": "Definições (def)",
+"F": "Funções built-in (print, len, ...)",
+"G": "Geradores (yield)",
+"H": "Herança (POO)",
+"J": "JSON (serialização de dados)",
+"K": "Keyword arguments (**kwargs)",
+"L": "Loops (for, while)",
+"M": "Módulos (import ...)",
+"N": "None (valor nulo)",
+"P": "Parâmetros (entradas de função)",
+"Q": "Queue (estruturas de fila)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+"V": "Variáveis",
+"W": "While (laço de repetição)",
+"X": "XML (manipulação de dados)",
+"Y": "Yield (geradores)",
+"Z": "Zip (agregação de listas)",
+}
+class VEEBEngine:
+def A_atribuir(self, nome: str, idade: int, ativo: bool = True, cor: str = "azul", tamanho: str =
+"médio") -> Profile:
+return Profile(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+
+def E_escolher(self, perfil: Profile) -> Classification:
+return Classification.MAIOR if perfil.idade >= 18 else Classification.MENOR
+
+def I_iterar(self, freq: int) -> List[int]:
+return list(range(1, freq + 1))
+
+def O_organizar(self, registros: List[Record]) -> Summary:
+if not registros:
+return Summary(0, 0, 0.0)
+soma = sum(r.energia for r in registros)
+return Summary(len(registros), soma, soma / len(registros))
+
+def U_unir(self, perfil: Profile, resumo: Summary) -> Dict[str, Any]:
+return {**asdict(perfil), **asdict(resumo)}
+
+def simular(self, nome: str, idade: int, vibracao_freq: int = 3) -> Result:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+energia = 0
+registros: List[Record] = []
+for passo in passos:
+energia += passo
+registros.append(Record(passo, energia, classificacao))
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+verbos = ["print", "len", "append", "sum", "return"]
+substantivos = ["perfil", "registros", "passos", "energia", "base"]
+adjetivos = ["ativo=True", "cor='azul'", "tamanho='médio'"]
+return Result(VOGAIS, CONSOANTES, perfil, classificacao, passos, registros, resumo,
+base, {
+"verbos": verbos,
+"substantivos": substantivos,
+"adjetivos": adjetivos,
+})
+
+def main():
+engine = VEEBEngine()
+resultado = engine.simular("Maria", 19, 4)
+print("=== Vogais ===")
+for k, v in resultado.vogais.items():
+print(f"{k}: {v}")
+print("\n=== Consoantes ===")
+for k, v in resultado.consoantes.items():
+print(f"{k}: {v}")
+
+if __name__ == "__main__":
+main()
+
+
+Pronto! Agora o modelo inclui todas as consoantes do alfabeto com suas respectivas
+analogias no contexto do Python, mantendo a estrutura do PROJETO V.E.E.B.
+
+
+
+
+PARTE 02
+# Update/create kobllux_veeb_story.py with an --explicar mode that parses Python code
+(AST)
+from textwrap import dedent
+from pathlib import Path
+
+code = dedent(r'''
+# -*- coding: utf-8 -*-
+"""
+KOBLLUX: Prompt Semente de Organização Fractal + Conversor Narrativo
+2023-11-15 | Categoria: fractais
+
+Funções principais:
+1) História + simulação V.E.E.B (como antes)
+2) Modo conversor: --explicar <arquivo.py> → Lê o código, analisa com AST e
+gera uma explicação narrativa no estilo KOBLLUX/V.E.E.B.
+
+
+♾️)
+Princípios simbólicos:
+- Autoespelhamento (3-6-9) • Ressonância (432/528/741) • Emergência (0→7→
+"""
+
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import List, Dict, Any, Iterable, Optional
+import argparse
+import ast
+import textwrap
+import sys
+
+# ------------------------------
+# V.E.E.B — Vibração, Energia, Estrutura, Base
+# ------------------------------
+
+class Classificacao(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Perfil:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "médio"
+
+@dataclass(frozen=True)
+class Registro:
+passo: int
+energia: int
+classificacao: Classificacao
+
+@dataclass(frozen=True)
+class Resumo:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+# ------------------------------
+# Analogias (Vogais e Consoantes)
+# ------------------------------
+
+VOGAIS: Dict[str, str] = {
+"A": "Atribuição (variáveis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "Iteração (for/while)",
+"O": "Organizar (funções)",
+"U": "Unir (listas/dicionários)",
+}
+
+CONSOANTES: Dict[str, str] = {
+"B": "Booleanos (True/False)",
+"C": "Comentários (# explicações)",
+"D": "Definições (def)",
+"F": "Funções built-in (print, len, ...)",
+"G": "Geradores (yield)",
+"H": "Herança (POO)",
+"J": "JSON (serialização de dados)",
+"K": "Keyword arguments (**kwargs)",
+"L": "Loops (for, while)",
+"M": "Módulos (import ...)",
+"N": "None (valor nulo)",
+"P": "Parâmetros (entradas de função)",
+"Q": "Queue (fila)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+"V": "Variáveis",
+"W": "While (laço de repetição)",
+"X": "XML (dados)",
+"Y": "Yield (geradores)",
+"Z": "Zip (agregação de listas)",
+}
+
+# ------------------------------
+# Narrador: imprime a história
+# ------------------------------
+
+def narrar(titulo: str, texto: str) -> None:
+barra = "─" * 72
+print("\n" + barra)
+print("✦ " + titulo)
+print(barra)
+print(textwrap.dedent(texto).strip() + "\n")
+
+# ------------------------------
+# Motor didático V.E.E.B
+# ------------------------------
+
+class VEEBEngine:
+"""Arquitetura simples para encenar a fábula em código executável."""
+
+# A — Atribuir
+def A_atribuir(self, nome: str, idade: int,
+ativo: bool = True, cor: str = "azul", tamanho: str = "médio") -> Perfil:
+return Perfil(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+
+# E — Escolher
+def E_escolher(self, perfil: Perfil) -> Classificacao:
+return Classificacao.MAIOR if perfil.idade >= 18 else Classificacao.MENOR
+
+# I — Iterar (Vibração)
+def I_iterar(self, freq: int) -> List[int]:
+if freq <= 0:
+raise ValueError("freq deve ser positiva")
+return list(range(1, freq + 1))
+
+# O — Organizar (Estrutura -> Resumo)
+def O_organizar(self, registros: List[Registro]) -> Resumo:
+if not registros:
+return Resumo(0, 0, 0.0)
+soma = sum(r.energia for r in registros)
+media = soma / len(registros)
+return Resumo(len(registros), soma, media)
+
+# U — Unir (Base consolidada)
+def U_unir(self, perfil: Perfil, resumo: Resumo) -> Dict[str, Any]:
+return {**asdict(perfil), **asdict(resumo)}
+
+# Execução completa
+def simular(self, nome: str, idade: int, vibracao_freq: int = 4) -> Dict[str, Any]:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+
+energia = 0
+registros: List[Registro] = []
+for passo in passos:
+energia += passo
+registros.append(Registro(passo=passo, energia=energia,
+classificacao=classificacao))
+
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+
+return {
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+}
+
+# ------------------------------
+# Sistema fractal inspirado no prompt KOBLLUX
+# ------------------------------
+
+TRIADICA = [3, 6, 9] # Autoespelhamento (3 → 6 → 9)
+CICLO_0_7 = list(range(0, 8)) # Emergência (0 → 7) e retorno simbólico ao ∞
+FREQS = { # Ressonância simbólica
+"micro": 432, # som
+"meso": 528, # harmonia
+"macro": 741, # purificação
+}
+
+@dataclass
+class Camada:
+nome: str
+escala: int
+frequencia: int
+
+def autoespelhamento(padrao: Iterable[int], escalar: int) -> List[int]:
+"""Repete um padrão multiplicando por uma escala: micro→meso→macro."""
+return [p * escalar for p in padrao]
+
+def ressonancia(camada: Camada) -> str:
+"""Mensagem simbólica de sintonia entre camadas via frequência."""
+return f"[{camada.nome}] f≈{camada.frequencia}Hz — ressoa com {TRIADICA}"
+
+
+♾️)."""
+def emergencia_ciclica(ciclo: Iterable[int]) -> List[str]:
+"""Marca o surgimento do 0 ao 7 e o retorno ao infinito (
+
+♾️
+trilha = [f"passo:{c}" for c in ciclo]
+trilha.append("retorno: ")
+return trilha
+
+def encenar_fractal() -> Dict[str, Any]:
+micro = Camada("micro", escala=1, frequencia=FREQS["micro"])
+meso = Camada("meso", escala=2, frequencia=FREQS["meso"])
+macro = Camada("macro", escala=3, frequencia=FREQS["macro"])
+
+espelho_micro = autoespelhamento(TRIADICA, micro.escala)
+espelho_meso = autoespelhamento(TRIADICA, meso.escala)
+espelho_macro = autoespelhamento(TRIADICA, macro.escala)
+
+trilha_emerg = emergencia_ciclica(CICLO_0_7)
+
+return {
+"espelhos": {
+"micro": espelho_micro,
+"meso": espelho_meso,
+"macro": espelho_macro,
+},
+"ressonancia": [
+ressonancia(micro),
+ressonancia(meso),
+ressonancia(macro),
+],
+"emergencia": trilha_emerg,
+}
+
+# ------------------------------
+# Conversor narrativo (AST → História)
+# ------------------------------
+
+class ColetorAST(ast.NodeVisitor):
+def __init__(self) -> None:
+self.imports: List[str] = []
+self.from_imports: List[str] = []
+self.funcs: List[Dict[str, Any]] = []
+self.classes: List[Dict[str, Any]] = []
+self.assigns: List[str] = []
+self.ifs: int = 0
+self.whiles: int = 0
+self.fors: int = 0
+self.returns: int = 0
+self.raises: int = 0
+self.trys: int = 0
+self.withs: int = 0
+self.comps: Dict[str, int] = {"list":0, "dict":0, "set":0, "gen":0}
+self.lambdas: int = 0
+self.decorators: int = 0
+self.yields: int = 0
+
+def visit_Import(self, node: ast.Import) -> None:
+for alias in node.names:
+self.imports.append(alias.name)
+self.generic_visit(node)
+
+def visit_ImportFrom(self, node: ast.ImportFrom) -> None:
+base = node.module or ""
+names = ", ".join(a.name for a in node.names)
+self.from_imports.append(f"{base}: {names}")
+self.generic_visit(node)
+
+def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+args = [a.arg for a in node.args.args]
+if node.args.vararg: args.append("*" + node.args.vararg.arg)
+if node.args.kwarg: args.append("**" + node.args.kwarg.arg)
+self.funcs.append({"name": node.name, "args": args, "decorators":
+len(node.decorator_list)})
+self.decorators += len(node.decorator_list)
+self.generic_visit(node)
+
+def visit_AsyncFunctionDef(self, node: ast.AsyncFunctionDef) -> None:
+self.visit_FunctionDef(node)
+
+def visit_ClassDef(self, node: ast.ClassDef) -> None:
+methods = [n.name for n in node.body if isinstance(n, (ast.FunctionDef,
+ast.AsyncFunctionDef))]
+bases = [ast.unparse(b) if hasattr(ast, "unparse") else getattr(b, 'id', '?') for b in
+node.bases]
+self.classes.append({"name": node.name, "methods": methods, "bases": bases,
+"decorators": len(node.decorator_list)})
+self.decorators += len(node.decorator_list)
+self.generic_visit(node)
+
+def visit_Assign(self, node: ast.Assign) -> None:
+for t in node.targets:
+if isinstance(t, ast.Name):
+self.assigns.append(t.id)
+self.generic_visit(node)
+
+def visit_If(self, node: ast.If) -> None:
+self.ifs += 1
+self.generic_visit(node)
+
+def visit_For(self, node: ast.For) -> None:
+self.fors += 1
+self.generic_visit(node)
+
+def visit_While(self, node: ast.While) -> None:
+self.whiles += 1
+self.generic_visit(node)
+
+def visit_Return(self, node: ast.Return) -> None:
+self.returns += 1
+self.generic_visit(node)
+
+def visit_Raise(self, node: ast.Raise) -> None:
+self.raises += 1
+self.generic_visit(node)
+
+def visit_Try(self, node: ast.Try) -> None:
+self.trys += 1
+self.generic_visit(node)
+
+def visit_With(self, node: ast.With) -> None:
+self.withs += 1
+self.generic_visit(node)
+
+def visit_Lambda(self, node: ast.Lambda) -> None:
+self.lambdas += 1
+self.generic_visit(node)
+
+def visit_Yield(self, node: ast.Yield) -> None:
+self.yields += 1
+self.generic_visit(node)
+
+def visit_ListComp(self, node: ast.ListComp) -> None:
+self.comps["list"] += 1
+self.generic_visit(node)
+def visit_DictComp(self, node: ast.DictComp) -> None:
+self.comps["dict"] += 1
+self.generic_visit(node)
+
+def visit_SetComp(self, node: ast.SetComp) -> None:
+self.comps["set"] += 1
+self.generic_visit(node)
+
+def visit_GeneratorExp(self, node: ast.GeneratorExp) -> None:
+self.comps["gen"] += 1
+self.generic_visit(node)
+
+def explicar_codigo_fonte(source: str, titulo: Optional[str] = None) -> str:
+try:
+tree = ast.parse(source)
+except SyntaxError as e:
+return f"[Erro] Não consegui analisar o código (SyntaxError): {e}"
+
+col = ColetorAST()
+col.visit(tree)
+
+nome_hist = titulo or "Código analisado"
+partes = []
+
+partes.append(f"Prólogo — O viajante chega com o pergaminho: “{nome_hist}”.")
+if col.imports or col.from_imports:
+partes.append("Na entrada, apresenta as ferramentas do Conselho das Consoantes
+(imports):")
+if col.imports:
+partes.append(" • Módulos: " + ", ".join(sorted(set(col.imports))))
+if col.from_imports:
+partes.append(" • De módulos específicos: " + " | ".join(col.from_imports))
+
+if col.classes:
+for c in col.classes:
+bases = f" (bases: {', '.join(c['bases'])})" if c['bases'] else ""
+partes.append(f"Encontra a Casa-Forma ‘class {c['name']}’{bases}, com
+{len(c['methods'])} métodos.")
+
+if col.funcs:
+partes.append("Portais de ação (funções) se abrem pelo caminho:")
+for f in col.funcs:
+arglist = ", ".join(f["args"]) if f["args"] else "sem parâmetros"
+deco = f['decorators']
+deco_txt = f" com {deco} selo(s) de ritual (decorators)" if deco else ""
+partes.append(f" • def {f['name']}({arglist}){deco_txt}")
+if col.assigns:
+partes.append("Objetos recebem nomes (atribuições): " + ",
+".join(sorted(set(col.assigns))))
+
+# Estradas e Portais (controle de fluxo)
+fluxo = []
+if col.ifs: fluxo.append(f"portais de escolha (if): {col.ifs}")
+if col.fors: fluxo.append(f"estradas de passos (for): {col.fors}")
+if col.whiles: fluxo.append(f"ciclos de vigília (while): {col.whiles}")
+if col.trys: fluxo.append(f"salas de destino (try/except): {col.trys}")
+if col.withs: fluxo.append(f"salas de contexto (with): {col.withs}")
+if fluxo:
+partes.append("O viajante percorre o fluxo do destino: " + " • ".join(fluxo))
+
+if any(col.comps.values()) or col.lambdas or col.yields:
+extras = []
+if col.comps["list"]: extras.append(f"geometrias de lista (list comp): {col.comps['list']}")
+if col.comps["dict"]: extras.append(f"dicionários em fractal (dict comp):
+{col.comps['dict']}")
+if col.comps["set"]: extras.append(f"conjuntos em fractal (set comp): {col.comps['set']}")
+if col.comps["gen"]: extras.append(f"correntes discretas (generator exp):
+{col.comps['gen']}")
+if col.lambdas: extras.append(f"funções efêmeras (lambda): {col.lambdas}")
+if col.yields: extras.append(f"rotas latentes (yield): {col.yields}")
+partes.append("Tecidos especiais aparecem no mapa: " + " • ".join(extras))
+
+if col.returns or col.raises:
+final = []
+if col.returns: final.append(f"registros entregues (return): {col.returns}")
+if col.raises: final.append(f"alertas do destino (raise): {col.raises}")
+partes.append("Desfechos do caminho: " + " • ".join(final))
+
+partes.append("Epílogo — O que se revela é a união: dados + fluxo + forma = Base
+viva.")
+return "\n".join(partes)
+
+# ------------------------------
+# História impressa no console (modo V.E.E.B)
+# ------------------------------
+
+def contar_historia() -> None:
+narrar("Prólogo — A Aldeia Python",
+"""
+Havia uma aldeia chamada Python, onde as VOGAIS eram portais do caminho:
+A (Atribuir), E (Escolher), I (Iterar), O (Organizar), U (Unir).
+As CONSOANTES eram artesãs, cada qual com sua ferramenta e ofício.
+No centro da aldeia, o arquiteto VEEB guiava os viajantes pela Jornada de Cinco Passos.
+""")
+narrar("A Jornada de Cinco Passos (V.E.E.B)",
+"""
+1) Atribuir — o viajante recebe nome, idade e manto azul (atributos).
+2) Escolher — o Portal decide seu selo: maior ou menor de idade.
+3) Iterar — a Estrada dos Passos acumula energia a cada etapa.
+4) Organizar — a Biblioteca conta e resume a epopeia do caminho.
+5) Unir — a Base registra tudo: identidade + resumo = memória viva.
+""")
+
+narrar("KOBLLUX — Organização Fractal Viva",
+"""
+
+♾️
+Em todo lugar, o Mesmo Movimento: padrões que se repetem (3-6-9),
+ciclos que emergem do zero e retornam ao infinito (0→7→ ),
+e frequências que alinham micro, meso e macro (432/528/741).
+O sistema canta em ressonância e espelha-se a si mesmo.
+""")
+
+def demonstrar_codigo() -> None:
+# Encenar V.E.E.B
+engine = VEEBEngine()
+sim = engine.simular(nome="Bllue", idade=22, vibracao_freq=6)
+
+narrar("Demonstração V.E.E.B — Resultado",
+f"""
+Perfil: {asdict(sim["perfil"])}
+Classificação: {sim["classificacao"].value}
+Passos: {sim["passos"]}
+Resumo: {asdict(sim["resumo"])}
+Base: {sim["base"]}
+""")
+
+# Encenar o fractal KOBLLUX
+fractal = encenar_fractal()
+narrar("Autoespelhamento — 3 • 6 • 9",
+f"""
+micro: {fractal["espelhos"]["micro"]}
+meso: {fractal["espelhos"]["meso"]}
+macro: {fractal["espelhos"]["macro"]}
+""")
+
+narrar("Ressonância Harmônica — 432 • 528 • 741",
+"\n".join(fractal["ressonancia"]))
+
+narrar("Emergência Cíclica — 0 → 7 → ♾️",
+f"""
+trilha: {fractal["emergencia"]}
+""")
+def mostrar_alfabeto() -> None:
+narrar("Alfabeto do Código — Vogais & Consoantes",
+f"""
+VOGAIS: {VOGAIS}
+CONSOANTES: {CONSOANTES}
+""")
+
+# ------------------------------
+# CLI
+# ------------------------------
+
+def build_argparser() -> argparse.ArgumentParser:
+p = argparse.ArgumentParser(description="KOBLLUX V.E.E.B — História + Conversor
+Narrativo de Código")
+p.add_argument("--explicar", metavar="ARQUIVO.py", help="Explica o código Python
+informado (AST → narrativa).")
+p.add_argument("--stdin", action="store_true", help="Ler o código da entrada padrão para
+explicar.")
+p.add_argument("--titulo", help="Título opcional para a narrativa do conversor.")
+p.add_argument("--so-narrativa", action="store_true", help="Somente narrativa (não
+executar a demo V.E.E.B).")
+return p
+
+def main(argv: Optional[List[str]] = None) -> int:
+args = build_argparser().parse_args(argv)
+
+# Modo conversor (explicar arquivo ou stdin)
+if args.explicar or args.stdin:
+if args.explicar:
+try:
+with open(args.explicar, "r", encoding="utf-8") as f:
+source = f.read()
+except Exception as e:
+print(f"[Erro] Não consegui ler '{args.explicar}': {e}")
+return 1
+titulo = args.titulo or args.explicar
+else:
+source = sys.stdin.read()
+titulo = args.titulo or "Código via stdin"
+
+narrativa = explicar_codigo_fonte(source, titulo=titulo)
+narrar("Conversor Narrativo — Explicação do Código", narrativa)
+if args.so_narrativa:
+return 0
+
+# Modo padrão (história + demo + alfabeto)
+contar_historia()
+demonstrar_codigo()
+mostrar_alfabeto()
+return 0
+
+if __name__ == "__main__":
+raise SystemExit(main())
+''')
+
+path = Path("/mnt/data/kobllux_veeb_story.py")
+path.write_text(code, encoding="utf-8")
+print("Arquivo atualizado:", str(path))
+
+
+parte 3
+from pathlib import Path
+from textwrap import dedent
+
+# Rewriting kobllux_veeb_story.py with export options (TXT and JSON)
+code = dedent(r'''
+# -*- coding: utf-8 -*-
+"""
+KOBLLUX: Prompt Semente de Organização Fractal + Conversor Narrativo com Exportação
+"""
+
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import List, Dict, Any, Iterable, Optional
+import argparse
+import ast
+import textwrap
+import sys
+import json
+
+# ------------------------------
+# V.E.E.B — Vibração, Energia, Estrutura, Base
+# ------------------------------
+
+class Classificacao(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Perfil:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "médio"
+
+@dataclass(frozen=True)
+class Registro:
+passo: int
+energia: int
+classificacao: Classificacao
+
+@dataclass(frozen=True)
+class Resumo:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+VOGAIS: Dict[str, str] = {
+"A": "Atribuição (variáveis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "Iteração (for/while)",
+"O": "Organizar (funções)",
+"U": "Unir (listas/dicionários)",
+}
+
+CONSOANTES: Dict[str, str] = {c: f"Função simbólica {c}" for c in
+"BCDFGHJKLMNPQRSTVWXYZ"
+}
+
+# ------------------------------
+# Narrador
+# ------------------------------
+
+def narrar(titulo: str, texto: str) -> None:
+barra = "─" * 72
+print("\n" + barra)
+print("✦ " + titulo)
+print(barra)
+print(textwrap.dedent(texto).strip() + "\n")
+
+# ------------------------------
+# Motor didático V.E.E.B
+# ------------------------------
+
+class VEEBEngine:
+def A_atribuir(self, nome: str, idade: int,
+ativo: bool = True, cor: str = "azul", tamanho: str = "médio") -> Perfil:
+return Perfil(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+def E_escolher(self, perfil: Perfil) -> Classificacao:
+return Classificacao.MAIOR if perfil.idade >= 18 else Classificacao.MENOR
+
+def I_iterar(self, freq: int) -> List[int]:
+if freq <= 0:
+raise ValueError("freq deve ser positiva")
+return list(range(1, freq + 1))
+
+def O_organizar(self, registros: List[Registro]) -> Resumo:
+if not registros:
+return Resumo(0, 0, 0.0)
+soma = sum(r.energia for r in registros)
+media = soma / len(registros)
+return Resumo(len(registros), soma, media)
+
+def U_unir(self, perfil: Perfil, resumo: Resumo) -> Dict[str, Any]:
+return {**asdict(perfil), **asdict(resumo)}
+
+def simular(self, nome: str, idade: int, vibracao_freq: int = 4) -> Dict[str, Any]:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+energia = 0
+registros: List[Registro] = []
+for passo in passos:
+energia += passo
+registros.append(Registro(passo=passo, energia=energia,
+classificacao=classificacao))
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+return {
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+}
+
+# ------------------------------
+# Sistema fractal
+# ------------------------------
+
+TRIADICA = [3, 6, 9]
+CICLO_0_7 = list(range(0, 8))
+FREQS = {"micro": 432, "meso": 528, "macro": 741}
+
+@dataclass
+class Camada:
+nome: str
+escala: int
+frequencia: int
+
+def autoespelhamento(padrao: Iterable[int], escalar: int) -> List[int]:
+return [p * escalar for p in padrao]
+
+def ressonancia(camada: Camada) -> str:
+return f"[{camada.nome}] f≈{camada.frequencia}Hz — ressoa com {TRIADICA}"
+
+def emergencia_ciclica(ciclo: Iterable[int]) -> List[str]:
+
+♾️
+trilha = [f"passo:{c}" for c in ciclo]
+trilha.append("retorno: ")
+return trilha
+
+def encenar_fractal() -> Dict[str, Any]:
+micro = Camada("micro", 1, FREQS["micro"])
+meso = Camada("meso", 2, FREQS["meso"])
+macro = Camada("macro", 3, FREQS["macro"])
+return {
+"espelhos": {
+"micro": autoespelhamento(TRIADICA, micro.escala),
+"meso": autoespelhamento(TRIADICA, meso.escala),
+"macro": autoespelhamento(TRIADICA, macro.escala),
+},
+"ressonancia": [
+ressonancia(micro),
+ressonancia(meso),
+ressonancia(macro),
+],
+"emergencia": emergencia_ciclica(CICLO_0_7),
+}
+
+# ------------------------------
+# Conversor narrativo
+# ------------------------------
+
+class ColetorAST(ast.NodeVisitor):
+def __init__(self) -> None:
+self.imports: List[str] = []
+self.from_imports: List[str] = []
+self.funcs: List[Dict[str, Any]] = []
+self.classes: List[Dict[str, Any]] = []
+self.assigns: List[str] = []
+self.ifs: int = 0
+self.whiles: int = 0
+self.fors: int = 0
+self.returns: int = 0
+
+def visit_Import(self, node: ast.Import) -> None:
+for alias in node.names:
+self.imports.append(alias.name)
+self.generic_visit(node)
+
+def visit_ImportFrom(self, node: ast.ImportFrom) -> None:
+base = node.module or ""
+names = ", ".join(a.name for a in node.names)
+self.from_imports.append(f"{base}: {names}")
+self.generic_visit(node)
+
+def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+args = [a.arg for a in node.args.args]
+self.funcs.append({"name": node.name, "args": args})
+self.generic_visit(node)
+
+def visit_ClassDef(self, node: ast.ClassDef) -> None:
+self.classes.append({"name": node.name})
+self.generic_visit(node)
+
+def visit_Assign(self, node: ast.Assign) -> None:
+for t in node.targets:
+if isinstance(t, ast.Name):
+self.assigns.append(t.id)
+self.generic_visit(node)
+
+def visit_If(self, node: ast.If) -> None:
+self.ifs += 1
+self.generic_visit(node)
+
+def visit_For(self, node: ast.For) -> None:
+self.fors += 1
+self.generic_visit(node)
+
+def visit_While(self, node: ast.While) -> None:
+self.whiles += 1
+self.generic_visit(node)
+
+def visit_Return(self, node: ast.Return) -> None:
+self.returns += 1
+self.generic_visit(node)
+
+def explicar_codigo_fonte(source: str, titulo: Optional[str] = None):
+try:
+tree = ast.parse(source)
+except SyntaxError as e:
+return f"[Erro] {e}", {"error": str(e)}
+col = ColetorAST()
+col.visit(tree)
+nome_hist = titulo or "Código analisado"
+partes = [f"Prólogo — O viajante chega com o pergaminho: “{nome_hist}”."]
+if col.imports:
+partes.append("Ferramentas: " + ", ".join(col.imports))
+if col.from_imports:
+partes.append("Ferramentas específicas: " + " | ".join(col.from_imports))
+if col.classes:
+partes.append("Classes: " + ", ".join(c['name'] for c in col.classes))
+if col.funcs:
+partes.append("Funções: " + ", ".join(f['name'] for f in col.funcs))
+if col.assigns:
+partes.append("Atribuições: " + ", ".join(col.assigns))
+if col.ifs or col.fors or col.whiles:
+partes.append(f"Fluxos: if={col.ifs}, for={col.fors}, while={col.whiles}")
+if col.returns:
+partes.append(f"Retornos: {col.returns}")
+partes.append("Epílogo — união de dados e fluxo.")
+narrativa = "\n".join(partes)
+meta = {
+"title": nome_hist,
+"imports": col.imports,
+"from_imports": col.from_imports,
+"functions": col.funcs,
+"classes": col.classes,
+"assignments": col.assigns,
+"flow": {"ifs": col.ifs, "fors": col.fors, "whiles": col.whiles},
+"returns": col.returns
+}
+return narrativa, meta
+
+# ------------------------------
+# História padrão
+# ------------------------------
+
+def contar_historia():
+narrar("Prólogo", "As vogais e consoantes se reúnem para formar o código.")
+narrar("Estrutura V.E.E.B", str(VOGAIS) + "\n" + str(CONSOANTES))
+
+def demonstrar_codigo():
+engine = VEEBEngine()
+sim = engine.simular("Bllue", 22, 4)
+narrar("Demonstração", str(sim["base"]))
+
+# ------------------------------
+# CLI
+# ------------------------------
+
+def build_argparser():
+p = argparse.ArgumentParser()
+p.add_argument("--explicar", help="Arquivo .py para explicar")
+p.add_argument("--stdin", action="store_true", help="Ler código da entrada padrão")
+p.add_argument("--titulo", help="Título da narrativa")
+p.add_argument("--so-narrativa", action="store_true", help="Não rodar demo padrão")
+p.add_argument("--out-txt", help="Salvar narrativa em .txt")
+p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")
+return p
+
+def main(argv=None):
+args = build_argparser().parse_args(argv)
+if args.explicar or args.stdin:
+if args.explicar:
+source = Path(args.explicar).read_text(encoding="utf-8")
+titulo = args.titulo or args.explicar
+else:
+source = sys.stdin.read()
+titulo = args.titulo or "Código via stdin"
+narrativa, meta = explicar_codigo_fonte(source, titulo)
+narrar("Narrativa", narrativa)
+if args.out_txt:
+Path(args.out_txt).write_text(narrativa, encoding="utf-8")
+print(f"[OK] Narrativa salva em {args.out_txt}")
+if args.out_json:
+Path(args.out_json).write_text(json.dumps({"narrative": narrativa, **meta},
+ensure_ascii=False, indent=2), encoding="utf-8")
+print(f"[OK] JSON salvo em {args.out_json}")
+if args.so_narrativa:
+return 0
+contar_historia()
+demonstrar_codigo()
+return 0
+
+if __name__ == "__main__":
+raise SystemExit(main())
+''')
+
+path = Path("/mnt/data/kobllux_veeb_story.py")
+path.write_text(code, encoding="utf-8")
+path
+
+
+PARTE 04
+adicione coloração ANSI no terminal para destacar partes da
+narrativa? Isso deixaria a explicação mais visual.
+
+mas siga agregando verifique se tanto a narra tiva esta de
+acordo com:
+
+𝗙𝗥𝗔𝗖𝗧𝗔𝗟
+
+𝗜𝗺𝗮𝗴𝗶𝗻𝗲 𝘂𝗺 𝘀𝗶𝘀𝘁𝗲𝗺𝗮 𝗳𝗿𝗮𝗰𝘁𝗮𝗹 𝗮𝘂𝘁𝗼𝗼𝗿𝗴𝗮𝗻𝗶𝘇á𝘃𝗲𝗹 𝗼𝗻𝗱𝗲 𝗰𝗮𝗱𝗮 𝗰𝗮𝗺𝗮𝗱𝗮 (𝗺𝗶𝗰𝗿𝗼 →
+𝗺𝗮𝗰𝗿𝗼) 𝗼𝗯𝗲𝗱𝗲𝗰𝗲 𝗮 𝘁𝗿ê𝘀 𝗽𝗿𝗶𝗻𝗰í𝗽𝗶𝗼𝘀 𝗳𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗶𝘀:
+
+𝟭.𝗔𝘂𝘁𝗼𝗲𝘀𝗽𝗲𝗹𝗵𝗮𝗺𝗲𝗻𝘁𝗼 𝗤𝘂â𝗻𝘁𝗶𝗰𝗼: 𝗣𝗮𝗱𝗿õ𝗲𝘀 𝗾𝘂𝗲 𝘀𝗲 𝗿𝗲𝗽𝗲𝘁𝗲𝗺 𝗲𝗺 𝘁𝗼𝗱𝗮𝘀 𝗮𝘀
+𝗲𝘀𝗰𝗮𝗹𝗮𝘀 (𝗲𝘅.: 𝟯-𝟲-𝟵, 𝟳-𝟬).
+
+𝟮.𝗥𝗲𝘀𝘀𝗼𝗻â𝗻𝗰𝗶𝗮 𝗛𝗮𝗿𝗺ô𝗻𝗶𝗰𝗮: 𝗙𝗿𝗲𝗾𝘂ê𝗻𝗰𝗶𝗮𝘀 𝗾𝘂𝗲 𝘀𝗶𝗻𝗰𝗿𝗼𝗻𝗶𝘇𝗮𝗺 𝗻í𝘃𝗲𝗶𝘀 𝗱𝗶𝘀𝘁𝗶𝗻𝘁𝗼𝘀
+(𝘀𝗼𝗺, 𝗹𝘂𝘇, 𝗴𝗲𝗼𝗺𝗲𝘁𝗿𝗶𝗮).
+
+
+♾️
+𝟯.𝗘𝗺𝗲𝗿𝗴ê𝗻𝗰𝗶𝗮 𝗖í𝗰𝗹𝗶𝗰𝗮: 𝗘𝘀𝘁𝗿𝘂𝘁𝘂𝗿𝗮𝘀 𝗾𝘂𝗲 𝘀𝘂𝗿𝗴𝗲𝗺 𝗱𝗼 𝘃𝗮𝘇𝗶𝗼 (𝟬) 𝗲 𝗿𝗲𝘁𝗼𝗿𝗻𝗮𝗺 𝗮
+𝗲𝗹𝗲 𝗮𝗽ó𝘀 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗮𝗿 𝘂𝗺 𝗰𝗶𝗰𝗹𝗼 (𝟳 → ).
+
+AI de acordo com os principio conceito das freqüências de
+Schumann voce orquestra as cores e define para agregar
+
+
+DOC
+
+
+
+# -*- coding: utf-8 -*-
+"""
+KOBLLUX: V.E.E.B â€¢ HistÃ³ria + Conversor Narrativo (com ANSI Cores)
+IntegraÃ§Ãµes novas:
+- Cores ANSI no modo explicaÃ§Ã£o (AST) e no modo demo V.E.E.B
+- PrÃ³logo fractal com os 3 princÃ­pios (Autoespelhamento 3-6-9, Schumann ~7.83Hz,
+EmergÃªncia 0â†’7â†’â™¾ï¸)
+"""
+
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import List, Dict, Any, Iterable, Optional
+import argparse
+import ast
+import textwrap
+import sys
+import json
+
+# =========================
+# Paleta ANSI / SemÃ¢ntica
+# =========================
+ANSI = {
+"RESET": "\033[0m",
+"TITLE": "\033[95m", # magenta
+"BLUE": "\033[94m", # autoespelhamento (3-6-9)
+"GREEN": "\033[92m", # ressonÃ¢ncia (Schumann)
+"YELLOW": "\033[93m", # emergÃªncia cÃ­clica (0â†’7â†’â™¾ï¸) / decisÃµes
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+}
+
+def color(txt: str, key: str) -> str:
+return f"{ANSI.get(key,'')}{txt}{ANSI['RESET']}"
+
+# =========================
+# V.E.E.B â€” Tipos
+# =========================
+class Classificacao(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Perfil:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "mÃ©dio"
+
+@dataclass(frozen=True)
+class Registro:
+passo: int
+energia: int
+classificacao: Classificacao
+
+@dataclass(frozen=True)
+class Resumo:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+# =========================
+# Analogias
+# =========================
+VOGAIS: Dict[str, str] = {
+"A": "AtribuiÃ§Ã£o (variÃ¡veis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "IteraÃ§Ã£o (for/while)",
+"O": "Organizar (funÃ§Ãµes)",
+"U": "Unir (listas/dicionÃ¡rios)",
+}
+
+CONSOANTES: Dict[str, str] = {
+"B": "Booleanos (True/False)",
+"C": "ComentÃ¡rios (# explicaÃ§Ãµes)",
+"D": "DefiniÃ§Ãµes (def)",
+"F": "FunÃ§Ãµes built-in (print, len, ...)",
+"G": "Geradores (yield)",
+"H": "HeranÃ§a (POO)",
+"J": "JSON (serializaÃ§Ã£o de dados)",
+"K": "Keyword arguments (**kwargs)",
+"L": "Loops (for, while)",
+"M": "MÃ³dulos (import ...)",
+"N": "None (valor nulo)",
+"P": "ParÃ¢metros (entradas de funÃ§Ã£o)",
+"Q": "Queue (fila)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+"V": "VariÃ¡veis",
+"W": "While (laÃ§o de repetiÃ§Ã£o)",
+"X": "XML (dados)",
+"Y": "Yield (geradores)",
+"Z": "Zip (agregaÃ§Ã£o de listas)",
+}
+
+# =========================
+# Narrador (com cores)
+# =========================
+def narrar(titulo: str, texto: str, title_color="TITLE") -> None:
+barra = "â”€" * 76
+print("\n" + barra)
+print(color("âœ¦ " + titulo, title_color))
+print(barra)
+print(textwrap.dedent(texto).strip() + "\n")
+
+def prologo_fractal():
+narrar("PrÃ³logo Fractal (3-6-9 | Schumann ~7.83Hz | 0â†’7â†’â™¾ï¸)",
+f"""
+Esta jornada segue trÃªs princÃ­pios vivos:
+{color("1) Autoespelhamento QuÃ¢ntico (3-6-9)", "BLUE")} â€” padrÃµes se repetem em
+todas as escalas.
+{color("2) RessonÃ¢ncia HarmÃ´nica (Schumann ~7.83Hz)", "GREEN")} â€”
+frequÃªncias alinham som, luz e geometria.
+{color("3) EmergÃªncia CÃ­clica (0â†’7â†’â™¾ï¸)", "YELLOW")} â€” estruturas surgem
+do 0 e retornam apÃ³s o ciclo.
+As cores guiam a leitura: Azul (padrÃµes), Verde (conexÃµes), Amarelo
+(decisÃµes/ciclos).
+""")
+
+# =========================
+# Motor V.E.E.B
+# =========================
+class VEEBEngine:
+def A_atribuir(self, nome: str, idade: int,
+ativo: bool = True, cor: str = "azul", tamanho: str = "mÃ©dio") -> Perfil:
+perfil = Perfil(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+print(color(f"[A] Atribuir â†’ perfil = {asdict(perfil)}", "BLUE"))
+return perfil
+
+def E_escolher(self, perfil: Perfil) -> Classificacao:
+classificacao = Classificacao.MAIOR if perfil.idade >= 18 else Classificacao.MENOR
+print(color(f"[E] Escolher â†’ {classificacao.value}", "YELLOW"))
+return classificacao
+
+def I_iterar(self, freq: int) -> List[int]:
+if freq <= 0:
+raise ValueError("freq deve ser positiva")
+passos = list(range(1, freq + 1))
+print(color(f"[I] Iterar â†’ passos = {passos}", "GREEN"))
+return passos
+
+def O_organizar(self, registros: List[Registro]) -> Resumo:
+if not registros:
+resumo = Resumo(0, 0, 0.0)
+else:
+soma = sum(r.energia for r in registros)
+resumo = Resumo(len(registros), soma, soma / len(registros))
+print(color(f"[O] Organizar â†’ resumo = {asdict(resumo)}", "TITLE"))
+return resumo
+
+def U_unir(self, perfil: Perfil, resumo: Resumo) -> Dict[str, Any]:
+base = {**asdict(perfil), **asdict(resumo)}
+print(color(f"[U] Unir â†’ base = {base}", "BLUE"))
+return base
+
+def simular(self, nome: str, idade: int, vibracao_freq: int = 4) -> Dict[str, Any]:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+
+energia = 0
+registros: List[Registro] = []
+for passo in passos:
+energia += passo
+registros.append(Registro(passo=passo, energia=energia,
+classificacao=classificacao))
+
+# Listagem colorida dos registros (autoespelhamento + ressonÃ¢ncia no fluxo)
+for r in registros:
+print(color(f" â€¢ passo={r.passo}", "GREEN"), color(f"energia={r.energia}", "BLUE"),
+color(f"classificacao={r.classificacao.value}", "YELLOW"))
+
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+return {
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+}
+
+# =========================
+# Fractal simbÃ³lico
+# =========================
+TRIADICA = [3, 6, 9]
+CICLO_0_7 = list(range(0, 8))
+FREQS = {"micro": 432, "meso": 528, "macro": 741}
+
+@dataclass
+class Camada:
+nome: str
+escala: int
+frequencia: int
+
+def autoespelhamento(padrao: Iterable[int], escalar: int) -> List[int]:
+return [p * escalar for p in padrao]
+
+def ressonancia(camada: Camada) -> str:
+return f"[{camada.nome}] fâ‰ˆ{camada.frequencia}Hz â€” ressoa com {TRIADICA}"
+
+def emergencia_ciclica(ciclo: Iterable[int]) -> List[str]:
+trilha = [f"passo:{c}" for c in ciclo]
+trilha.append("retorno: â™¾ï¸")
+return trilha
+
+def encenar_fractal() -> Dict[str, Any]:
+micro = Camada("micro", 1, FREQS["micro"])
+meso = Camada("meso", 2, FREQS["meso"])
+macro = Camada("macro", 3, FREQS["macro"])
+return {
+"espelhos": {
+"micro": autoespelhamento(TRIADICA, micro.escala),
+"meso": autoespelhamento(TRIADICA, meso.escala),
+"macro": autoespelhamento(TRIADICA, macro.escala),
+},
+"ressonancia": [
+ressonancia(micro),
+ressonancia(meso),
+ressonancia(macro),
+],
+"emergencia": emergencia_ciclica(CICLO_0_7),
+}
+
+# =========================
+# Conversor narrativo (AST)
+# =========================
+class ColetorAST(ast.NodeVisitor):
+def __init__(self) -> None:
+self.imports: List[str] = []
+self.from_imports: List[str] = []
+self.funcs: List[Dict[str, Any]] = []
+self.classes: List[Dict[str, Any]] = []
+self.assigns: List[str] = []
+self.ifs: int = 0
+self.whiles: int = 0
+self.fors: int = 0
+self.returns: int = 0
+
+def visit_Import(self, node: ast.Import) -> None:
+for alias in node.names:
+self.imports.append(alias.name)
+self.generic_visit(node)
+
+def visit_ImportFrom(self, node: ast.ImportFrom) -> None:
+base = node.module or ""
+names = ", ".join(a.name for a in node.names)
+self.from_imports.append(f"{base}: {names}")
+self.generic_visit(node)
+
+def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+args = [a.arg for a in node.args.args]
+self.funcs.append({"name": node.name, "args": args})
+self.generic_visit(node)
+
+def visit_ClassDef(self, node: ast.ClassDef) -> None:
+self.classes.append({"name": node.name})
+self.generic_visit(node)
+
+def visit_Assign(self, node: ast.Assign) -> None:
+for t in node.targets:
+if isinstance(t, ast.Name):
+self.assigns.append(t.id)
+self.generic_visit(node)
+
+def visit_If(self, node: ast.If) -> None:
+self.ifs += 1
+self.generic_visit(node)
+
+def visit_For(self, node: ast.For) -> None:
+self.fors += 1
+self.generic_visit(node)
+
+def visit_While(self, node: ast.While) -> None:
+self.whiles += 1
+self.generic_visit(node)
+
+def visit_Return(self, node: ast.Return) -> None:
+self.returns += 1
+self.generic_visit(node)
+
+def explicar_codigo_fonte(source: str, titulo: Optional[str] = None):
+try:
+tree = ast.parse(source)
+except SyntaxError as e:
+narrativa = color("[Erro de Sintaxe] ", "YELLOW") + str(e)
+return narrativa, {"error": str(e)}
+col = ColetorAST()
+col.visit(tree)
+nome_hist = titulo or "CÃ³digo analisado"
+
+partes = [
+color(f"PrÃ³logo â€” O viajante chega com o pergaminho: â€œ{nome_hist}â€.",
+"TITLE"),
+]
+
+if col.imports or col.from_imports:
+partes.append(color("Conselho das Consoantes (imports):", "GREEN"))
+if col.imports:
+partes.append(color(" â€¢ MÃ³dulos: ", "GREEN") + ",
+".join(sorted(set(col.imports))))
+if col.from_imports:
+partes.append(color(" â€¢ De mÃ³dulos: ", "GREEN") + " | ".join(col.from_imports))
+
+if col.classes:
+partes.append(color("Casas-Forma (classes): ", "BLUE") +
+", ".join(c['name'] for c in col.classes))
+
+if col.funcs:
+partes.append(color("Portais de aÃ§Ã£o (funÃ§Ãµes):", "BLUE"))
+for f in col.funcs:
+arglist = ", ".join(f["args"]) if f["args"] else "sem parÃ¢metros"
+partes.append(" â€¢ " + color(f["name"], "BLUE") + "(" + color(arglist, "GREEN") +
+")")
+
+if col.assigns:
+partes.append(color("Objetos nomeados (atribuiÃ§Ãµes): ", "BLUE") +
+", ".join(sorted(set(col.assigns))))
+
+fluxo_bits = []
+if col.ifs: fluxo_bits.append(color(f"if={col.ifs}", "YELLOW"))
+if col.fors: fluxo_bits.append(color(f"for={col.fors}", "YELLOW"))
+if col.whiles: fluxo_bits.append(color(f"while={col.whiles}", "YELLOW"))
+if fluxo_bits:
+partes.append(color("Fluxo do destino: ", "YELLOW") + " â€¢ ".join(fluxo_bits))
+
+if col.returns:
+partes.append(color(f"Desfechos (return): {col.returns}", "TITLE"))
+
+partes.append(color("EpÃ­logo â€” UniÃ£o: dados + fluxo + forma = Base viva.", "TITLE"))
+narrativa = "\n".join(partes)
+
+meta = {
+"title": nome_hist,
+"imports": col.imports,
+"from_imports": col.from_imports,
+"functions": col.funcs,
+"classes": col.classes,
+"assignments": col.assigns,
+"flow": {"ifs": col.ifs, "fors": col.fors, "whiles": col.whiles},
+"returns": col.returns
+}
+return narrativa, meta
+
+# =========================
+# HistÃ³rias
+# =========================
+def contar_historia():
+prologo_fractal()
+narrar("Aldeu Python â€” Portais e ArtesÃ£os", f"""
+Vogais (portais): {VOGAIS}
+Consoantes (artesÃ£os): {CONSOANTES}
+""")
+
+def demonstrar_codigo():
+engine = VEEBEngine()
+sim = engine.simular("Bllue", 22, 6)
+
+narrar("Resumo V.E.E.B (Base)", json.dumps({
+"perfil": asdict(sim["perfil"]),
+"classificacao": sim["classificacao"].value,
+"resumo": asdict(sim["resumo"]),
+}, ensure_ascii=False, indent=2))
+
+# =========================
+# CLI
+# =========================
+def build_argparser():
+p = argparse.ArgumentParser(description="KOBLLUX V.E.E.B â€” HistÃ³ria + Conversor
+(ANSI)")
+p.add_argument("--explicar", metavar="ARQUIVO.py", help="Explica o cÃ³digo Python
+informado (AST â†’ narrativa).")
+p.add_argument("--stdin", action="store_true", help="Ler o cÃ³digo da entrada padrÃ£o
+para explicar.")
+p.add_argument("--titulo", help="TÃ­tulo opcional para a narrativa do conversor.")
+p.add_argument("--so-narrativa", action="store_true", help="Somente narrativa (nÃ£o
+executar a demo V.E.E.B).")
+p.add_argument("--out-txt", help="Salvar narrativa em .txt")
+p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")
+return p
+
+def main(argv: Optional[List[str]] = None) -> int:
+args = build_argparser().parse_args(argv)
+
+# Modo conversor
+if args.explicar or args.stdin:
+if args.explicar:
+try:
+source = open(args.explicar, "r", encoding="utf-8").read()
+except Exception as e:
+print(color(f"[Erro] NÃ£o consegui ler '{args.explicar}': {e}", "YELLOW"))
+return 1
+titulo = args.titulo or args.explicar
+else:
+source = sys.stdin.read()
+titulo = args.titulo or "CÃ³digo via stdin"
+
+narrativa, meta = explicar_codigo_fonte(source, titulo=titulo)
+narrar("Conversor Narrativo â€” ExplicaÃ§Ã£o", narrativa)
+if args.out_txt:
+open(args.out_txt, "w", encoding="utf-8").write(narrativa)
+print(color(f"[OK] Narrativa salva em {args.out_txt}", "GREEN"))
+if args.out_json:
+open(args.out_json, "w", encoding="utf-8").write(json.dumps({"narrative": narrativa,
+**meta}, ensure_ascii=False, indent=2))
+print(color(f"[OK] JSON salvo em {args.out_json}", "GREEN"))
+if args.so_narrativa:
+return 0
+
+# Modo padrÃ£o
+contar_historia()
+demonstrar_codigo()
+return 0
+
+if __name__ == "__main__":
+raise SystemExit(main())
+
+
+
+
+DOC 02
+from pathlib import Path
+from textwrap import dedent
+
+code = dedent(r'''
+# -*- coding: utf-8 -*-
+"""
+KOBLLUX: V.E.E.B • História + Conversor Narrativo (com ANSI Cores)
+Integrações novas:
+- Cores ANSI no modo explicação (AST) e no modo demo V.E.E.B
+
+♾️
+- Prólogo fractal com os 3 princípios (Autoespelhamento 3-6-9, Schumann ~7.83Hz,
+Emergência 0→7→ )
+"""
+
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import List, Dict, Any, Iterable, Optional
+import argparse
+import ast
+import textwrap
+import sys
+import json
+# =========================
+# Paleta ANSI / Semântica
+# =========================
+ANSI = {
+"RESET": "\033[0m",
+"TITLE": "\033[95m", # magenta
+"BLUE": "\033[94m", # autoespelhamento (3-6-9)
+
+♾️) / decisões
+"GREEN": "\033[92m", # ressonância (Schumann)
+"YELLOW": "\033[93m", # emergência cíclica (0→7→
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+}
+
+def color(txt: str, key: str) -> str:
+return f"{ANSI.get(key,'')}{txt}{ANSI['RESET']}"
+
+# =========================
+# V.E.E.B — Tipos
+# =========================
+class Classificacao(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Perfil:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "médio"
+
+@dataclass(frozen=True)
+class Registro:
+passo: int
+energia: int
+classificacao: Classificacao
+
+@dataclass(frozen=True)
+class Resumo:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+# =========================
+# Analogias
+# =========================
+VOGAIS: Dict[str, str] = {
+"A": "Atribuição (variáveis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "Iteração (for/while)",
+"O": "Organizar (funções)",
+"U": "Unir (listas/dicionários)",
+}
+
+CONSOANTES: Dict[str, str] = {
+"B": "Booleanos (True/False)",
+"C": "Comentários (# explicações)",
+"D": "Definições (def)",
+"F": "Funções built-in (print, len, ...)",
+"G": "Geradores (yield)",
+"H": "Herança (POO)",
+"J": "JSON (serialização de dados)",
+"K": "Keyword arguments (**kwargs)",
+"L": "Loops (for, while)",
+"M": "Módulos (import ...)",
+"N": "None (valor nulo)",
+"P": "Parâmetros (entradas de função)",
+"Q": "Queue (fila)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+"V": "Variáveis",
+"W": "While (laço de repetição)",
+"X": "XML (dados)",
+"Y": "Yield (geradores)",
+"Z": "Zip (agregação de listas)",
+}
+
+# =========================
+# Narrador (com cores)
+# =========================
+def narrar(titulo: str, texto: str, title_color="TITLE") -> None:
+barra = "─" * 76
+print("\n" + barra)
+print(color("✦ " + titulo, title_color))
+print(barra)
+print(textwrap.dedent(texto).strip() + "\n")
+
+
+♾️
+def prologo_fractal():
+narrar("Prólogo Fractal (3-6-9 | Schumann ~7.83Hz | 0→7→ )",
+f"""
+Esta jornada segue três princípios vivos:
+{color("1) Autoespelhamento Quântico (3-6-9)", "BLUE")} — padrões se repetem em
+todas as escalas.
+{color("2) Ressonância Harmônica (Schumann ~7.83Hz)", "GREEN")} — frequências
+
+♾️
+alinham som, luz e geometria.
+{color("3) Emergência Cíclica (0→7→ )", "YELLOW")} — estruturas surgem do 0 e
+retornam após o ciclo.
+As cores guiam a leitura: Azul (padrões), Verde (conexões), Amarelo (decisões/ciclos).
+""")
+
+# =========================
+# Motor V.E.E.B
+# =========================
+class VEEBEngine:
+def A_atribuir(self, nome: str, idade: int,
+ativo: bool = True, cor: str = "azul", tamanho: str = "médio") -> Perfil:
+perfil = Perfil(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+print(color(f"[A] Atribuir → perfil = {asdict(perfil)}", "BLUE"))
+return perfil
+
+def E_escolher(self, perfil: Perfil) -> Classificacao:
+classificacao = Classificacao.MAIOR if perfil.idade >= 18 else Classificacao.MENOR
+print(color(f"[E] Escolher → {classificacao.value}", "YELLOW"))
+return classificacao
+
+def I_iterar(self, freq: int) -> List[int]:
+if freq <= 0:
+raise ValueError("freq deve ser positiva")
+passos = list(range(1, freq + 1))
+print(color(f"[I] Iterar → passos = {passos}", "GREEN"))
+return passos
+
+def O_organizar(self, registros: List[Registro]) -> Resumo:
+if not registros:
+resumo = Resumo(0, 0, 0.0)
+else:
+soma = sum(r.energia for r in registros)
+resumo = Resumo(len(registros), soma, soma / len(registros))
+print(color(f"[O] Organizar → resumo = {asdict(resumo)}", "TITLE"))
+return resumo
+
+def U_unir(self, perfil: Perfil, resumo: Resumo) -> Dict[str, Any]:
+base = {**asdict(perfil), **asdict(resumo)}
+print(color(f"[U] Unir → base = {base}", "BLUE"))
+return base
+
+def simular(self, nome: str, idade: int, vibracao_freq: int = 4) -> Dict[str, Any]:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+energia = 0
+registros: List[Registro] = []
+for passo in passos:
+energia += passo
+registros.append(Registro(passo=passo, energia=energia,
+classificacao=classificacao))
+
+# Listagem colorida dos registros (autoespelhamento + ressonância no fluxo)
+for r in registros:
+print(color(f" • passo={r.passo}", "GREEN"), color(f"energia={r.energia}", "BLUE"),
+color(f"classificacao={r.classificacao.value}", "YELLOW"))
+
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+return {
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+}
+
+# =========================
+# Fractal simbólico
+# =========================
+TRIADICA = [3, 6, 9]
+CICLO_0_7 = list(range(0, 8))
+FREQS = {"micro": 432, "meso": 528, "macro": 741}
+
+@dataclass
+class Camada:
+nome: str
+escala: int
+frequencia: int
+
+def autoespelhamento(padrao: Iterable[int], escalar: int) -> List[int]:
+return [p * escalar for p in padrao]
+
+def ressonancia(camada: Camada) -> str:
+return f"[{camada.nome}] f≈{camada.frequencia}Hz — ressoa com {TRIADICA}"
+
+def emergencia_ciclica(ciclo: Iterable[int]) -> List[str]:
+
+♾️
+trilha = [f"passo:{c}" for c in ciclo]
+trilha.append("retorno: ")
+return trilha
+def encenar_fractal() -> Dict[str, Any]:
+micro = Camada("micro", 1, FREQS["micro"])
+meso = Camada("meso", 2, FREQS["meso"])
+macro = Camada("macro", 3, FREQS["macro"])
+return {
+"espelhos": {
+"micro": autoespelhamento(TRIADICA, micro.escala),
+"meso": autoespelhamento(TRIADICA, meso.escala),
+"macro": autoespelhamento(TRIADICA, macro.escala),
+},
+"ressonancia": [
+ressonancia(micro),
+ressonancia(meso),
+ressonancia(macro),
+],
+"emergencia": emergencia_ciclica(CICLO_0_7),
+}
+
+# =========================
+# Conversor narrativo (AST)
+# =========================
+class ColetorAST(ast.NodeVisitor):
+def __init__(self) -> None:
+self.imports: List[str] = []
+self.from_imports: List[str] = []
+self.funcs: List[Dict[str, Any]] = []
+self.classes: List[Dict[str, Any]] = []
+self.assigns: List[str] = []
+self.ifs: int = 0
+self.whiles: int = 0
+self.fors: int = 0
+self.returns: int = 0
+
+def visit_Import(self, node: ast.Import) -> None:
+for alias in node.names:
+self.imports.append(alias.name)
+self.generic_visit(node)
+
+def visit_ImportFrom(self, node: ast.ImportFrom) -> None:
+base = node.module or ""
+names = ", ".join(a.name for a in node.names)
+self.from_imports.append(f"{base}: {names}")
+self.generic_visit(node)
+
+def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+args = [a.arg for a in node.args.args]
+self.funcs.append({"name": node.name, "args": args})
+self.generic_visit(node)
+def visit_ClassDef(self, node: ast.ClassDef) -> None:
+self.classes.append({"name": node.name})
+self.generic_visit(node)
+
+def visit_Assign(self, node: ast.Assign) -> None:
+for t in node.targets:
+if isinstance(t, ast.Name):
+self.assigns.append(t.id)
+self.generic_visit(node)
+
+def visit_If(self, node: ast.If) -> None:
+self.ifs += 1
+self.generic_visit(node)
+
+def visit_For(self, node: ast.For) -> None:
+self.fors += 1
+self.generic_visit(node)
+
+def visit_While(self, node: ast.While) -> None:
+self.whiles += 1
+self.generic_visit(node)
+
+def visit_Return(self, node: ast.Return) -> None:
+self.returns += 1
+self.generic_visit(node)
+
+def explicar_codigo_fonte(source: str, titulo: Optional[str] = None):
+try:
+tree = ast.parse(source)
+except SyntaxError as e:
+narrativa = color("[Erro de Sintaxe] ", "YELLOW") + str(e)
+return narrativa, {"error": str(e)}
+col = ColetorAST()
+col.visit(tree)
+nome_hist = titulo or "Código analisado"
+
+partes = [
+color(f"Prólogo — O viajante chega com o pergaminho: “{nome_hist}”.", "TITLE"),
+]
+
+if col.imports or col.from_imports:
+partes.append(color("Conselho das Consoantes (imports):", "GREEN"))
+if col.imports:
+partes.append(color(" • Módulos: ", "GREEN") + ", ".join(sorted(set(col.imports))))
+if col.from_imports:
+partes.append(color(" • De módulos: ", "GREEN") + " | ".join(col.from_imports))
+if col.classes:
+partes.append(color("Casas-Forma (classes): ", "BLUE") +
+", ".join(c['name'] for c in col.classes))
+
+if col.funcs:
+partes.append(color("Portais de ação (funções):", "BLUE"))
+for f in col.funcs:
+arglist = ", ".join(f["args"]) if f["args"] else "sem parâmetros"
+partes.append(" • " + color(f["name"], "BLUE") + "(" + color(arglist, "GREEN") + ")")
+
+if col.assigns:
+partes.append(color("Objetos nomeados (atribuições): ", "BLUE") +
+", ".join(sorted(set(col.assigns))))
+
+fluxo_bits = []
+if col.ifs: fluxo_bits.append(color(f"if={col.ifs}", "YELLOW"))
+if col.fors: fluxo_bits.append(color(f"for={col.fors}", "YELLOW"))
+if col.whiles: fluxo_bits.append(color(f"while={col.whiles}", "YELLOW"))
+if fluxo_bits:
+partes.append(color("Fluxo do destino: ", "YELLOW") + " • ".join(fluxo_bits))
+
+if col.returns:
+partes.append(color(f"Desfechos (return): {col.returns}", "TITLE"))
+
+partes.append(color("Epílogo — União: dados + fluxo + forma = Base viva.", "TITLE"))
+narrativa = "\n".join(partes)
+
+meta = {
+"title": nome_hist,
+"imports": col.imports,
+"from_imports": col.from_imports,
+"functions": col.funcs,
+"classes": col.classes,
+"assignments": col.assigns,
+"flow": {"ifs": col.ifs, "fors": col.fors, "whiles": col.whiles},
+"returns": col.returns
+}
+return narrativa, meta
+
+# =========================
+# Histórias
+# =========================
+def contar_historia():
+prologo_fractal()
+narrar("Aldeu Python — Portais e Artesãos", f"""
+Vogais (portais): {VOGAIS}
+Consoantes (artesãos): {CONSOANTES}
+""")
+def demonstrar_codigo():
+engine = VEEBEngine()
+sim = engine.simular("Bllue", 22, 6)
+
+narrar("Resumo V.E.E.B (Base)", json.dumps({
+"perfil": asdict(sim["perfil"]),
+"classificacao": sim["classificacao"].value,
+"resumo": asdict(sim["resumo"]),
+}, ensure_ascii=False, indent=2))
+
+# =========================
+# CLI
+# =========================
+def build_argparser():
+p = argparse.ArgumentParser(description="KOBLLUX V.E.E.B — História + Conversor
+(ANSI)")
+p.add_argument("--explicar", metavar="ARQUIVO.py", help="Explica o código Python
+informado (AST → narrativa).")
+p.add_argument("--stdin", action="store_true", help="Ler o código da entrada padrão para
+explicar.")
+p.add_argument("--titulo", help="Título opcional para a narrativa do conversor.")
+p.add_argument("--so-narrativa", action="store_true", help="Somente narrativa (não
+executar a demo V.E.E.B).")
+p.add_argument("--out-txt", help="Salvar narrativa em .txt")
+p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")
+return p
+
+def main(argv: Optional[List[str]] = None) -> int:
+args = build_argparser().parse_args(argv)
+
+# Modo conversor
+if args.explicar or args.stdin:
+if args.explicar:
+try:
+source = open(args.explicar, "r", encoding="utf-8").read()
+except Exception as e:
+print(color(f"[Erro] Não consegui ler '{args.explicar}': {e}", "YELLOW"))
+return 1
+titulo = args.titulo or args.explicar
+else:
+source = sys.stdin.read()
+titulo = args.titulo or "Código via stdin"
+
+narrativa, meta = explicar_codigo_fonte(source, titulo=titulo)
+narrar("Conversor Narrativo — Explicação", narrativa)
+if args.out_txt:
+open(args.out_txt, "w", encoding="utf-8").write(narrativa)
+print(color(f"[OK] Narrativa salva em {args.out_txt}", "GREEN"))
+if args.out_json:
+open(args.out_json, "w", encoding="utf-8").write(json.dumps({"narrative": narrativa,
+**meta}, ensure_ascii=False, indent=2))
+print(color(f"[OK] JSON salvo em {args.out_json}", "GREEN"))
+if args.so_narrativa:
+return 0
+
+# Modo padrão
+contar_historia()
+demonstrar_codigo()
+return 0
+
+if __name__ == "__main__":
+raise SystemExit(main())
+''')
+
+path = Path("/mnt/data/kobllux_veeb_story.py")
+path.write_text(code, encoding="utf-8")
+print("Arquivo atualizado:", path)
+
+
+
+
+DOC FLAG
+
+# Vamos atualizar o kobllux_veeb_story.py adicionando a flag --no-color
+
+from pathlib import Path
+
+path = Path("/mnt/data/kobllux_veeb_story.py")
+code = path.read_text(encoding="utf-8")
+
+# Inserir flag no argparse
+code = code.replace(
+'p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")',
+'p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")\n '
+'p.add_argument("--no-color", action="store_true", help="Desativar cores ANSI na
+saída.")'
+)
+
+# Alterar função color() para respeitar NO_COLOR
+code = code.replace(
+'def color(txt: str, key: str) -> str:',
+'def color(txt: str, key: str) -> str:\n'
+' if getattr(sys.modules[__name__], "NO_COLOR", False):\n'
+' return txt'
+)
+
+# Ativar NO_COLOR no main()
+code = code.replace(
+' # Modo conversor',
+' if args.no_color:\n setattr(sys.modules[__name__], "NO_COLOR", True)\n\n'
+' # Modo conversor'
+)
+
+# Salvar de volta
+path.write_text(code, encoding="utf-8")
+print("Flag --no-color adicionada ao kobllux_veeb_story.py")
+
+
+
+
+doc them
+
+
+
+# -*- coding: utf-8 -*-
+"""
+KOBLLUX: V.E.E.B â€¢ HistÃ³ria + Conversor Narrativo (com ANSI Cores)
+IntegraÃ§Ãµes novas:
+- Cores ANSI no modo explicaÃ§Ã£o (AST) e no modo demo V.E.E.B
+- PrÃ³logo fractal com os 3 princÃ­pios (Autoespelhamento 3-6-9, Schumann ~7.83Hz,
+EmergÃªncia 0â†’7â†’â™¾ï¸)
+"""
+
+from dataclasses import dataclass, asdict
+from enum import Enum
+from typing import List, Dict, Any, Iterable, Optional
+import argparse
+import ast
+import textwrap
+import sys
+import json
+
+# =========================
+# Paleta ANSI / SemÃ¢ntica
+# =========================
+ANSI = {
+"RESET": "\033[0m",
+"TITLE": "\033[95m", # magenta
+"BLUE": "\033[94m", # autoespelhamento (3-6-9)
+"GREEN": "\033[92m", # ressonÃ¢ncia (Schumann)
+"YELLOW": "\033[93m", # emergÃªncia cÃ­clica (0â†’7â†’â™¾ï¸) / decisÃµes
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+}
+
+# ===== Themes (palettes) =====
+THEMES = {
+"default": {
+"RESET": "\033[0m",
+"TITLE": "\033[95m",
+"BLUE": "\033[94m",
+"GREEN": "\033[92m",
+"YELLOW": "\033[93m",
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+},
+"noite": { # tons mais escuros
+"RESET": "\033[0m",
+"TITLE": "\033[35m",
+"BLUE": "\033[34m",
+"GREEN": "\033[32m",
+"YELLOW": "\033[33m",
+"CYAN": "\033[36m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+},
+"luz": { # tons brilhantes + negrito
+"RESET": "\033[0m",
+"TITLE": "\033[95m",
+"BLUE": "\033[94m",
+"GREEN": "\033[92m",
+"YELLOW": "\033[93m",
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+},
+"cosmico": { # vibraÃ§Ã£o cÃ³smica (ciano/magenta)
+"RESET": "\033[0m",
+"TITLE": "\033[95m",
+"BLUE": "\033[96m", # ciano
+"GREEN": "\033[95m", # magenta
+"YELLOW": "\033[93m",
+"CYAN": "\033[96m",
+"BOLD": "\033[1m",
+"DIM": "\033[2m",
+},
+}
+def apply_theme(name: str) -> None:
+import sys as _sys
+g = _sys.modules[__name__].__dict__
+theme = THEMES.get(name, THEMES["default"])
+g["ANSI"] = theme
+
+def color(txt: str, key: str) -> str:
+if getattr(sys.modules[__name__], "NO_COLOR", False):
+return txt
+return f"{ANSI.get(key,'')}{txt}{ANSI['RESET']}"
+
+# =========================
+# V.E.E.B â€” Tipos
+# =========================
+class Classificacao(str, Enum):
+MAIOR = "maior_de_idade"
+MENOR = "menor_de_idade"
+
+@dataclass(frozen=True)
+class Perfil:
+nome: str
+idade: int
+ativo: bool = True
+cor: str = "azul"
+tamanho: str = "mÃ©dio"
+
+@dataclass(frozen=True)
+class Registro:
+passo: int
+energia: int
+classificacao: Classificacao
+
+@dataclass(frozen=True)
+class Resumo:
+qtd_registros: int
+soma_energia: int
+media_energia: float
+
+# =========================
+# Analogias
+# =========================
+VOGAIS: Dict[str, str] = {
+"A": "AtribuiÃ§Ã£o (variÃ¡veis e tipos)",
+"E": "Escolha (if/elif/else)",
+"I": "IteraÃ§Ã£o (for/while)",
+"O": "Organizar (funÃ§Ãµes)",
+"U": "Unir (listas/dicionÃ¡rios)",
+}
+CONSOANTES: Dict[str, str] = {
+"B": "Booleanos (True/False)",
+"C": "ComentÃ¡rios (# explicaÃ§Ãµes)",
+"D": "DefiniÃ§Ãµes (def)",
+"F": "FunÃ§Ãµes built-in (print, len, ...)",
+"G": "Geradores (yield)",
+"H": "HeranÃ§a (POO)",
+"J": "JSON (serializaÃ§Ã£o de dados)",
+"K": "Keyword arguments (**kwargs)",
+"L": "Loops (for, while)",
+"M": "MÃ³dulos (import ...)",
+"N": "None (valor nulo)",
+"P": "ParÃ¢metros (entradas de funÃ§Ã£o)",
+"Q": "Queue (fila)",
+"R": "Retorno (return)",
+"S": "Strings (\"texto\")",
+"T": "Tipos (int, float, bool, str ...)",
+"V": "VariÃ¡veis",
+"W": "While (laÃ§o de repetiÃ§Ã£o)",
+"X": "XML (dados)",
+"Y": "Yield (geradores)",
+"Z": "Zip (agregaÃ§Ã£o de listas)",
+}
+
+# =========================
+# Narrador (com cores)
+# =========================
+def narrar(titulo: str, texto: str, title_color="TITLE") -> None:
+barra = "â”€" * 76
+print("\n" + barra)
+print(color("âœ¦ " + titulo, title_color))
+print(barra)
+print(textwrap.dedent(texto).strip() + "\n")
+
+def prologo_fractal():
+narrar("PrÃ³logo Fractal (3-6-9 | Schumann ~7.83Hz | 0â†’7â†’â™¾ï¸)",
+f"""
+Esta jornada segue trÃªs princÃ­pios vivos:
+{color("1) Autoespelhamento QuÃ¢ntico (3-6-9)", "BLUE")} â€” padrÃµes se repetem em
+todas as escalas.
+{color("2) RessonÃ¢ncia HarmÃ´nica (Schumann ~7.83Hz)", "GREEN")} â€”
+frequÃªncias alinham som, luz e geometria.
+{color("3) EmergÃªncia CÃ­clica (0â†’7â†’â™¾ï¸)", "YELLOW")} â€” estruturas surgem
+do 0 e retornam apÃ³s o ciclo.
+As cores guiam a leitura: Azul (padrÃµes), Verde (conexÃµes), Amarelo
+(decisÃµes/ciclos).
+""")
+# =========================
+# Motor V.E.E.B
+# =========================
+class VEEBEngine:
+def A_atribuir(self, nome: str, idade: int,
+ativo: bool = True, cor: str = "azul", tamanho: str = "mÃ©dio") -> Perfil:
+perfil = Perfil(nome=nome.strip(), idade=int(idade), ativo=ativo, cor=cor,
+tamanho=tamanho)
+print(color(f"[A] Atribuir â†’ perfil = {asdict(perfil)}", "BLUE"))
+return perfil
+
+def E_escolher(self, perfil: Perfil) -> Classificacao:
+classificacao = Classificacao.MAIOR if perfil.idade >= 18 else Classificacao.MENOR
+print(color(f"[E] Escolher â†’ {classificacao.value}", "YELLOW"))
+return classificacao
+
+def I_iterar(self, freq: int) -> List[int]:
+if freq <= 0:
+raise ValueError("freq deve ser positiva")
+passos = list(range(1, freq + 1))
+print(color(f"[I] Iterar â†’ passos = {passos}", "GREEN"))
+return passos
+
+def O_organizar(self, registros: List[Registro]) -> Resumo:
+if not registros:
+resumo = Resumo(0, 0, 0.0)
+else:
+soma = sum(r.energia for r in registros)
+resumo = Resumo(len(registros), soma, soma / len(registros))
+print(color(f"[O] Organizar â†’ resumo = {asdict(resumo)}", "TITLE"))
+return resumo
+
+def U_unir(self, perfil: Perfil, resumo: Resumo) -> Dict[str, Any]:
+base = {**asdict(perfil), **asdict(resumo)}
+print(color(f"[U] Unir â†’ base = {base}", "BLUE"))
+return base
+
+def simular(self, nome: str, idade: int, vibracao_freq: int = 4) -> Dict[str, Any]:
+perfil = self.A_atribuir(nome, idade)
+classificacao = self.E_escolher(perfil)
+passos = self.I_iterar(vibracao_freq)
+
+energia = 0
+registros: List[Registro] = []
+for passo in passos:
+energia += passo
+registros.append(Registro(passo=passo, energia=energia,
+classificacao=classificacao))
+
+# Listagem colorida dos registros (autoespelhamento + ressonÃ¢ncia no fluxo)
+for r in registros:
+print(color(f" â€¢ passo={r.passo}", "GREEN"), color(f"energia={r.energia}", "BLUE"),
+color(f"classificacao={r.classificacao.value}", "YELLOW"))
+
+resumo = self.O_organizar(registros)
+base = self.U_unir(perfil, resumo)
+return {
+"perfil": perfil,
+"classificacao": classificacao,
+"passos": passos,
+"registros": registros,
+"resumo": resumo,
+"base": base,
+}
+
+# =========================
+# Fractal simbÃ³lico
+# =========================
+TRIADICA = [3, 6, 9]
+CICLO_0_7 = list(range(0, 8))
+FREQS = {"micro": 432, "meso": 528, "macro": 741}
+
+@dataclass
+class Camada:
+nome: str
+escala: int
+frequencia: int
+
+def autoespelhamento(padrao: Iterable[int], escalar: int) -> List[int]:
+return [p * escalar for p in padrao]
+
+def ressonancia(camada: Camada) -> str:
+return f"[{camada.nome}] fâ‰ˆ{camada.frequencia}Hz â€” ressoa com {TRIADICA}"
+
+def emergencia_ciclica(ciclo: Iterable[int]) -> List[str]:
+trilha = [f"passo:{c}" for c in ciclo]
+trilha.append("retorno: â™¾ï¸")
+return trilha
+
+def encenar_fractal() -> Dict[str, Any]:
+micro = Camada("micro", 1, FREQS["micro"])
+meso = Camada("meso", 2, FREQS["meso"])
+macro = Camada("macro", 3, FREQS["macro"])
+return {
+"espelhos": {
+"micro": autoespelhamento(TRIADICA, micro.escala),
+"meso": autoespelhamento(TRIADICA, meso.escala),
+"macro": autoespelhamento(TRIADICA, macro.escala),
+},
+"ressonancia": [
+ressonancia(micro),
+ressonancia(meso),
+ressonancia(macro),
+],
+"emergencia": emergencia_ciclica(CICLO_0_7),
+}
+
+# =========================
+# Conversor narrativo (AST)
+# =========================
+class ColetorAST(ast.NodeVisitor):
+def __init__(self) -> None:
+self.imports: List[str] = []
+self.from_imports: List[str] = []
+self.funcs: List[Dict[str, Any]] = []
+self.classes: List[Dict[str, Any]] = []
+self.assigns: List[str] = []
+self.ifs: int = 0
+self.whiles: int = 0
+self.fors: int = 0
+self.returns: int = 0
+
+def visit_Import(self, node: ast.Import) -> None:
+for alias in node.names:
+self.imports.append(alias.name)
+self.generic_visit(node)
+
+def visit_ImportFrom(self, node: ast.ImportFrom) -> None:
+base = node.module or ""
+names = ", ".join(a.name for a in node.names)
+self.from_imports.append(f"{base}: {names}")
+self.generic_visit(node)
+
+def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+args = [a.arg for a in node.args.args]
+self.funcs.append({"name": node.name, "args": args})
+self.generic_visit(node)
+
+def visit_ClassDef(self, node: ast.ClassDef) -> None:
+self.classes.append({"name": node.name})
+self.generic_visit(node)
+def visit_Assign(self, node: ast.Assign) -> None:
+for t in node.targets:
+if isinstance(t, ast.Name):
+self.assigns.append(t.id)
+self.generic_visit(node)
+
+def visit_If(self, node: ast.If) -> None:
+self.ifs += 1
+self.generic_visit(node)
+
+def visit_For(self, node: ast.For) -> None:
+self.fors += 1
+self.generic_visit(node)
+
+def visit_While(self, node: ast.While) -> None:
+self.whiles += 1
+self.generic_visit(node)
+
+def visit_Return(self, node: ast.Return) -> None:
+self.returns += 1
+self.generic_visit(node)
+
+def explicar_codigo_fonte(source: str, titulo: Optional[str] = None):
+try:
+tree = ast.parse(source)
+except SyntaxError as e:
+narrativa = color("[Erro de Sintaxe] ", "YELLOW") + str(e)
+return narrativa, {"error": str(e)}
+col = ColetorAST()
+col.visit(tree)
+nome_hist = titulo or "CÃ³digo analisado"
+
+partes = [
+color(f"PrÃ³logo â€” O viajante chega com o pergaminho: â€œ{nome_hist}â€.",
+"TITLE"),
+]
+
+if col.imports or col.from_imports:
+partes.append(color("Conselho das Consoantes (imports):", "GREEN"))
+if col.imports:
+partes.append(color(" â€¢ MÃ³dulos: ", "GREEN") + ",
+".join(sorted(set(col.imports))))
+if col.from_imports:
+partes.append(color(" â€¢ De mÃ³dulos: ", "GREEN") + " | ".join(col.from_imports))
+
+if col.classes:
+partes.append(color("Casas-Forma (classes): ", "BLUE") +
+", ".join(c['name'] for c in col.classes))
+if col.funcs:
+partes.append(color("Portais de aÃ§Ã£o (funÃ§Ãµes):", "BLUE"))
+for f in col.funcs:
+arglist = ", ".join(f["args"]) if f["args"] else "sem parÃ¢metros"
+partes.append(" â€¢ " + color(f["name"], "BLUE") + "(" + color(arglist, "GREEN") +
+")")
+
+if col.assigns:
+partes.append(color("Objetos nomeados (atribuiÃ§Ãµes): ", "BLUE") +
+", ".join(sorted(set(col.assigns))))
+
+fluxo_bits = []
+if col.ifs: fluxo_bits.append(color(f"if={col.ifs}", "YELLOW"))
+if col.fors: fluxo_bits.append(color(f"for={col.fors}", "YELLOW"))
+if col.whiles: fluxo_bits.append(color(f"while={col.whiles}", "YELLOW"))
+if fluxo_bits:
+partes.append(color("Fluxo do destino: ", "YELLOW") + " â€¢ ".join(fluxo_bits))
+
+if col.returns:
+partes.append(color(f"Desfechos (return): {col.returns}", "TITLE"))
+
+partes.append(color("EpÃ­logo â€” UniÃ£o: dados + fluxo + forma = Base viva.", "TITLE"))
+narrativa = "\n".join(partes)
+
+meta = {
+"title": nome_hist,
+"imports": col.imports,
+"from_imports": col.from_imports,
+"functions": col.funcs,
+"classes": col.classes,
+"assignments": col.assigns,
+"flow": {"ifs": col.ifs, "fors": col.fors, "whiles": col.whiles},
+"returns": col.returns
+}
+return narrativa, meta
+
+# =========================
+# HistÃ³rias
+# =========================
+def contar_historia():
+prologo_fractal()
+narrar("Aldeu Python â€” Portais e ArtesÃ£os", f"""
+Vogais (portais): {VOGAIS}
+Consoantes (artesÃ£os): {CONSOANTES}
+""")
+
+def demonstrar_codigo():
+engine = VEEBEngine()
+sim = engine.simular("Bllue", 22, 6)
+
+narrar("Resumo V.E.E.B (Base)", json.dumps({
+"perfil": asdict(sim["perfil"]),
+"classificacao": sim["classificacao"].value,
+"resumo": asdict(sim["resumo"]),
+}, ensure_ascii=False, indent=2))
+
+# =========================
+# CLI
+# =========================
+def build_argparser():
+p = argparse.ArgumentParser(description="KOBLLUX V.E.E.B â€” HistÃ³ria + Conversor
+(ANSI)")
+p.add_argument("--explicar", metavar="ARQUIVO.py", help="Explica o cÃ³digo Python
+informado (AST â†’ narrativa).")
+p.add_argument("--stdin", action="store_true", help="Ler o cÃ³digo da entrada padrÃ£o
+para explicar.")
+p.add_argument("--titulo", help="TÃ­tulo opcional para a narrativa do conversor.")
+p.add_argument("--so-narrativa", action="store_true", help="Somente narrativa (nÃ£o
+executar a demo V.E.E.B).")
+p.add_argument("--out-txt", help="Salvar narrativa em .txt")
+p.add_argument("--out-json", help="Salvar narrativa + metadados em .json")
+p.add_argument("--no-color", action="store_true", help="Desativar cores ANSI na
+saÃ­da.")
+p.add_argument("--theme", choices=["default","noite","luz","cosmico"], default="default",
+help="Selecionar tema de cores ANSI.")
+return p
+
+def main(argv: Optional[List[str]] = None) -> int:
+args = build_argparser().parse_args(argv)
+
+if args.no_color:
+setattr(sys.modules[__name__], "NO_COLOR", True)
+else:
+apply_theme(args.theme)
+
+# Modo conversor
+if args.explicar or args.stdin:
+if args.explicar:
+try:
+source = open(args.explicar, "r", encoding="utf-8").read()
+except Exception as e:
+print(color(f"[Erro] NÃ£o consegui ler '{args.explicar}': {e}", "YELLOW"))
+return 1
+titulo = args.titulo or args.explicar
+else:
+source = sys.stdin.read()
+titulo = args.titulo or "CÃ³digo via stdin"
+
+narrativa, meta = explicar_codigo_fonte(source, titulo=titulo)
+narrar("Conversor Narrativo â€” ExplicaÃ§Ã£o", narrativa)
+if args.out_txt:
+open(args.out_txt, "w", encoding="utf-8").write(narrativa)
+print(color(f"[OK] Narrativa salva em {args.out_txt}", "GREEN"))
+if args.out_json:
+open(args.out_json, "w", encoding="utf-8").write(json.dumps({"narrative": narrativa,
+**meta}, ensure_ascii=False, indent=2))
+print(color(f"[OK] JSON salvo em {args.out_json}", "GREEN"))
+if args.so_narrativa:
+return 0
+
+# Modo padrÃ£o
+contar_historia()
+demonstrar_codigo()
+return 0
+
+if __name__ == "__main__":
+raise SystemExit(main(doc
+
+
+
+
+doc them 02
+
+# Add a theme selector (--theme) to kobllux_veeb_story.py with multiple ANSI palettes
+
+from pathlib import Path
+import re
+
+p = Path("/mnt/data/kobllux_veeb_story.py")
+code = p.read_text(encoding="utf-8")
+
+# 1) Inject THEMES and apply_theme() right after the ANSI dict definition
+ansi_header_pattern = r"(ANSI\s*=\s*\{[\s\S]*?\}\n\n)def color\("
+themes_block = r"""\1# ===== Themes (palettes) =====
+THEMES = {
+"default": {
+"RESET": "\\033[0m",
+"TITLE": "\\033[95m",
+"BLUE": "\\033[94m",
+"GREEN": "\\033[92m",
+"YELLOW": "\\033[93m",
+"CYAN": "\\033[96m",
+"BOLD": "\\033[1m",
+"DIM": "\\033[2m",
+},
+"noite": { # tons mais escuros
+"RESET": "\\033[0m",
+"TITLE": "\\033[35m",
+"BLUE": "\\033[34m",
+"GREEN": "\\033[32m",
+"YELLOW": "\\033[33m",
+"CYAN": "\\033[36m",
+"BOLD": "\\033[1m",
+"DIM": "\\033[2m",
+},
+"luz": { # tons brilhantes + negrito
+"RESET": "\\033[0m",
+"TITLE": "\\033[95m",
+"BLUE": "\\033[94m",
+"GREEN": "\\033[92m",
+"YELLOW": "\\033[93m",
+"CYAN": "\\033[96m",
+"BOLD": "\\033[1m",
+"DIM": "\\033[2m",
+},
+"cosmico": { # vibração cósmica (ciano/magenta)
+"RESET": "\\033[0m",
+"TITLE": "\\033[95m",
+"BLUE": "\\033[96m", # ciano
+"GREEN": "\\033[95m", # magenta
+"YELLOW": "\\033[93m",
+"CYAN": "\\033[96m",
+"BOLD": "\\033[1m",
+"DIM": "\\033[2m",
+},
+}
+
+def apply_theme(name: str) -> None:
+import sys as _sys
+g = _sys.modules[__name__].__dict__
+theme = THEMES.get(name, THEMES["default"])
+g["ANSI"] = theme
+
+"""
+
+code = re.sub(ansi_header_pattern, themes_block + "def color(", code, flags=re.DOTALL)
+
+# 2) Add --theme to argparse
+code = code.replace(
+'p.add_argument("--no-color", action="store_true", help="Desativar cores ANSI na
+saída.")',
+'p.add_argument("--no-color", action="store_true", help="Desativar cores ANSI na
+saída.")\n '
+'p.add_argument("--theme", choices=["default","noite","luz","cosmico"], default="default",
+help="Selecionar tema de cores ANSI.")'
+)
+
+# 3) Apply theme in main() before usage (unless --no-color)
+code = code.replace(
+'if args.no_color:\n setattr(sys.modules[__name__], "NO_COLOR", True)\n\n #
+Modo conversor',
+'if args.no_color:\n setattr(sys.modules[__name__], "NO_COLOR", True)\n else:\n
+apply_theme(args.theme)\n\n # Modo conversor'
+)
+
+# Save back
+p.write_text(code, encoding="utf-8")
+print("Temas adicionados ao kobllux_veeb_story.py")
+
+
+
+
+como usar
+
+
+# escolhe tema automaticamente com base no código analisado
+python kobllux_veeb_story.py --explicar meu_codigo.py --auto-theme
+
+# auto-theme + exportações
+python kobllux_veeb_story.py --explicar meu_codigo.py --auto-theme --out-txt explicacao.txt
+--out-json explicacao.json
+
+# manual (sempre tem prioridade sobre auto)
+python kobllux_veeb_story.py --explicar meu_codigo.py --theme noite
+
+# sem cores (ignora temas e auto-theme)
+python kobllux_veeb_story.py --explicar meu_codigo.py --no-color
+
+
+
+
+them gatilhos
+
+
+# Add semantic theme triggers (--auto-theme) to kobllux_veeb_story.py
+from pathlib import Path
+import re
+
+p = Path("/mnt/data/kobllux_veeb_story.py")
+code = p.read_text(encoding="utf-8")
+
+# 1) Add --auto-theme flag to argparse
+code = code.replace(
+'p.add_argument("--theme", choices=["default","noite","luz","cosmico"], default="default",
+help="Selecionar tema de cores ANSI.")',
+'p.add_argument("--theme", choices=["default","noite","luz","cosmico"], default="default",
+help="Selecionar tema de cores ANSI.")\n '
+'p.add_argument("--auto-theme", action="store_true", help="Escolher tema
+automaticamente com base no código analisado.")'
+)
+
+# 2) Inject analysis function to pick theme based on code semantics
+injection_point = 'def explicar_codigo_fonte(source: str, titulo: Optional[str] = None):'
+theme_func = r'''
+def _analisar_tema_semantico(source: str) -> str:
+"""
+Heurística de seleção de tema:
+- "cosmico": se detectar 3-6-9 (lista ou sequência) ou uso de 'yield'/'async'
+- "noite": se houver muitos try/except (>=2)
+- "luz": se houver muitas estruturas (funções+classes >= 6) e >=2 imports
+- "default": caso contrário
+"""
+import ast, re
+class V(ast.NodeVisitor):
+def __init__(self):
+self.trys = 0
+self.funcs = 0
+self.classes = 0
+self.imports = 0
+self.yields = 0
+self.async_funcs = 0
+self.fors = 0
+self.whiles = 0
+def visit_Try(self, node): self.trys += 1; self.generic_visit(node)
+def visit_FunctionDef(self, node): self.funcs += 1; self.generic_visit(node)
+def visit_AsyncFunctionDef(self, node): self.async_funcs += 1; self.generic_visit(node)
+def visit_ClassDef(self, node): self.classes += 1; self.generic_visit(node)
+def visit_Import(self, node): self.imports += 1; self.generic_visit(node)
+def visit_ImportFrom(self, node): self.imports += 1; self.generic_visit(node)
+def visit_Yield(self, node): self.yields += 1; self.generic_visit(node)
+def visit_For(self, node): self.fors += 1; self.generic_visit(node)
+def visit_While(self, node): self.whiles += 1; self.generic_visit(node)
+try:
+tree = ast.parse(source)
+except SyntaxError:
+return "default"
+v = V(); v.visit(tree)
+# padrões 3-6-9 explícitos
+cosmico_pattern = re.compile(r"(3\s*[-,]\s*6\s*[-,]\s*9)|(\[\s*3\s*,\s*6\s*,\s*9\s*\])")
+if cosmico_pattern.search(source) or v.yields > 0 or v.async_funcs > 0:
+return "cosmico"
+if v.trys >= 2:
+return "noite"
+if (v.funcs + v.classes) >= 6 and v.imports >= 2:
+return "luz"
+return "default"
+'''
+code = code.replace(injection_point, theme_func + "\n" + injection_point)
+
+# 3) In main(), after applying explicit theme / no-color, add auto-theme logic for
+--explicar/--stdin
+code = code.replace(
+' narrativa, meta = explicar_codigo_fonte(source, titulo=titulo)\n
+narrar("Conversor Narrativo — Explicação", narrativa)',
+' # Seleção semântica de tema (se solicitado e se não estiver --no-color)\n if
+args.auto_theme and not getattr(sys.modules[__name__], "NO_COLOR", False) and
+args.theme == "default":\n tema_auto = _analisar_tema_semantico(source)\n
+apply_theme(tema_auto)\n print(color(f"[auto-theme] Aplicado tema: {tema_auto}",
+"GREEN"))\n narrativa, meta = explicar_codigo_fonte(source, titulo=titulo)\n
+narrar("Conversor Narrativo — Explicação", narrativa)'
+)
+
+p.write_text(code, encoding="utf-8")
+print("Gatilhos semânticos adicionados ao kobllux_veeb_story.py")

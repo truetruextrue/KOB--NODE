@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T15:30:24.115604",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1818,
+      "es": 742,
+      "en": 2
+    },
+    "top_bigrams": [
+      {
+        "ngram": "overbo",
+        "count": 51
+      },
+      {
+        "ngram": "oque",
+        "count": 37
+      },
+      {
+        "ngram": "éo",
+        "count": 33
+      },
+      {
+        "ngram": "doespírito",
+        "count": 32
+      },
+      {
+        "ngram": "começaa",
+        "count": 32
+      },
+      {
+        "ngram": "espíritosanto",
+        "count": 29
+      },
+      {
+        "ngram": "kaeldominus",
+        "count": 29
+      },
+      {
+        "ngram": "fractal3",
+        "count": 27
+      },
+      {
+        "ngram": "36",
+        "count": 24
+      },
+      {
+        "ngram": "69",
+        "count": 24
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1807,
+      "es": 738,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "obrevo",
+        "count": 51
+      },
+      {
+        "ngram": "euqo",
+        "count": 37
+      },
+      {
+        "ngram": "oé",
+        "count": 33
+      },
+      {
+        "ngram": "otirípseod",
+        "count": 32
+      },
+      {
+        "ngram": "aaçemoc",
+        "count": 32
+      },
+      {
+        "ngram": "otnasotirípse",
+        "count": 29
+      },
+      {
+        "ngram": "sunimodleak",
+        "count": 29
+      },
+      {
+        "ngram": "3latcarf",
+        "count": 27
+      },
+      {
+        "ngram": "79",
+        "count": 24
+      },
+      {
+        "ngram": "96",
+        "count": 24
+      }
+    ]
+  },
+  "seal": "∆7"
+}

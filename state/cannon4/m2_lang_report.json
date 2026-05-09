@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T11:17:01.218732",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 677,
+      "es": 139,
+      "en": 9
+    },
+    "top_bigrams": [
+      {
+        "ngram": "selfnode",
+        "count": 64
+      },
+      {
+        "ngram": "selfgeneric_visit",
+        "count": 63
+      },
+      {
+        "ngram": "generic_visitnode",
+        "count": 63
+      },
+      {
+        "ngram": "nodedef",
+        "count": 63
+      },
+      {
+        "ngram": "ifcol",
+        "count": 62
+      },
+      {
+        "ngram": "nodeast",
+        "count": 55
+      },
+      {
+        "ngram": "colorf",
+        "count": 52
+      },
+      {
+        "ngram": "partesappend",
+        "count": 50
+      },
+      {
+        "ngram": "dictstr",
+        "count": 42
+      },
+      {
+        "ngram": "ve",
+        "count": 41
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 668,
+      "es": 136,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "edonfles",
+        "count": 64
+      },
+      {
+        "ngram": "flesedon",
+        "count": 64
+      },
+      {
+        "ngram": "edontisiv_cireneg",
+        "count": 63
+      },
+      {
+        "ngram": "tisiv_cirenegfles",
+        "count": 63
+      },
+      {
+        "ngram": "locfi",
+        "count": 62
+      },
+      {
+        "ngram": "flesenon",
+        "count": 59
+      },
+      {
+        "ngram": "tsaedon",
+        "count": 55
+      },
+      {
+        "ngram": "froloc",
+        "count": 52
+      },
+      {
+        "ngram": "dneppasetrap",
+        "count": 50
+      },
+      {
+        "ngram": "rtstcid",
+        "count": 42
+      }
+    ]
+  },
+  "seal": "∆7"
+}

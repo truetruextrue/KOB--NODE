@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T11:32:46.895672",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 37,
+      "es": 17,
+      "en": 2
+    },
+    "top_bigrams": [
+      {
+        "ngram": "1n",
+        "count": 8
+      },
+      {
+        "ngram": "egakcapni",
+        "count": 6
+      },
+      {
+        "ngram": "éoãn",
+        "count": 4
+      },
+      {
+        "ngram": "²999",
+        "count": 4
+      },
+      {
+        "ngram": "edsanuloc",
+        "count": 4
+      },
+      {
+        "ngram": "n01",
+        "count": 4
+      },
+      {
+        "ngram": "012",
+        "count": 4
+      },
+      {
+        "ngram": "99",
+        "count": 4
+      },
+      {
+        "ngram": "1111",
+        "count": 4
+      },
+      {
+        "ngram": "11",
+        "count": 4
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 41,
+      "es": 19,
+      "en": 2
+    },
+    "top_bigrams": [
+      {
+        "ngram": "n1",
+        "count": 8
+      },
+      {
+        "ngram": "1111",
+        "count": 6
+      },
+      {
+        "ngram": "inpackage",
+        "count": 6
+      },
+      {
+        "ngram": "nãoé",
+        "count": 4
+      },
+      {
+        "ngram": "colunasde",
+        "count": 4
+      },
+      {
+        "ngram": "999²",
+        "count": 4
+      },
+      {
+        "ngram": "10n",
+        "count": 4
+      },
+      {
+        "ngram": "210",
+        "count": 4
+      },
+      {
+        "ngram": "99",
+        "count": 4
+      },
+      {
+        "ngram": "11",
+        "count": 4
+      }
+    ]
+  },
+  "seal": "∆7"
+}

@@ -1,0 +1,5 @@
+POSSÍVEL INTRUSÃO: added=89, modified=1, suspicious=4
+/sdcard/JESUS_VERBO/CODEX/MYRMIDE/03_MANIFESTO/VIEW/painel/run_panel.sh
+/sdcard/JESUS_VERBO/CODEX/MYRMIDE/Scripts/myrmide_tree_audit.sh
+/sdcard/JESUS_VERBO/CODEX/KOBLLUX_VOZ/scripts/kobllux_speak.sh
+/sdcard/JESUS_VERBO/CODEX/KOBLLUX_VOZ/scripts/kobllux_seed_tests.sh

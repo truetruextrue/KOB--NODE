@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T23:17:58.860476",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 50,
+      "es": 23,
+      "en": 6
+    },
+    "top_bigrams": [
+      {
+        "ngram": "whispercpp",
+        "count": 15
+      },
+      {
+        "ngram": "tstxt",
+        "count": 12
+      },
+      {
+        "ngram": "utf8",
+        "count": 9
+      },
+      {
+        "ngram": "inrange",
+        "count": 9
+      },
+      {
+        "ngram": "encodingutf",
+        "count": 8
+      },
+      {
+        "ngram": "outdirf",
+        "count": 7
+      },
+      {
+        "ngram": "edgetts",
+        "count": 6
+      },
+      {
+        "ngram": "sstr",
+        "count": 6
+      },
+      {
+        "ngram": "apadd_argument",
+        "count": 6
+      },
+      {
+        "ngram": "printf",
+        "count": 6
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 42,
+      "es": 20,
+      "en": 1
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ppcrepsihw",
+        "count": 15
+      },
+      {
+        "ngram": "txtst",
+        "count": 12
+      },
+      {
+        "ngram": "8ftu",
+        "count": 9
+      },
+      {
+        "ngram": "egnarni",
+        "count": 9
+      },
+      {
+        "ngram": "ftugnidocne",
+        "count": 8
+      },
+      {
+        "ngram": "fridtuo",
+        "count": 7
+      },
+      {
+        "ngram": "sttegde",
+        "count": 6
+      },
+      {
+        "ngram": "rtss",
+        "count": 6
+      },
+      {
+        "ngram": "tnemugra_ddapa",
+        "count": 6
+      },
+      {
+        "ngram": "ftnirp",
+        "count": 6
+      }
+    ]
+  },
+  "seal": "∆7"
+}

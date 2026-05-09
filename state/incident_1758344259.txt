@@ -1,0 +1,4 @@
+POSSÍVEL INTRUSÃO: added=92, modified=4, suspicious=3
+/sdcard/JESUS_VERBO/CODEX/TRINITY/CARTAS_TRINITY/UNO/UNO_AGUA/kobllux_tts_uno_agua.sh
+/sdcard/JESUS_VERBO/CODEX/KOBLLUX/CARTAS_TRINITY/scripts/kobllux_trinity_cards.sh
+/sdcard/KBLX/KBLX_03.sh

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T14:42:38.250766",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 4233,
+      "es": 1791,
+      "en": 7
+    },
+    "top_bigrams": [
+      {
+        "ngram": "11",
+        "count": 129
+      },
+      {
+        "ngram": "coma",
+        "count": 59
+      },
+      {
+        "ngram": "36",
+        "count": 51
+      },
+      {
+        "ngram": "dokobllux",
+        "count": 51
+      },
+      {
+        "ngram": "93",
+        "count": 45
+      },
+      {
+        "ngram": "31",
+        "count": 43
+      },
+      {
+        "ngram": "oque",
+        "count": 42
+      },
+      {
+        "ngram": "69",
+        "count": 41
+      },
+      {
+        "ngram": "33",
+        "count": 39
+      },
+      {
+        "ngram": "como",
+        "count": 38
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 4223,
+      "es": 1787,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "11",
+        "count": 127
+      },
+      {
+        "ngram": "amoc",
+        "count": 58
+      },
+      {
+        "ngram": "63",
+        "count": 51
+      },
+      {
+        "ngram": "xullbokod",
+        "count": 49
+      },
+      {
+        "ngram": "39",
+        "count": 44
+      },
+      {
+        "ngram": "13",
+        "count": 43
+      },
+      {
+        "ngram": "96",
+        "count": 41
+      },
+      {
+        "ngram": "euqo",
+        "count": 41
+      },
+      {
+        "ngram": "33",
+        "count": 39
+      },
+      {
+        "ngram": "omoc",
+        "count": 38
+      }
+    ]
+  },
+  "seal": "∆7"
+}

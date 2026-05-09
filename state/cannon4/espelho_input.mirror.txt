@@ -1,0 +1,2803 @@
+,siagov( saigolana sà odargetni "B.E.E.V oledoM" o moc nohtyP oviuqra mu rareg somaV #
+.)sovitejda ,sovitnatsbus ,sobrev ,setnaosnoc
+
+tneded tropmi parwtxet morf
+
+'''(tneded = edoc
+-*- 8-ftu :gnidoc -*- #
+"""
+nohtyP me ocitádiD oledoM — B.E.E.V OTEJORP
+esaB • aruturtsE • aigrenE • oãçarbiV = B.E.E.V
+
+:saigolana odnasu orez od nohtyP anisne tpircs etsE
+rinU ,razinagrO ,raretI ,rehlocsE ,riubirtA :)U ,O ,I ,E ,A( siagoV -
+).cte ,seõçinifeD ,soirátnemoC ,sonaelooB( saçep/satnemarref :setnaosnoC -
+ogidóc od lacitamarg arofátem :sovitejdA / sovitnatsbuS / sobreV -
+
+:odnadoR
+yp.ledom_beev nohtyp
+"""
+
+tsiL ,tciD tropmi gnipyt morf
+
+------------------------------------------------------------ #
+saigolana ed alebaT )0 #
+------------------------------------------------------------ #
+
+{ = SIAGOV
+,")sopit e sieváirav( oãçiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( oãçaretI" :"I"
+,")seõçnuf( razinagrO" :"O"
+,")soiránoicid/satsil( rinU" :"U"
+}
+
+{ = SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seõçacilpxe #( soirátnemoC" :"C"
+,")fed( seõçinifeD" :"D"
+,") ... ,nel ,tnirp( ni-tliub seõçnuF" :"F"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( soludóM" :"M"
+,")oãçnuf ad sadartne( sortemâraP" :"P"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+}
+
+------------------------------------------------------------ #
+)sacigógadep seõçnuf( acitárp an siagoV )1 #
+------------------------------------------------------------ #
+
+= rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita ,tni :edadi ,rts :emon(riubirta_A fed
+:tciD >- )"oidém"
+"\"\"\.)sovitejda + sovitnatsbus( socisáb sodad adraug :oãçiubirtA — A"\"\"\
+lifrep ,edadi ,emon :sovitnatsbuS #
+ohnamat ,roc ,ovita :sovitejdA #
+{ = lifrep
+,emon :"emon"
+,edadi :"edadi"
+,ovita :"ovita"
+,roc :"roc"
+,ohnamat :"ohnamat"
+}
+lifrep nruter
+
+:rts >- )tciD :lifrep(rehlocse_E fed
+"\"\"\.)esle/fi( oãçidnoc amu me esab moc sohnimac ediced :ahlocsE — E"\"\"\
+:81 => ]"edadi"[lifrep fi
+"edadi_ed_roiam" nruter
+:esle
+"edadi_ed_ronem" nruter
+
+:]tni[tsiL >- )tni :qerf(rareti_I fed
+"\"\"\.)aicnêuqerf( 'oãçarbiv' a emrofnoc sossap areg :oãçaretI — I"\"\"\
+][ = sossap
+:)1 + qerf ,1(egnar ni i rof
+ovitareti otnemivom # )i(dneppa.sossap
+sossap nruter
+
+:tciD >- )]tciD[tsiL :sortsiger(razinagro_O fed
+"\"\"\.)sievázilituer seõçnuf( emuser e agerga :razinagrO — O"\"\"\
+)sortsiger ni ger rof ]"aigrene"[ger(mus = sossap_latot
+{ nruter
+,)sortsiger(nel :"sortsiger_dtq"
+,sossap_latot :"aigrene_amos"
+,0.0 esle sortsiger fi )sortsiger(nel / sossap_latot :"aigrene_aidem"
+}
+
+:tciD >- )tciD :omuser ,tciD :lifrep(rinu_U fed
+"\"\"\.lanif odatse mu me )soiránoicid/satsil( seõçeloc atnuj :rinU — U"\"\"\
+}omuser** ,lifrep**{ = odatse
+odatse nruter
+
+------------------------------------------------------------ #
+ogidóc me B.E.E.V )2 #
+------------------------------------------------------------ #
+:tciD >- )3 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon(ralumis_beev fed
+"\"\"\
+.)qerf( somatucexe seõçareti satnauq alortnoc :oãçarbiV — V
+.ametsis o ecetsaba e ossap adac a ecserc :aigrenE — E
+.otnemivom o madraug )soiránoicid ed atsil( sortsiger :aruturtsE — E
+.)tohspans( odadilosnoc lanif odatse :esaB — B
+"\"\"\
+sovitejda + sovitnatsbus — )oãçiubirtA( A #
+)"oidém"=ohnamat ,"luza"=roc ,eurT=ovita ,edadi=edadi ,emon=emon(riubirta_A = lifrep
+
+)ahlocsE( E #
+)lifrep(rehlocse_E = oacacifissalc
+
+sossap so alortnoc oãçarbiv — )oãçaretI( I #
+)qerf_oacarbiv(rareti_I = sossap
+
+)sortsiger rinu( sodad ed aruturtsE #
+][ = sortsiger
+0 = aigrene
+:sossap ni ossap rof
+otnemivom o moc ebos aigrene # ossap =+ aigrene
+{(dneppa.sortsiger
+,ossap :"ossap"
+,aigrene :"aigrene"
+,oacacifissalc :"oacacifissalc"
+)}
+
+sortsiger sod omuser — )razinagrO( O #
+)sortsiger(razinagro_O = omuser
+
+"esaB" odatse mu avlas — )rinU( U #
+)omuser ,lifrep(rinu_U = esab
+
+lacitamarg :lanoicida oãçamrofnI #
+]"nruter" ,"mus" ,"dneppa" ,"nel" ,"tnirp"[ = sobrev
+]"esab" ,"aigrene" ,"sossap" ,"sortsiger" ,"lifrep"[ = sovitnatsbus
+]"'oidém'=ohnamat" ,"'luza'=roc" ,"eurT=ovita"[ = sovitejda
+
+{ = odatluser
+,SIAGOV :"SIAGOV"
+,SETNAOSNOC :"SETNAOSNOC"
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+{ :"acitamarg"
+,sobrev :"sobrev"
+,sovitnatsbus :"sovitnatsbus"
+,sovitejda :"sovitejda"
+}
+}
+odatluser nruter
+
+------------------------------------------------------------ #
+oãçartsnomeD )3 #
+------------------------------------------------------------ #
+
+:)(saigolana_ed_salebat_rartsom fed
+)"=== )seralip( siagoV ==="(tnirp
+:)(smeti.SIAGOV ni v ,k rof
+)"}v{ :}k{"f(tnirp
+)"=== )satnemarref( setnaosnoC ===n\\"(tnirp
+:)(smeti.SETNAOSNOC ni v ,k rof
+)"}v{ :}k{"f(tnirp
+)(tnirp
+
+:)(omed fed
+oãrdap serolav odnasu selpmis olpmexE #
+)(saigolana_ed_salebat_rartsom
+)4=qerf_oacarbiv ,91=edadi ,"airaM"=emon(ralumis_beev = odatluser
+
+sacitádid seõsserpmI #
+)"=== )A( lifreP ==="(tnirp
+)]"lifrep"[odatluser(tnirp
+
+)"=== )E( oãçacifissalC ===n\\"(tnirp
+)]"oacacifissalc"[odatluser(tnirp
+
+)"=== )I( sossaP ===n\\"(tnirp
+)]"sossap"[odatluser(tnirp
+
+)"=== )aruturtse( sortsigeR ===n\\"(tnirp
+:]"sortsiger"[odatluser ni ger rof
+)ger(tnirp
+
+)"=== )O( omuseR ===n\\"(tnirp
+)]"omuser"[odatluser(tnirp
+
+)"=== )U( esaB ===n\\"(tnirp
+)]"esab"[odatluser(tnirp
+
+)"=== ogidóC od acitámarG ===n\\"(tnirp
+))]"sobrev"[]"acitamarg"[odatluser(nioj." ," ,":sobreV"(tnirp
+))]"sovitnatsbus"[]"acitamarg"[odatluser(nioj." ," ,":sovitnatsbuS"(tnirp
+))]"sovitejda"[]"acitamarg"[odatluser(nioj." ," ,":sovitejdA"(tnirp
+
+:"__niam__" == __eman__ fi
+)(omed
+)'''
+
+"yp.ledom_beev/atad/tnm/" = htap
+:f sa )"8-ftu"=gnidocne ,"w" ,htap(nepo htiw
+)edoc(etirw.f
+
+htap
+
+
+
+
+-*- 8-ftu :gnidoc -*- #
+"""
+)odarotafeR( nohtyP me ocitádiD oledoM — B.E.E.V OTEJORP
+esaB • aruturtsE • aigrenE • oãçarbiV = B.E.E.V
+
+.nohtyP oa sadacilpa saigolana moc otebafla od setnaosnoc sa sadot iulcnI
+"""
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+ynA ,tsiL ,tciD tropmi gnipyt morf
+
+:)munE ,rts(noitacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:eliforP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oidém" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:droceR ssalc
+tni :ossap
+tni :aigrene
+noitacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:yrammuS ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+)eurT=nezorf(ssalcatad@
+:tluseR ssalc
+]rts ,rts[tciD :siagov
+]rts ,rts[tciD :setnaosnoc
+eliforP :lifrep
+noitacifissalC :oacacifissalc
+]tni[tsiL :sossap
+]droceR[tsiL :sortsiger
+yrammuS :omuser
+]ynA ,rts[tciD :esab
+]]rts[tsiL ,rts[tciD :acitamarg
+
+{ = SIAGOV
+,")sopit e sieváirav( oãçiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( oãçaretI" :"I"
+,")seõçnuf( razinagrO" :"O"
+,")soiránoicid/satsil( rinU" :"U"
+}
+
+saigolana moc setnaosnoc sa sadoT #
+{ = SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seõçacilpxe #( soirátnemoC" :"C"
+,")fed( seõçinifeD" :"D"
+,")... ,nel ,tnirp( ni-tliub seõçnuF" :"F"
+,")dleiy( serodareG" :"G"
+,")OOP( açnareH" :"H"
+,")sodad ed oãçazilaires( NOSJ" :"J"
+,")sgrawk**( stnemugra drowyeK" :"K"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( soludóM" :"M"
+,")olun rolav( enoN" :"N"
+,")oãçnuf ed sadartne( sortemâraP" :"P"
+,")alif ed saruturtse( eueuQ" :"Q"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+,"sieváiraV" :"V"
+,")oãçiteper ed oçal( elihW" :"W"
+,")sodad ed oãçalupinam( LMX" :"X"
+,")serodareg( dleiY" :"Y"
+,")satsil ed oãçagerga( piZ" :"Z"
+}
+:enignEBEEV ssalc
+= rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita ,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:eliforP >- )"oidém"
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(eliforP nruter
+)ohnamat=ohnamat
+
+:noitacifissalC >- )eliforP :lifrep ,fles(rehlocse_E fed
+RONEM.noitacifissalC esle 81 => edadi.lifrep fi ROIAM.noitacifissalC nruter
+
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+))1 + qerf ,1(egnar(tsil nruter
+
+:yrammuS >- )]droceR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(yrammuS nruter
+)sortsiger ni r rof aigrene.r(mus = amos
+))sortsiger(nel / amos ,amos ,)sortsiger(nel(yrammuS nruter
+
+:]ynA ,rts[tciD >- )yrammuS :omuser ,eliforP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ nruter
+
+:tluseR >- )3 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+0 = aigrene
+][ = ]droceR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+))oacacifissalc ,aigrene ,ossap(droceR(dneppa.sortsiger
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+]"nruter" ,"mus" ,"dneppa" ,"nel" ,"tnirp"[ = sobrev
+]"esab" ,"aigrene" ,"sossap" ,"sortsiger" ,"lifrep"[ = sovitnatsbus
+]"'oidém'=ohnamat" ,"'luza'=roc" ,"eurT=ovita"[ = sovitejda
+,omuser ,sortsiger ,sossap ,oacacifissalc ,lifrep ,SETNAOSNOC ,SIAGOV(tluseR nruter
+{ ,esab
+,sobrev :"sobrev"
+,sovitnatsbus :"sovitnatsbus"
+,sovitejda :"sovitejda"
+)}
+
+:)(niam fed
+)(enignEBEEV = enigne
+)4 ,91 ,"airaM"(ralumis.enigne = odatluser
+)"=== siagoV ==="(tnirp
+:)(smeti.siagov.odatluser ni v ,k rof
+)"}v{ :}k{"f(tnirp
+)"=== setnaosnoC ===n\"(tnirp
+:)(smeti.setnaosnoc.odatluser ni v ,k rof
+)"}v{ :}k{"f(tnirp
+
+:"__niam__" == __eman__ fi
+)(niam
+
+
+savitcepser saus moc otebafla od setnaosnoc sa sadot iulcni oledom o arogA !otnorP
+.B.E.E.V OTEJORP od aruturtse a odnetnam ,nohtyP od otxetnoc on saigolana
+
+
+
+
+20 ETRAP
+edoc nohtyP sesrap taht edom racilpxe-- na htiw yp.yrots_beev_xullbok etaerc/etadpU #
+)TSA(
+tneded tropmi parwtxet morf
+htaP tropmi bilhtap morf
+
+'''r(tneded = edoc
+-*- 8-ftu :gnidoc -*- #
+"""
+ovitarraN rosrevnoC + latcarF oãçazinagrO ed etnemeS tpmorP :XULLBOK
+siatcarf :airogetaC | 51-11-3202
+
+:siapicnirp seõçnuF
+)setna omoc( B.E.E.V oãçalumis + airótsiH )1
+e TSA moc asilana ,ogidóc o êL → >yp.oviuqra< racilpxe-- :rosrevnoc odoM )2
+.B.E.E.V/XULLBOK olitse on avitarran oãçacilpxe amu areg
+
+
+)️♾
+:socilóbmis soipícnirP
+→7→0( aicnêgremE • )147/825/234( aicnânosseR • )9-6-3( otnemahlepseotuA -
+"""
+
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+lanoitpO ,elbaretI ,ynA ,tciD ,tsiL tropmi gnipyt morf
+esrapgra tropmi
+tsa tropmi
+parwtxet tropmi
+sys tropmi
+
+------------------------------ #
+esaB ,aruturtsE ,aigrenE ,oãçarbiV — B.E.E.V #
+------------------------------ #
+
+:)munE ,rts(oacacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:lifreP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oidém" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:ortsigeR ssalc
+tni :ossap
+tni :aigrene
+oacacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:omuseR ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+------------------------------ #
+)setnaosnoC e siagoV( saigolanA #
+------------------------------ #
+
+{ = ]rts ,rts[tciD :SIAGOV
+,")sopit e sieváirav( oãçiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( oãçaretI" :"I"
+,")seõçnuf( razinagrO" :"O"
+,")soiránoicid/satsil( rinU" :"U"
+}
+
+{ = ]rts ,rts[tciD :SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seõçacilpxe #( soirátnemoC" :"C"
+,")fed( seõçinifeD" :"D"
+,")... ,nel ,tnirp( ni-tliub seõçnuF" :"F"
+,")dleiy( serodareG" :"G"
+,")OOP( açnareH" :"H"
+,")sodad ed oãçazilaires( NOSJ" :"J"
+,")sgrawk**( stnemugra drowyeK" :"K"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( soludóM" :"M"
+,")olun rolav( enoN" :"N"
+,")oãçnuf ed sadartne( sortemâraP" :"P"
+,")alif( eueuQ" :"Q"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+,"sieváiraV" :"V"
+,")oãçiteper ed oçal( elihW" :"W"
+,")sodad( LMX" :"X"
+,")serodareg( dleiY" :"Y"
+,")satsil ed oãçagerga( piZ" :"Z"
+}
+
+------------------------------ #
+airótsih a emirpmi :rodarraN #
+------------------------------ #
+
+:enoN >- )rts :otxet ,rts :olutit(rarran fed
+27 * "─" = arrab
+)arrab + "n\"(tnirp
+)olutit + " ✦"(tnirp
+)arrab(tnirp
+)"n\" + )(pirts.)otxet(tneded.parwtxet(tnirp
+
+------------------------------ #
+B.E.E.V ocitádid rotoM #
+------------------------------ #
+
+:enignEBEEV ssalc
+""".levátucexe ogidóc me alubáf a ranecne arap selpmis arutetiuqrA"""
+
+riubirtA — A #
+,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:lifreP >- )"oidém" = rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(lifreP nruter
+)ohnamat=ohnamat
+
+rehlocsE — E #
+:oacacifissalC >- )lifreP :lifrep ,fles(rehlocse_E fed
+RONEM.oacacifissalC esle 81 => edadi.lifrep fi ROIAM.oacacifissalC nruter
+
+)oãçarbiV( raretI — I #
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+:0 =< qerf fi
+)"avitisop res eved qerf"(rorrEeulaV esiar
+))1 + qerf ,1(egnar(tsil nruter
+
+)omuseR >- aruturtsE( razinagrO — O #
+:omuseR >- )]ortsigeR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(omuseR nruter
+)sortsiger ni r rof aigrene.r(mus = amos
+)sortsiger(nel / amos = aidem
+)aidem ,amos ,)sortsiger(nel(omuseR nruter
+
+)adadilosnoc esaB( rinU — U #
+:]ynA ,rts[tciD >- )omuseR :omuser ,lifreP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ nruter
+
+atelpmoc oãçucexE #
+:]ynA ,rts[tciD >- )4 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+
+0 = aigrene
+][ = ]ortsigeR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+,aigrene=aigrene ,ossap=ossap(ortsigeR(dneppa.sortsiger
+))oacacifissalc=oacacifissalc
+
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+
+{ nruter
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+}
+
+------------------------------ #
+XULLBOK tpmorp on odaripsni latcarf ametsiS #
+------------------------------ #
+
+)9 → 6 → 3( otnemahlepseotuA # ]9 ,6 ,3[ = ACIDAIRT
+∞ oa ocilóbmis onroter e )7 → 0( aicnêgremE # ))8 ,0(egnar(tsil = 7_0_OLCIC
+acilóbmis aicnânosseR # { = SQERF
+mos # ,234 :"orcim"
+ainomrah # ,825 :"osem"
+oãçacifirup # ,147 :"orcam"
+}
+
+ssalcatad@
+:adamaC ssalc
+rts :emon
+tni :alacse
+tni :aicneuqerf
+
+:]tni[tsiL >- )tni :ralacse ,]tni[elbaretI :oardap(otnemahlepseotua fed
+""".orcam→osem→orcim :alacse amu rop odnacilpitlum oãrdap mu etepeR"""
+]oardap ni p rof ralacse * p[ nruter
+
+:rts >- )adamaC :adamac(aicnanosser fed
+""".aicnêuqerf aiv sadamac ertne ainotnis ed acilóbmis megasneM"""
+"}ACIDAIRT{ moc aosser — zH}aicneuqerf.adamac{≈f ]}emon.adamac{["f nruter
+
+
+""".)️♾
+:]rts[tsiL >- )]tni[elbaretI :olcic(acilcic_aicnegreme fed
+( otinifni oa onroter o e 7 oa 0 od otnemigrus o acraM"""
+
+️♾
+]olcic ni c rof "}c{:ossap"f[ = ahlirt
+)" :onroter"(dneppa.ahlirt
+ahlirt nruter
+
+:]ynA ,rts[tciD >- )(latcarf_ranecne fed
+)]"orcim"[SQERF=aicneuqerf ,1=alacse ,"orcim"(adamaC = orcim
+)]"osem"[SQERF=aicneuqerf ,2=alacse ,"osem"(adamaC = osem
+)]"orcam"[SQERF=aicneuqerf ,3=alacse ,"orcam"(adamaC = orcam
+
+)alacse.orcim ,ACIDAIRT(otnemahlepseotua = orcim_ohlepse
+)alacse.osem ,ACIDAIRT(otnemahlepseotua = osem_ohlepse
+)alacse.orcam ,ACIDAIRT(otnemahlepseotua = orcam_ohlepse
+
+)7_0_OLCIC(acilcic_aicnegreme = greme_ahlirt
+
+{ nruter
+{ :"sohlepse"
+,orcim_ohlepse :"orcim"
+,osem_ohlepse :"osem"
+,orcam_ohlepse :"orcam"
+,}
+[ :"aicnanosser"
+,)orcim(aicnanosser
+,)osem(aicnanosser
+,)orcam(aicnanosser
+,]
+,greme_ahlirt :"aicnegreme"
+}
+
+------------------------------ #
+)airótsiH → TSA( ovitarran rosrevnoC #
+------------------------------ #
+
+:)rotisiVedoN.tsa(TSAroteloC ssalc
+:enoN >- )fles(__tini__ fed
+][ = ]rts[tsiL :stropmi.fles
+][ = ]rts[tsiL :stropmi_morf.fles
+][ = ]]ynA ,rts[tciD[tsiL :scnuf.fles
+][ = ]]ynA ,rts[tciD[tsiL :sessalc.fles
+][ = ]rts[tsiL :sngissa.fles
+0 = tni :sfi.fles
+0 = tni :selihw.fles
+0 = tni :srof.fles
+0 = tni :snruter.fles
+0 = tni :sesiar.fles
+0 = tni :syrt.fles
+0 = tni :shtiw.fles
+}0:"neg" ,0:"tes" ,0:"tcid" ,0:"tsil"{ = ]tni ,rts[tciD :spmoc.fles
+0 = tni :sadbmal.fles
+0 = tni :srotaroced.fles
+0 = tni :sdleiy.fles
+
+:enoN >- )tropmI.tsa :edon ,fles(tropmI_tisiv fed
+:seman.edon ni saila rof
+)eman.saila(dneppa.stropmi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )morFtropmI.tsa :edon ,fles(morFtropmI_tisiv fed
+"" ro eludom.edon = esab
+)seman.edon ni a rof eman.a(nioj." ," = seman
+)"}seman{ :}esab{"f(dneppa.stropmi_morf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuF.tsa :edon ,fles(feDnoitcnuF_tisiv fed
+]sgra.sgra.edon ni a rof gra.a[ = sgra
+)gra.grarav.sgra.edon + "*"(dneppa.sgra :grarav.sgra.edon fi
+)gra.grawk.sgra.edon + "**"(dneppa.sgra :grawk.sgra.edon fi
+:"srotaroced" ,sgra :"sgra" ,eman.edon :"eman"{(dneppa.scnuf.fles
+)})tsil_rotaroced.edon(nel
+)tsil_rotaroced.edon(nel =+ srotaroced.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuFcnysA.tsa :edon ,fles(feDnoitcnuFcnysA_tisiv fed
+)edon(feDnoitcnuF_tisiv.fles
+
+:enoN >- )feDssalC.tsa :edon ,fles(feDssalC_tisiv fed
+,feDnoitcnuF.tsa( ,n(ecnatsnisi fi ydob.edon ni n rof eman.n[ = sdohtem
+]))feDnoitcnuFcnysA.tsa
+ni b rof )'?' ,'di' ,b(rttateg esle )"esrapnu" ,tsa(rttasah fi )b(esrapnu.tsa[ = sesab
+]sesab.edon
+,sesab :"sesab" ,sdohtem :"sdohtem" ,eman.edon :"eman"{(dneppa.sessalc.fles
+)})tsil_rotaroced.edon(nel :"srotaroced"
+)tsil_rotaroced.edon(nel =+ srotaroced.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )ngissA.tsa :edon ,fles(ngissA_tisiv fed
+:stegrat.edon ni t rof
+:)emaN.tsa ,t(ecnatsnisi fi
+)di.t(dneppa.sngissa.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )fI.tsa :edon ,fles(fI_tisiv fed
+1 =+ sfi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )roF.tsa :edon ,fles(roF_tisiv fed
+1 =+ srof.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )elihW.tsa :edon ,fles(elihW_tisiv fed
+1 =+ selihw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )nruteR.tsa :edon ,fles(nruteR_tisiv fed
+1 =+ snruter.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )esiaR.tsa :edon ,fles(esiaR_tisiv fed
+1 =+ sesiar.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )yrT.tsa :edon ,fles(yrT_tisiv fed
+1 =+ syrt.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )htiW.tsa :edon ,fles(htiW_tisiv fed
+1 =+ shtiw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )adbmaL.tsa :edon ,fles(adbmaL_tisiv fed
+1 =+ sadbmal.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )dleiY.tsa :edon ,fles(dleiY_tisiv fed
+1 =+ sdleiy.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )pmoCtsiL.tsa :edon ,fles(pmoCtsiL_tisiv fed
+1 =+ ]"tsil"[spmoc.fles
+)edon(tisiv_cireneg.fles
+:enoN >- )pmoCtciD.tsa :edon ,fles(pmoCtciD_tisiv fed
+1 =+ ]"tcid"[spmoc.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )pmoCteS.tsa :edon ,fles(pmoCteS_tisiv fed
+1 =+ ]"tes"[spmoc.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )pxErotareneG.tsa :edon ,fles(pxErotareneG_tisiv fed
+1 =+ ]"neg"[spmoc.fles
+)edon(tisiv_cireneg.fles
+
+:rts >- )enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed
+:yrt
+)ecruos(esrap.tsa = eert
+:e sa rorrExatnyS tpecxe
+"}e{ :)rorrExatnyS( ogidóc o rasilana iugesnoc oãN ]orrE["f nruter
+
+)(TSAroteloC = loc
+)eert(tisiv.loc
+
+"odasilana ogidóC" ro olutit = tsih_emon
+][ = setrap
+
+)".”}tsih_emon{“ :ohnimagrep o moc agehc etnajaiv O — ogolórP"f(dneppa.setrap
+:stropmi_morf.loc ro stropmi.loc fi
+setnaosnoC sad ohlesnoC od satnemarref sa atneserpa ,adartne aN"(dneppa.setrap
+)":)stropmi(
+:stropmi.loc fi
+))))stropmi.loc(tes(detros(nioj." ," + " :soludóM • "(dneppa.setrap
+:stropmi_morf.loc fi
+))stropmi_morf.loc(nioj." | " + " :socifícepse soludóm eD • "(dneppa.setrap
+
+:sessalc.loc fi
+:sessalc.loc ni c rof
+"" esle ]'sesab'[c fi ")})]'sesab'[c(nioj.' ,'{ :sesab( "f = sesab
+moc ,}sesab{’}]'eman'[c{ ssalc‘ amroF-asaC a artnocnE"f(dneppa.setrap
+)".sodotém })]'sdohtem'[c(nel{
+
+:scnuf.loc fi
+)":ohnimac olep merba es )seõçnuf( oãça ed siatroP"(dneppa.setrap
+:scnuf.loc ni f rof
+"sortemârap mes" esle ]"sgra"[f fi )]"sgra"[f(nioj." ," = tsilgra
+]'srotaroced'[f = oced
+"" esle oced fi ")srotaroced( lautir ed )s(oles }oced{ moc "f = txt_oced
+)"}txt_oced{)}tsilgra{(}]'eman'[f{ fed • "f(dneppa.setrap
+:sngissa.loc fi
+," + " :)seõçiubirta( semon mebecer sotejbO"(dneppa.setrap
+))))sngissa.loc(tes(detros(nioj."
+
+)oxulf ed elortnoc( siatroP e sadartsE #
+][ = oxulf
+)"}sfi.loc{ :)fi( ahlocse ed siatrop"f(dneppa.oxulf :sfi.loc fi
+)"}srof.loc{ :)rof( sossap ed sadartse"f(dneppa.oxulf :srof.loc fi
+)"}selihw.loc{ :)elihw( ailígiv ed solcic"f(dneppa.oxulf :selihw.loc fi
+)"}syrt.loc{ :)tpecxe/yrt( onitsed ed salas"f(dneppa.oxulf :syrt.loc fi
+)"}shtiw.loc{ :)htiw( otxetnoc ed salas"f(dneppa.oxulf :shtiw.loc fi
+:oxulf fi
+))oxulf(nioj." • " + " :onitsed od oxulf o errocrep etnajaiv O"(dneppa.setrap
+
+:sdleiy.loc ro sadbmal.loc ro ))(seulav.spmoc.loc(yna fi
+][ = sartxe
+)"}]'tsil'[spmoc.loc{ :)pmoc tsil( atsil ed sairtemoeg"f(dneppa.sartxe :]"tsil"[spmoc.loc fi
+:)pmoc tcid( latcarf me soiránoicid"f(dneppa.sartxe :]"tcid"[spmoc.loc fi
+)"}]'tcid'[spmoc.loc{
+)"}]'tes'[spmoc.loc{ :)pmoc tes( latcarf me sotnujnoc"f(dneppa.sartxe :]"tes"[spmoc.loc fi
+:)pxe rotareneg( satercsid setnerroc"f(dneppa.sartxe :]"neg"[spmoc.loc fi
+)"}]'neg'[spmoc.loc{
+)"}sadbmal.loc{ :)adbmal( saremêfe seõçnuf"f(dneppa.sartxe :sadbmal.loc fi
+)"}sdleiy.loc{ :)dleiy( setnetal sator"f(dneppa.sartxe :sdleiy.loc fi
+))sartxe(nioj." • " + " :apam on mecerapa siaicepse sodiceT"(dneppa.setrap
+
+:sesiar.loc ro snruter.loc fi
+][ = lanif
+)"}snruter.loc{ :)nruter( seugertne sortsiger"f(dneppa.lanif :snruter.loc fi
+)"}sesiar.loc{ :)esiar( onitsed od satrela"f(dneppa.lanif :sesiar.loc fi
+))lanif(nioj." • " + " :ohnimac od sohcefseD"(dneppa.setrap
+
+esaB = amrof + oxulf + sodad :oãinu a é alever es euq O — ogolípE"(dneppa.setrap
+)".aviv
+)setrap(nioj."n\" nruter
+
+------------------------------ #
+)B.E.E.V odom( elosnoc on asserpmi airótsiH #
+------------------------------ #
+
+:enoN >- )(airotsih_ratnoc fed
+,"nohtyP aiedlA A — ogolórP"(rarran
+"""
+:ohnimac od siatrop mare SIAGOV sa edno ,nohtyP adamahc aiedla amu aivaH
+.)rinU( U ,)razinagrO( O ,)raretI( I ,)rehlocsE( E ,)riubirtA( A
+.oicífo e atnemarref aus moc lauq adac ,sãsetra mare SETNAOSNOC sA
+.sossaP ocniC ed adanroJ alep setnajaiv so avaiug BEEV otetiuqra o ,aiedla ad ortnec oN
+)"""
+,")B.E.E.V( sossaP ocniC ed adanroJ A"(rarran
+"""
+.)sotubirta( luza otnam e edadi ,emon ebecer etnajaiv o — riubirtA )1
+.edadi ed ronem uo roiam :oles ues ediced latroP o — rehlocsE )2
+.apate adac a aigrene alumuca sossaP sod adartsE a — raretI )3
+.ohnimac od aiepope a emuser e atnoc acetoilbiB a — razinagrO )4
+.aviv airómem = omuser + edaditnedi :odut artsiger esaB a — rinU )5
+)"""
+
+,"aviV latcarF oãçazinagrO — XULLBOK"(rarran
+"""
+
+️♾
+,)9-6-3( meteper es euq seõrdap :otnemivoM omseM o ,ragul odot mE
+,) →7→0( otinifni oa manroter e orez od megreme euq solcic
+.)147/825/234( orcam e osem ,orcim mahnila euq saicnêuqerf e
+.omsem is a es-ahlepse e aicnânosser me atnac ametsis O
+)"""
+
+:enoN >- )(ogidoc_rartsnomed fed
+B.E.E.V ranecnE #
+)(enignEBEEV = enigne
+)6=qerf_oacarbiv ,22=edadi ,"eullB"=emon(ralumis.enigne = mis
+
+,"odatluseR — B.E.E.V oãçartsnomeD"(rarran
+"""f
+})]"lifrep"[mis(tcidsa{ :lifreP
+}eulav.]"oacacifissalc"[mis{ :oãçacifissalC
+}]"sossap"[mis{ :sossaP
+})]"omuser"[mis(tcidsa{ :omuseR
+}]"esab"[mis{ :esaB
+)"""
+
+XULLBOK latcarf o ranecnE #
+)(latcarf_ranecne = latcarf
+,"9 • 6 • 3 — otnemahlepseotuA"(rarran
+"""f
+}]"orcim"[]"sohlepse"[latcarf{ :orcim
+}]"osem"[]"sohlepse"[latcarf{ :osem
+}]"orcam"[]"sohlepse"[latcarf{ :orcam
+)"""
+
+,"147 • 825 • 234 — acinômraH aicnânosseR"(rarran
+))]"aicnanosser"[latcarf(nioj."n\"
+
+,"️♾ → 7 → 0 — acilcíC aicnêgremE"(rarran
+"""f
+}]"aicnegreme"[latcarf{ :ahlirt
+)"""
+:enoN >- )(otebafla_rartsom fed
+,"setnaosnoC & siagoV — ogidóC od otebaflA"(rarran
+"""f
+}SIAGOV{ :SIAGOV
+}SETNAOSNOC{ :SETNAOSNOC
+)"""
+
+------------------------------ #
+ILC #
+------------------------------ #
+
+:resraPtnemugrA.esrapgra >- )(resrapgra_dliub fed
+rosrevnoC + airótsiH — B.E.E.V XULLBOK"=noitpircsed(resraPtnemugrA.esrapgra = p
+)"ogidóC ed ovitarraN
+nohtyP ogidóc o acilpxE"=pleh ,"yp.OVIUQRA"=ravatem ,"racilpxe--"(tnemugra_dda.p
+)".)avitarran → TSA( odamrofni
+arap oãrdap adartne ad ogidóc o reL"=pleh ,"eurt_erots"=noitca ,"nidts--"(tnemugra_dda.p
+)".racilpxe
+)".rosrevnoc od avitarran a arap lanoicpo olutíT"=pleh ,"olutit--"(tnemugra_dda.p
+oãn( avitarran etnemoS"=pleh ,"eurt_erots"=noitca ,"avitarran-os--"(tnemugra_dda.p
+)".)B.E.E.V omed a ratucexe
+p nruter
+
+:tni >- )enoN = ]]rts[tsiL[lanoitpO :vgra(niam fed
+)vgra(sgra_esrap.)(resrapgra_dliub = sgra
+
+)nidts uo oviuqra racilpxe( rosrevnoc odoM #
+:nidts.sgra ro racilpxe.sgra fi
+:racilpxe.sgra fi
+:yrt
+:f sa )"8-ftu"=gnidocne ,"r" ,racilpxe.sgra(nepo htiw
+)(daer.f = ecruos
+:e sa noitpecxE tpecxe
+)"}e{ :'}racilpxe.sgra{' rel iugesnoc oãN ]orrE["f(tnirp
+1 nruter
+racilpxe.sgra ro olutit.sgra = olutit
+:esle
+)(daer.nidts.sys = ecruos
+"nidts aiv ogidóC" ro olutit.sgra = olutit
+
+)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = avitarran
+)avitarran ,"ogidóC od oãçacilpxE — ovitarraN rosrevnoC"(rarran
+:avitarran_os.sgra fi
+0 nruter
+
+)otebafla + omed + airótsih( oãrdap odoM #
+)(airotsih_ratnoc
+)(ogidoc_rartsnomed
+)(otebafla_rartsom
+0 nruter
+
+:"__niam__" == __eman__ fi
+))(niam(tixEmetsyS esiar
+)'''
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = htap
+)"8-ftu"=gnidocne ,edoc(txet_etirw.htap
+))htap(rts ,":odazilauta oviuqrA"(tnirp
+
+
+3 etrap
+htaP tropmi bilhtap morf
+tneded tropmi parwtxet morf
+
+)NOSJ dna TXT( snoitpo tropxe htiw yp.yrots_beev_xullbok gnitirweR #
+'''r(tneded = edoc
+-*- 8-ftu :gnidoc -*- #
+"""
+oãçatropxE moc ovitarraN rosrevnoC + latcarF oãçazinagrO ed etnemeS tpmorP :XULLBOK
+"""
+
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+lanoitpO ,elbaretI ,ynA ,tciD ,tsiL tropmi gnipyt morf
+esrapgra tropmi
+tsa tropmi
+parwtxet tropmi
+sys tropmi
+nosj tropmi
+
+------------------------------ #
+esaB ,aruturtsE ,aigrenE ,oãçarbiV — B.E.E.V #
+------------------------------ #
+
+:)munE ,rts(oacacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:lifreP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oidém" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:ortsigeR ssalc
+tni :ossap
+tni :aigrene
+oacacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:omuseR ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+{ = ]rts ,rts[tciD :SIAGOV
+,")sopit e sieváirav( oãçiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( oãçaretI" :"I"
+,")seõçnuf( razinagrO" :"O"
+,")soiránoicid/satsil( rinU" :"U"
+}
+
+ni c rof "}c{ acilóbmis oãçnuF"f :c{ = ]rts ,rts[tciD :SETNAOSNOC
+"ZYXWVTSRQPNMLKJHGFDCB"
+}
+
+------------------------------ #
+rodarraN #
+------------------------------ #
+
+:enoN >- )rts :otxet ,rts :olutit(rarran fed
+27 * "─" = arrab
+)arrab + "n\"(tnirp
+)olutit + " ✦"(tnirp
+)arrab(tnirp
+)"n\" + )(pirts.)otxet(tneded.parwtxet(tnirp
+
+------------------------------ #
+B.E.E.V ocitádid rotoM #
+------------------------------ #
+
+:enignEBEEV ssalc
+,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:lifreP >- )"oidém" = rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(lifreP nruter
+)ohnamat=ohnamat
+:oacacifissalC >- )lifreP :lifrep ,fles(rehlocse_E fed
+RONEM.oacacifissalC esle 81 => edadi.lifrep fi ROIAM.oacacifissalC nruter
+
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+:0 =< qerf fi
+)"avitisop res eved qerf"(rorrEeulaV esiar
+))1 + qerf ,1(egnar(tsil nruter
+
+:omuseR >- )]ortsigeR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(omuseR nruter
+)sortsiger ni r rof aigrene.r(mus = amos
+)sortsiger(nel / amos = aidem
+)aidem ,amos ,)sortsiger(nel(omuseR nruter
+
+:]ynA ,rts[tciD >- )omuseR :omuser ,lifreP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ nruter
+
+:]ynA ,rts[tciD >- )4 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+0 = aigrene
+][ = ]ortsigeR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+,aigrene=aigrene ,ossap=ossap(ortsigeR(dneppa.sortsiger
+))oacacifissalc=oacacifissalc
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+{ nruter
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+}
+
+------------------------------ #
+latcarf ametsiS #
+------------------------------ #
+
+]9 ,6 ,3[ = ACIDAIRT
+))8 ,0(egnar(tsil = 7_0_OLCIC
+}147 :"orcam" ,825 :"osem" ,234 :"orcim"{ = SQERF
+
+ssalcatad@
+:adamaC ssalc
+rts :emon
+tni :alacse
+tni :aicneuqerf
+
+:]tni[tsiL >- )tni :ralacse ,]tni[elbaretI :oardap(otnemahlepseotua fed
+]oardap ni p rof ralacse * p[ nruter
+
+:rts >- )adamaC :adamac(aicnanosser fed
+"}ACIDAIRT{ moc aosser — zH}aicneuqerf.adamac{≈f ]}emon.adamac{["f nruter
+
+:]rts[tsiL >- )]tni[elbaretI :olcic(acilcic_aicnegreme fed
+
+️♾
+]olcic ni c rof "}c{:ossap"f[ = ahlirt
+)" :onroter"(dneppa.ahlirt
+ahlirt nruter
+
+:]ynA ,rts[tciD >- )(latcarf_ranecne fed
+)]"orcim"[SQERF ,1 ,"orcim"(adamaC = orcim
+)]"osem"[SQERF ,2 ,"osem"(adamaC = osem
+)]"orcam"[SQERF ,3 ,"orcam"(adamaC = orcam
+{ nruter
+{ :"sohlepse"
+,)alacse.orcim ,ACIDAIRT(otnemahlepseotua :"orcim"
+,)alacse.osem ,ACIDAIRT(otnemahlepseotua :"osem"
+,)alacse.orcam ,ACIDAIRT(otnemahlepseotua :"orcam"
+,}
+[ :"aicnanosser"
+,)orcim(aicnanosser
+,)osem(aicnanosser
+,)orcam(aicnanosser
+,]
+,)7_0_OLCIC(acilcic_aicnegreme :"aicnegreme"
+}
+
+------------------------------ #
+ovitarran rosrevnoC #
+------------------------------ #
+
+:)rotisiVedoN.tsa(TSAroteloC ssalc
+:enoN >- )fles(__tini__ fed
+][ = ]rts[tsiL :stropmi.fles
+][ = ]rts[tsiL :stropmi_morf.fles
+][ = ]]ynA ,rts[tciD[tsiL :scnuf.fles
+][ = ]]ynA ,rts[tciD[tsiL :sessalc.fles
+][ = ]rts[tsiL :sngissa.fles
+0 = tni :sfi.fles
+0 = tni :selihw.fles
+0 = tni :srof.fles
+0 = tni :snruter.fles
+
+:enoN >- )tropmI.tsa :edon ,fles(tropmI_tisiv fed
+:seman.edon ni saila rof
+)eman.saila(dneppa.stropmi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )morFtropmI.tsa :edon ,fles(morFtropmI_tisiv fed
+"" ro eludom.edon = esab
+)seman.edon ni a rof eman.a(nioj." ," = seman
+)"}seman{ :}esab{"f(dneppa.stropmi_morf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuF.tsa :edon ,fles(feDnoitcnuF_tisiv fed
+]sgra.sgra.edon ni a rof gra.a[ = sgra
+)}sgra :"sgra" ,eman.edon :"eman"{(dneppa.scnuf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDssalC.tsa :edon ,fles(feDssalC_tisiv fed
+)}eman.edon :"eman"{(dneppa.sessalc.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )ngissA.tsa :edon ,fles(ngissA_tisiv fed
+:stegrat.edon ni t rof
+:)emaN.tsa ,t(ecnatsnisi fi
+)di.t(dneppa.sngissa.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )fI.tsa :edon ,fles(fI_tisiv fed
+1 =+ sfi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )roF.tsa :edon ,fles(roF_tisiv fed
+1 =+ srof.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )elihW.tsa :edon ,fles(elihW_tisiv fed
+1 =+ selihw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )nruteR.tsa :edon ,fles(nruteR_tisiv fed
+1 =+ snruter.fles
+)edon(tisiv_cireneg.fles
+
+:)enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed
+:yrt
+)ecruos(esrap.tsa = eert
+:e sa rorrExatnyS tpecxe
+})e(rts :"rorre"{ ,"}e{ ]orrE["f nruter
+)(TSAroteloC = loc
+)eert(tisiv.loc
+"odasilana ogidóC" ro olutit = tsih_emon
+]".”}tsih_emon{“ :ohnimagrep o moc agehc etnajaiv O — ogolórP"f[ = setrap
+:stropmi.loc fi
+))stropmi.loc(nioj." ," + " :satnemarreF"(dneppa.setrap
+:stropmi_morf.loc fi
+))stropmi_morf.loc(nioj." | " + " :sacifícepse satnemarreF"(dneppa.setrap
+:sessalc.loc fi
+))sessalc.loc ni c rof ]'eman'[c(nioj." ," + " :sessalC"(dneppa.setrap
+:scnuf.loc fi
+))scnuf.loc ni f rof ]'eman'[f(nioj." ," + " :seõçnuF"(dneppa.setrap
+:sngissa.loc fi
+))sngissa.loc(nioj." ," + " :seõçiubirtA"(dneppa.setrap
+:selihw.loc ro srof.loc ro sfi.loc fi
+)"}selihw.loc{=elihw ,}srof.loc{=rof ,}sfi.loc{=fi :soxulF"f(dneppa.setrap
+:snruter.loc fi
+)"}snruter.loc{ :sonroteR"f(dneppa.setrap
+)".oxulf e sodad ed oãinu — ogolípE"(dneppa.setrap
+)setrap(nioj."n\" = avitarran
+{ = atem
+,tsih_emon :"eltit"
+,stropmi.loc :"stropmi"
+,stropmi_morf.loc :"stropmi_morf"
+,scnuf.loc :"snoitcnuf"
+,sessalc.loc :"sessalc"
+,sngissa.loc :"stnemngissa"
+,}selihw.loc :"selihw" ,srof.loc :"srof" ,sfi.loc :"sfi"{ :"wolf"
+snruter.loc :"snruter"
+}
+atem ,avitarran nruter
+
+------------------------------ #
+oãrdap airótsiH #
+------------------------------ #
+
+:)(airotsih_ratnoc fed
+)".ogidóc o ramrof arap menúer es setnaosnoc e siagov sA" ,"ogolórP"(rarran
+))SETNAOSNOC(rts + "n\" + )SIAGOV(rts ,"B.E.E.V aruturtsE"(rarran
+
+:)(ogidoc_rartsnomed fed
+)(enignEBEEV = enigne
+)4 ,22 ,"eullB"(ralumis.enigne = mis
+))]"esab"[mis(rts ,"oãçartsnomeD"(rarran
+
+------------------------------ #
+ILC #
+------------------------------ #
+
+:)(resrapgra_dliub fed
+)(resraPtnemugrA.esrapgra = p
+)"racilpxe arap yp. oviuqrA"=pleh ,"racilpxe--"(tnemugra_dda.p
+)"oãrdap adartne ad ogidóc reL"=pleh ,"eurt_erots"=noitca ,"nidts--"(tnemugra_dda.p
+)"avitarran ad olutíT"=pleh ,"olutit--"(tnemugra_dda.p
+)"oãrdap omed rador oãN"=pleh ,"eurt_erots"=noitca ,"avitarran-os--"(tnemugra_dda.p
+)"txt. me avitarran ravlaS"=pleh ,"txt-tuo--"(tnemugra_dda.p
+)"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p
+p nruter
+
+:)enoN=vgra(niam fed
+)vgra(sgra_esrap.)(resrapgra_dliub = sgra
+:nidts.sgra ro racilpxe.sgra fi
+:racilpxe.sgra fi
+)"8-ftu"=gnidocne(txet_daer.)racilpxe.sgra(htaP = ecruos
+racilpxe.sgra ro olutit.sgra = olutit
+:esle
+)(daer.nidts.sys = ecruos
+"nidts aiv ogidóC" ro olutit.sgra = olutit
+)olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran
+)avitarran ,"avitarraN"(rarran
+:txt_tuo.sgra fi
+)"8-ftu"=gnidocne ,avitarran(txet_etirw.)txt_tuo.sgra(htaP
+)"}txt_tuo.sgra{ me avlas avitarraN ]KO["f(tnirp
+:nosj_tuo.sgra fi
+,}atem** ,avitarran :"evitarran"{(spmud.nosj(txet_etirw.)nosj_tuo.sgra(htaP
+)"8-ftu"=gnidocne ,)2=tnedni ,eslaF=iicsa_erusne
+)"}nosj_tuo.sgra{ me ovlas NOSJ ]KO["f(tnirp
+:avitarran_os.sgra fi
+0 nruter
+)(airotsih_ratnoc
+)(ogidoc_rartsnomed
+0 nruter
+
+:"__niam__" == __eman__ fi
+))(niam(tixEmetsyS esiar
+)'''
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = htap
+)"8-ftu"=gnidocne ,edoc(txet_etirw.htap
+htap
+
+
+40 ETRAP
+ad setrap racatsed arap lanimret on ISNA oãçaroloc enoicida
+.lausiv siam oãçacilpxe a airaxied ossI ?avitarran
+
+ed atse avit arran a otnat es euqifirev odnagerga agis sam
+:moc odroca
+
+𝗟𝗔𝗧𝗖𝗔𝗥𝗙
+
+→ 𝗼𝗿𝗰𝗶𝗺( 𝗮𝗱𝗮𝗺𝗮𝗰 𝗮𝗱𝗮𝗰 𝗲𝗱𝗻𝗼 𝗹𝗲𝘃á𝘇𝗶𝗻𝗮𝗴𝗿𝗼𝗼𝘁𝘂𝗮 𝗹𝗮𝘁𝗰𝗮𝗿𝗳 𝗮𝗺𝗲𝘁𝘀𝗶𝘀 𝗺𝘂 𝗲𝗻𝗶𝗴𝗮𝗺𝗜
+:𝘀𝗶𝗮𝘁𝗻𝗲𝗺𝗮𝗱𝗻𝘂𝗳 𝘀𝗼𝗶𝗽í𝗰𝗻𝗶𝗿𝗽 𝘀ê𝗿𝘁 𝗮 𝗲𝗰𝗲𝗱𝗲𝗯𝗼 )𝗼𝗿𝗰𝗮𝗺
+
+𝘀𝗮 𝘀𝗮𝗱𝗼𝘁 𝗺𝗲 𝗺𝗲𝘁𝗲𝗽𝗲𝗿 𝗲𝘀 𝗲𝘂𝗾 𝘀𝗲õ𝗿𝗱𝗮𝗣 :𝗼𝗰𝗶𝘁𝗻â𝘂𝗤 𝗼𝘁𝗻𝗲𝗺𝗮𝗵𝗹𝗲𝗽𝘀𝗲𝗼𝘁𝘂𝗔.𝟭
+.)𝟬-𝟳 ,𝟵-𝟲-𝟯 :.𝘅𝗲( 𝘀𝗮𝗹𝗮𝗰𝘀𝗲
+
+𝘀𝗼𝘁𝗻𝗶𝘁𝘀𝗶𝗱 𝘀𝗶𝗲𝘃í𝗻 𝗺𝗮𝘇𝗶𝗻𝗼𝗿𝗰𝗻𝗶𝘀 𝗲𝘂𝗾 𝘀𝗮𝗶𝗰𝗻ê𝘂𝗾𝗲𝗿𝗙 :𝗮𝗰𝗶𝗻ô𝗺𝗿𝗮𝗛 𝗮𝗶𝗰𝗻â𝗻𝗼𝘀𝘀𝗲𝗥.𝟮
+.)𝗮𝗶𝗿𝘁𝗲𝗺𝗼𝗲𝗴 ,𝘇𝘂𝗹 ,𝗺𝗼𝘀(
+
+
+️♾
+𝗮 𝗺𝗮𝗻𝗿𝗼𝘁𝗲𝗿 𝗲 )𝟬( 𝗼𝗶𝘇𝗮𝘃 𝗼𝗱 𝗺𝗲𝗴𝗿𝘂𝘀 𝗲𝘂𝗾 𝘀𝗮𝗿𝘂𝘁𝘂𝗿𝘁𝘀𝗘 :𝗮𝗰𝗶𝗹𝗰í𝗖 𝗮𝗶𝗰𝗻ê𝗴𝗿𝗲𝗺𝗘.𝟯
+.) → 𝟳( 𝗼𝗹𝗰𝗶𝗰 𝗺𝘂 𝗿𝗮𝘁𝗲𝗹𝗽𝗺𝗼𝗰 𝘀ó𝗽𝗮 𝗲𝗹𝗲
+
+ed saicnêüqerf sad otiecnoc oipicnirp so moc odroca ed IA
+ragerga arap enifed e seroc sa artseuqro ecov nnamuhcS
+
+
+COD
+
+
+
+-*- 8-ftu :gnidoc -*- #
+"""
+)seroC ISNA moc( ovitarraN rosrevnoC + air³ÃtsiH ¢€â B.E.E.V :XULLBOK
+:savon seµÃ§ÃargetnI
+B.E.E.V omed odom on e )TSA( o£Ã§Ãacilpxe odom on ISNA seroC -
+,zH38.7~ nnamuhcS ,9-6-3 otnemahlepseotuA( soip­Ãcnirp 3 so moc latcarf ogol³ÃrP -
+)¸ï¾™â’†â7’†â0 aicnªÃgremE
+"""
+
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+lanoitpO ,elbaretI ,ynA ,tciD ,tsiL tropmi gnipyt morf
+esrapgra tropmi
+tsa tropmi
+parwtxet tropmi
+sys tropmi
+nosj tropmi
+
+========================= #
+acitn¢ÃmeS / ISNA atelaP #
+========================= #
+{ = ISNA
+,"m0[330\" :"TESER"
+atnegam # ,"m59[330\" :"ELTIT"
+)9-6-3( otnemahlepseotua # ,"m49[330\" :"EULB"
+)nnamuhcS( aicn¢Ãnosser # ,"m29[330\" :"NEERG"
+seµÃsiced / )¸ï¾™â’†â7’†â0( acilc­Ãc aicnªÃgreme # ,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+}
+
+:rts >- )rts :yek ,rts :txt(roloc fed
+"}]'TESER'[ISNA{}txt{})'',yek(teg.ISNA{"f nruter
+
+========================= #
+sopiT ”€â B.E.E.V #
+========================= #
+:)munE ,rts(oacacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:lifreP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oid©Ãm" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:ortsigeR ssalc
+tni :ossap
+tni :aigrene
+oacacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:omuseR ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+========================= #
+saigolanA #
+========================= #
+{ = ]rts ,rts[tciD :SIAGOV
+,")sopit e siev¡Ãirav( o£Ã§ÃiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( o£Ã§ÃaretI" :"I"
+,")seµÃ§Ãnuf( razinagrO" :"O"
+,")soir¡Ãnoicid/satsil( rinU" :"U"
+}
+
+{ = ]rts ,rts[tciD :SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seµÃ§Ãacilpxe #( soir¡ÃtnemoC" :"C"
+,")fed( seµÃ§ÃinifeD" :"D"
+,")... ,nel ,tnirp( ni-tliub seµÃ§ÃnuF" :"F"
+,")dleiy( serodareG" :"G"
+,")OOP( a§ÃnareH" :"H"
+,")sodad ed o£Ã§Ãazilaires( NOSJ" :"J"
+,")sgrawk**( stnemugra drowyeK" :"K"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( solud³ÃM" :"M"
+,")olun rolav( enoN" :"N"
+,")o£Ã§Ãnuf ed sadartne( sortem¢ÃraP" :"P"
+,")alif( eueuQ" :"Q"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+,"siev¡ÃiraV" :"V"
+,")o£Ã§Ãiteper ed o§Ãal( elihW" :"W"
+,")sodad( LMX" :"X"
+,")serodareg( dleiY" :"Y"
+,")satsil ed o£Ã§Ãagerga( piZ" :"Z"
+}
+
+========================= #
+)seroc moc( rodarraN #
+========================= #
+:enoN >- )"ELTIT"=roloc_eltit ,rts :otxet ,rts :olutit(rarran fed
+67 * "€”â" = arrab
+)arrab + "n\"(tnirp
+))roloc_eltit ,olutit + " ¦œâ"(roloc(tnirp
+)arrab(tnirp
+)"n\" + )(pirts.)otxet(tneded.parwtxet(tnirp
+
+:)(latcarf_ogolorp fed
+,")¸ï¾™â’†â7’†â0 | zH38.7~ nnamuhcS | 9-6-3( latcarF ogol³ÃrP"(rarran
+"""f
+:soviv soip­Ãcnirp sªÃrt euges adanroj atsE
+me meteper es seµÃrdap ”€â })"EULB" ,")9-6-3( ocitn¢ÃuQ otnemahlepseotuA )1"(roloc{
+.salacse sa sadot
+”€â })"NEERG" ,")zH38.7~ nnamuhcS( acin´ÃmraH aicn¢ÃnosseR )2"(roloc{
+.airtemoeg e zul ,mos mahnila saicnªÃuqerf
+megrus saruturtse ”€â })"WOLLEY" ,")¸ï¾™â’†â7’†â0( acilc­ÃC aicnªÃgremE )3"(roloc{
+.olcic o s³Ãpa manroter e 0 od
+oleramA ,)seµÃxenoc( edreV ,)seµÃrdap( luzA :arutiel a maiug seroc sA
+.)solcic/seµÃsiced(
+)"""
+
+========================= #
+B.E.E.V rotoM #
+========================= #
+:enignEBEEV ssalc
+,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:lifreP >- )"oid©Ãm" = rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(lifreP = lifrep
+)ohnamat=ohnamat
+))"EULB" ,"})lifrep(tcidsa{ = lifrep ’†â riubirtA ]A["f(roloc(tnirp
+lifrep nruter
+
+:oacacifissalC >- )lifreP :lifrep ,fles(rehlocse_E fed
+RONEM.oacacifissalC esle 81 => edadi.lifrep fi ROIAM.oacacifissalC = oacacifissalc
+))"WOLLEY" ,"}eulav.oacacifissalc{ ’†â rehlocsE ]E["f(roloc(tnirp
+oacacifissalc nruter
+
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+:0 =< qerf fi
+)"avitisop res eved qerf"(rorrEeulaV esiar
+))1 + qerf ,1(egnar(tsil = sossap
+))"NEERG" ,"}sossap{ = sossap ’†â raretI ]I["f(roloc(tnirp
+sossap nruter
+
+:omuseR >- )]ortsigeR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(omuseR = omuser
+:esle
+)sortsiger ni r rof aigrene.r(mus = amos
+))sortsiger(nel / amos ,amos ,)sortsiger(nel(omuseR = omuser
+))"ELTIT" ,"})omuser(tcidsa{ = omuser ’†â razinagrO ]O["f(roloc(tnirp
+omuser nruter
+
+:]ynA ,rts[tciD >- )omuseR :omuser ,lifreP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ = esab
+))"EULB" ,"}esab{ = esab ’†â rinU ]U["f(roloc(tnirp
+esab nruter
+
+:]ynA ,rts[tciD >- )4 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+
+0 = aigrene
+][ = ]ortsigeR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+,aigrene=aigrene ,ossap=ossap(ortsigeR(dneppa.sortsiger
+))oacacifissalc=oacacifissalc
+
+)oxulf on aicn¢Ãnosser + otnemahlepseotua( sortsiger sod adiroloc megatsiL #
+:sortsiger ni r rof
+,)"EULB" ,"}aigrene.r{=aigrene"f(roloc ,)"NEERG" ,"}ossap.r{=ossap ¢€â "f(roloc(tnirp
+))"WOLLEY" ,"}eulav.oacacifissalc.r{=oacacifissalc"f(roloc
+
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+{ nruter
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+}
+
+========================= #
+ocil³Ãbmis latcarF #
+========================= #
+]9 ,6 ,3[ = ACIDAIRT
+))8 ,0(egnar(tsil = 7_0_OLCIC
+}147 :"orcam" ,825 :"osem" ,234 :"orcim"{ = SQERF
+
+ssalcatad@
+:adamaC ssalc
+rts :emon
+tni :alacse
+tni :aicneuqerf
+
+:]tni[tsiL >- )tni :ralacse ,]tni[elbaretI :oardap(otnemahlepseotua fed
+]oardap ni p rof ralacse * p[ nruter
+
+:rts >- )adamaC :adamac(aicnanosser fed
+"}ACIDAIRT{ moc aosser ”€â zH}aicneuqerf.adamac{ˆ‰âf ]}emon.adamac{["f nruter
+
+:]rts[tsiL >- )]tni[elbaretI :olcic(acilcic_aicnegreme fed
+]olcic ni c rof "}c{:ossap"f[ = ahlirt
+)"¸ï¾™â :onroter"(dneppa.ahlirt
+ahlirt nruter
+
+:]ynA ,rts[tciD >- )(latcarf_ranecne fed
+)]"orcim"[SQERF ,1 ,"orcim"(adamaC = orcim
+)]"osem"[SQERF ,2 ,"osem"(adamaC = osem
+)]"orcam"[SQERF ,3 ,"orcam"(adamaC = orcam
+{ nruter
+{ :"sohlepse"
+,)alacse.orcim ,ACIDAIRT(otnemahlepseotua :"orcim"
+,)alacse.osem ,ACIDAIRT(otnemahlepseotua :"osem"
+,)alacse.orcam ,ACIDAIRT(otnemahlepseotua :"orcam"
+,}
+[ :"aicnanosser"
+,)orcim(aicnanosser
+,)osem(aicnanosser
+,)orcam(aicnanosser
+,]
+,)7_0_OLCIC(acilcic_aicnegreme :"aicnegreme"
+}
+
+========================= #
+)TSA( ovitarran rosrevnoC #
+========================= #
+:)rotisiVedoN.tsa(TSAroteloC ssalc
+:enoN >- )fles(__tini__ fed
+][ = ]rts[tsiL :stropmi.fles
+][ = ]rts[tsiL :stropmi_morf.fles
+][ = ]]ynA ,rts[tciD[tsiL :scnuf.fles
+][ = ]]ynA ,rts[tciD[tsiL :sessalc.fles
+][ = ]rts[tsiL :sngissa.fles
+0 = tni :sfi.fles
+0 = tni :selihw.fles
+0 = tni :srof.fles
+0 = tni :snruter.fles
+
+:enoN >- )tropmI.tsa :edon ,fles(tropmI_tisiv fed
+:seman.edon ni saila rof
+)eman.saila(dneppa.stropmi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )morFtropmI.tsa :edon ,fles(morFtropmI_tisiv fed
+"" ro eludom.edon = esab
+)seman.edon ni a rof eman.a(nioj." ," = seman
+)"}seman{ :}esab{"f(dneppa.stropmi_morf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuF.tsa :edon ,fles(feDnoitcnuF_tisiv fed
+]sgra.sgra.edon ni a rof gra.a[ = sgra
+)}sgra :"sgra" ,eman.edon :"eman"{(dneppa.scnuf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDssalC.tsa :edon ,fles(feDssalC_tisiv fed
+)}eman.edon :"eman"{(dneppa.sessalc.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )ngissA.tsa :edon ,fles(ngissA_tisiv fed
+:stegrat.edon ni t rof
+:)emaN.tsa ,t(ecnatsnisi fi
+)di.t(dneppa.sngissa.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )fI.tsa :edon ,fles(fI_tisiv fed
+1 =+ sfi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )roF.tsa :edon ,fles(roF_tisiv fed
+1 =+ srof.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )elihW.tsa :edon ,fles(elihW_tisiv fed
+1 =+ selihw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )nruteR.tsa :edon ,fles(nruteR_tisiv fed
+1 =+ snruter.fles
+)edon(tisiv_cireneg.fles
+
+:)enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed
+:yrt
+)ecruos(esrap.tsa = eert
+:e sa rorrExatnyS tpecxe
+)e(rts + )"WOLLEY" ," ]exatniS ed orrE["(roloc = avitarran
+})e(rts :"rorre"{ ,avitarran nruter
+)(TSAroteloC = loc
+)eert(tisiv.loc
+"odasilana ogid³ÃC" ro olutit = tsih_emon
+
+[ = setrap
+,".€â}tsih_emon{œ€â :ohnimagrep o moc agehc etnajaiv O ”€â ogol³ÃrP"f(roloc
+,)"ELTIT"
+]
+
+:stropmi_morf.loc ro stropmi.loc fi
+))"NEERG" ,":)stropmi( setnaosnoC sad ohlesnoC"(roloc(dneppa.setrap
+:stropmi.loc fi
+," + )"NEERG" ," :solud³ÃM ¢€â "(roloc(dneppa.setrap
+))))stropmi.loc(tes(detros(nioj."
+:stropmi_morf.loc fi
+))stropmi_morf.loc(nioj." | " + )"NEERG" ," :solud³Ãm eD ¢€â "(roloc(dneppa.setrap
+
+:sessalc.loc fi
++ )"EULB" ," :)sessalc( amroF-sasaC"(roloc(dneppa.setrap
+))sessalc.loc ni c rof ]'eman'[c(nioj." ,"
+
+:scnuf.loc fi
+))"EULB" ,":)seµÃ§Ãnuf( o£Ã§Ãa ed siatroP"(roloc(dneppa.setrap
+:scnuf.loc ni f rof
+"sortem¢Ãrap mes" esle ]"sgra"[f fi )]"sgra"[f(nioj." ," = tsilgra
++ )"NEERG" ,tsilgra(roloc + "(" + )"EULB" ,]"eman"[f(roloc + " ¢€â "(dneppa.setrap
+)")"
+
+:sngissa.loc fi
++ )"EULB" ," :)seµÃ§Ãiubirta( sodaemon sotejbO"(roloc(dneppa.setrap
+))))sngissa.loc(tes(detros(nioj." ,"
+
+][ = stib_oxulf
+))"WOLLEY" ,"}sfi.loc{=fi"f(roloc(dneppa.stib_oxulf :sfi.loc fi
+))"WOLLEY" ,"}srof.loc{=rof"f(roloc(dneppa.stib_oxulf :srof.loc fi
+))"WOLLEY" ,"}selihw.loc{=elihw"f(roloc(dneppa.stib_oxulf :selihw.loc fi
+:stib_oxulf fi
+))stib_oxulf(nioj." ¢€â " + )"WOLLEY" ," :onitsed od oxulF"(roloc(dneppa.setrap
+
+:snruter.loc fi
+))"ELTIT" ,"}snruter.loc{ :)nruter( sohcefseD"f(roloc(dneppa.setrap
+
+))"ELTIT" ,".aviv esaB = amrof + oxulf + sodad :o£ÃinU ”€â ogol­ÃpE"(roloc(dneppa.setrap
+)setrap(nioj."n\" = avitarran
+
+{ = atem
+,tsih_emon :"eltit"
+,stropmi.loc :"stropmi"
+,stropmi_morf.loc :"stropmi_morf"
+,scnuf.loc :"snoitcnuf"
+,sessalc.loc :"sessalc"
+,sngissa.loc :"stnemngissa"
+,}selihw.loc :"selihw" ,srof.loc :"srof" ,sfi.loc :"sfi"{ :"wolf"
+snruter.loc :"snruter"
+}
+atem ,avitarran nruter
+
+========================= #
+sair³ÃtsiH #
+========================= #
+:)(airotsih_ratnoc fed
+)(latcarf_ogolorp
+"""f ,"so£ÃsetrA e siatroP ”€â nohtyP uedlA"(rarran
+}SIAGOV{ :)siatrop( siagoV
+}SETNAOSNOC{ :)so£Ãsetra( setnaosnoC
+)"""
+
+:)(ogidoc_rartsnomed fed
+)(enignEBEEV = enigne
+)6 ,22 ,"eullB"(ralumis.enigne = mis
+
+{(spmud.nosj ,")esaB( B.E.E.V omuseR"(rarran
+,)]"lifrep"[mis(tcidsa :"lifrep"
+,eulav.]"oacacifissalc"[mis :"oacacifissalc"
+,)]"omuser"[mis(tcidsa :"omuser"
+))2=tnedni ,eslaF=iicsa_erusne ,}
+
+========================= #
+ILC #
+========================= #
+:)(resrapgra_dliub fed
+rosrevnoC + air³ÃtsiH ”€â B.E.E.V XULLBOK"=noitpircsed(resraPtnemugrA.esrapgra = p
+)")ISNA(
+nohtyP ogid³Ãc o acilpxE"=pleh ,"yp.OVIUQRA"=ravatem ,"racilpxe--"(tnemugra_dda.p
+)".)avitarran ’†â TSA( odamrofni
+o£Ãrdap adartne ad ogid³Ãc o reL"=pleh ,"eurt_erots"=noitca ,"nidts--"(tnemugra_dda.p
+)".racilpxe arap
+)".rosrevnoc od avitarran a arap lanoicpo olut­ÃT"=pleh ,"olutit--"(tnemugra_dda.p
+o£Ãn( avitarran etnemoS"=pleh ,"eurt_erots"=noitca ,"avitarran-os--"(tnemugra_dda.p
+)".)B.E.E.V omed a ratucexe
+)"txt. me avitarran ravlaS"=pleh ,"txt-tuo--"(tnemugra_dda.p
+)"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p
+p nruter
+
+:tni >- )enoN = ]]rts[tsiL[lanoitpO :vgra(niam fed
+)vgra(sgra_esrap.)(resrapgra_dliub = sgra
+
+rosrevnoc odoM #
+:nidts.sgra ro racilpxe.sgra fi
+:racilpxe.sgra fi
+:yrt
+)(daer.)"8-ftu"=gnidocne ,"r" ,racilpxe.sgra(nepo = ecruos
+:e sa noitpecxE tpecxe
+))"WOLLEY" ,"}e{ :'}racilpxe.sgra{' rel iugesnoc o£ÃN ]orrE["f(roloc(tnirp
+1 nruter
+racilpxe.sgra ro olutit.sgra = olutit
+:esle
+)(daer.nidts.sys = ecruos
+"nidts aiv ogid³ÃC" ro olutit.sgra = olutit
+
+)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran
+)avitarran ,"o£Ã§ÃacilpxE ”€â ovitarraN rosrevnoC"(rarran
+:txt_tuo.sgra fi
+)avitarran(etirw.)"8-ftu"=gnidocne ,"w" ,txt_tuo.sgra(nepo
+))"NEERG" ,"}txt_tuo.sgra{ me avlas avitarraN ]KO["f(roloc(tnirp
+:nosj_tuo.sgra fi
+,avitarran :"evitarran"{(spmud.nosj(etirw.)"8-ftu"=gnidocne ,"w" ,nosj_tuo.sgra(nepo
+))2=tnedni ,eslaF=iicsa_erusne ,}atem**
+))"NEERG" ,"}nosj_tuo.sgra{ me ovlas NOSJ ]KO["f(roloc(tnirp
+:avitarran_os.sgra fi
+0 nruter
+
+o£Ãrdap odoM #
+)(airotsih_ratnoc
+)(ogidoc_rartsnomed
+0 nruter
+
+:"__niam__" == __eman__ fi
+))(niam(tixEmetsyS esiar
+
+
+
+
+20 COD
+htaP tropmi bilhtap morf
+tneded tropmi parwtxet morf
+
+'''r(tneded = edoc
+-*- 8-ftu :gnidoc -*- #
+"""
+)seroC ISNA moc( ovitarraN rosrevnoC + airótsiH • B.E.E.V :XULLBOK
+:savon seõçargetnI
+B.E.E.V omed odom on e )TSA( oãçacilpxe odom on ISNA seroC -
+
+️♾
+,zH38.7~ nnamuhcS ,9-6-3 otnemahlepseotuA( soipícnirp 3 so moc latcarf ogolórP -
+) →7→0 aicnêgremE
+"""
+
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+lanoitpO ,elbaretI ,ynA ,tciD ,tsiL tropmi gnipyt morf
+esrapgra tropmi
+tsa tropmi
+parwtxet tropmi
+sys tropmi
+nosj tropmi
+========================= #
+acitnâmeS / ISNA atelaP #
+========================= #
+{ = ISNA
+,"m0[330\" :"TESER"
+atnegam # ,"m59[330\" :"ELTIT"
+)9-6-3( otnemahlepseotua # ,"m49[330\" :"EULB"
+
+seõsiced / )️♾
+)nnamuhcS( aicnânosser # ,"m29[330\" :"NEERG"
+→7→0( acilcíc aicnêgreme # ,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+}
+
+:rts >- )rts :yek ,rts :txt(roloc fed
+"}]'TESER'[ISNA{}txt{})'',yek(teg.ISNA{"f nruter
+
+========================= #
+sopiT — B.E.E.V #
+========================= #
+:)munE ,rts(oacacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:lifreP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oidém" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:ortsigeR ssalc
+tni :ossap
+tni :aigrene
+oacacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:omuseR ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+========================= #
+saigolanA #
+========================= #
+{ = ]rts ,rts[tciD :SIAGOV
+,")sopit e sieváirav( oãçiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( oãçaretI" :"I"
+,")seõçnuf( razinagrO" :"O"
+,")soiránoicid/satsil( rinU" :"U"
+}
+
+{ = ]rts ,rts[tciD :SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seõçacilpxe #( soirátnemoC" :"C"
+,")fed( seõçinifeD" :"D"
+,")... ,nel ,tnirp( ni-tliub seõçnuF" :"F"
+,")dleiy( serodareG" :"G"
+,")OOP( açnareH" :"H"
+,")sodad ed oãçazilaires( NOSJ" :"J"
+,")sgrawk**( stnemugra drowyeK" :"K"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( soludóM" :"M"
+,")olun rolav( enoN" :"N"
+,")oãçnuf ed sadartne( sortemâraP" :"P"
+,")alif( eueuQ" :"Q"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+,"sieváiraV" :"V"
+,")oãçiteper ed oçal( elihW" :"W"
+,")sodad( LMX" :"X"
+,")serodareg( dleiY" :"Y"
+,")satsil ed oãçagerga( piZ" :"Z"
+}
+
+========================= #
+)seroc moc( rodarraN #
+========================= #
+:enoN >- )"ELTIT"=roloc_eltit ,rts :otxet ,rts :olutit(rarran fed
+67 * "─" = arrab
+)arrab + "n\"(tnirp
+))roloc_eltit ,olutit + " ✦"(roloc(tnirp
+)arrab(tnirp
+)"n\" + )(pirts.)otxet(tneded.parwtxet(tnirp
+
+
+️♾
+:)(latcarf_ogolorp fed
+,") →7→0 | zH38.7~ nnamuhcS | 9-6-3( latcarF ogolórP"(rarran
+"""f
+:soviv soipícnirp sêrt euges adanroj atsE
+me meteper es seõrdap — })"EULB" ,")9-6-3( ocitnâuQ otnemahlepseotuA )1"(roloc{
+.salacse sa sadot
+saicnêuqerf — })"NEERG" ,")zH38.7~ nnamuhcS( acinômraH aicnânosseR )2"(roloc{
+
+️♾
+.airtemoeg e zul ,mos mahnila
+e 0 od megrus saruturtse — })"WOLLEY" ,") →7→0( acilcíC aicnêgremE )3"(roloc{
+.olcic o sópa manroter
+.)solcic/seõsiced( oleramA ,)seõxenoc( edreV ,)seõrdap( luzA :arutiel a maiug seroc sA
+)"""
+
+========================= #
+B.E.E.V rotoM #
+========================= #
+:enignEBEEV ssalc
+,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:lifreP >- )"oidém" = rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(lifreP = lifrep
+)ohnamat=ohnamat
+))"EULB" ,"})lifrep(tcidsa{ = lifrep → riubirtA ]A["f(roloc(tnirp
+lifrep nruter
+
+:oacacifissalC >- )lifreP :lifrep ,fles(rehlocse_E fed
+RONEM.oacacifissalC esle 81 => edadi.lifrep fi ROIAM.oacacifissalC = oacacifissalc
+))"WOLLEY" ,"}eulav.oacacifissalc{ → rehlocsE ]E["f(roloc(tnirp
+oacacifissalc nruter
+
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+:0 =< qerf fi
+)"avitisop res eved qerf"(rorrEeulaV esiar
+))1 + qerf ,1(egnar(tsil = sossap
+))"NEERG" ,"}sossap{ = sossap → raretI ]I["f(roloc(tnirp
+sossap nruter
+
+:omuseR >- )]ortsigeR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(omuseR = omuser
+:esle
+)sortsiger ni r rof aigrene.r(mus = amos
+))sortsiger(nel / amos ,amos ,)sortsiger(nel(omuseR = omuser
+))"ELTIT" ,"})omuser(tcidsa{ = omuser → razinagrO ]O["f(roloc(tnirp
+omuser nruter
+
+:]ynA ,rts[tciD >- )omuseR :omuser ,lifreP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ = esab
+))"EULB" ,"}esab{ = esab → rinU ]U["f(roloc(tnirp
+esab nruter
+
+:]ynA ,rts[tciD >- )4 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+0 = aigrene
+][ = ]ortsigeR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+,aigrene=aigrene ,ossap=ossap(ortsigeR(dneppa.sortsiger
+))oacacifissalc=oacacifissalc
+
+)oxulf on aicnânosser + otnemahlepseotua( sortsiger sod adiroloc megatsiL #
+:sortsiger ni r rof
+,)"EULB" ,"}aigrene.r{=aigrene"f(roloc ,)"NEERG" ,"}ossap.r{=ossap • "f(roloc(tnirp
+))"WOLLEY" ,"}eulav.oacacifissalc.r{=oacacifissalc"f(roloc
+
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+{ nruter
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+}
+
+========================= #
+ocilóbmis latcarF #
+========================= #
+]9 ,6 ,3[ = ACIDAIRT
+))8 ,0(egnar(tsil = 7_0_OLCIC
+}147 :"orcam" ,825 :"osem" ,234 :"orcim"{ = SQERF
+
+ssalcatad@
+:adamaC ssalc
+rts :emon
+tni :alacse
+tni :aicneuqerf
+
+:]tni[tsiL >- )tni :ralacse ,]tni[elbaretI :oardap(otnemahlepseotua fed
+]oardap ni p rof ralacse * p[ nruter
+
+:rts >- )adamaC :adamac(aicnanosser fed
+"}ACIDAIRT{ moc aosser — zH}aicneuqerf.adamac{≈f ]}emon.adamac{["f nruter
+
+:]rts[tsiL >- )]tni[elbaretI :olcic(acilcic_aicnegreme fed
+
+️♾
+]olcic ni c rof "}c{:ossap"f[ = ahlirt
+)" :onroter"(dneppa.ahlirt
+ahlirt nruter
+:]ynA ,rts[tciD >- )(latcarf_ranecne fed
+)]"orcim"[SQERF ,1 ,"orcim"(adamaC = orcim
+)]"osem"[SQERF ,2 ,"osem"(adamaC = osem
+)]"orcam"[SQERF ,3 ,"orcam"(adamaC = orcam
+{ nruter
+{ :"sohlepse"
+,)alacse.orcim ,ACIDAIRT(otnemahlepseotua :"orcim"
+,)alacse.osem ,ACIDAIRT(otnemahlepseotua :"osem"
+,)alacse.orcam ,ACIDAIRT(otnemahlepseotua :"orcam"
+,}
+[ :"aicnanosser"
+,)orcim(aicnanosser
+,)osem(aicnanosser
+,)orcam(aicnanosser
+,]
+,)7_0_OLCIC(acilcic_aicnegreme :"aicnegreme"
+}
+
+========================= #
+)TSA( ovitarran rosrevnoC #
+========================= #
+:)rotisiVedoN.tsa(TSAroteloC ssalc
+:enoN >- )fles(__tini__ fed
+][ = ]rts[tsiL :stropmi.fles
+][ = ]rts[tsiL :stropmi_morf.fles
+][ = ]]ynA ,rts[tciD[tsiL :scnuf.fles
+][ = ]]ynA ,rts[tciD[tsiL :sessalc.fles
+][ = ]rts[tsiL :sngissa.fles
+0 = tni :sfi.fles
+0 = tni :selihw.fles
+0 = tni :srof.fles
+0 = tni :snruter.fles
+
+:enoN >- )tropmI.tsa :edon ,fles(tropmI_tisiv fed
+:seman.edon ni saila rof
+)eman.saila(dneppa.stropmi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )morFtropmI.tsa :edon ,fles(morFtropmI_tisiv fed
+"" ro eludom.edon = esab
+)seman.edon ni a rof eman.a(nioj." ," = seman
+)"}seman{ :}esab{"f(dneppa.stropmi_morf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuF.tsa :edon ,fles(feDnoitcnuF_tisiv fed
+]sgra.sgra.edon ni a rof gra.a[ = sgra
+)}sgra :"sgra" ,eman.edon :"eman"{(dneppa.scnuf.fles
+)edon(tisiv_cireneg.fles
+:enoN >- )feDssalC.tsa :edon ,fles(feDssalC_tisiv fed
+)}eman.edon :"eman"{(dneppa.sessalc.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )ngissA.tsa :edon ,fles(ngissA_tisiv fed
+:stegrat.edon ni t rof
+:)emaN.tsa ,t(ecnatsnisi fi
+)di.t(dneppa.sngissa.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )fI.tsa :edon ,fles(fI_tisiv fed
+1 =+ sfi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )roF.tsa :edon ,fles(roF_tisiv fed
+1 =+ srof.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )elihW.tsa :edon ,fles(elihW_tisiv fed
+1 =+ selihw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )nruteR.tsa :edon ,fles(nruteR_tisiv fed
+1 =+ snruter.fles
+)edon(tisiv_cireneg.fles
+
+:)enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed
+:yrt
+)ecruos(esrap.tsa = eert
+:e sa rorrExatnyS tpecxe
+)e(rts + )"WOLLEY" ," ]exatniS ed orrE["(roloc = avitarran
+})e(rts :"rorre"{ ,avitarran nruter
+)(TSAroteloC = loc
+)eert(tisiv.loc
+"odasilana ogidóC" ro olutit = tsih_emon
+
+[ = setrap
+,)"ELTIT" ,".”}tsih_emon{“ :ohnimagrep o moc agehc etnajaiv O — ogolórP"f(roloc
+]
+
+:stropmi_morf.loc ro stropmi.loc fi
+))"NEERG" ,":)stropmi( setnaosnoC sad ohlesnoC"(roloc(dneppa.setrap
+:stropmi.loc fi
+))))stropmi.loc(tes(detros(nioj." ," + )"NEERG" ," :soludóM • "(roloc(dneppa.setrap
+:stropmi_morf.loc fi
+))stropmi_morf.loc(nioj." | " + )"NEERG" ," :soludóm eD • "(roloc(dneppa.setrap
+:sessalc.loc fi
++ )"EULB" ," :)sessalc( amroF-sasaC"(roloc(dneppa.setrap
+))sessalc.loc ni c rof ]'eman'[c(nioj." ,"
+
+:scnuf.loc fi
+))"EULB" ,":)seõçnuf( oãça ed siatroP"(roloc(dneppa.setrap
+:scnuf.loc ni f rof
+"sortemârap mes" esle ]"sgra"[f fi )]"sgra"[f(nioj." ," = tsilgra
+)")" + )"NEERG" ,tsilgra(roloc + "(" + )"EULB" ,]"eman"[f(roloc + " • "(dneppa.setrap
+
+:sngissa.loc fi
++ )"EULB" ," :)seõçiubirta( sodaemon sotejbO"(roloc(dneppa.setrap
+))))sngissa.loc(tes(detros(nioj." ,"
+
+][ = stib_oxulf
+))"WOLLEY" ,"}sfi.loc{=fi"f(roloc(dneppa.stib_oxulf :sfi.loc fi
+))"WOLLEY" ,"}srof.loc{=rof"f(roloc(dneppa.stib_oxulf :srof.loc fi
+))"WOLLEY" ,"}selihw.loc{=elihw"f(roloc(dneppa.stib_oxulf :selihw.loc fi
+:stib_oxulf fi
+))stib_oxulf(nioj." • " + )"WOLLEY" ," :onitsed od oxulF"(roloc(dneppa.setrap
+
+:snruter.loc fi
+))"ELTIT" ,"}snruter.loc{ :)nruter( sohcefseD"f(roloc(dneppa.setrap
+
+))"ELTIT" ,".aviv esaB = amrof + oxulf + sodad :oãinU — ogolípE"(roloc(dneppa.setrap
+)setrap(nioj."n\" = avitarran
+
+{ = atem
+,tsih_emon :"eltit"
+,stropmi.loc :"stropmi"
+,stropmi_morf.loc :"stropmi_morf"
+,scnuf.loc :"snoitcnuf"
+,sessalc.loc :"sessalc"
+,sngissa.loc :"stnemngissa"
+,}selihw.loc :"selihw" ,srof.loc :"srof" ,sfi.loc :"sfi"{ :"wolf"
+snruter.loc :"snruter"
+}
+atem ,avitarran nruter
+
+========================= #
+sairótsiH #
+========================= #
+:)(airotsih_ratnoc fed
+)(latcarf_ogolorp
+"""f ,"soãsetrA e siatroP — nohtyP uedlA"(rarran
+}SIAGOV{ :)siatrop( siagoV
+}SETNAOSNOC{ :)soãsetra( setnaosnoC
+)"""
+:)(ogidoc_rartsnomed fed
+)(enignEBEEV = enigne
+)6 ,22 ,"eullB"(ralumis.enigne = mis
+
+{(spmud.nosj ,")esaB( B.E.E.V omuseR"(rarran
+,)]"lifrep"[mis(tcidsa :"lifrep"
+,eulav.]"oacacifissalc"[mis :"oacacifissalc"
+,)]"omuser"[mis(tcidsa :"omuser"
+))2=tnedni ,eslaF=iicsa_erusne ,}
+
+========================= #
+ILC #
+========================= #
+:)(resrapgra_dliub fed
+rosrevnoC + airótsiH — B.E.E.V XULLBOK"=noitpircsed(resraPtnemugrA.esrapgra = p
+)")ISNA(
+nohtyP ogidóc o acilpxE"=pleh ,"yp.OVIUQRA"=ravatem ,"racilpxe--"(tnemugra_dda.p
+)".)avitarran → TSA( odamrofni
+arap oãrdap adartne ad ogidóc o reL"=pleh ,"eurt_erots"=noitca ,"nidts--"(tnemugra_dda.p
+)".racilpxe
+)".rosrevnoc od avitarran a arap lanoicpo olutíT"=pleh ,"olutit--"(tnemugra_dda.p
+oãn( avitarran etnemoS"=pleh ,"eurt_erots"=noitca ,"avitarran-os--"(tnemugra_dda.p
+)".)B.E.E.V omed a ratucexe
+)"txt. me avitarran ravlaS"=pleh ,"txt-tuo--"(tnemugra_dda.p
+)"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p
+p nruter
+
+:tni >- )enoN = ]]rts[tsiL[lanoitpO :vgra(niam fed
+)vgra(sgra_esrap.)(resrapgra_dliub = sgra
+
+rosrevnoc odoM #
+:nidts.sgra ro racilpxe.sgra fi
+:racilpxe.sgra fi
+:yrt
+)(daer.)"8-ftu"=gnidocne ,"r" ,racilpxe.sgra(nepo = ecruos
+:e sa noitpecxE tpecxe
+))"WOLLEY" ,"}e{ :'}racilpxe.sgra{' rel iugesnoc oãN ]orrE["f(roloc(tnirp
+1 nruter
+racilpxe.sgra ro olutit.sgra = olutit
+:esle
+)(daer.nidts.sys = ecruos
+"nidts aiv ogidóC" ro olutit.sgra = olutit
+
+)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran
+)avitarran ,"oãçacilpxE — ovitarraN rosrevnoC"(rarran
+:txt_tuo.sgra fi
+)avitarran(etirw.)"8-ftu"=gnidocne ,"w" ,txt_tuo.sgra(nepo
+))"NEERG" ,"}txt_tuo.sgra{ me avlas avitarraN ]KO["f(roloc(tnirp
+:nosj_tuo.sgra fi
+,avitarran :"evitarran"{(spmud.nosj(etirw.)"8-ftu"=gnidocne ,"w" ,nosj_tuo.sgra(nepo
+))2=tnedni ,eslaF=iicsa_erusne ,}atem**
+))"NEERG" ,"}nosj_tuo.sgra{ me ovlas NOSJ ]KO["f(roloc(tnirp
+:avitarran_os.sgra fi
+0 nruter
+
+oãrdap odoM #
+)(airotsih_ratnoc
+)(ogidoc_rartsnomed
+0 nruter
+
+:"__niam__" == __eman__ fi
+))(niam(tixEmetsyS esiar
+)'''
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = htap
+)"8-ftu"=gnidocne ,edoc(txet_etirw.htap
+)htap ,":odazilauta oviuqrA"(tnirp
+
+
+
+
+GALF COD
+
+roloc-on-- galf a odnanoicida yp.yrots_beev_xullbok o razilauta somaV #
+
+htaP tropmi bilhtap morf
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = htap
+)"8-ftu"=gnidocne(txet_daer.htap = edoc
+
+esrapgra on galf riresnI #
+(ecalper.edoc = edoc
+,')"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p'
+' n\)"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p'
+an ISNA seroc ravitaseD"=pleh ,"eurt_erots"=noitca ,"roloc-on--"(tnemugra_dda.p'
+')".adías
+)
+
+ROLOC_ON ratiepser arap )(roloc oãçnuf raretlA #
+(ecalper.edoc = edoc
+,':rts >- )rts :yek ,rts :txt(roloc fed'
+'n\:rts >- )rts :yek ,rts :txt(roloc fed'
+'n\:)eslaF ,"ROLOC_ON" ,]__eman__[seludom.sys(rttateg fi '
+'txt nruter '
+)
+
+)(niam on ROLOC_ON ravitA #
+(ecalper.edoc = edoc
+,'rosrevnoc odoM # '
+'n\n\)eurT ,"ROLOC_ON" ,]__eman__[seludom.sys(rttates n\:roloc_on.sgra fi '
+'rosrevnoc odoM # '
+)
+
+atlov ed ravlaS #
+)"8-ftu"=gnidocne ,edoc(txet_etirw.htap
+)"yp.yrots_beev_xullbok oa adanoicida roloc-on-- galF"(tnirp
+
+
+
+
+meht cod
+
+
+
+-*- 8-ftu :gnidoc -*- #
+"""
+)seroC ISNA moc( ovitarraN rosrevnoC + air³ÃtsiH ¢€â B.E.E.V :XULLBOK
+:savon seµÃ§ÃargetnI
+B.E.E.V omed odom on e )TSA( o£Ã§Ãacilpxe odom on ISNA seroC -
+,zH38.7~ nnamuhcS ,9-6-3 otnemahlepseotuA( soip­Ãcnirp 3 so moc latcarf ogol³ÃrP -
+)¸ï¾™â’†â7’†â0 aicnªÃgremE
+"""
+
+tcidsa ,ssalcatad tropmi sessalcatad morf
+munE tropmi mune morf
+lanoitpO ,elbaretI ,ynA ,tciD ,tsiL tropmi gnipyt morf
+esrapgra tropmi
+tsa tropmi
+parwtxet tropmi
+sys tropmi
+nosj tropmi
+
+========================= #
+acitn¢ÃmeS / ISNA atelaP #
+========================= #
+{ = ISNA
+,"m0[330\" :"TESER"
+atnegam # ,"m59[330\" :"ELTIT"
+)9-6-3( otnemahlepseotua # ,"m49[330\" :"EULB"
+)nnamuhcS( aicn¢Ãnosser # ,"m29[330\" :"NEERG"
+seµÃsiced / )¸ï¾™â’†â7’†â0( acilc­Ãc aicnªÃgreme # ,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+}
+
+===== )settelap( semehT ===== #
+{ = SEMEHT
+{ :"tluafed"
+,"m0[330\" :"TESER"
+,"m59[330\" :"ELTIT"
+,"m49[330\" :"EULB"
+,"m29[330\" :"NEERG"
+,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+,}
+sorucse siam snot # { :"etion"
+,"m0[330\" :"TESER"
+,"m53[330\" :"ELTIT"
+,"m43[330\" :"EULB"
+,"m23[330\" :"NEERG"
+,"m33[330\" :"WOLLEY"
+,"m63[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+,}
+otirgen + setnahlirb snot # { :"zul"
+,"m0[330\" :"TESER"
+,"m59[330\" :"ELTIT"
+,"m49[330\" :"EULB"
+,"m29[330\" :"NEERG"
+,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+,}
+)atnegam/onaic( acims³Ãc o£Ã§Ãarbiv # { :"ocimsoc"
+,"m0[330\" :"TESER"
+,"m59[330\" :"ELTIT"
+onaic # ,"m69[330\" :"EULB"
+atnegam # ,"m59[330\" :"NEERG"
+,"m39[330\" :"WOLLEY"
+,"m69[330\" :"NAYC"
+,"m1[330\" :"DLOB"
+,"m2[330\" :"MID"
+,}
+}
+:enoN >- )rts :eman(emeht_ylppa fed
+sys_ sa sys tropmi
+__tcid__.]__eman__[seludom.sys_ = g
+)]"tluafed"[SEMEHT ,eman(teg.SEMEHT = emeht
+emeht = ]"ISNA"[g
+
+:rts >- )rts :yek ,rts :txt(roloc fed
+:)eslaF ,"ROLOC_ON" ,]__eman__[seludom.sys(rttateg fi
+txt nruter
+"}]'TESER'[ISNA{}txt{})'',yek(teg.ISNA{"f nruter
+
+========================= #
+sopiT ”€â B.E.E.V #
+========================= #
+:)munE ,rts(oacacifissalC ssalc
+"edadi_ed_roiam" = ROIAM
+"edadi_ed_ronem" = RONEM
+
+)eurT=nezorf(ssalcatad@
+:lifreP ssalc
+rts :emon
+tni :edadi
+eurT = loob :ovita
+"luza" = rts :roc
+"oid©Ãm" = rts :ohnamat
+
+)eurT=nezorf(ssalcatad@
+:ortsigeR ssalc
+tni :ossap
+tni :aigrene
+oacacifissalC :oacacifissalc
+
+)eurT=nezorf(ssalcatad@
+:omuseR ssalc
+tni :sortsiger_dtq
+tni :aigrene_amos
+taolf :aigrene_aidem
+
+========================= #
+saigolanA #
+========================= #
+{ = ]rts ,rts[tciD :SIAGOV
+,")sopit e siev¡Ãirav( o£Ã§ÃiubirtA" :"A"
+,")esle/file/fi( ahlocsE" :"E"
+,")elihw/rof( o£Ã§ÃaretI" :"I"
+,")seµÃ§Ãnuf( razinagrO" :"O"
+,")soir¡Ãnoicid/satsil( rinU" :"U"
+}
+{ = ]rts ,rts[tciD :SETNAOSNOC
+,")eslaF/eurT( sonaelooB" :"B"
+,")seµÃ§Ãacilpxe #( soir¡ÃtnemoC" :"C"
+,")fed( seµÃ§ÃinifeD" :"D"
+,")... ,nel ,tnirp( ni-tliub seµÃ§ÃnuF" :"F"
+,")dleiy( serodareG" :"G"
+,")OOP( a§ÃnareH" :"H"
+,")sodad ed o£Ã§Ãazilaires( NOSJ" :"J"
+,")sgrawk**( stnemugra drowyeK" :"K"
+,")elihw ,rof( spooL" :"L"
+,")... tropmi( solud³ÃM" :"M"
+,")olun rolav( enoN" :"N"
+,")o£Ã§Ãnuf ed sadartne( sortem¢ÃraP" :"P"
+,")alif( eueuQ" :"Q"
+,")nruter( onroteR" :"R"
+,")"\otxet"\( sgnirtS" :"S"
+,")... rts ,loob ,taolf ,tni( sopiT" :"T"
+,"siev¡ÃiraV" :"V"
+,")o£Ã§Ãiteper ed o§Ãal( elihW" :"W"
+,")sodad( LMX" :"X"
+,")serodareg( dleiY" :"Y"
+,")satsil ed o£Ã§Ãagerga( piZ" :"Z"
+}
+
+========================= #
+)seroc moc( rodarraN #
+========================= #
+:enoN >- )"ELTIT"=roloc_eltit ,rts :otxet ,rts :olutit(rarran fed
+67 * "€”â" = arrab
+)arrab + "n\"(tnirp
+))roloc_eltit ,olutit + " ¦œâ"(roloc(tnirp
+)arrab(tnirp
+)"n\" + )(pirts.)otxet(tneded.parwtxet(tnirp
+
+:)(latcarf_ogolorp fed
+,")¸ï¾™â’†â7’†â0 | zH38.7~ nnamuhcS | 9-6-3( latcarF ogol³ÃrP"(rarran
+"""f
+:soviv soip­Ãcnirp sªÃrt euges adanroj atsE
+me meteper es seµÃrdap ”€â })"EULB" ,")9-6-3( ocitn¢ÃuQ otnemahlepseotuA )1"(roloc{
+.salacse sa sadot
+”€â })"NEERG" ,")zH38.7~ nnamuhcS( acin´ÃmraH aicn¢ÃnosseR )2"(roloc{
+.airtemoeg e zul ,mos mahnila saicnªÃuqerf
+megrus saruturtse ”€â })"WOLLEY" ,")¸ï¾™â’†â7’†â0( acilc­ÃC aicnªÃgremE )3"(roloc{
+.olcic o s³Ãpa manroter e 0 od
+oleramA ,)seµÃxenoc( edreV ,)seµÃrdap( luzA :arutiel a maiug seroc sA
+.)solcic/seµÃsiced(
+)"""
+========================= #
+B.E.E.V rotoM #
+========================= #
+:enignEBEEV ssalc
+,tni :edadi ,rts :emon ,fles(riubirta_A fed
+:lifreP >- )"oid©Ãm" = rts :ohnamat ,"luza" = rts :roc ,eurT = loob :ovita
+,roc=roc ,ovita=ovita ,)edadi(tni=edadi ,)(pirts.emon=emon(lifreP = lifrep
+)ohnamat=ohnamat
+))"EULB" ,"})lifrep(tcidsa{ = lifrep ’†â riubirtA ]A["f(roloc(tnirp
+lifrep nruter
+
+:oacacifissalC >- )lifreP :lifrep ,fles(rehlocse_E fed
+RONEM.oacacifissalC esle 81 => edadi.lifrep fi ROIAM.oacacifissalC = oacacifissalc
+))"WOLLEY" ,"}eulav.oacacifissalc{ ’†â rehlocsE ]E["f(roloc(tnirp
+oacacifissalc nruter
+
+:]tni[tsiL >- )tni :qerf ,fles(rareti_I fed
+:0 =< qerf fi
+)"avitisop res eved qerf"(rorrEeulaV esiar
+))1 + qerf ,1(egnar(tsil = sossap
+))"NEERG" ,"}sossap{ = sossap ’†â raretI ]I["f(roloc(tnirp
+sossap nruter
+
+:omuseR >- )]ortsigeR[tsiL :sortsiger ,fles(razinagro_O fed
+:sortsiger ton fi
+)0.0 ,0 ,0(omuseR = omuser
+:esle
+)sortsiger ni r rof aigrene.r(mus = amos
+))sortsiger(nel / amos ,amos ,)sortsiger(nel(omuseR = omuser
+))"ELTIT" ,"})omuser(tcidsa{ = omuser ’†â razinagrO ]O["f(roloc(tnirp
+omuser nruter
+
+:]ynA ,rts[tciD >- )omuseR :omuser ,lifreP :lifrep ,fles(rinu_U fed
+})omuser(tcidsa** ,)lifrep(tcidsa**{ = esab
+))"EULB" ,"}esab{ = esab ’†â rinU ]U["f(roloc(tnirp
+esab nruter
+
+:]ynA ,rts[tciD >- )4 = tni :qerf_oacarbiv ,tni :edadi ,rts :emon ,fles(ralumis fed
+)edadi ,emon(riubirta_A.fles = lifrep
+)lifrep(rehlocse_E.fles = oacacifissalc
+)qerf_oacarbiv(rareti_I.fles = sossap
+
+0 = aigrene
+][ = ]ortsigeR[tsiL :sortsiger
+:sossap ni ossap rof
+ossap =+ aigrene
+,aigrene=aigrene ,ossap=ossap(ortsigeR(dneppa.sortsiger
+))oacacifissalc=oacacifissalc
+
+)oxulf on aicn¢Ãnosser + otnemahlepseotua( sortsiger sod adiroloc megatsiL #
+:sortsiger ni r rof
+,)"EULB" ,"}aigrene.r{=aigrene"f(roloc ,)"NEERG" ,"}ossap.r{=ossap ¢€â "f(roloc(tnirp
+))"WOLLEY" ,"}eulav.oacacifissalc.r{=oacacifissalc"f(roloc
+
+)sortsiger(razinagro_O.fles = omuser
+)omuser ,lifrep(rinu_U.fles = esab
+{ nruter
+,lifrep :"lifrep"
+,oacacifissalc :"oacacifissalc"
+,sossap :"sossap"
+,sortsiger :"sortsiger"
+,omuser :"omuser"
+,esab :"esab"
+}
+
+========================= #
+ocil³Ãbmis latcarF #
+========================= #
+]9 ,6 ,3[ = ACIDAIRT
+))8 ,0(egnar(tsil = 7_0_OLCIC
+}147 :"orcam" ,825 :"osem" ,234 :"orcim"{ = SQERF
+
+ssalcatad@
+:adamaC ssalc
+rts :emon
+tni :alacse
+tni :aicneuqerf
+
+:]tni[tsiL >- )tni :ralacse ,]tni[elbaretI :oardap(otnemahlepseotua fed
+]oardap ni p rof ralacse * p[ nruter
+
+:rts >- )adamaC :adamac(aicnanosser fed
+"}ACIDAIRT{ moc aosser ”€â zH}aicneuqerf.adamac{ˆ‰âf ]}emon.adamac{["f nruter
+
+:]rts[tsiL >- )]tni[elbaretI :olcic(acilcic_aicnegreme fed
+]olcic ni c rof "}c{:ossap"f[ = ahlirt
+)"¸ï¾™â :onroter"(dneppa.ahlirt
+ahlirt nruter
+
+:]ynA ,rts[tciD >- )(latcarf_ranecne fed
+)]"orcim"[SQERF ,1 ,"orcim"(adamaC = orcim
+)]"osem"[SQERF ,2 ,"osem"(adamaC = osem
+)]"orcam"[SQERF ,3 ,"orcam"(adamaC = orcam
+{ nruter
+{ :"sohlepse"
+,)alacse.orcim ,ACIDAIRT(otnemahlepseotua :"orcim"
+,)alacse.osem ,ACIDAIRT(otnemahlepseotua :"osem"
+,)alacse.orcam ,ACIDAIRT(otnemahlepseotua :"orcam"
+,}
+[ :"aicnanosser"
+,)orcim(aicnanosser
+,)osem(aicnanosser
+,)orcam(aicnanosser
+,]
+,)7_0_OLCIC(acilcic_aicnegreme :"aicnegreme"
+}
+
+========================= #
+)TSA( ovitarran rosrevnoC #
+========================= #
+:)rotisiVedoN.tsa(TSAroteloC ssalc
+:enoN >- )fles(__tini__ fed
+][ = ]rts[tsiL :stropmi.fles
+][ = ]rts[tsiL :stropmi_morf.fles
+][ = ]]ynA ,rts[tciD[tsiL :scnuf.fles
+][ = ]]ynA ,rts[tciD[tsiL :sessalc.fles
+][ = ]rts[tsiL :sngissa.fles
+0 = tni :sfi.fles
+0 = tni :selihw.fles
+0 = tni :srof.fles
+0 = tni :snruter.fles
+
+:enoN >- )tropmI.tsa :edon ,fles(tropmI_tisiv fed
+:seman.edon ni saila rof
+)eman.saila(dneppa.stropmi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )morFtropmI.tsa :edon ,fles(morFtropmI_tisiv fed
+"" ro eludom.edon = esab
+)seman.edon ni a rof eman.a(nioj." ," = seman
+)"}seman{ :}esab{"f(dneppa.stropmi_morf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDnoitcnuF.tsa :edon ,fles(feDnoitcnuF_tisiv fed
+]sgra.sgra.edon ni a rof gra.a[ = sgra
+)}sgra :"sgra" ,eman.edon :"eman"{(dneppa.scnuf.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )feDssalC.tsa :edon ,fles(feDssalC_tisiv fed
+)}eman.edon :"eman"{(dneppa.sessalc.fles
+)edon(tisiv_cireneg.fles
+:enoN >- )ngissA.tsa :edon ,fles(ngissA_tisiv fed
+:stegrat.edon ni t rof
+:)emaN.tsa ,t(ecnatsnisi fi
+)di.t(dneppa.sngissa.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )fI.tsa :edon ,fles(fI_tisiv fed
+1 =+ sfi.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )roF.tsa :edon ,fles(roF_tisiv fed
+1 =+ srof.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )elihW.tsa :edon ,fles(elihW_tisiv fed
+1 =+ selihw.fles
+)edon(tisiv_cireneg.fles
+
+:enoN >- )nruteR.tsa :edon ,fles(nruteR_tisiv fed
+1 =+ snruter.fles
+)edon(tisiv_cireneg.fles
+
+:)enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed
+:yrt
+)ecruos(esrap.tsa = eert
+:e sa rorrExatnyS tpecxe
+)e(rts + )"WOLLEY" ," ]exatniS ed orrE["(roloc = avitarran
+})e(rts :"rorre"{ ,avitarran nruter
+)(TSAroteloC = loc
+)eert(tisiv.loc
+"odasilana ogid³ÃC" ro olutit = tsih_emon
+
+[ = setrap
+,".€â}tsih_emon{œ€â :ohnimagrep o moc agehc etnajaiv O ”€â ogol³ÃrP"f(roloc
+,)"ELTIT"
+]
+
+:stropmi_morf.loc ro stropmi.loc fi
+))"NEERG" ,":)stropmi( setnaosnoC sad ohlesnoC"(roloc(dneppa.setrap
+:stropmi.loc fi
+," + )"NEERG" ," :solud³ÃM ¢€â "(roloc(dneppa.setrap
+))))stropmi.loc(tes(detros(nioj."
+:stropmi_morf.loc fi
+))stropmi_morf.loc(nioj." | " + )"NEERG" ," :solud³Ãm eD ¢€â "(roloc(dneppa.setrap
+
+:sessalc.loc fi
++ )"EULB" ," :)sessalc( amroF-sasaC"(roloc(dneppa.setrap
+))sessalc.loc ni c rof ]'eman'[c(nioj." ,"
+:scnuf.loc fi
+))"EULB" ,":)seµÃ§Ãnuf( o£Ã§Ãa ed siatroP"(roloc(dneppa.setrap
+:scnuf.loc ni f rof
+"sortem¢Ãrap mes" esle ]"sgra"[f fi )]"sgra"[f(nioj." ," = tsilgra
++ )"NEERG" ,tsilgra(roloc + "(" + )"EULB" ,]"eman"[f(roloc + " ¢€â "(dneppa.setrap
+)")"
+
+:sngissa.loc fi
++ )"EULB" ," :)seµÃ§Ãiubirta( sodaemon sotejbO"(roloc(dneppa.setrap
+))))sngissa.loc(tes(detros(nioj." ,"
+
+][ = stib_oxulf
+))"WOLLEY" ,"}sfi.loc{=fi"f(roloc(dneppa.stib_oxulf :sfi.loc fi
+))"WOLLEY" ,"}srof.loc{=rof"f(roloc(dneppa.stib_oxulf :srof.loc fi
+))"WOLLEY" ,"}selihw.loc{=elihw"f(roloc(dneppa.stib_oxulf :selihw.loc fi
+:stib_oxulf fi
+))stib_oxulf(nioj." ¢€â " + )"WOLLEY" ," :onitsed od oxulF"(roloc(dneppa.setrap
+
+:snruter.loc fi
+))"ELTIT" ,"}snruter.loc{ :)nruter( sohcefseD"f(roloc(dneppa.setrap
+
+))"ELTIT" ,".aviv esaB = amrof + oxulf + sodad :o£ÃinU ”€â ogol­ÃpE"(roloc(dneppa.setrap
+)setrap(nioj."n\" = avitarran
+
+{ = atem
+,tsih_emon :"eltit"
+,stropmi.loc :"stropmi"
+,stropmi_morf.loc :"stropmi_morf"
+,scnuf.loc :"snoitcnuf"
+,sessalc.loc :"sessalc"
+,sngissa.loc :"stnemngissa"
+,}selihw.loc :"selihw" ,srof.loc :"srof" ,sfi.loc :"sfi"{ :"wolf"
+snruter.loc :"snruter"
+}
+atem ,avitarran nruter
+
+========================= #
+sair³ÃtsiH #
+========================= #
+:)(airotsih_ratnoc fed
+)(latcarf_ogolorp
+"""f ,"so£ÃsetrA e siatroP ”€â nohtyP uedlA"(rarran
+}SIAGOV{ :)siatrop( siagoV
+}SETNAOSNOC{ :)so£Ãsetra( setnaosnoC
+)"""
+
+:)(ogidoc_rartsnomed fed
+)(enignEBEEV = enigne
+)6 ,22 ,"eullB"(ralumis.enigne = mis
+
+{(spmud.nosj ,")esaB( B.E.E.V omuseR"(rarran
+,)]"lifrep"[mis(tcidsa :"lifrep"
+,eulav.]"oacacifissalc"[mis :"oacacifissalc"
+,)]"omuser"[mis(tcidsa :"omuser"
+))2=tnedni ,eslaF=iicsa_erusne ,}
+
+========================= #
+ILC #
+========================= #
+:)(resrapgra_dliub fed
+rosrevnoC + air³ÃtsiH ”€â B.E.E.V XULLBOK"=noitpircsed(resraPtnemugrA.esrapgra = p
+)")ISNA(
+nohtyP ogid³Ãc o acilpxE"=pleh ,"yp.OVIUQRA"=ravatem ,"racilpxe--"(tnemugra_dda.p
+)".)avitarran ’†â TSA( odamrofni
+o£Ãrdap adartne ad ogid³Ãc o reL"=pleh ,"eurt_erots"=noitca ,"nidts--"(tnemugra_dda.p
+)".racilpxe arap
+)".rosrevnoc od avitarran a arap lanoicpo olut­ÃT"=pleh ,"olutit--"(tnemugra_dda.p
+o£Ãn( avitarran etnemoS"=pleh ,"eurt_erots"=noitca ,"avitarran-os--"(tnemugra_dda.p
+)".)B.E.E.V omed a ratucexe
+)"txt. me avitarran ravlaS"=pleh ,"txt-tuo--"(tnemugra_dda.p
+)"nosj. me sodadatem + avitarran ravlaS"=pleh ,"nosj-tuo--"(tnemugra_dda.p
+an ISNA seroc ravitaseD"=pleh ,"eurt_erots"=noitca ,"roloc-on--"(tnemugra_dda.p
+)".ad­Ãas
+,"tluafed"=tluafed ,]"ocimsoc","zul","etion","tluafed"[=seciohc ,"emeht--"(tnemugra_dda.p
+)".ISNA seroc ed amet ranoiceleS"=pleh
+p nruter
+
+:tni >- )enoN = ]]rts[tsiL[lanoitpO :vgra(niam fed
+)vgra(sgra_esrap.)(resrapgra_dliub = sgra
+
+:roloc_on.sgra fi
+)eurT ,"ROLOC_ON" ,]__eman__[seludom.sys(rttates
+:esle
+)emeht.sgra(emeht_ylppa
+
+rosrevnoc odoM #
+:nidts.sgra ro racilpxe.sgra fi
+:racilpxe.sgra fi
+:yrt
+)(daer.)"8-ftu"=gnidocne ,"r" ,racilpxe.sgra(nepo = ecruos
+:e sa noitpecxE tpecxe
+))"WOLLEY" ,"}e{ :'}racilpxe.sgra{' rel iugesnoc o£ÃN ]orrE["f(roloc(tnirp
+1 nruter
+racilpxe.sgra ro olutit.sgra = olutit
+:esle
+)(daer.nidts.sys = ecruos
+"nidts aiv ogid³ÃC" ro olutit.sgra = olutit
+
+)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran
+)avitarran ,"o£Ã§ÃacilpxE ”€â ovitarraN rosrevnoC"(rarran
+:txt_tuo.sgra fi
+)avitarran(etirw.)"8-ftu"=gnidocne ,"w" ,txt_tuo.sgra(nepo
+))"NEERG" ,"}txt_tuo.sgra{ me avlas avitarraN ]KO["f(roloc(tnirp
+:nosj_tuo.sgra fi
+,avitarran :"evitarran"{(spmud.nosj(etirw.)"8-ftu"=gnidocne ,"w" ,nosj_tuo.sgra(nepo
+))2=tnedni ,eslaF=iicsa_erusne ,}atem**
+))"NEERG" ,"}nosj_tuo.sgra{ me ovlas NOSJ ]KO["f(roloc(tnirp
+:avitarran_os.sgra fi
+0 nruter
+
+o£Ãrdap odoM #
+)(airotsih_ratnoc
+)(ogidoc_rartsnomed
+0 nruter
+
+:"__niam__" == __eman__ fi
+cod(niam(tixEmetsyS esiar
+
+
+
+
+20 meht cod
+
+settelap ISNA elpitlum htiw yp.yrots_beev_xullbok ot )emeht--( rotceles emeht a ddA #
+
+htaP tropmi bilhtap morf
+er tropmi
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = p
+)"8-ftu"=gnidocne(txet_daer.p = edoc
+
+noitinifed tcid ISNA eht retfa thgir )(emeht_ylppa dna SEMEHT tcejnI )1 #
+"(\roloc fed)n\n\}\?*]S\s\[{\*s\=*s\ISNA("r = nrettap_redaeh_isna
+===== )settelap( semehT ===== #1\"""r = kcolb_semeht
+{ = SEMEHT
+{ :"tluafed"
+,"m0[330\\" :"TESER"
+,"m59[330\\" :"ELTIT"
+,"m49[330\\" :"EULB"
+,"m29[330\\" :"NEERG"
+,"m39[330\\" :"WOLLEY"
+,"m69[330\\" :"NAYC"
+,"m1[330\\" :"DLOB"
+,"m2[330\\" :"MID"
+,}
+sorucse siam snot # { :"etion"
+,"m0[330\\" :"TESER"
+,"m53[330\\" :"ELTIT"
+,"m43[330\\" :"EULB"
+,"m23[330\\" :"NEERG"
+,"m33[330\\" :"WOLLEY"
+,"m63[330\\" :"NAYC"
+,"m1[330\\" :"DLOB"
+,"m2[330\\" :"MID"
+,}
+otirgen + setnahlirb snot # { :"zul"
+,"m0[330\\" :"TESER"
+,"m59[330\\" :"ELTIT"
+,"m49[330\\" :"EULB"
+,"m29[330\\" :"NEERG"
+,"m39[330\\" :"WOLLEY"
+,"m69[330\\" :"NAYC"
+,"m1[330\\" :"DLOB"
+,"m2[330\\" :"MID"
+,}
+)atnegam/onaic( acimsóc oãçarbiv # { :"ocimsoc"
+,"m0[330\\" :"TESER"
+,"m59[330\\" :"ELTIT"
+onaic # ,"m69[330\\" :"EULB"
+atnegam # ,"m59[330\\" :"NEERG"
+,"m39[330\\" :"WOLLEY"
+,"m69[330\\" :"NAYC"
+,"m1[330\\" :"DLOB"
+,"m2[330\\" :"MID"
+,}
+}
+
+:enoN >- )rts :eman(emeht_ylppa fed
+sys_ sa sys tropmi
+__tcid__.]__eman__[seludom.sys_ = g
+)]"tluafed"[SEMEHT ,eman(teg.SEMEHT = emeht
+emeht = ]"ISNA"[g
+
+"""
+
+)LLATOD.er=sgalf ,edoc ,"(roloc fed" + kcolb_semeht ,nrettap_redaeh_isna(bus.er = edoc
+
+esrapgra ot emeht-- ddA )2 #
+(ecalper.edoc = edoc
+an ISNA seroc ravitaseD"=pleh ,"eurt_erots"=noitca ,"roloc-on--"(tnemugra_dda.p'
+,')".adías
+an ISNA seroc ravitaseD"=pleh ,"eurt_erots"=noitca ,"roloc-on--"(tnemugra_dda.p'
+' n\)".adías
+,"tluafed"=tluafed ,]"ocimsoc","zul","etion","tluafed"[=seciohc ,"emeht--"(tnemugra_dda.p'
+')".ISNA seroc ed amet ranoiceleS"=pleh
+)
+
+)roloc-on-- sselnu( egasu erofeb )(niam ni emeht ylppA )3 #
+(ecalper.edoc = edoc
+# n\n\)eurT ,"ROLOC_ON" ,]__eman__[seludom.sys(rttates n\:roloc_on.sgra fi'
+,'rosrevnoc odoM
+n\:esle n\)eurT ,"ROLOC_ON" ,]__eman__[seludom.sys(rttates n\:roloc_on.sgra fi'
+'rosrevnoc odoM # n\n\)emeht.sgra(emeht_ylppa
+)
+
+kcab evaS #
+)"8-ftu"=gnidocne ,edoc(txet_etirw.p
+)"yp.yrots_beev_xullbok oa sodanoicida sameT"(tnirp
+
+
+
+
+rasu omoc
+
+
+odasilana ogidóc on esab moc etnemacitamotua amet ehlocse #
+emeht-otua-- yp.ogidoc_uem racilpxe-- yp.yrots_beev_xullbok nohtyp
+
+seõçatropxe + emeht-otua #
+txt.oacacilpxe txt-tuo-- emeht-otua-- yp.ogidoc_uem racilpxe-- yp.yrots_beev_xullbok nohtyp
+nosj.oacacilpxe nosj-tuo--
+
+)otua erbos edadiroirp met erpmes( launam #
+etion emeht-- yp.ogidoc_uem racilpxe-- yp.yrots_beev_xullbok nohtyp
+
+)emeht-otua e samet arongi( seroc mes #
+roloc-on-- yp.ogidoc_uem racilpxe-- yp.yrots_beev_xullbok nohtyp
+
+
+
+
+sohlitag meht
+
+
+yp.yrots_beev_xullbok ot )emeht-otua--( sreggirt emeht citnames ddA #
+htaP tropmi bilhtap morf
+er tropmi
+
+)"yp.yrots_beev_xullbok/atad/tnm/"(htaP = p
+)"8-ftu"=gnidocne(txet_daer.p = edoc
+
+esrapgra ot galf emeht-otua-- ddA )1 #
+(ecalper.edoc = edoc
+,"tluafed"=tluafed ,]"ocimsoc","zul","etion","tluafed"[=seciohc ,"emeht--"(tnemugra_dda.p'
+,')".ISNA seroc ed amet ranoiceleS"=pleh
+,"tluafed"=tluafed ,]"ocimsoc","zul","etion","tluafed"[=seciohc ,"emeht--"(tnemugra_dda.p'
+' n\)".ISNA seroc ed amet ranoiceleS"=pleh
+amet rehlocsE"=pleh ,"eurt_erots"=noitca ,"emeht-otua--"(tnemugra_dda.p'
+')".odasilana ogidóc on esab moc etnemacitamotua
+)
+
+scitnames edoc no desab emeht kcip ot noitcnuf sisylana tcejnI )2 #
+':)enoN = ]rts[lanoitpO :olutit ,rts :ecruos(etnof_ogidoc_racilpxe fed' = tniop_noitcejni
+'''r = cnuf_emeht
+:rts >- )rts :ecruos(ocitnames_amet_rasilana_ fed
+"""
+:amet ed oãçeles ed acitsírueH
+'cnysa'/'dleiy' ed osu uo )aicnêuqes uo atsil( 9-6-3 ratceted es :"ocimsoc" -
+)2=>( tpecxe/yrt sotium revuoh es :"etion" -
+stropmi 2=> e )6 => sessalc+seõçnuf( saruturtse satium revuoh es :"zul" -
+oirártnoc osac :"tluafed" -
+"""
+er ,tsa tropmi
+:)rotisiVedoN.tsa(V ssalc
+:)fles(__tini__ fed
+0 = syrt.fles
+0 = scnuf.fles
+0 = sessalc.fles
+0 = stropmi.fles
+0 = sdleiy.fles
+0 = scnuf_cnysa.fles
+0 = srof.fles
+0 = selihw.fles
+)edon(tisiv_cireneg.fles ;1 =+ syrt.fles :)edon ,fles(yrT_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ scnuf.fles :)edon ,fles(feDnoitcnuF_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ scnuf_cnysa.fles :)edon ,fles(feDnoitcnuFcnysA_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ sessalc.fles :)edon ,fles(feDssalC_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ stropmi.fles :)edon ,fles(tropmI_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ stropmi.fles :)edon ,fles(morFtropmI_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ sdleiy.fles :)edon ,fles(dleiY_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ srof.fles :)edon ,fles(roF_tisiv fed
+)edon(tisiv_cireneg.fles ;1 =+ selihw.fles :)edon ,fles(elihW_tisiv fed
+:yrt
+)ecruos(esrap.tsa = eert
+:rorrExatnyS tpecxe
+"tluafed" nruter
+)eert(tisiv.v ;)(V = v
+soticílpxe 9-6-3 seõrdap #
+)")]\*s\9*s\,*s\6*s\,*s\3*s\[\(|)9*s\],-[*s\6*s\],-[*s\3("r(elipmoc.er = nrettap_ocimsoc
+:0 > scnuf_cnysa.v ro 0 > sdleiy.v ro )ecruos(hcraes.nrettap_ocimsoc fi
+"ocimsoc" nruter
+:2 => syrt.v fi
+"etion" nruter
+:2 => stropmi.v dna 6 => )sessalc.v + scnuf.v( fi
+"zul" nruter
+"tluafed" nruter
+'''
+)tniop_noitcejni + "n\" + cnuf_emeht ,tniop_noitcejni(ecalper.edoc = edoc
+
+rof cigol emeht-otua dda ,roloc-on / emeht ticilpxe gniylppa retfa ,)(niam nI )3 #
+nidts--/racilpxe--
+(ecalper.edoc = edoc
+n\)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran '
+,')avitarran ,"oãçacilpxE — ovitarraN rosrevnoC"(rarran
+fi n\)roloc-on-- revitse oãn es e odaticilos es( amet ed acitnâmes oãçeleS # '
+dna )eslaF ,"ROLOC_ON" ,]__eman__[seludom.sys(rttateg ton dna emeht_otua.sgra
+n\)ecruos(ocitnames_amet_rasilana_ = otua_amet n\:"tluafed" == emeht.sgra
+,"}otua_amet{ :amet odacilpA ]emeht-otua["f(roloc(tnirp n\)otua_amet(emeht_ylppa
+n\)olutit=olutit ,ecruos(etnof_ogidoc_racilpxe = atem ,avitarran n\))"NEERG"
+')avitarran ,"oãçacilpxE — ovitarraN rosrevnoC"(rarran
+)
+
+)"8-ftu"=gnidocne ,edoc(txet_etirw.p
+)"yp.yrots_beev_xullbok oa sodanoicida socitnâmes sohlitaG"(tnirp

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T15:17:46.388802",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 1074,
+      "es": 536,
+      "en": 1
+    },
+    "top_bigrams": [
+      {
+        "ngram": "36",
+        "count": 103
+      },
+      {
+        "ngram": "69",
+        "count": 101
+      },
+      {
+        "ngram": "97",
+        "count": 101
+      },
+      {
+        "ngram": "verdadeintegrar",
+        "count": 82
+      },
+      {
+        "ngram": "7verdade",
+        "count": 81
+      },
+      {
+        "ngram": "correlacionare",
+        "count": 76
+      },
+      {
+        "ngram": "eexpandir",
+        "count": 74
+      },
+      {
+        "ngram": "koblluxconclusão",
+        "count": 61
+      },
+      {
+        "ngram": "conclusãoem",
+        "count": 61
+      },
+      {
+        "ngram": "emkobllux",
+        "count": 61
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 1062,
+      "es": 533,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "63",
+        "count": 103
+      },
+      {
+        "ngram": "79",
+        "count": 101
+      },
+      {
+        "ngram": "96",
+        "count": 101
+      },
+      {
+        "ngram": "rargetniedadrev",
+        "count": 82
+      },
+      {
+        "ngram": "eranoicalerroc",
+        "count": 76
+      },
+      {
+        "ngram": "ridnapxee",
+        "count": 74
+      },
+      {
+        "ngram": "3rargetni",
+        "count": 70
+      },
+      {
+        "ngram": "xullbok7",
+        "count": 63
+      },
+      {
+        "ngram": "ranoicalerrocxullbok",
+        "count": 61
+      },
+      {
+        "ngram": "xullbokme",
+        "count": 61
+      }
+    ]
+  },
+  "seal": "∆7"
+}

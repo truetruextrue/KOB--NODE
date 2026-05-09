@@ -1,0 +1,2 @@
+POSSÍVEL INTRUSÃO: added=25, modified=1, suspicious=1
+/sdcard/JESUS_VERBO/CODEX/audio/transcrever.sh

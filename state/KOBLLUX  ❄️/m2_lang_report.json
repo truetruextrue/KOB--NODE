@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T15:09:19.024673",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1236,
+      "es": 614,
+      "en": 2
+    },
+    "top_bigrams": [
+      {
+        "ngram": "éo",
+        "count": 79
+      },
+      {
+        "ngram": "codexazure",
+        "count": 47
+      },
+      {
+        "ngram": "éa",
+        "count": 32
+      },
+      {
+        "ngram": "oque",
+        "count": 24
+      },
+      {
+        "ngram": "nãoé",
+        "count": 23
+      },
+      {
+        "ngram": "aluz",
+        "count": 22
+      },
+      {
+        "ngram": "metalux",
+        "count": 21
+      },
+      {
+        "ngram": "docodex",
+        "count": 21
+      },
+      {
+        "ngram": "quevocê",
+        "count": 17
+      },
+      {
+        "ngram": "eo",
+        "count": 17
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1225,
+      "es": 611,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "oé",
+        "count": 78
+      },
+      {
+        "ngram": "eruzaxedoc",
+        "count": 47
+      },
+      {
+        "ngram": "aé",
+        "count": 30
+      },
+      {
+        "ngram": "euqo",
+        "count": 24
+      },
+      {
+        "ngram": "éoãn",
+        "count": 23
+      },
+      {
+        "ngram": "zula",
+        "count": 22
+      },
+      {
+        "ngram": "xulatem",
+        "count": 21
+      },
+      {
+        "ngram": "xedocod",
+        "count": 21
+      },
+      {
+        "ngram": "êcoveuq",
+        "count": 17
+      },
+      {
+        "ngram": "oe",
+        "count": 17
+      }
+    ]
+  },
+  "seal": "∆7"
+}

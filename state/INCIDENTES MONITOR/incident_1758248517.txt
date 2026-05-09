@@ -1,0 +1,2 @@
+POSSÍVEL INTRUSÃO: added=1, modified=1, suspicious=1
+/sdcard/JESUS_VERBO/CODEX/KOBLLUX/DUAL/RODA_VIVA/bridge_uno_duo.sh

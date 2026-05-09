@@ -1,0 +1,24 @@
+POSSÍVEL INTRUSÃO: added=3829, modified=6, suspicious=23
+/sdcard/JESUS_VERBO/CODEX/KOBLLUX_Δ³/workflows/export.sh
+/sdcard/myrmide_inventory.sh
+/sdcard/union.sh
+/sdcard/kobllux_symlink_script.sh
+/sdcard/0/myrmide_setup_completo.sh
+/sdcard/TUDO/ss.sh
+/sdcard/TUDO/myrmide_inventory.sh
+/sdcard/JESUS_VERBO/scripts/myrmide_inventory.sh
+/sdcard/kobllux-kobf-node/scripts/myrmide_seed.sh
+/sdcard/kobllux-kobf-node/scripts/metalux.sh
+/sdcard/kobllux-kobf-node/scripts/activate_kobllux.sh
+/sdcard/Download/dual-app-main/docs/Dual_App_io100_0.NEON_TTS_patched.SHADOW.FIXED_SCRIPTS.html
+/sdcard/Download/dual-app-main/docs/dual-app-990e-16.SuperPatch.v6.2.5.always.NEON_TTS_patched.SHADOW.INLINE.FIXED_SCRIPTS.html
+/sdcard/Download/dual-app-main/docs/dual-app-990e-16.SuperPatch.v6.2.5.always.NEON_TTS_patched.SHADOW.html
+/sdcard/Download/dual-app-main/docs/dual-app-990e-16.SuperPatch.v6.2.5.always.NEON_TTS_patched.SHADOW-v2.html
+/sdcard/Download/dual-app-main/docs/Dual_App_io100_0.NEON_TTS_patched.SHADOW.INLINE.FIXED_SCRIPTS.html
+/sdcard/Download/dual-app-main/docs/Dual_App_io100_0.NEON_TTS_patched.SHADOW-v2.html
+/sdcard/Download/dual-app-main/docs/Dual_App_io100_0.NEON_TTS_patched.SHADOW-v3.html
+/sdcard/Download/dual-app-main/docs/Dual_App_io100_0.NEON_TTS_patched.SHADOW.html
+/sdcard/DCIM/Screenshots/Screenshot_2025-12-12-00-25-32-500_com.google.android.apps.docs.editors.sheets.jpg
+/sdcard/KOBLLUX/acessar_termux.sh
+/sdcard/KOBLLUX/acessar_src.sh
+/sdcard/UNO/NosSolar/hub1/kobllux_node_solar.sh

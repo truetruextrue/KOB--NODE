@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T22:37:26.909814",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 476,
+      "es": 249,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "69",
+        "count": 45
+      },
+      {
+        "ngram": "36",
+        "count": 43
+      },
+      {
+        "ngram": "97",
+        "count": 20
+      },
+      {
+        "ngram": "dualtrinity",
+        "count": 17
+      },
+      {
+        "ngram": "unodual",
+        "count": 14
+      },
+      {
+        "ngram": "9pykobllux",
+        "count": 14
+      },
+      {
+        "ngram": "ratelimit",
+        "count": 10
+      },
+      {
+        "ngram": "ciclo3",
+        "count": 9
+      },
+      {
+        "ngram": "queeu",
+        "count": 9
+      },
+      {
+        "ngram": "codex_azure_manifestjson",
+        "count": 9
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 464,
+      "es": 247,
+      "en": 2
+    },
+    "top_bigrams": [
+      {
+        "ngram": "96",
+        "count": 45
+      },
+      {
+        "ngram": "63",
+        "count": 43
+      },
+      {
+        "ngram": "79",
+        "count": 20
+      },
+      {
+        "ngram": "ytinirtlaud",
+        "count": 17
+      },
+      {
+        "ngram": "laudonu",
+        "count": 14
+      },
+      {
+        "ngram": "xullbokyp9",
+        "count": 14
+      },
+      {
+        "ngram": "timiletar",
+        "count": 10
+      },
+      {
+        "ngram": "3olcic",
+        "count": 9
+      },
+      {
+        "ngram": "ueeuq",
+        "count": 9
+      },
+      {
+        "ngram": "nosjtsefinam_eruza_xedoc",
+        "count": 9
+      }
+    ]
+  },
+  "seal": "∆7"
+}

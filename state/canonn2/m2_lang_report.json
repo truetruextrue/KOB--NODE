@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T11:02:19.778503",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 2606,
+      "es": 1321,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "queeu",
+        "count": 34
+      },
+      {
+        "ngram": "36",
+        "count": 31
+      },
+      {
+        "ngram": "69",
+        "count": 30
+      },
+      {
+        "ngram": "querque",
+        "count": 29
+      },
+      {
+        "ngram": "97",
+        "count": 27
+      },
+      {
+        "ngram": "divdiv",
+        "count": 26
+      },
+      {
+        "ngram": "éo",
+        "count": 23
+      },
+      {
+        "ngram": "overbo",
+        "count": 23
+      },
+      {
+        "ngram": "nocentro",
+        "count": 23
+      },
+      {
+        "ngram": "livrodigital",
+        "count": 20
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 2595,
+      "es": 1319,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ueeuq",
+        "count": 34
+      },
+      {
+        "ngram": "63",
+        "count": 31
+      },
+      {
+        "ngram": "96",
+        "count": 30
+      },
+      {
+        "ngram": "euqreuq",
+        "count": 29
+      },
+      {
+        "ngram": "vidvid",
+        "count": 29
+      },
+      {
+        "ngram": "79",
+        "count": 27
+      },
+      {
+        "ngram": "oé",
+        "count": 23
+      },
+      {
+        "ngram": "obrevo",
+        "count": 23
+      },
+      {
+        "ngram": "ortnecon",
+        "count": 23
+      },
+      {
+        "ngram": "latigidorvil",
+        "count": 20
+      }
+    ]
+  },
+  "seal": "∆7"
+}

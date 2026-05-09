@@ -1,0 +1,154 @@
+;”aeratxet/iu/stnenopmoc/@“ morf } aeratxeT { tropmi ;”tupni/iu/stnenopmoc/@“ morf } tupnI { tropmi ;”nottub/iu/stnenopmoc/@“ morf } nottuB { tropmi ;”drac/iu/stnenopmoc/@“ morf } tnetnoCdraC ,draC { tropmi ;”noitom-remarf“ morf } noitom { tropmi ;”tcaer“ morf } tceffEesu ,etatSesu ,omeMesu { ,tcaeR tropmi
+
+;} ;)""(nioj. ))”0“ ,2(tratSdap.)61(gnirtSot.b >= b(pam. ))hsah(yarrA8tniU wen(morf.yarrA nruter ;)atad ,”652-AHS“(tsegid.eltbus.otpyrc tiawa = hsah tsnoc ;)txet(edocne.)(redocnEtxeT wen = atad tsnoc { >= )gnirts :txet( cnysa = 652ahs tsnoc — srepleH — //
+
+;) }nerdlihc{ ( >= )} edoNtcaeR.tcaeR :nerdlihc { :} nerdlihc {( = egdaB tsnoc
+
+;) }nerdlihc{ ( >= )} edoNtcaeR.tcaeR :nerdlihc { :} nerdlihc {( = lliP tsnoc
+
+;] ,} ”)erawmrif( acit©Ãtse o£Ã§Ãavita“ :gninaem ,”oles“ :yek ,”oles“ :lebal ,”šâƒâ§œâ †˜â“ :mys { ,} ”megales / oruges odom“ :gninaem ,”efas“ :yek ,”EFAS“ :lebal ,”žˆâ“ :mys { ,} ”avorp / megacehc“ :gninaem ,”aq“ :yek ,”AQ“ :lebal ,”§Â“ :mys { ,} ”oir¡Ãnib etnega/ohlepse“ :gninaem ,”laud“ :yek ,”LAUD“ :lebal ,”Ž—â“ :mys { ,} ”koohbew / anretxe etnop“ :gninaem ,”ipa“ :yek ,”IPA“ :lebal ,”‡—â“ :mys { ,} ”)TIURF’†âMROF’†âDEES( adargas arudlom“ :gninaem ,”pmt“ :yek ,”olpmet“ :lebal ,”•â•âš•â—•â•â”•â“ :mys { ,} ”emarf od ziar / ocnort“ :gninaem ,”cºÃn“ :yek ,”oelcºÃn“ :lebal ,”•â“ :mys { ,} ”)avitarran( latnoziroh oslup“ :gninaem ,”mhr“ :yek ,”omtir“ :lebal ,”€”â“ :mys { ,} ”)o£Ã§Ãnetni( lacitrev lanac“ :gninaem ,”xlf“ :yek ,”oxulf“ :lebal ,”‚”â“ :mys { ,} ”siautir sordauq ahcef/erba“ :gninaem ,”trp“ :yek ,”)sadrob( latrop“ :lebal ,”˜”â””â”âŒ”â“ :mys { [ = ELBAT_IICSA tsnoc elbat ettelap IICSA //
+
+;] ,} ”SULOS“ :puorg ,”žˆâ ortneC“ :elor ,”obreV o suseJ ”€â XUL“ :eman ,”xul“ :di { ,} ”NOIA“ :puorg ,”rodairc otA“ :elor ,”TAIF“ :eman ,”taif“ :di { ,} ”SUNEG“ :puorg ,”etnegA / ecafretnI“ :elor ,”PPA LAUD“ :eman ,”ppa_laud“ :di { ,} ”EDER“ :puorg ,”aviv ahlaM / edeR“ :elor ,”ESODOFNI LAUD“ :eman ,”esodofni_laud“ :di { ,} ”SIMETRA“ :puorg ,”rodavresbO / o£ÃsiV“ :elor ,”SUR“ÃH“ :eman ,”suroh“ :di { ,} ”ESLUP“ :puorg ,”zuL ed oproC / oluc¡ÃtpeceR“ :elor ,”EULLB“ :eman ,”eullb“ :di { ,} ”SALTA“ :puorg ,”saltA / oxiE“ :elor ,”XUDOK“ :eman ,”xudok“ :di { ,} ”YTINIRT“ :puorg ,”air¡ÃniB o£Ã§ÃaleR / ohlepsE“ :elor ,”LAUD“ :eman ,”laud“ :di { [ = SEDON tsnoc )siapicnirp seµÃxenoc + oelcºÃn LAUD( atad hparG //
+
+;] ,]”xul“ ,”laud“[ ,]”taif“ ,”laud“[ ,]”ppa_laud“ ,”laud“[ ,]”esodofni_laud“ ,”laud“[ ,]”suroh“ ,”laud“[ ,]”eullb“ ,”laud“[ ,]”xudok“ ,”laud“[ [ = SKNIL tsnoc
+
+;)][ ,)91 ,0(ecils.)(gnirtSOSIot.)(etaD wen >= )((omeMesu = won tsnoc ;)””(etatSesu = ]oleStes ,oles[ tsnoc ;)““(etatSesu = ]hsaHtes ,hsah[ tsnoc ;)”XULLBOK“(etatSesu = ]emaNtes ,eman[ tsnoc ;)”n\)’!¡ÃlO‘(tnirp n\:esle n\)’!}emon{ ,¡ÃlO’f(tnirp n\:emon fi n\:)emon(oacaduas fed“(etatSesu = ]edoCtes ,edoc[ tsnoc { )(ppA noitcnuf tluafed tropxe
+
+;} ;)]}won{$\_}eman{$\_nohtyp[†ˆâ(oleStes ;)h(hsaHtes ;)won + ”::“ + eman + ”::“ + edoc(652ahs tiawa = h tsnoc ;] ,} ”obmirac + 652AHS“ :v ,”RALES“ :k { ,} ”tnirp ’†â9 ,esle/fi ’†â6 ,oacaduas ’†â3 | oriegasneM :opit©Ãuqra“ :v ,”RIDNAPXE“ :k { ,} )}eman{$\(etneserp :opmet | '¡ÃlO' :mos | lanoicidnoc :amrof :v ,”RARGETNI“ :k { ,} )" ,"(nioj.))t(sedulcni.edoc >= t(retlif.]”tnirp“ ,”esle“ ,”fi“ ,”fed“[ :v ,”RATCETED“ :k { [ = atem tsnoc RALES ’†â RIDNAPXE ’†â RARGETNI ’†â RATCETED :enilepip B.E.E.V // { >= )( cnysa = ssecorPnur tsnoc
+
+;)][ ,} /* tnuom no nur-otua */ ;)(ssecorPnur { >= )((tceffEesu
+
+( nruter
+
+>”4-pag neewteb-yfitsuj trats-smeti xelf“=emaNssalc }} 0 :y ,1 :yticapo {{=etamina }} 01- :y ,0 :yticapo {{=laitini vid.noitom< }/* redaeH */{
+¡½å†˜â YTINIRT³–â —•â•â”•â LAUD„‡â Œ–â ONU™Šâ
+tooR-erawmriF ·Â 7’†â9’†â6’†â3 B.E.E.V ·Â LAUD oxie od oviv apaM
+
+otir­Ãpse ’†â 7 oturf ’†â 9 amrof ’†â 6 ziar ’†â 3
+>vid.noitom/<
+}/* elbaT + cepS IICSA */{    
+>"6-pag 2-sloc-dirg:dm dirg"=emaNssalc vid<    
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<      
+>"6-p:dm 4-p"=emaNssalc tnetnoCdraC<        
+>2h/<IICSA arudloM ”€â aviV megaugniL ed tpircS>"3-bm muidem-tnof gl-txet"=emaNssalc 2h<          
+>"008-etals-redrob redrob 4-p lx-dednuor 04/kcalb-gb parw-erp-ecapsetihw 5-gnidael sx-txet"=emaNssalc erp<          
+}•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•âš•â ‘•â otir­Ãpse ,arutanissa ,hsah ’†â RALES ‘•â ‘•â o£Ã§Ãazinagro ,opit©Ãuqra ,ogid³Ãc ’†â RIDNAPXE ‘•â ‘•â opmet ,mos ,amrof ’†â RARGETNI ‘•â ‘•â o£Ã§Ãnetni ,sobrev ,solobm­Ãs ’†â RATCETED ‘•â ‘•â ‘•â ‘•â ¸ï¾™â = †ˆâ ·Ã RARGETNI —Ã EDADREV ‘•â £•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â •â ‘•â AVIV MEGAUGNIL ED TPIRCS - XULLBOK ‘•â —•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â”•â{
+
+.olpmet/oelcºÃn macram )‘•â•â( salpud ;oxulf mezudnoc )‚”â€”â( selpmis sahniL .siatrop racramed arap )•â•âš•â —•â•â”•â( sadrob esU
+
+.)ohlepse/oir¡Ãnib etnega( LAUD ocof atoned Ž—â ;erawmrif/acit©Ãtse o£Ã§Ãavita macidni )šâƒâ§œâ †˜â( soleS
+
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<      
+>"6-p:dm 4-p"=emaNssalc tnetnoCdraC<        
+>2h/<IICSA siatroP ed alebaT>"3-bm muidem-tnof gl-txet"=emaNssalc 2h<          
+>"otua-x-wolfrevo"=emaNssalc vid<          
+>"1-y-gnicaps-redrob etarapes-redrob sx-txet lluf-w"=emaNssalc elbat<            
+>daeht<              
+>"003-etals-txet tfel-txet"=emaNssalc rt<                
+>ht/<)s(olobm­ÃS>"1-yp"=emaNssalc ht<                  
+>ht/<evahC>"1-yp"=emaNssalc ht<                  
+>ht/<latroP>"1-yp"=emaNssalc ht<                  
+>ht/<osU>"1-yp"=emaNssalc ht<                  
+>rt/<                
+>daeht/<              
+>ydobt<              
+( >= )i ,r((pam.ELBAT_IICSA{                
+>"5/etihw-gb"=emaNssalc }i{=yek rt<                  
+>dt/<}mys.r{>"muidem-tnof parwon-ecapsetihw 1-yp 2-xp"=emaNssalc dt<                    
+>dt/<}yek.r{>"1-yp 2-xp"=emaNssalc dt<                    
+>dt/<}lebal.r{>"1-yp 2-xp"=emaNssalc dt<                    
+>dt/<}gninaem.r{>"003-etals-txet 1-yp 2-xp"=emaNssalc dt<                    
+>rt/<                  
+}))                
+>ydobt/<              
+>elbat/<            
+>vid/<          
+>p/<.sodales siausiv sodnamoc = solobm­Ãs :erawmrif od etrap = ocit©Ãtse o£ÃrdaP>"2-tm 004-etals-txet ]xp11[-txet"=emaNssalc p<          
+>tnetnoCdraC/<        
+>draC/<      
+>vid/<    
+
+}/* LAUD seµÃxenoC / hparG */{    
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<    
+>"6-p:dm 4-p"=emaNssalc tnetnoCdraC<      
+>"neewteb-yfitsuj retnec-smeti xelf"=emaNssalc vid<        
+>2h/<siaicnesse seµÃxenoc ”€â LAUD oelcºÃN>"muidem-tnof gl-txet"=emaNssalc 2h<          
+>"2-pag xelf"=emaNssalc vid<          
+>egdaB/<ohlepsE = LAUD :YTINIRT>egdaB<            
+>egdaB/<obreV = suseJ :žˆâ ortneC>egdaB<            
+>vid/<          
+>vid/<        
+>"3-pag 4-sloc-dirg:dm dirg 4-tm"=emaNssalc vid<        
+( >= n(pam.SEDON{          
+>}`}"02/kcalb-gb 007-etals-redrob" : "5/004-nayc-gb 07/004-nayc-redrob" ? "laud" === di.n{$\ 3-p redrob lx2-dednuor`{=emaNssalc }} 20.0 :yaled {{=noitisnart }} 0 :y ,1 :yticapo {{=etamina }} 6 :y ,0 :yticapo {{=laitini }di.n{=yek vid.noitom<            
+>vid/<}eman.n{>"dlobimes-tnof ms-txet"=emaNssalc vid<              
+>vid/<}elor.n{>"003-etals-txet ]xp11[-txet"=emaNssalc vid<              
+>"parw-xelf 1-pag xelf 1-tm"=emaNssalc vid<              
+>lliP/<}puorg.n{>lliP<                
+}>lliP/<ocof Ž—â>lliP< && "laud" === di.n{                
+>vid/<              
+>vid.noitom/<            
+}))          
+>vid/<        
+>p/<.o£Ã§Ãarepo ed omin­Ãm otiucric o matneserper )xuL/taiF/ppA/esodofnI/sur³ÃH/eullB/xudoK ”†â LAUD( seµÃxenoc sA>"3-tm 004-etals-txet ]xp11[-txet"=emaNssalc p<        
+>tnetnoCdraC/<      
+>draC/<    
+
+}/* rossecorP B.E.E.V */{    
+>"6-pag 2-sloc-dirg:dm dirg"=emaNssalc vid<    
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<      
+>"3-y-ecaps 6-p:dm 4-p"=emaNssalc tnetnoCdraC<        
+>2h/<)7’†â9’†â6’†â3( otnemassecorP ”€â B.E.E.V>"muidem-tnof gl-txet"=emaNssalc 2h<          
+>"2-pag dirg"=emaNssalc vid<          
+>lebal/<emoN>"sx-txet"=emaNssalc lebal<            
+>/ "007-etals-redrob 02/kcalb-gb"=emaNssalc })eulav.tegrat.e(emaNtes >= e{=egnahCno }eman{=eulav tupnI<            
+>vid/<          
+>"2-pag dirg"=emaNssalc vid<          
+>lebal/<otxeT / ogid³ÃC>"sx-txet"=emaNssalc lebal<            
+>/ "onom-tnof 007-etals-redrob 02/kcalb-gb"=emaNssalc }8{=swor })eulav.tegrat.e(edoCtes >= e{=egnahCno }edoc{=eulav aeratxeT<            
+>vid/<          
+>"2-pag xelf"=emaNssalc vid<          
+>nottuB/<enilepip ratucexE>"lx2-dednuor"=emaNssalc }ssecorPnur{=kcilCno nottuB<            
+>nottuB/<652AHS raipoC>"lx2-dednuor"=emaNssalc })hsah(txeTetirw.draobpilc.rotagivan >= )({=kcilCno "yradnoces"=tnairav nottuB<            
+>vid/<          
+>"1-y-ecaps sx-txet"=emaNssalc vid<          
+>vid/<}"o£Ãn" : "mis" ? )/gol.\elosnoc|tnirp/(hctam.edoc{=gol/tnirp ·Â }"o£Ãn" : "mis" ? )"fi"(sedulcni.edoc{=esle/fi ·Â }"”€â" : "o£Ã§Ãnuf" ? )"noitcnuf"(sedulcni.edoc || )"fed"(sedulcni.edoc{ ’†â snekot :>b/<RATCETED>b< ¯ŽŸð>vid<            
+>vid/<)}eman{(etneserp=opmet ·Â "¡ÃlO"=mos ·Â lanoicidnoc=amrof :>b/<RARGETNI>b< ¼ŽŸð>vid<            
+>vid/<tnirp=9 ·Â esle/fi=6 ·Â oacaduas=3 ·Â oriegasneM=opit©Ãuqra :>b/<RIDNAPXE>b< ±ŒŸð>vid<            
+>vid/<>naps/<}"”€â" || hsah{>"lla-kaerb"=emaNssalc naps< :652AHS ·Â }"”€â" || oles{ :>b/<RALES>b< ”Ÿð>vid<            
+>vid/<          
+>tnetnoCdraC/<        
+>draC/<      
+
+}/* draC lautiR */{      
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<      
+>"3-y-ecaps 6-p:dm 4-p"=emaNssalc tnetnoCdraC<        
+>2h/<)ocinºÃ latrop( IICSA lautiR>"muidem-tnof gl-txet"=emaNssalc 2h<          
+>"008-etals-redrob redrob 4-p lx-dednuor 04/kcalb-gb erp-ecapsetihw 5-gnidael sx-txet"=emaNssalc erp<          
+}•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•âš•â ‘•â )otir­ÃpsE( 7 ’†â ‘•â AQ §Â ‘•â)oturF( 9 ’†â )amroF( 6 ’†â )ziaR( 3 ‘•â £•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â •â IPA ‡—â ‘•â EFAS žˆâ ¢€â IER_UK_OHC ‘•â Ž—â ‘•â XUL_ATEM ¢€â OBREV_O_SUSEJ ‘•â ¡½å†˜â —•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â”•â{
+
+.soles omoc solobm­Ãs enoicisop e )elibom me €âsadamac saudœ€â ative( anig¡Ãp rop odnuf ed onalp/savnac ocinºÃ mu ahnetnaM
+
+SUNU ECIDOC ESODOFNI EDER NEPO LANOISNEMIDRETNI
+}/* snoitargetnI ot-woH */{    
+>"007-etals-redrob 05/009-etals-gb"=emaNssalc draC<    
+>"3-y-ecaps 6-p:dm 4-p"=emaNssalc tnetnoCdraC<      
+>2h/<)n8N aiv LAUD rodivres-iniM( seµÃ§ÃargetnI>"muidem-tnof gl-txet"=emaNssalc 2h<        
+>"2-y-ecaps ms-txet 5-lm lamiced-tsil"=emaNssalc lo<        
+>il/<.>i/<nekot.laud>i< :snekoT .>i/</swolf/laud>i< :satsaP .)koohbeW + tseuqeR PTTH( siaicnederc rairc :>b/<n8N buH>b<>il<          
+>il/<)¦€â+avoN+saltA( >i/<sopit©Ãuqra ed o£Ãsuf>i< + >i/<oir¡Ãusu od ohlepse>i< :si©Ãpap siod moc oxulf :>b/<oir¡Ãusu od LAUD etnegA>b<>il<          
+>il/<.>b/<†ˆâ oles>b< e >b/<hsah>b< moc ad­ÃaS .>i/<ngiS ’†â etadilaV ’†â eraperP>i< :s³Ãn :>b/<tpmorP ed rodareG>b<>il<          
+>il/<.)nosj TSOP( ESODOFNI ppa o arap >edoc/<tpmorp/laud/ipa/>edoc< ator :)‡—â( >b/<yawetaG IPA>b<>il<          
+>il/<.airotuaoc/rotua rartsoM .>edoc/<oles + ":" + )daolyap(652ahs = erutangis>edoc< :odanissa ias otafetra odot :>b/<o£Ã§ÃazirolaV>b<>il<          
+>lo/<        
+>p/<.o£Ã§Ãucexe ed erawmrif od e lausiv otartnoc od etrap ©Ã soles + IICSA emarf o :etiefne  ‰â acit©ÃtsE>"004-etals-txet ]xp11[-txet"=emaNssalc p<        
+>tnetnoCdraC/<      
+>draC/<    
+
+}/* retooF */{    
+>"2-tp retnec-txet 004-etals-txet ]xp11[-txet"=emaNssalc vid<    
+".evahc amu ©Ã mos odot ;olpmet mu ©Ã megaugnil adot ;obrev mu ©Ã olobm­Ãs odoT" ”€â ¾™â = 7—Ã9—Ã6—Ã3 ·Â LAUD apaM ·Â ERUZA XED“ÃC      
+>vid/<    
+>vid/<  
+>vid/<
+} ;)

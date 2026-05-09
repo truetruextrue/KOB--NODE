@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T14:30:20.753607",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 2160,
+      "es": 931,
+      "en": 6
+    },
+    "top_bigrams": [
+      {
+        "ngram": "colorfrom",
+        "count": 84
+      },
+      {
+        "ngram": "soundsounds",
+        "count": 84
+      },
+      {
+        "ngram": "mp3name",
+        "count": 76
+      },
+      {
+        "ngram": "thispdf",
+        "count": 53
+      },
+      {
+        "ngram": "pdfdocument",
+        "count": 53
+      },
+      {
+        "ngram": "documentwas",
+        "count": 53
+      },
+      {
+        "ngram": "wascreated",
+        "count": 53
+      },
+      {
+        "ngram": "createdwith",
+        "count": 53
+      },
+      {
+        "ngram": "withckeditor",
+        "count": 53
+      },
+      {
+        "ngram": "ckeditorand",
+        "count": 53
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 2149,
+      "es": 927,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "sdnuosdnuos",
+        "count": 84
+      },
+      {
+        "ngram": "morfroloc",
+        "count": 84
+      },
+      {
+        "ngram": "eman3pm",
+        "count": 76
+      },
+      {
+        "ngram": "ylnosesoprup",
+        "count": 53
+      },
+      {
+        "ngram": "sesoprupnoitaulave",
+        "count": 53
+      },
+      {
+        "ngram": "noitaulaverof",
+        "count": 53
+      },
+      {
+        "ngram": "rofdesu",
+        "count": 53
+      },
+      {
+        "ngram": "desueb",
+        "count": 53
+      },
+      {
+        "ngram": "ebnac",
+        "count": 53
+      },
+      {
+        "ngram": "nacdna",
+        "count": 53
+      }
+    ]
+  },
+  "seal": "∆7"
+}

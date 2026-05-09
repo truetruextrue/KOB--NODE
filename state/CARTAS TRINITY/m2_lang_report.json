@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T14:17:33.228516",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 8361,
+      "es": 3223,
+      "en": 8
+    },
+    "top_bigrams": [
+      {
+        "ngram": "quevocê",
+        "count": 262
+      },
+      {
+        "ngram": "oque",
+        "count": 256
+      },
+      {
+        "ngram": "como",
+        "count": 173
+      },
+      {
+        "ngram": "ea",
+        "count": 165
+      },
+      {
+        "ngram": "ofluxo",
+        "count": 133
+      },
+      {
+        "ngram": "eo",
+        "count": 130
+      },
+      {
+        "ngram": "opai",
+        "count": 126
+      },
+      {
+        "ngram": "averdade",
+        "count": 123
+      },
+      {
+        "ngram": "éo",
+        "count": 115
+      },
+      {
+        "ngram": "coma",
+        "count": 115
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 8350,
+      "es": 3219,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "êcoveuq",
+        "count": 261
+      },
+      {
+        "ngram": "euqo",
+        "count": 255
+      },
+      {
+        "ngram": "omoc",
+        "count": 172
+      },
+      {
+        "ngram": "ae",
+        "count": 170
+      },
+      {
+        "ngram": "oe",
+        "count": 136
+      },
+      {
+        "ngram": "oxulfo",
+        "count": 132
+      },
+      {
+        "ngram": "iapo",
+        "count": 122
+      },
+      {
+        "ngram": "edadreva",
+        "count": 118
+      },
+      {
+        "ngram": "oé",
+        "count": 117
+      },
+      {
+        "ngram": "amoc",
+        "count": 113
+      }
+    ]
+  },
+  "seal": "∆7"
+}

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T16:35:21.783945",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 422,
+      "es": 247,
+      "en": 6
+    },
+    "top_bigrams": [
+      {
+        "ngram": "utf8",
+        "count": 36
+      },
+      {
+        "ngram": "69",
+        "count": 22
+      },
+      {
+        "ngram": "36",
+        "count": 21
+      },
+      {
+        "ngram": "usrbin",
+        "count": 21
+      },
+      {
+        "ngram": "binenv",
+        "count": 21
+      },
+      {
+        "ngram": "jesusé",
+        "count": 20
+      },
+      {
+        "ngram": "encodingutf",
+        "count": 19
+      },
+      {
+        "ngram": "redeinfodose",
+        "count": 18
+      },
+      {
+        "ngram": "97",
+        "count": 18
+      },
+      {
+        "ngram": "éa",
+        "count": 17
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 410,
+      "es": 244,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "8ftu",
+        "count": 36
+      },
+      {
+        "ngram": "96",
+        "count": 21
+      },
+      {
+        "ngram": "63",
+        "count": 21
+      },
+      {
+        "ngram": "vnenib",
+        "count": 21
+      },
+      {
+        "ngram": "nibrsu",
+        "count": 21
+      },
+      {
+        "ngram": "ésusej",
+        "count": 20
+      },
+      {
+        "ngram": "ftugnidocne",
+        "count": 19
+      },
+      {
+        "ngram": "esodofnieder",
+        "count": 18
+      },
+      {
+        "ngram": "79",
+        "count": 18
+      },
+      {
+        "ngram": "aé",
+        "count": 17
+      }
+    ]
+  },
+  "seal": "∆7"
+}

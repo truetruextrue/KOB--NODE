@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T15:32:59.291363",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1571,
+      "es": 603,
+      "en": 11
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ea",
+        "count": 30
+      },
+      {
+        "ngram": "ina",
+        "count": 26
+      },
+      {
+        "ngram": "eo",
+        "count": 24
+      },
+      {
+        "ngram": "ofthe",
+        "count": 21
+      },
+      {
+        "ngram": "amanifestação",
+        "count": 18
+      },
+      {
+        "ngram": "aquiestá",
+        "count": 17
+      },
+      {
+        "ngram": "dotempo",
+        "count": 16
+      },
+      {
+        "ngram": "comkobllux",
+        "count": 14
+      },
+      {
+        "ngram": "averdade",
+        "count": 14
+      },
+      {
+        "ngram": "isa",
+        "count": 14
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 1561,
+      "es": 601,
+      "en": 4
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ae",
+        "count": 29
+      },
+      {
+        "ngram": "ani",
+        "count": 26
+      },
+      {
+        "ngram": "oe",
+        "count": 24
+      },
+      {
+        "ngram": "ehtfo",
+        "count": 21
+      },
+      {
+        "ngram": "oãçatsefinama",
+        "count": 18
+      },
+      {
+        "ngram": "átseiuqa",
+        "count": 17
+      },
+      {
+        "ngram": "opmetod",
+        "count": 15
+      },
+      {
+        "ngram": "xullbokmoc",
+        "count": 14
+      },
+      {
+        "ngram": "ehtdna",
+        "count": 14
+      },
+      {
+        "ngram": "oãçejorpotirípse",
+        "count": 13
+      }
+    ]
+  },
+  "seal": "∆7"
+}

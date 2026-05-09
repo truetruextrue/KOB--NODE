@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-20T02:02:45.787196",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 469,
+      "es": 2,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ââ",
+        "count": 264
+      },
+      {
+        "ngram": "classnametext",
+        "count": 18
+      },
+      {
+        "ngram": "divclassname",
+        "count": 14
+      },
+      {
+        "ngram": "divdiv",
+        "count": 14
+      },
+      {
+        "ngram": "borderslate",
+        "count": 11
+      },
+      {
+        "ngram": "ão",
+        "count": 10
+      },
+      {
+        "ngram": "symâ",
+        "count": 9
+      },
+      {
+        "ngram": "classnamebg",
+        "count": 9
+      },
+      {
+        "ngram": "slate700",
+        "count": 9
+      },
+      {
+        "ngram": "p4",
+        "count": 8
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 462,
+      "es": 1,
+      "en": 0
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ââ",
+        "count": 264
+      },
+      {
+        "ngram": "txetemanssalc",
+        "count": 18
+      },
+      {
+        "ngram": "emanssalcvid",
+        "count": 14
+      },
+      {
+        "ngram": "etalsredrob",
+        "count": 11
+      },
+      {
+        "ngram": "oã",
+        "count": 10
+      },
+      {
+        "ngram": "vidvid",
+        "count": 10
+      },
+      {
+        "ngram": "âmys",
+        "count": 9
+      },
+      {
+        "ngram": "007etals",
+        "count": 9
+      },
+      {
+        "ngram": "gbemanssalc",
+        "count": 9
+      },
+      {
+        "ngram": "4p",
+        "count": 8
+      }
+    ]
+  },
+  "seal": "∆7"
+}

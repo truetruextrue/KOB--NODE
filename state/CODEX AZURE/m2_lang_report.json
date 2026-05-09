@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T16:08:08.949345",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 5333,
+      "es": 1504,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ea",
+        "count": 93
+      },
+      {
+        "ngram": "deforma",
+        "count": 62
+      },
+      {
+        "ngram": "podeser",
+        "count": 59
+      },
+      {
+        "ngram": "deuma",
+        "count": 54
+      },
+      {
+        "ngram": "omovimento",
+        "count": 51
+      },
+      {
+        "ngram": "osnúmeros",
+        "count": 44
+      },
+      {
+        "ngram": "deum",
+        "count": 43
+      },
+      {
+        "ngram": "coma",
+        "count": 41
+      },
+      {
+        "ngram": "linguagemuniversal",
+        "count": 41
+      },
+      {
+        "ngram": "comouma",
+        "count": 40
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Greek",
+    "lang": "pt",
+    "scores": {
+      "pt": 5323,
+      "es": 1498,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "ae",
+        "count": 93
+      },
+      {
+        "ngram": "resedop",
+        "count": 58
+      },
+      {
+        "ngram": "amrofed",
+        "count": 54
+      },
+      {
+        "ngram": "amued",
+        "count": 52
+      },
+      {
+        "ngram": "otnemivomo",
+        "count": 44
+      },
+      {
+        "ngram": "amoc",
+        "count": 42
+      },
+      {
+        "ngram": "mued",
+        "count": 41
+      },
+      {
+        "ngram": "soremúnso",
+        "count": 41
+      },
+      {
+        "ngram": "amuomoc",
+        "count": 40
+      },
+      {
+        "ngram": "oe",
+        "count": 39
+      }
+    ]
+  },
+  "seal": "∆7"
+}

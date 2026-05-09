@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-10-22T22:11:39.342704",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "input_file": "/sdcard/JESUS_VERBO/CODEX/state/espelho_input.txt",
+  "counts": {
+    "direct": {
+      "letters": 9641,
+      "words": 1869,
+      "sentences": 12
+    },
+    "mirror": {
+      "letters": 9641,
+      "words": 1869,
+      "sentences": 6
+    }
+  },
+  "patterns": {
+    "direct": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "palindromos": [],
+      "repunits": [],
+      "coluna_8": false,
+      "coluna_1": false
+    },
+    "mirror": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "palindromos": [],
+      "repunits": [],
+      "coluna_8": false,
+      "coluna_1": false
+    }
+  },
+  "thesis_antithesis": {
+    "direct": {
+      "thesis": 0,
+      "antithesis": 0
+    },
+    "mirror": {
+      "thesis": 0,
+      "antithesis": 0
+    }
+  },
+  "synthesis": {
+    "UNO": {
+      "law": "VERDADE × INTEGRAR ÷ Δ = ♾️",
+      "focus": [
+        "9…9²",
+        "repunits",
+        "palíndromos"
+      ]
+    },
+    "DUAL": {
+      "mirror": true,
+      "invariants": [
+        "múltiplos de 9",
+        "palíndromos",
+        "repunits"
+      ],
+      "mapping": "…321 ↔ …123, coluna 8 ↔ ajuste k"
+    },
+    "TRINITY": {
+      "procedure": [
+        "detectar A/B/C/D",
+        "contar L/P/F/T/A",
+        "selar ∆⁷",
+        "loop 3×9×7"
+      ]
+    }
+  },
+  "seal": "∆7",
+  "loop": "3×9×7"
+}

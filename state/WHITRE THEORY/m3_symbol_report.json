@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-09-17T14:37:19.967113",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "m2_report": "/sdcard/JESUS_VERBO/CODEX/state/m2_lang_report.json",
+  "symbols": {
+    "direct": {
+      "math": 272,
+      "seal": 29,
+      "arrows": 5
+    },
+    "mirror": {
+      "math": 272,
+      "seal": 29,
+      "arrows": 5
+    }
+  },
+  "patterns": {
+    "direct": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "mirror": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    }
+  },
+  "seal": "∆7",
+  "synthesis": {
+    "law": "VERDADE × INTEGRAR ÷ Δ = ♾️",
+    "interdependence": [
+      "M1→M2→M3 selam ∆⁷"
+    ]
+  }
+}

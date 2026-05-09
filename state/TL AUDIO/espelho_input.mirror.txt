@@ -1,0 +1,819 @@
+.odal oa atreba iof áj alebat a e vsc.omuser_xullbok/atad/tnm/ me átse oviuqra O .uoivne êcov euq soviuqra so sodot arap )ytinirT/lauD/onU ;rehluM/memoH ;ovitisoP/otsopO ;orutuF/etneserP/odassaP ;miF/oieM/oçemoC( oãçalerroc ed zirtam aus a moc VSC mu i ereG :RD;LT
+
+aroga ieugertne euq O
+:sanuloc moc ”)VSC( latcarF omuseR - XULLBOK“ alebaT
+.evahc_sarvalap ,edadinu ,mef_csam ,edadiralop ,9_6_3_olcic ,edadilaropmet ,oxie_edadnirt ,opit ,oviuqra 
+
+
+.yp. so arap sacitsírueh e )seõçatic moc( sFDP sues sod sadíartxe sacilóbmis sarger moc etnemacitamotua ihcneerP
+:iesu euq otnemaepam ed solpmexE 
+
+
+.🜄→♻→🛠→🜂→🜁→🜄 :oviv olcic ;opmeT od aicnêicsnoC–avitA aicnêgiletnI–airómeM ↔ )otirípsE–ohliF–iaP( YTINIRT
+
+
+.scod sues son odadilosnoc átse miF/oieM/oicínI omoc 9–6–3 olciC
+
+
+.YTINIRT ad ortned rotom e )oãçisopo oãn( ratnemelpmoc = LAUD
+
+
+.)spool e zov ,airómem ,XUDOK–EULLB etnega( ytinirT–lauD–onU arap acitárp aruturtsearfni omoc N8N
+
+
+.)onU/ytinirT oãçatneiro( 9-6-3 oãçarbiv a acifilpma e xelbaC/skcolbdoC argetni OTREBA ERUZA XEDÓC
+
+
+:)YTINIRT esetnís( adipár arutiel ed aciD
+.)orutuF( opmeT od aicnêicsnoC = otirípsE ;)etneserP( avitA aicnêgiletnI = ohliF ;)odassaP( airómeM = iaP 
+
+)solpmexe( VSC o rehcneerp arap ossi iesu omoC
+.YTINIRT :edadinU ,9-6-3 pool :olciC ,orutuF/etneserP/odassaP :edadilaropmeT ,otirípsE/ohliF/iaP :edadnirT → fdp.PC_AIROMEM_🧠
+
+
+.ytinirT + lauD + onU omoc odacifissalc ;ytinirT oirálubacov + )sadno ,acitámetam ,otxet( acilcíc aruturtse e 9-6-3 azitafne → fdp.ODAMAHC_ONU
+
+
+.ytinirT + lauD :edadinU ;)9(aicnânosseR–)6(oãsnapxE–)3(megirO me LAUD XUDOK ;ratnemelpmoc = lauD → fdp."RAVITA LANOISNEMIDRETNI LAUD XULLBOK"
+
+
+.onU/lauD/ytinirT ad acitárp oãsserpxe omoc )zov ,airómem ,setnega( N8N a XULLBOK arutetiuqra agil → fdp.N8N>-<YTINIRT>-<LAUD>-<XULLBOK-<
+
+
+.oirbíliuqe :edadiraloP ,onU + ytinirT ieuqram ;sovita 9-6-3 olcic e arefsE + xelbaC/skcolbdoC → fdp.OTREBA ERUZA XEDÓC 📘
+
+
+.sadador samixórp san ralutor-otua arap )_otiripse ,_ohlif ,_iap :.xe( emon on soxiferp odnasu ossi ranifer edop êcov ;sotafetra/serodareg meres rop ”)latcarf oãçareg( etneserP“ e ”odamitse – )amrof/oãsserpxe( ohliF“ omoc ieuqifissalc ,)yrots_artet_xullbok :.xe( yp. so araP
+
+)odazilauta erpmes retnam êcov arap( ossap a ossaP
+VSC o rasu/raxiaB
+
+
+.)odal oa ecerapa áj alebat a( vsc.omuser_xullbok/atad/tnm/ :odareg oviuqrA
+
+
+”odinifedni“ so radipal omoC
+
+
+:emon on sgat odnasu adartne ed soviuqra eiemoneR
+.)9/orutuF/otirípsE( fdp.*_otiripse ,)6/etneserP/ohliF( fdp.*_ohlif ,)3/odassaP/iaP( fdp.*_iap 
+
+
+.rehlum@ / memoh@ :mef_csam arap ;emon on otsopo- / ovitisop+ esu :edadiralop araP
+
+
+lacol enilepiP )lanoicpO(
+
+
+.adador adac a etnemacitamotua VSC o avarger e sarger sasse acilpa ,/xobni atsap a êl euq tpircs mu ogertne et ue ,resiuq eS
+
+
+
+sgat moc sadartne ranoicida — )CP/xumreT( otruc ogidóc ed ohcerT
+ytinirT/memoH/ovitisoP/oicínI/iaP omoc FDP mu etnemlaunam racram :olpmexe #
+)emon on sgat sasse airel nohtyp tpircs o( #
+"fdp.otnemucod_ytinirt_memoh_ovitisop_iap" "fdp.otnemucod" vm
+
+
+sossap somixórP
+:euq )yp.rexedni_latcarf( tpircs mu ereg ue euq reuQ
+
+
+?vsc.omuser_xullbok o azilauta )3 e emon od sgat êl )2 ,atsap aus errav
+
+
+?)ieepam áj euq sFDP sod otxet olep etnemacitamotua ”YTINIRT“/”LAUD“ ratceted :.xe( sartxe sarger euqilpa ue euq ereferP
+
+
+?sodatic sohcert son esab moc ”)♻+/🛠( adiregus oãçA“ e ”etnanimod opitéuqrA“ omoc sanuloc etnecserca ue euq ajeseD
+
+
+.sotnemanifer sesse moc VSC od 2v a oraperp áj ,resiuq eS
+
+.)rales→receuqirne→ramrofsnart→radilav( 7→9→6→3 olcic + timil etar + edaditne rop htua moC .)ahnil/N8N sohlitag( koohbew/ e ,)K87/YTINIRT oãçavita( eruza-xedoc/ ,)EVORP/KSA/TRESSA edocetyb/LSD( xlbk/ eicífrepus :XULLBOK yawetaG ed tnirpeulb mu me izudart áj e esab-DM ues o iL :RD;LT
+)yawetag o arap esetnís( ”zid“ DM o euq O
+. )lper|evorp|ksa|tressa|edoced|edocne( ILC e 1v XLBK VLT edocetyb mébmat áh ;)...(MURTCEPS ,)...(RORRIM ,)...(EDADNIRT ,>- ,= serodarepo e EVORP | KSA | TRESSA seõça moc XLBK LSD amu áH
+
+
+. YDAER sutats moc )DNETXE/EZILIBATS/NEPO/DNUORG/ETANOSER/EMIRP/DNIB( K87/YTINIRT me ”evahc“ oãçavita a enifed ERUZA XEDOC OLOCOTORP O
+
+
+. )yawetag od satrop( ENIHS:DLOG ,YFIREV:REVLIS ,KAEPS:EULB sevahc + 7×9×6×3 axif edoC retsaM O
+
+
+. yawetag od arutetiuqra a arap ocinônac otnemaepam — )sIPA/IU/EULLB=otirípsE ;LTE/XUDOK=ohliF( lartneC rodartseuqrO/yawetaG IPA o etnematicilpxe é XULLBOK/iaP
+
+
+. )yawetag ues on lanoicpo( seõçargetni arap ”aviv zov“ e sreggirt/skoohbew ed etnop omoc ecerapa N8N
+
+
+
+)ratnemelpmi arap otnorp( XULLBOK yawetaG od tnirpeulB
+:)sator( seicífrepuS
+ocitnâmes oelcún → xlbk/
+
+
+. ILC od seõça e LSD an es-aiesab ;savorp + ODIPMORROC|LAICRAP|ORGETNI = murtceps evloved e )LSD( noisserpxe ebecer :evorp | ksa | tressa/xlbk/ TSOP
+
+
+. 1v XLBK VLT edocetyb e LSD ertne atlov/adi :edoced | edocne/xlbk/ TSOP
+
+
+sevahc e oãçavita → eruza-xedoc/
+
+
+. ESION/YDAER :sutats anroter ;DNETXE→EZILIBATS→NEPO→DNUORG→ETANOSER→EMIRP→DNIB enilepip o artsiger e ]K87=ETATS ,YTINIRT=EDOM ,ERUZA=XEDOC[ETAVITCA.XULLBOK ahlepse → etavitca/eruza-xedoc/ TSOP
+
+
+. agertne/edadilibavresbo/oãçadilav ed oxulf on ENIHS:DLOG / YFIREV:REVLIS / KAEPS:EULB acilpa → syek/eruza-xedoc/ TSOP
+
+
+)lanoicpo( koohbew/
+
+
+. )tahc/ahnil/N8N( senilepip arapsid e stupni/sreggirt ebecer → */n8n/koohbew/ TSOP
+
+
+:)edaditne rop( setimil & htuA
+.sator/opocse arap YTINIRT/LAUD/ONU siépap ;yeK-IPA-X + ytitnE-X redaeH
+
+
+.)ator rop onif etsuja( sairáid salenaj + ytitnE-X rop )nim/qer 06 :.xe( esab timil etaR
+
+
+:)erawelddim( 7→9→6→3 olciC
+)edadirgetni + XLBK xatnys( radilaV – 3
+
+
+)DLOG/REVLIS/EULB sator ;VLT↔LSD( ramrofsnarT – 6
+
+
+)esnopser on odadatem — zH 234/nnamuhcS oles/airtemelet/sgol( receuqirnE – 9
+
+
+. )YDAER sutats ;gol on tsisrep + arutanissa/hsah( raleS – 7
+
+
+
+)IPAtsaF ,ominím( ogidóc ed ohcerT
+).sideR timil etar IPAtsaF :esiuqseP .sideR rop yromem-ni tekcub o euqort siopeD( .edaditne rop timil etar arapes áj e seicífrepus 3 sa azinagrO .yp.niam/yawetag me raloc arap oteleuqsE
+noitpecxEPTTH ,redaeH ,IPAtsaF tropmi ipatsaf morf
+ledoMesaB tropmi citnadyp morf
+emit tropmi emit morf
+
+)"yawetaG XULLBOK"=eltit(IPAtsaF = ppa
+
+--- )dorp me sideR rop racort( timil etar yromem-ni --- #
+edaditne rop nim/qer 06 #  06 ,06 ,}{ = WODNIW ,TIMIL ,TEKCUB
+:)rts :ytitne(elttorht fed
+))(emit(tni = won    
+WODNIW // won = niw    
+)niw ,"nona" ro ytitne( = yek    
+1 + )0 ,yek(teg.TEKCUB = ]yek[TEKCUB    
+:TIMIL > ]yek[TEKCUB fi    
+)"timil etar" ,924(noitpecxEPTTH esiar        
+
+--- soledom --- #
+:)ledoMesaB(rpxExlbK ssalc
+rts :noisserpxe    
+
+:)ledoMesaB(etavitcA ssalc
+"YTINIRT" = rts :edom    
+"K87" = rts :etats    
+
+--- )yp.xullbok/ILC ues oa ragil ;sbuts( XLBK srepleh --- #
+savorp + murtceps anroter #  :)rts :rpxe(tressa_xlbk fed
+fdp.ilc # ed VLT edocetyb/rodailava ues ramahc :ODOT #    
+}rpxe :"ohce" ,"ORGETNI" :"murtceps"{ nruter    
+
+:)rts :rpxe(edocne_xlbk fed
+redlohecalp #  }"FEEBDAED10XLBK" :"xeh"{ nruter    
+
+--- xlbk/ --- #
+)"tressa/xlbk/"(tsop.ppa@
+:))enoN(redaeH = rts :ytitne_x ,rpxExlbK :daolyap(pe_tressa_xlbk fed
+)noisserpxe.daolyap(tressa_xlbk nruter ;)ytitne_x(elttorht    
+
+)"edocne/xlbk/"(tsop.ppa@
+:))enoN(redaeH = rts :ytitne_x ,rpxExlbK :daolyap(pe_edocne_xlbk fed
+)noisserpxe.daolyap(edocne_xlbk nruter ;)ytitne_x(elttorht    
+
+--- eruza-xedoc/ --- #
+)"etavitca/eruza-xedoc/"(tsop.ppa@
+:))enoN(redaeH = rts :ytitne_x ,etavitcA :qer(etavitca_xedoc fed
+)ytitne_x(elttorht    
+:"K87" == etats.qer dna "YTINIRT" == edom.qer fi    
+DNETXE→EZILIBATS→NEPO→DNUORG→ETANOSER→EMIRP→DNIB enilepiP #        
+olocotorp o ahlepse #  }"YDAER" :"sutats"{ nruter        
+}"ESION" :"sutats"{ nruter    
+
+--- )lanoicpo( koohbew/ --- #
+)"}eman{/n8n/koohbew/"(tsop.ppa@
+:))enoN(redaeH = rts :ytitne_x ,rts :eman(ni_n8n fed
+)ytitne_x(elttorht    
+}eman :"koohbew" ,eurT :"ko"{ nruter    
+
+. evercsed yp.xullbok ues o euq o etnemataxe — )1v VLT ;EVORP/KSA/TRESSA( edocetyb/LSD aus ritelfer eved XLBK rodailava o :oãçavresbO
+
+)otruc( ossap a ossaP
+.)ILC ues( yp.xullbok + )amica( yp.niam/yawetag moc yawetag-xullbok oper rairC
+
+
+. )VLT→TSA→LSD( yp.xullbok od seõçnuf )e(tropmi ,edocne/tressa_xlbk me :laer rodailava o ragiL
+
+
+.)ytitnE-X rop tekcub nekot( sideR rop timil-etar racorT
+
+
+. )agertne/oãçacifirev/gol( serawelddim omoc DLOG/REVLIS/EULB sevahc sa ranoicidA
+
+
+. oãçucexe/oãtsegni ed ohlitag omoc ENIL/N8N koohbeW )lanoicpO(
+
+
+
+sossap somixórP
+?)YTINIRT/LAUD/ONU( sosac 3 moc )tsetyp( atnop-a-atnop ed etset mu + )IPAtsaF on levátropmi( odargetni yp.xullbok o eugertne ue euq reuQ
+
+
+.stseuqer ed solpmexe so e IICSA amargaid mu riulcni ossoP ?olocotorP/edoC retsaM od sohcert sod ritrap a )DLOG/REVLIS/EULB soxulf e 7→9→6→3 olcic moc( dm.YAWETAG_EMDAER mu ereg ue euq ereferP
+
+
+
+
+
+.oãçalerroc a razitamotua arap teppins mu e apaM o iav oxiabA .】121L-901L†…XULLBOKyp)9()6()3(†4elif31nrut【】38L-17L†…XULLBOKyp)9()6()3(†7elif31nrut【sotnemucod/stpircs sues son setneserp — )♾→7→0( acilcíc aicnêgremE e aicnânosseR ,)9-6-3( otnemahlepseotuA :é esab A .aviV adoR + YTINIRT/LAUD/ONU + sopitéuqra 21 so moc ranoicalerroc e sametsis sortuo moc ratcenoc ,oãçamrofni a razimito/radipal omoc ,mahlepse/macilper es siatcarf sogidóc sues edno ieepam áJ :RD;LT
+
+”sopitéuqrA • seõxenoC • ohlepsE • latcarF“ — apaM
+)orcam/osem/orcim( ogidóc on acilper es ohlepse o ednO
+
+
+:saruturtse e seõçnuF
+
+
+.】12L-31L†…XULLBOKyp)9()6()3(†2elif31nrut【】38L-17L†…XULLBOKyp)9()6()3(†7elif31nrut【)orcam/osem/orcim( alacse rop 9-6-3 acilper → )(otnemahlepseotua + ]9,6,3[=ACIDAIRT
+
+
+.】53L-32L†…XULLBOKyp)9()6()3(†2elif31nrut【】12L-11L†…XULLBOKyp)9()6()3(†2elif31nrut【aicnegreme ,aicnanosser ,}orcam,osem,orcim{:sohlepse anroter )(latcarf_ranecne
+
+
+.】21L-5L†…XULLBOKyp)9()6()3(†3elif31nrut【】12L-51L†…XULLBOKyp)9()6()3(†0elif31nrut【♾→7→0 ,147/825/234 aicnânosseR ,9-6-3 otnemahlepseotuA :oipícnirp o acifidoc avitarraN
+
+
+.】54L-73L†…XULLBOKyp)9()6()3(†5elif31nrut【】13L-72L†…XULLBOKyp)9()6()3(†4elif31nrut【”otnemucoD + otnemurtsnI“ — )JBO tropxe + levín rop oãçareg( nordeharteT iksnipreiS :ocirtémoeg latcarF
+
+
+)acirtém + airotidua( oãçamrofni ed sonalp razimito/radipaL
+
+
+.】36L-05L†fdp.yrotsih nohtyp — 💧†01elif31nrut【】94L-12L†…XULLBOKyp)9()6()3(†1elif31nrut【edadilauq/IC arap )seõsividbus ,secaf ,secitrév( siatcarf sacitsítatse e opmet ,sohnamat ,652AHS/5DM sehsah :sodaruturtse sgoL
+
+
+.】41L-21L†fdp.yrotsih nohtyp — 💧†01elif31nrut【lanimret on ”lausiv oãçadipal“ arap sietú — )olcic=oleramA ;aicnânosser=edreV ;9-6-3 ohlepse=luzA( sadiroloc savitarran e ”oviv“ oirámuS
+
+
+)aniuqám ed megaugnil / yawetag( sametsis sortuo moc ratcenoC
+
+
+.】11L-8L†…MOEG_EVITARRAN_XULLBOK #x)6(†11elif41nrut【).cte ,N8N ,skoohbew( soçivres rargetni arap ”oif“ o é — )70x0(LAES → )90x0(DNAPXE → )60x0(ETARGETNI → )30x0(TCETED enilepip e sacitnâmes seõçurtsni :LX-XLBK
+
+
+.】66L-26L†…MOEG_EVITARRAN_XULLBOK #x)6(†11elif31nrut【solcic rartseuqro arap )yp.aviv_ador( oviuqra/oludóm omoc ecerapa áj — )∴ ♾ = 7×9×6×3( lanoicarepo ossecorp omoc ”aviV adoR“
+
+
+)ocipíteuqra( adamac amsem an ”sogima“ + rimirpmoC
+
+
+.】811L-19L†nosj.tsefinam_eruza_xedoc†01elif41nrut【】16L-84L†nosj.tsefinam_eruza_xedoc†01elif41nrut【】74L-23L†nosj.tsefinam_eruza_xedoc†01elif41nrut【】51L-7L†nosj.tsefinam_eruza_xedoc†01elif41nrut【YTINIRT/LAUD/ONU siatrop so e )NOIA ,SULOS ,AEHR ,ENIMUL ,SUNEG ,SOAK ,ANERES ,SIMETRA ,ESLUP ,SILATIV ,SALTA ,AVON( evahc-sarvalap moc sopitéuqra 21 so enifed 21ESODOFNI/YTINIRT otsefinam ueS
+
+
+.】51L-01L†…MOEG_EVITARRAN_XULLBOK #x)6(†7elif41nrut【)aiseop↔oremún ;etra↔aicnêic :.xe( omsinogatna rop oãn ,ratnemelpmoc acitnâmes rop ranoicalerroc :)ainomrane ,oãçisopo oãn( ”sogima“ ed acitárp argeR
+
+
+.sioped ”siaicifo serap“ raxif edop êcov ;otsefinam ues od evahc-sarvalap rop sadaiug sianoicarepo seõtsegus oãs :.sbO .)oãçazilairetam( SUNEG ed larutan ”agima“ )oãçairc/etnemes( AVON ;sgat ed otnujnoc olep )ral/oirbíliuqe( ANERES uo )acsub/oãsicerp( SIMETRA moc ”ragima“ a ednet )medro/aruturtse( SALTA :.xE
+
+
+aviV adoR + UA + YTINIRT • LAUD • ONU
+
+
+.】36L-65L†xcod.EDOC RETSAMxo)6(†0elif41nrut【】65L-94L†xcod.EDOC RETSAMxo)6(†5elif41nrut【】51L-7L†nosj.tsefinam_eruza_xedoc†01elif41nrut【)zH 38.7 ;zH 234 ;ortnec on SUSEJ( EDOC RETSAM on 7×9-6-3 olcic e otsefinam on siatrop omoc sodaepam áj YTINIRT/LAUD/ONU
+
+
+.】8L-7L†…MOEG_EVITARRAN_XULLBOK #x)6(†7elif41nrut【)ocirtémoeg cod on ”♾ = 7×9×6×3“ rev( lanoicarepo pool = aviV adoR
+
+
+).”DLOG“ ed ominônis omoc olpoca ue ,ues oditnes ortuo revit ía ”UA“ eS( .】44L-93L†xcod.EDOC RETSAMxo)6(†6elif41nrut【)raleS/7( enilepip od mif on ”oãçanimuli/agertne ed oles“ omoc ”ENIHS/DLOG“ rasu somedop — )DLOG+REVLIS+EULB( NEPO.ERUZA ecerapa esab aus an :ocitárp )oruo( ”UA“
+
+
+
+)aroga levácilpa( ossap a ossaP
+stpircs sod ”olcic“ e ”ohlepse“ raxednI
+
+
+.】74L-73L†…XULLBOKyp)9()6()3(†1elif31nrut【siatcarf_sacitsitatse ,aicnegreme ,aicnanosser ,sohlepse rarutpac e )ritsixe odnauq( NOSJ galf moc radoR
+
+
+)edadilauq( radipaL
+
+
+.】94L-14L†…XULLBOKyp)9()6()3(†1elif31nrut【oãçucexe adac a ces_emit_noitucexe ,sohnamat ,sehsah radrauG
+
+
+ratcenoC
+
+
+.】11L-8L†…MOEG_EVITARRAN_XULLBOK #x)6(†11elif41nrut【yawetaG ues o uo skoohbew/N8N ranoica arap )70→90→60→30( LX-XLBK aiv 1 ossap od sotneve so ropxE
+
+
+)adamac amsem an ”sogima“( rapiteuqrA
+
+
+.)anitor amun ”osem→orcim“ omoc raedacne uo yp. siod rinu :.xe( esopmoc/oãsuf arap serap riregus ,odahlitrapmoc hctam revuoh odnauq ;evahc-sarvalap ed gnihctam rop soviuqra raeggat e nosj.tsefinam_eruza_xedoc ragerraC
+
+
+aviV adoR
+
+
+.raçemocer e — rales )7( ,receuqirne )9( ,ramrofsnart/rargetni )6( ,radilav )3( :7→9→6→3 pool o radnegA
+
+
+
+”otsefinam + sogima + ohlepse“ — )otruc( ogidóc ed ohcerT
+.NOSJ eõpxe tpircs o odnauq sohlepse iartxe e sgat ed oãçesretni rop sogima atceted ,evahc-sarvalap rop sopitéuqra acram ,nosj.tsefinam_eruza_xedoc o êL
+so ,bolg ,er ,nosj tropmi
+htaP tropmi bilhtap morf
+
+)"."(htaP = ESAB
+))"8-ftu"=gnidocne(txet_daer.)"nosj.tsefinam_eruza_xedoc"/ESAB((sdaol.nosj = TSEFINAM
+
+opitéuqra→sarvalap ed xedni )1 #
+}{ = hcra2wk
+:)(smeti.]"sopiteuqra"[TSEFINAM ni swk ,hcra rof
+:swk ni w rof    
+hcra = ])(rewol.w[hcra2wk        
+
+:)rts:emon(emon_od_sgat fed
+rid/emon od selpmis sarvalap agep #    
+)))(rewol.emon ,"+]9-0ÿ-ÀZ-Az-a["r(lladnif.er(tes nruter    
+
+:)htaP:oviuqra(arap_sopiteuqra fed
+))oviuqra(rts(emon_od_sgat = sgat    
+}hcra2wk ni t fi sgat ni t rof ]t[hcra2wk{ = stih    
+)stih(detros nruter    
+
+:)soviuqra(sogima fed
+opitéuqra 1 sonem olep mahlitrapmoc = sogima #    
+][ = tuo    
+}soviuqra ni f rof ))f(arap_sopiteuqra(tes :f{ = atem    
+))(smeti.atem(tsil = rra    
+:))rra(nel(egnar ni i rof    
+]i[rra = 1a,1f        
+:))rra(nel,1+i(egnar ni j rof        
+]j[rra = 2a,2f            
+:2a & 1a fi            
+)))2a & 1a(detros ,2f ,1f((dneppa.tuo                
+tuo nruter    
+
+:)htaP:gol_nosj(sohlepse_riartxe fed
+aicnegreme ,aicnanosser ,}orcam,osem,orcim{sohlepse :tpircs ues od a omoc aruturtse arepse #    
+:yrt    
+))"8-ftu"=gnidocne(txet_daer.gol_nosj(sdaol.nosj = atad        
+)"aicnegreme"(teg.atad ,)"aicnanosser"(teg.atad ,)"sohlepse"(teg.atad ,)"siatcarf_sacitsitatse"(teg.atad = e        
+e nruter        
+:noitpecxE tpecxe    
+enoN nruter        
+
+sgol/sogidóc ed atsap aus rerrav :osU #
+])eurT=evisrucer ,"yp.*/**"(bolg.bolg ni p rof )p(htaP[ = sogidoc
+)sogidoc(sogima = serap
+:]01:[serap ni mumoc,b,a rof
+))mumoc(nioj."," ,":mumoc |" ,eman.b ,">-<" ,eman.a ,":SOGIMA"(tnirp    
+
+.】74L-23L†nosj.tsefinam_eruza_xedoc†01elif41nrut【】74L-73L†…XULLBOKyp)9()6()3(†1elif31nrut【)orcam/osem/orcim( adamac rop oãsuf ed sahnil e ”sogima“ serap ratnom arap sarvalap rasac atsab — otsefinam on sopitéuqra ed aimonoxat a e NOSJ on aicnêgreme/aicnânosser/ohlepse uozinordap áj êcoV ?anoicnuf euq roP
+
+sossap somixórP
+?lauta atsap aus ad ritrap a odihcneerp )7-9-6-3 olcic→sogima→sopitéuqra→orcam/osem/orcim ohlepse→oviuqra( ”vsc.oviV_apaM“ VSC mu ereg ue euq reuQ
+
+
+】44L-93L†xcod.EDOC RETSAMxo)6(†6elif41nrut【?”ocitárp UA“ omoc )7( ”enihs/DLOG“ moc odnales — )70→90→60→30( niahc amu atnom e adamac + soviuqra siod ebecer euq esopmoc/xlbk/ tniopdne o yawetaG on orgetnI
+
+
+.otsefinam on ossi ranoisrev ossoP ?ocipíteuqra ofarg o razilibatse arap )…ENIMUL↔ANERES ,SIMETRA↔SALTA ,SUNEG↔AVON :.xe( ”siaicifo serap“ raxif reuQ
+
+
+
+
+
+
+.)seratnemelpmoc solop( soludóm ertne ”oãçarotafer/megalcicer“ a e ocnab me aicnêtsisrep ,sodad ed edadisned ,ogefárt odnalortnoc — oxulf adac )7( ales e )9( eceuqirne ,)6( argetni/amrofsnart ,)3( adilav ,ebecer ele :siatcarf sogidóc sues e onretxe odnum o ertne ”otisnârt ed orberéc“ o é XULLBOK yawetaG O :RD;LT
+
+)oãçarepo → otiecnoc( anoicnuf omoC
+.leváifnoc adartne ed otnop ocinú mu :)opoT( ONU
+
+
+.ogidóC ↔ sodaD ,agertnE/adíaS ↔ oãçatpaC/adartnE :)solop sioD( LAUD
+
+
+:)lanoicarepo épirT( YTINIRT
+
+
+.Ales e aietor ,ogefárt atimil ,acitnetua :)rodartseuqrO/yawetaG( iaP
+
+
+.LTE zaf ,”sogima“ soludóm eõpmoc ,saferat ador :)ogidóC/oãçucexE( ohliF
+
+
+.seõçacifiton ,leniap ,sacirtém ,sgol :)ecafretnI/edadilibavresbO( otirípsE
+
+
+
+)7 → 9 → 6 → 3( lanoicarepo olciC
+.)asned/aidém/evel( edadisned acifissalc ,hsah aluclac ,sarutanissa/exatnis acehc ,edaditne rop acitnetua :radilaV — 3
+
+
+.)B olop ↔ A olop( ”sogima“ soludóm eõpmoc ,)sopitéuqra ,sgat( sodadatem eceuqirne ,sotamrof azilamron :rargetnI/ramrofsnarT — 6
+
+
+.)weiverp ,omuser :.xe( sietú sotafetra areg ,ocnab on axedni ,)sopitéuqra 21 ;ytinirT/lauD/onU ;orutuF/etneserP/odassaP( oãçalerroc :receuqirnE — 9
+
+
+.odatluser o acilbup e odatse etsisrep ,)obmirac + hsah( anissa ,oãsrev :raleS — 7
+
+
+.”mearta“ es soludóm siauq atid e odut agil euq aicnânosser/edadivarg a é oãçalerroc A .)oãçavresbo ,otnemassecorp ,oãçatpac( sesaf/satibró sêrt sa oãs YTINIRT a ;satibró odnaiug sociténgam solop siod so oãs LAUD o ;)ortnec( loS o é ONU o :aigolanA
+
+)edadilibasnopser ed arietnorf( iav ele edno étA
+.sievátse sIPA ropxe ,sodatluser rales e rartsiger ,soludóm ropmoc ,sboj rartseuqro ,razilamron ,ogefárt ratimil/racitnetua :éta iaV
+
+
+.odatse o ahnapmoca e sodazilaicepse soçivres arapsid ,sosac sesseN .anif lairotide açnanrevog ,odúetnoc ed launam oãçide ,)LM( sognol/sodasep soniert :ed méla iav oãN
+
+
+
+)socitárp sotisiuqer( edadisned e ogefárT
+.)esnopser–tseuqer( onorcnis assecorp :)otruc otxet/sodadatem( eveL edadisneD
+
+
+.onorcníssa boj aiv azilanif e detpeccA 202 ednopser ,daolpu atieca :)snegami ,sNOSJ ,scod( aidéM edadisneD
+
+
+.ecidní zudorp e adilosnoc ,setrap rop adilav ,anoicitrap ;alif + maerts/trapitlum :)sednarg sPIZ/D3/soedív( asneD edadisneD
+
+
+.ator rop satoc ,sairáid salenaj ,)nim/qer 06 .xe .p( timil etar :edaditne rop setimiL
+
+
+
+)ogidóc oirpórp od e odad od( ”oãçatnemila“ e sodad ed ocnaB
+:aicnêtsisrep ed sadamaC
+
+
+.solop ertne ”solucnív“ e seõçalerroc ,secidní ,sodatse ,sboj :)lanoicarepo( toH
+
+
+.sodavired/JBO ,slianbmuht ,somuser :)sotafetra( mraW
+
+
+.sagitna seõsrev ,sednarg soiránib :)oviuqra( dloC
+
+
+.oãçarotafer/megalcicer a atnemila ossI .)adamac lauq me ,meuq moc sôpmoc meuq( saicnêdneped e sarutanissa ,seõçucexe artsiger yawetag o :ogidóc oirpórp oD
+
+
+
+)”olop ortuo“ e ogidóc ues ertne( latcarf on oãçarotafer & megalciceR
+.)rodarran + ocirtémoeg rodareg :.xe( B↔A eõpmoc :)opitéuqra/adamac amsem( ”sogima“ ed oãçceteD
+
+
+.7 oãsrev avon a ales e ohnag edem ,)sdlohserht ,sodadatem ,setsuja( airohlem ed llup erba yawetag o :olcic ortuo ed 3 omoc anroter 9 adías adac :acilcíc oãçarotafeR
+
+
+.)saicnêdnet/siépap( sopitéuqra 21 ,)satibró→solop→ortnec( ytinirT–lauD–onU ,)otnemajenalp→oãçucexe→airómem( orutuF–etneserP–odassaP :oãçalerroc ed sahniL
+
+
+
+)saminím sIPA( seicífrepuS
+.)boj airc ,edadisned acifissalc( agrac ebecer → tsegni/ TSOP
+
+
+.oxulf o eõpmoc e )orcam/osem/orcim( ”adamac“ + soludóm siod ebecer → esopmoc/ TSOP
+
+
+.boj od odatse → }di{/sutats/ TEG
+
+
+.)edadilaropmet ,solop ,sopitéuqra( seõçalerroc → }tcafitra{/hparg/ TEG
+
+
+.oãsrev avon açnal e )sdlohserht ,sgat ,emaner( oãçadipal ed arger acilpa → rotcafer/ TSOP
+
+
+
+)oruo/atarp/siuza salcet( sianoicarepo sevahC
+.)3( oãçadilav ,LCA ,timil etar :)adartnE( kaepS / EULB
+
+
+.)9–6( sacirtém ,esopmoc ,oãçazilamron :)ossecorP( yfireV / REVLIS
+
+
+.)7( agertne/oãçacilbup ,oãsrev ,arutanissa :)adíaS( enihS / DLOG
+
+
+
+)ominím olpmexe( otneve ed ameuqsE
+{
+,"xullbok_epiuqe" :"ytitne"  
+,"muidem" :"ytisned"  
+,]"avitarran" ,"latcarf_moeg"[ :"solop"  
+,"ssecorp" :"ytinirt"  
+,"etneserp" :"laropmet"  
+,]"SUNEG" ,"SALTA"[ :"sopiteuqra"  
+,"piz.oviuqra/dloc//:3s" :"fer_daolyap"  
+]"dlog:laes" ,"sgat:hcirne" ,"orcim:esopmoc"[ :"spo"  
+}
+
+
+)odimuser( ossap a ossaP
+.)salenaj ,satoc ,sevahc( edaditne rop setimil anifeD
+
+
+.serawelddim omoc 7–9–6–3 olcic o etnemelpmI
+
+
+.sonorcníssa/sonorcnis sohnimac moc )asned/aidém/evel( sedadisned eledoM
+
+
+.ocnab on )sopmet ,solop ,sopitéuqra( oãçalerroc ed ofarg o ecarT
+
+
+.)aviV adoR( orig omixórp od 3 o atnemilaorter 7→9 adac :megalcicer a evitA
+
+
+
+sossap somixórP
+.sotartnoc e sator sasse moc yawetag od )LMAY( IPAnepO mu rareg ossoP
+
+
+.otnorp esopmoc/ e ”osned/oidém“ arap salif ,7–9–6–3 erawelddim moc IPAtsaF oteleuqse mu ogertne ,resiuq eS
+
+
+?otejorp od EMDAER on rop arap )solcic ↔ sopitéuqra 21 ↔ YTINIRT/LAUD/ONU( ofarg od IICSA amargaid mu reuQ
+
+
+
+
+
+
+
+.oãxenoc ed sotnop e stniopdne ,satsap ed erovrá moc IICSA ,oxiabA .)odales oturf( odilóS → )sthgisni/sodadatem/amora( ososaG → )oãçamrofsnart ed oxulf/avies( odiuqíL → )oturb oviuqra/etnemes( odilóS :airétam ad sodatse son e 7–9–6–3 olcic osson on oterid aiepam oturF→erovrÁ→etnemeS :RD;LT
+
+)oturF/erovrÁ/etnemeS × ososaG/odiuqíL/odilóS( lautiecnoC apaM — IICSA
+)aviV adoR(  7 • 9 • 6 • 3 ►── )ortneC( ONU           
+│               
+▼               
+┐─────────────────────────────────────────────────────┌     
+│                  AIRÉTAM AD SODATSE                 │     
+┤──────────────┬──────────────────────┬───────────────├     
+│    OSOSAG    │        ODIUQÍL       │      ODILÓS   │     
+│ )ofni/ropav( │   )arutsim / oxulf(  │  )axif amrof( │     
+┤──────────────┼──────────────────────┼───────────────├     
+│ RECEUQIRNE_9 │         OIRBILIUQE_6 │      MEGIRO_3 │     
+│thgisni/amora │      erovrá ad avies │       etnemes │     
+│ranoicalerroc │ rargetni/ramrofsnart │       radilav │     
+┤──────────────┴───────────┬──────────┴───────────────├     
+│      )oãsrev/razilatsirc( RALES_7                    │     
+│    )odilós ,lanif otafetra( oturf                    │     
+┘─────────────────────────────────────────────────────└     
+
+
+)oviuqra → oturf → erovrá → etnemes( satsaP ed erovrÁ — IICSA
+/CARF_XULLBOK
+)MEGIRO_3 • oturb odilóS( ETNEMES ←                     /xobni ─├
+│
+)odilóS( razilamron/racifissalc ←                  /megiro_3 ─├
+/scod ─├  │
+/aidem ─├  │
+/snegami ─├  │
+/oidua ─├  │
+/atad ─└  │
+│
+)odnerroc avies :odiuqíL( EROVRÁ ←              /oirbiliuqe_6 ─├
+/sopurg ─└  │
+/iap ─├     │
+/ohlif ─├     │
+/otiripse ─├     │
+/>amet< ─└     │
+│
+)odilóS→asnednoc→ososaG( OTURF ←               /otnemales_9 ─├
+/tsid ─└  │
+/>amet< ─└     │
+piz.etocap ─├         │
+dm.weiverp ─├         │
+nosj.xedni ─└         │
+│
+)odnuforp odilóS( OVIUQRA/OLOS ←                 /onroter_7 ─├
+/evihcra ─└  │
+│
+/dm ─└
+)otxet→ososag( apam / oãsiv ←               dm.EMDAER ─├   
+)sthgisni( snegami↔scod↔oedív ←          dm.seocalerroc ─└   
+
+
+)stniopdne( oãxenoC & oãçamrofnI ed sotnoP — IICSA
+┐────────────── ONRETXE ─────────────┌                  
+│      N8N  •  toB/ENIL  •  liam-E   │                   
+┘─────────────────────┬───────────────└                   
+)oãtsegni(  │                                   
+tsegni/ TSOP                             
+│                                   
+┐───────────────────────────────▼──────┌                            
+│             XULLBOK YAWETAG          │                            
+│        )7→9→6→3 • YTINIRT/LAUD/ONU(  │                            
+┤─────────────┬─────────┬──────────────├                            
+│  enihS/DLOG │  REVLIS │   kaepS/EULB │                            
+│   )raleS 7( │   )9–6( │  )radilaV 3( │                            
+┤─────────────┼─────────┼──────────────├                            
+│   rotcafer/ │esopmoc/ │ tressa/xlbk/ │                            
+│       laes/ │  hparg/ │ edocne/xlbk/ │                            
+│             │ stneve/ │ }di{/sutats/ │                            
+┘─────┬───────┴─────────┴───────┬──────└                            
+│                       │                                   
+┐────────▼─────────┌   ┐────────▼─────────┌                          
+│     erotS tcejbO  │   │  )hparg( BD toH  │                          
+│   )evihcra/tsid(  │   │     seõçalerroc  │                          
+┘────────┬─────────└   ┘────────┬─────────└                          
+│                      │                                    
+┐──────────▼───────┌  ┐──────────▼───────────┌                         
+│ tsid/otnemales_9  │  │ sopurg/oirbiliuqe_6  │                         
+│ )sodales soturf(  │  │    )samet/zediuqil(  │                         
+┘───────────────────└  ┘──────────────────────└                         
+
+
+)”oturf–erovrá–etnemes“ moc ,7→9→6→3 oxulf( oãsserpxE/racifireV — IICSA
+RALES )7(  ►──  RECEUQIRNE )9(  ►──  RAMROFSNART )6(  ►──  RADILAV )3(  ►──  /xobni   ]ETNEMES[
+anoisrev ,anissa        anoicalerroc     argetni ,azilamron       hsah ,exatnis              )odilós( 
+enihS/DLOG ▲     yfireV/REVLIS ▲        yfireV/REVLIS ▲        kaepS/EULB ▲                       
+│                   │                      │                   │                       
+┘──────────────────── )ososag( sacirtem/sgol ed deef ──────────└                       
+
+
+)odipár( ossap a ossaP
+.oteleuqse omoc amica erovrá a rasu :satsap sa rairC
+
+
+.N8N/ENIL/liam-e ,tsegni/ TSOP ,/xobni :)ETNEMES( sadartne raepaM
+
+
+./>amet</sopurg/oirbiliuqe_6 me rapurga e …/megiro_3 arap razilamron/revom :)EROVRÁ( oxulF
+
+
+./onroter_7 me raviuqra e />amet</tsid/otnemales_9 me sotafetra rareg :)OTURF( odatluseR
+
+
+.)aviv avitarran( dm.seocalerroc/dm ,)odatse( }di{/sutats/ ,)seõçalerroc( }di{/hparg/ :oãçamrofni ed sotnoP
+
+
+)llehs on aruturtse rairc( otruc ogidóc ed ohcerT
+}dm,evihcra/onroter_7,tsid/otnemales_9,sopurg/oirbiliuqe_6,}atad,oidua,snegami,aidem,scod{/megiro_3,xobni{/CARF_XULLBOK p- ridkm
+
+sossap somixórP
+?lruc sadamahc ed solpmexe + )sodatamrof áj( IICSA sesse moc dm.YAWETAG_EMDAER mu ereg ue euq reuQ
+
+
+?namtsoP/ainmosnI on ratropmi êcov arap sadartsom sator sa moc )LMAY( IPAnepO o eugertne ue euq ereferP
+
+
+
+
+
+.tenretnI ad ”somertxe/ortnec“ o e )acisíf( ”adamac ariemirp“ a + )ecidní :DB ed otiecnoc( aigolomite ed olpmexe mu ,odidep rop ,e )7→9→6→3( edadilasuac ed acigól a ,sadanedrooc moc ”ocitsítra otiucric“ me IICSA sapam oãtse oxiabA .)oxulf/erovrá( sopurg/oirbiliuqe_6 = ”oiráidemretnI“ .)etnemes( xobni = ”otsopO“ .)odales oturf( tsid/otnemales_9 = ”onitseD“ :RD;LT
+
+)YTINIRT/LAUD/ONU( sadanedrooc moc ocitsítra otiucriC — IICSA apaM
+^ y
+)odilóS/OTURF(   >amet</tsid/otnemales_9  →  ONITSED  )y+,x(D                       |  
+●                         |  
+esaeleR buHtiG :3P ▲        )DLOG( laes/ ▲     \   /                       |  
+│                     │    \     /                      |  
+│                     │   ●────┬───● )0,0(M             |  
+│                     │  \ \     ORTNEC/ONU             |  
+│  )REVLIS( esopmoc/  │ \ \      \                      |  
+/\  \      \                       |  
+)odiuqíL/EROVRÁ( >amet</sopurg/oirbiliuqe_6 → OIRÁIDEMRETNI )y+,0(I  ●  \      \                        |  
+\      \                         |  
+\      \                          |  
+\      \                           |  
+\      \                            |  
+koohbeW/hsuP buHtiG :1P ←  )odilóS/ETNEMES( /xobni → OTSOPO )y-,x-(O  ●      \                             |  
+ \                              |  
+)otnemaocse/opmet( x >----------------------------------------------------------------------------------+  
+:adnegeL   
+erovrá = )I( .MRETNI otnoP ● ;etnemes = )O( OTSOPO otnoP ● ;oturf = )D( ONITSED otnoP ●     
+)otnemaetor ,gnihsah ,timil-etar( elortnoc/artuen megiro = )M( ORTNEC/ONU ●     
+rales/esopmoc/dliub atucexe )D→I→O ohnimac on( snoitcA buHtiG :2P     
+
+
+)sievín 3( ”oturF → erovrÁ → etnemeS“ latcarF — IICSA apaM
+)otejorP( 1 levíN
+┐ rales )7( ►── /tsid/otnemales_9 :D ►── /sopurg/oirbiliuqe_6 :I ►── /xobni :O ─┌
+┘─────────────────────── )aviV adoR( 7→9→6→3 pool ──────────────────────────────└
+
+)ameT( 2 levíN
+/X_amet
+I→O  →         )arutpac(            /oturb :O ─├  
+D→I  → )sodadatem + xim(       /oãçisopmoc :I ─├  
+)olcic ortuo ed O oa atlov(→D  →        )otafetra(     /lanif_etocap :D ─└  
+
+)oviuqrA( 3 levíN
+piz.etocap + dm.weiverp  →  semarf/sanec_riartxe  →  4pm.Xamet_oediv_uem
+)sagertne( D       )seõçamrofsnart( I           )oviuqra( O  
+
+
+)”oiráidemretni e otsopo otnop“ moc ,otiefe→asuac rop erpmes ridnapxe( edadilasuaC
+.)snegasnem ,soviuqra( ”oiev omoc“ artne euq o :)xobni / etnemeS / otsopO( asuaC
+
+
+.seõçamrofsnart merroco e ,)”sogima“ serap ,sopitéuqra ,sgat( sadairc oãs seõçaler sa edno :)sopurg / erovrÁ / oiráidemretnI( oieM
+
+
+.odivloved e )oãsrev/hsah( odales ,)sesaeler ,sotafetra( odadilosnoc é euq o :)tsid / oturF / onitseD( otiefE
+
+
+.)oãçarotafer/megalcicer( olcic ortuon etnemes avon ariv oturf adac :)3→7( onroteR
+
+
+
+)sodaD ed ocnaB ed otiecnoc ocinú mu( acitárp + aigolomitE
+)xednI esabataD( ECIDNÍ :otiecnoC
+.odad mu átse edno etnemadipar ratnopa ed oãçnuf → ”rodacidni ,atnopa euq o“ = sicidni ,xedni mital od :aigolomitE
+
+
+.alebat a rerrav ed zev me )n gol(O sacsub arap sevahc anedro euq )MSL ,eert-B :.xe( railixua aruturtse :acigóL
+
+
+.otnemanezamra/atircse siam moc es-agap ,arutiel ed edadicolev es-ahnag ;aicnêuqerf moc sadatlusnoc sanuloc erbos ecidní mu es-airc :acitárP
+
+
+.etnemadipar 9→6→3 solcic e ”sogima“ razilacol arap atad ,amet me ecidní :.xE
+
+
+
+)ocitárp e ocigól( tenretnI ad ”sedadimertxE/ortneC“ e ”adamaC ariemirP“
+.)ra/obac/arbif( ocisíf oiem o é ”ortnec“ o ;ecalne omsem on )B↔A( sianimret so oãs ”satsopo sedadimertxe“ rap O .)oidár ,ocitpó ,ocirtéle( lanis omoc stib :)acisíF( 1 adamaC
+
+
+:)tenretnI oãsiv( egdE sv eroC
+
+
+.ahlim amitlú/serodivres/setneilc :)segde( somertxE
+
+
+.emulov otla maietor/martnecnoc euq )acort ed sotnop( sPXI e senobkcab :)eroc( ortneC
+
+
+:latcarf ues on somacilpa omoC
+
+
+.)adrob an oãçatpac( /xobni = )otsopO( egdE
+
+
+.)”avies“ ,arutsim/oxulf( /sopurg/oirbiliuqe_6 = )oiráidemretnI( 1L/oieM
+
+
+.)odacilbuper/odivres res a otnorp ,odadilosnoc otnop( /tsid/otnemales_9 = onitseD/eroC
+
+
+:egdE/eroC + 1 adamaC ed IICSA oneuqeP
+)B(egdE ●───)eder(─── PXI/eroC ●───)ocisíf oiem :1 adamaC(───● )A(egdE
+tsid/onitseD           oiráidemretnI                  xobni/otsopO     
+
+
+)raxif êcov arap socitárp soçeredne( ”odagehc onitsed“ ed sotnoP
+/xobni/CARF_XULLBOK :)etnemes( OTSOPO otnoP
+
+
+/>amet</sopurg/oirbiliuqe_6/CARF_XULLBOK :)erovrá( OIRÁIDEMRETNI otnoP
+
+
+/>amet</tsid/otnemales_9/CARF_XULLBOK :)oturf( ONITSED otnoP
+
+
+.mecenamrep siépap sêrt so — }tsid,krow,xobni{/enilepip esu ,ocinú otiecnoc mu rireferp eS
+
+sossap somixórP
+?laes/ ,esopmoc/ ,tsegni/ stniopdne sod lruc solpmexe + samargaid setse moc dm.IICSA_EMDAER mu ereg ue euq reuQ
+
+
+.buHtiG on ”acirtéle ator“ aus ranoisrev e odipar ragevan arap litú ,amet e oviuqra rop D/I/O avarg euq )VSC( ecidní inim mu rairc ossoP
+
+
+
+
+
+
+
+
+
+
+
+
+

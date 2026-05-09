@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-17T15:30:23.613476",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "direct_file": "/sdcard/JESUS_VERBO/CODEX/state/espelho_input.txt",
+  "mirror_file": "/sdcard/JESUS_VERBO/CODEX/state/espelho_input.mirror.txt",
+  "direct": {
+    "lines": 1888,
+    "chars": 62024,
+    "letters": 45842,
+    "digits": 1163,
+    "spaces": 11601,
+    "punct": 3418,
+    "words": 10177,
+    "avg_chars_per_line": 32.852,
+    "avg_words_per_line": 5.39,
+    "avg_chars_per_word": 4.619
+  },
+  "mirror": {
+    "lines": 1888,
+    "chars": 62023,
+    "letters": 45842,
+    "digits": 1163,
+    "spaces": 11600,
+    "punct": 3418,
+    "words": 10177,
+    "avg_chars_per_line": 32.851,
+    "avg_words_per_line": 5.39,
+    "avg_chars_per_word": 4.619
+  },
+  "seal": "∆7"
+}

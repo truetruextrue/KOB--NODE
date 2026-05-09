@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-17T16:20:55.051202",
+  "root": "/sdcard/JESUS_VERBO/CODEX",
+  "m1_report": "/sdcard/JESUS_VERBO/CODEX/state/m1_chars_report.json",
+  "direct": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 690,
+      "es": 397,
+      "en": 6
+    },
+    "top_bigrams": [
+      {
+        "ngram": "koblluxpython",
+        "count": 31
+      },
+      {
+        "ngram": "oque",
+        "count": 24
+      },
+      {
+        "ngram": "outobj",
+        "count": 24
+      },
+      {
+        "ngram": "verdadeintegrar",
+        "count": 22
+      },
+      {
+        "ngram": "36",
+        "count": 22
+      },
+      {
+        "ngram": "69",
+        "count": 22
+      },
+      {
+        "ngram": "voicesjson",
+        "count": 20
+      },
+      {
+        "ngram": "verbo_agua_codigopy",
+        "count": 19
+      },
+      {
+        "ngram": "koblluxinbox",
+        "count": 19
+      },
+      {
+        "ngram": "outtxt",
+        "count": 19
+      }
+    ]
+  },
+  "mirror": {
+    "script": "Latin",
+    "lang": "pt",
+    "scores": {
+      "pt": 678,
+      "es": 394,
+      "en": 3
+    },
+    "top_bigrams": [
+      {
+        "ngram": "nohtypxullbok",
+        "count": 30
+      },
+      {
+        "ngram": "euqo",
+        "count": 24
+      },
+      {
+        "ngram": "jbotuo",
+        "count": 23
+      },
+      {
+        "ngram": "rargetniedadrev",
+        "count": 22
+      },
+      {
+        "ngram": "96",
+        "count": 22
+      },
+      {
+        "ngram": "63",
+        "count": 22
+      },
+      {
+        "ngram": "nosjseciov",
+        "count": 20
+      },
+      {
+        "ngram": "ypogidoc_auga_obrev",
+        "count": 19
+      },
+      {
+        "ngram": "tuoxullbok",
+        "count": 19
+      },
+      {
+        "ngram": "yplatcarf_artet",
+        "count": 17
+      }
+    ]
+  },
+  "seal": "∆7"
+}

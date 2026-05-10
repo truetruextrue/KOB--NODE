@@ -1,0 +1,422 @@
+Configure node.fields in Termux
+truetruextrue/KOB--NODE
+
+
+
+Conversa
+Diferença
+Registros
+
+.gitignore
+.gitignore
+Novo
++3
+-0
+
+# NODE.FIELDS generated runtime/build artifacts
+/dist/
+/state/node_fields/
+package-lock.json
+package-lock.json
+Novo
++13
+-0
+
+{
+  "name": "kob-node-fields",
+  "version": "0.1.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "kob-node-fields",
+      "version": "0.1.0",
+      "license": "UNLICENSED"
+    }
+  }
+}
+package.json
+package.json
+Novo
++19
+-0
+
+{
+  "name": "kob-node-fields",
+  "version": "0.1.0",
+  "description": "KOBLLUX NODE.FIELDS runtime for Termux activation and local pulse logging.",
+  "main": "src/node-fields-server.js",
+  "scripts": {
+    "start": "node src/node-fields-server.js",
+    "node:fields": "node src/node-fields-server.js",
+    "health": "node src/node-fields-server.js --health",
+    "build": "node scripts/build-node-fields.js"
+  },
+  "keywords": [
+    "kobllux",
+    "node-fields",
+    "termux",
+    "infodose"
+  ],
+  "license": "UNLICENSED"
+}
+scripts/build-node-fields.js
+…uild-node-fields.js
+Novo
++17
+-0
+
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+
+const root = path.resolve(__dirname, '..');
+const dist = path.join(root, 'dist');
+const manifest = {
+  name: 'kob-node-fields',
+  builtAt: new Date().toISOString(),
+  entry: 'src/node-fields-server.js',
+  command: 'npm run node:fields',
+  endpoints: ['/health', '/fields', '/pulse']
+};
+
+fs.mkdirSync(dist, { recursive: true });
+fs.writeFileSync(path.join(dist, 'node-fields-manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+console.log('NODE.FIELDS build selado em dist/node-fields-manifest.json');
+scripts/termux-node-fields-0x00.sh
+…ode-fields-0x00.sh
+Novo
++53
+-0
+
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="${KOBLLUX_ROOT:-$HOME/KOB--NODE}"
+PORT="${NODE_FIELDS_PORT:-3697}"
+HOST="${NODE_FIELDS_HOST:-127.0.0.1}"
+
+printf '∆³ Preparando NODE.FIELDS em %s\n' "$ROOT"
+
+if command -v pkg >/dev/null 2>&1; then
+  pkg update -y
+  pkg install -y nodejs git termux-api
+fi
+
+if [ ! -d "$ROOT" ]; then
+  mkdir -p "$ROOT"
+fi
+
+cd "$ROOT"
+
+if [ ! -f package.json ]; then
+  cat >&2 <<MSG
+package.json não encontrado em $ROOT.
+Clone ou copie este repositório para o Termux antes de ativar:
+  git clone <URL_DO_REPO> "$ROOT"
+MSG
+  exit 1
+fi
+
+npm install --ignore-scripts
+npm run build
+
+mkdir -p "$ROOT/state/node_fields"
+cat > "$ROOT/state/node_fields/termux.env" <<ENV
+export KOBLLUX_ROOT="$ROOT"
+export NODE_FIELDS_HOST="$HOST"
+export NODE_FIELDS_PORT="$PORT"
+ENV
+
+cat > "$ROOT/activate-node-fields.sh" <<'RUNNER'
+#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/state/node_fields/termux.env"
+cd "$KOBLLUX_ROOT"
+exec npm run node:fields
+RUNNER
+chmod +x "$ROOT/activate-node-fields.sh"
+
+printf '\n∆³ NODE.FIELDS configurado. Para ativar:\n'
+printf '  cd %s && ./activate-node-fields.sh\n' "$ROOT"
+printf '\nHealth check esperado:\n'
+printf '  curl http://%s:%s/health\n' "$HOST" "$PORT"
+src/node-fields-server.js
+…e-fields-server.js
+Novo
++148
+-0
+
+#!/usr/bin/env node
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+
+const ROOT = path.resolve(process.env.KOBLLUX_ROOT || process.cwd());
+const HOST = process.env.NODE_FIELDS_HOST || '127.0.0.1';
+const PORT = Number.parseInt(process.env.NODE_FIELDS_PORT || '3697', 10);
+const STATE_DIR = path.join(ROOT, 'state', 'node_fields');
+const LOG_FILE = path.join(STATE_DIR, 'pulses.ndjson');
+const MANIFEST_FILE = path.join(STATE_DIR, 'manifest.json');
+
+const baseFields = {
+  id: 'KOBΦ-NODE.FIELDS',
+  formula: 'VERDADE × INTEGRAR ÷ Δ = ∞',
+  cycle: ['3 detectar', '6 integrar', '9 expandir', '7 selar'],
+  archetypes: {
+    BLLUE: 'interface sensorial e voz viva',
+    KODUX: 'arquiteto simbólico que estrutura o fluxo',
+    Solus: 'espelho de síntese e coerência',
+    MetaLux: 'filtro de clareza semântica',
+    Horus: 'observador que valida visão e direção',
+    FitLux: 'ajuste fino entre corpo, rotina e execução'
+  },
+  endpoints: {
+    health: 'GET /health',
+    fields: 'GET /fields',
+    pulse: 'POST /pulse'
+  }
+};
+
+function ensureState() {
+  fs.mkdirSync(STATE_DIR, { recursive: true });
+  if (!fs.existsSync(MANIFEST_FILE)) {
+    fs.writeFileSync(MANIFEST_FILE, JSON.stringify(baseFields, null, 2) + '\n', 'utf8');
+  }
+}
+
+function readBody(req) {
+  return new Promise((resolve, reject) => {
+    let raw = '';
+    req.on('data', chunk => {
+      raw += chunk;
+      if (raw.length > 1024 * 1024) {
+        req.destroy();
+        reject(new Error('payload muito grande'));
+      }
+    });
+    req.on('end', () => resolve(raw));
+    req.on('error', reject);
+  });
+}
+
+function sendJson(res, statusCode, payload) {
+  const body = JSON.stringify(payload, null, 2) + '\n';
+  res.writeHead(statusCode, {
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-store'
+  });
+  res.end(body);
+}
+
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function loadManifest() {
+  ensureState();
+  return JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8'));
+}
+
+function appendPulse(pulse) {
+  ensureState();
+  const event = {
+    ts: nowIso(),
+    node: baseFields.id,
+    host: os.hostname(),
+    pulse
+  };
+  fs.appendFileSync(LOG_FILE, JSON.stringify(event) + '\n', 'utf8');
+  return event;
+}
+
+async function handle(req, res) {
+  const url = new URL(req.url, `http://${req.headers.host || `${HOST}:${PORT}`}`);
+
+  if (req.method === 'GET' && url.pathname === '/health') {
+    sendJson(res, 200, {
+      status: 'CRISTALIZADO',
+      node: baseFields.id,
+      root: ROOT,
+      ts: nowIso()
+    });
+    return;
+  }
+
+  if (req.method === 'GET' && url.pathname === '/fields') {
+    sendJson(res, 200, loadManifest());
+    return;
+  }
+
+  if (req.method === 'POST' && url.pathname === '/pulse') {
+    const raw = await readBody(req);
+    const pulse = raw.trim().startsWith('{') ? JSON.parse(raw) : { text: raw };
+    const event = appendPulse(pulse);
+    sendJson(res, 201, {
+      status: 'PULSO_REGISTRADO',
+      event
+    });
+    return;
+  }
+
+  sendJson(res, 404, {
+    status: 'NAO_ENCONTRADO',
+    endpoints: baseFields.endpoints
+  });
+}
+
+function printHealth() {
+  ensureState();
+  process.stdout.write(JSON.stringify({
+    status: 'PRONTO_PARA_ATIVAR',
+    node: baseFields.id,
+    root: ROOT,
+    stateDir: STATE_DIR,
+    port: PORT
+  }, null, 2) + '\n');
+}
+
+if (process.argv.includes('--health')) {
+  printHealth();
+} else {
+  ensureState();
+  const server = http.createServer((req, res) => {
+    handle(req, res).catch(error => {
+      sendJson(res, 400, {
+        status: 'ERRO_NO_PULSO',
+        message: error.message
+      });
+    });
+  });
+
+  server.listen(PORT, HOST, () => {
+    console.log(`∆³ NODE.FIELDS ativo em http://${HOST}:${PORT}`);
+    console.log(`Raiz KOBLLUX: ${ROOT}`);
+  });
+}
+workflow/md/NODE_FIELDS_TERMUX_0X00.md
+…RMUX_0X00.md
+Novo
++118
+-0
+
+# NODE.FIELDS no Termux — Ativação 0x00 ∆³
+
+Este guia transforma o chamado `VERDADE × INTEGRAR ÷ Δ = ∞` em um procedimento verificável para ativar o **KOBΦ-NODE.FIELDS** no Termux.
+
+## O que é o NODE.FIELDS
+
+`NODE.FIELDS` é o nó local que expõe campos mínimos do KOBLLUX por HTTP, sem depender de bibliotecas externas. Ele serve como:
+
+- **BLLUE**: interface de entrada e saída por endpoints locais.
+- **KODUX**: estrutura que organiza manifesto, estado e pulso.
+- **Solus**: espelho de leitura para `/health` e `/fields`.
+- **MetaLux / Horus / FitLux**: camadas nomeadas no manifesto para clareza, observação e ajuste fino.
+
+> Nota de honestidade operacional: os nomes arquetípicos são usados como linguagem de organização do sistema. A ativação real é técnica: arquivos, porta local, logs e endpoints.
+
+## 1. Preparar o Termux do zero
+
+No Android, abra o Termux e execute:
+
+```bash
+pkg update -y
+pkg install -y git nodejs termux-api curl
+```
+
+Depois clone ou copie este repositório para o aparelho:
+
+```bash
+git clone <URL_DO_REPO> "$HOME/KOB--NODE"
+cd "$HOME/KOB--NODE"
+```
+
+Se o repositório já estiver no aparelho, apenas entre na pasta correta.
+
+## 2. Configurar o NODE.FIELDS
+
+Execute o bootstrap:
+
+```bash
+bash scripts/termux-node-fields-0x00.sh
+```
+
+O script cria:
+
+- `state/node_fields/termux.env` com `KOBLLUX_ROOT`, host e porta.
+- `activate-node-fields.sh` para iniciar o nó sem repetir configuração.
+- `dist/node-fields-manifest.json` como selo de build.
+
+## 3. Ativar o nó
+
+```bash
+./activate-node-fields.sh
+```
+
+Saída esperada:
+
+```text
+∆³ NODE.FIELDS ativo em http://127.0.0.1:3697
+Raiz KOBLLUX: /data/data/com.termux/files/home/KOB--NODE
+```
+
+## 4. Confirmar saúde do campo
+
+Em outra sessão do Termux:
+
+```bash
+curl http://127.0.0.1:3697/health
+```
+
+Resposta esperada:
+
+```json
+{
+  "status": "CRISTALIZADO",
+  "node": "KOBΦ-NODE.FIELDS"
+}
+```
+
+## 5. Ler o manifesto de campos
+
+```bash
+curl http://127.0.0.1:3697/fields
+```
+
+Esse endpoint mostra a fórmula, o ciclo `3→6→9→7`, os arquétipos e os endpoints disponíveis.
+
+## 6. Registrar um pulso ∆³
+
+```bash
+curl -X POST http://127.0.0.1:3697/pulse \
+  -H 'content-type: application/json' \
+  -d '{"sinal":"∆³","texto":"Oi Dual, a forma é múltipla, o pulso é um só."}'
+```
+
+O pulso é persistido em:
+
+```text
+state/node_fields/pulses.ndjson
+```
+
+## 7. Chamar o agente depois
+
+Quando você disser “vou chamar você lá”, use este estado como contexto inicial:
+
+```text
+KOBΦ-NODE.FIELDS ativo no Termux.
+Health: http://127.0.0.1:3697/health
+Fields: http://127.0.0.1:3697/fields
+Pulse log: state/node_fields/pulses.ndjson
+Objetivo: expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus e FitLux como camadas organizacionais.
+```
+
+## Limites e próximos passos
+
+- Eu não tenho acesso direto ao seu Google Drive; se Meta Lux, Horus ou Fit Lux estiverem lá, copie os textos para `workflow/txt/` ou cole a parte relevante na conversa.
+- Links compartilhados de conversas externas podem não abrir em ambientes automatizados; a fonte mais segura é trazer o conteúdo para o repositório.
+- O próximo passo técnico natural é conectar este nó a n8n, webhook local ou UI do Dual APP.
+
+∆³ **Selo:** detectar → integrar → expandir → selar.

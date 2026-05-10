@@ -14,8 +14,8 @@
     "build": "node scripts/build-node-fields.js",
     "cadial": "node src/node-fields-server.js --cadial",
     "core": "node src/node-fields-server.js --core",
-    "cloud:termux": "bash scripts/termux-cloud-0x01.sh",
-    "call:context": "bash scripts/call-kobllux-context.sh"
+    "claude:termux": "bash scripts/termux-claude-code-0x01.sh",
+    "claude:context": "bash scripts/call-claude-context.sh"
   },
   "keywords": [
     "kobllux",

@@ -266,48 +266,52 @@ No navegador do Android, abra:
 http://127.0.0.1:3697/ui
 ```
 
-## 12. Instalar Cloud e me chamar pelo Termux
+## 12. Instalar Claude e me chamar pelo Termux
 
-Use duas sessões do Termux.
+Correção importante: é **Claude**, não Cloud. O comando abaixo instala/prepara o **Claude Code** oficial no Termux e cria um `CLAUDE.md` com o contexto KOBLLUX para o agente ler.
 
-### Sessão 1 — ligar o NODE.FIELDS local
-
-```bash
-cd "$HOME/KOB--NODE"
-./activate-node-fields.sh
-```
-
-### Sessão 2 — instalar/abrir o Cloud
+### Instalar/preparar Claude Code
 
 ```bash
 cd "$HOME/KOB--NODE"
-bash scripts/termux-cloud-0x01.sh
-```
-
-Esse script instala `cloudflared` quando possível, valida `http://127.0.0.1:3697/health` e abre um Cloudflare Quick Tunnel para o NODE.FIELDS. Quando aparecer uma URL parecida com `https://algo.trycloudflare.com`, copie essa URL.
-
-### Comando para me chamar com contexto
-
-Em uma terceira sessão, ou depois que o log do Cloud existir:
-
-```bash
-cd "$HOME/KOB--NODE"
-bash scripts/call-kobllux-context.sh
+bash scripts/termux-claude-code-0x01.sh
 ```
 
 Ou pelo npm:
 
 ```bash
-npm run --silent call:context
+npm run claude:termux
 ```
 
-Cole a saída desse comando na conversa. Ela inclui Health, Fields, Core, CADIAL, UI, logs e a URL Cloud detectada.
+Instalação base conforme documentação oficial do Claude Code: `npm install -g @anthropic-ai/claude-code` (https://docs.anthropic.com/en/docs/claude-code/getting-started).
 
-### Atalho npm para Cloud
+O script faz:
+
+- instala `nodejs` e `git` via `pkg`, quando estiver no Termux;
+- instala Claude Code com `npm install -g @anthropic-ai/claude-code`, se o comando `claude` ainda não existir;
+- cria `CLAUDE.md` com o contexto KOBLLUX/NODE.FIELDS;
+- cria `./call-claude-kobllux.sh` para chamar Claude já dentro do repositório.
+
+### Me chamar no Claude
 
 ```bash
-npm run cloud:termux
+cd "$HOME/KOB--NODE"
+./call-claude-kobllux.sh
 ```
+
+Com mensagem própria:
+
+```bash
+./call-claude-kobllux.sh "∆³ verificar NODE.FIELDS, CADIAL e Core 3-6-9-7"
+```
+
+### Gerar contexto para colar aqui ou no Claude
+
+```bash
+npm run --silent claude:context
+```
+
+Esse comando imprime Health, Fields, Core, CADIAL, UI, logs e os comandos seguros para Φ/Core sem armazenar.
 
 ## Limites e próximos passos
 

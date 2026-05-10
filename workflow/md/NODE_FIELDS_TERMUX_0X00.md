@@ -313,6 +313,40 @@ npm run --silent claude:context
 
 Esse comando imprime Health, Fields, Core, CADIAL, UI, logs e os comandos seguros para Φ/Core sem armazenar.
 
+## 13. Patch Φ — transformar intenção em diff selado
+
+O **patch Φ** personifica o KOBLLUX como objeto-ferramenta: ele recebe uma intenção, roda o Core 3-6-9-7, monta um diff unificado, calcula `seal_sha256` e pode registrar o evento em `state/node_fields/pulses.ndjson`.
+
+### Gerar patch Φ sem armazenar
+
+```bash
+npm run --silent patch:phi -- --no-store "Transformar intenção em patch verificável no KOBLLUX"
+```
+
+### Imprimir só o diff
+
+```bash
+npm run --silent patch:phi -- --no-store --print-patch "Transformar intenção em patch verificável no KOBLLUX"
+```
+
+### Texto longo por stdin
+
+```bash
+printf '%s\n' 'VERDADE × INTEGRAR ÷ Δ = ∞' \
+  'Gerar patch Φ com BLLUE, KODUX, Solus, CADIAL e Aion.' \
+  | npm run --silent patch:phi -- --stdin --no-store
+```
+
+### Via HTTP
+
+```bash
+curl -X POST 'http://127.0.0.1:3697/patch-phi?store=0' \
+  -H 'content-type: application/json' \
+  -d '{"texto":"Transformar intenção em patch verificável no KOBLLUX","target":"workflow/md/PATCH_PHI.md"}'
+```
+
+Resposta esperada: JSON com `status: PATCH_PHI_OK`, `patch`, `seal_sha256`, `trinity` e `token_estimate`.
+
 ## Limites e próximos passos
 
 - Eu não tenho acesso direto ao seu Google Drive; se Meta Lux, Horus ou Fit Lux estiverem lá, copie os textos para `workflow/txt/` ou cole a parte relevante na conversa.

@@ -216,6 +216,73 @@ function runCore(input, options = {}) {
   return result;
 }
 
+
+function escapePatchLine(line) {
+  return String(line).replace(/\r/g, '');
+}
+
+function buildUnifiedPatch({ target = 'KOBLLUX_PATCH.md', before = '', after = '', title = 'Patch Φ' } = {}) {
+  const beforeLines = String(before || '').split('\n');
+  const afterLines = String(after || '').split('\n');
+  const header = [
+    `diff --git a/${target} b/${target}`,
+    `--- a/${target}`,
+    `+++ b/${target}`,
+    `@@ -1,${Math.max(beforeLines.length, 1)} +1,${Math.max(afterLines.length, 1)} @@`,
+    `# ${title}`
+  ];
+  const removed = beforeLines.filter((line, index) => line.length > 0 || index < beforeLines.length - 1).map(line => `-${escapePatchLine(line)}`);
+  const added = afterLines.filter((line, index) => line.length > 0 || index < afterLines.length - 1).map(line => `+${escapePatchLine(line)}`);
+  return [...header, ...removed, ...added].join('\n') + '\n';
+}
+
+function buildPhiPatch(input, options = {}) {
+  const title = options.title || 'Patch Φ · KOBLLUX NODE.FIELDS';
+  const target = options.target || 'workflow/md/PATCH_PHI.md';
+  const before = options.before || '';
+  const core = runCore(input, { seal: false });
+  const after = [
+    `# ${title}`,
+    '',
+    `Lei: ${LAW}`,
+    'Ciclo: 3 detectar → 6 integrar → 9 expandir → 7 selar',
+    '',
+    '## Entrada',
+    String(input || '').trim(),
+    '',
+    '## POS',
+    JSON.stringify(core.pos, null, 2),
+    '',
+    '## UNO/DUAL/TRINITY',
+    JSON.stringify(core.trinity, null, 2),
+    '',
+    '## Aproximação de tokens',
+    JSON.stringify(core.token_estimate, null, 2),
+    '',
+    '## Objeto-ferramenta',
+    'Este patch Φ converte intenção em diff verificável: BLLUE escuta, KODUX estrutura, Solus sela, CADIAL distribui função e Aion preserva integridade temporal.',
+    '',
+    '## Saídas',
+    '- HTML: presente em `outputs.html` no JSON do Core.',
+    '- Python: presente em `outputs.python` no JSON do Core.',
+    '- OBJ: presente em `outputs.obj` no JSON do Core.'
+  ].join('\n');
+  const patch = buildUnifiedPatch({ target, before, after, title });
+  const seal_sha256 = sha256Hex(patch);
+  return {
+    status: 'PATCH_PHI_OK',
+    law: LAW,
+    target,
+    title,
+    token_estimate: approximateTokens(input),
+    trinity: core.trinity,
+    patch,
+    seal_sha256,
+    seal_ts: new Date().toISOString(),
+    core
+  };
+}
+
 function cadialWheel() {
   return Object.entries(CADIAL_ARCHETYPES).map(([nome, data], index) => ({
     index: index + 1,
@@ -236,6 +303,8 @@ module.exports = {
   CADIAL_ARCHETYPES,
   approximateTokens,
   buildLog,
+  buildPhiPatch,
+  buildUnifiedPatch,
   cadialWheel,
   classifyText,
   emitHTML,

@@ -15,7 +15,8 @@
     "cadial": "node src/node-fields-server.js --cadial",
     "core": "node src/node-fields-server.js --core",
     "claude:termux": "bash scripts/termux-claude-code-0x01.sh",
-    "claude:context": "bash scripts/call-claude-context.sh"
+    "claude:context": "bash scripts/call-claude-context.sh",
+    "patch:phi": "node src/node-fields-server.js --patch-phi"
   },
   "keywords": [
     "kobllux",

@@ -3,7 +3,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
-const { approximateTokens, cadialWheel, formatCadialCli, runCore } = require('./kobllux-core');
+const { approximateTokens, buildPhiPatch, cadialWheel, formatCadialCli, runCore } = require('./kobllux-core');
 
 function discoverRoot() {
   if (process.env.KOBLLUX_ROOT) {
@@ -53,6 +53,7 @@ const baseFields = {
     logs: 'GET /logs?limit=9',
     cadial: 'GET /cadial',
     core: 'POST /core',
+    patchPhi: 'POST /patch-phi',
     pulse: 'POST /pulse',
     phi: 'POST /phi?store=0',
     ui: 'GET /ui'
@@ -70,6 +71,7 @@ const commandBook = {
     'npm run --silent claude:context',
     'npm run --silent cadial',
     'npm run --silent core -- "Integrar 432Hz + tetraedros Sierpiński e narrar PT-BR (∆7)."',
+    'npm run --silent patch:phi -- --no-store "Transformar intenção em patch verificável"',
     'printf %s "texto longo" | npm run --silent core -- --stdin --seal',
     'curl http://127.0.0.1:3697/context',
     'curl http://127.0.0.1:3697/logs?limit=9'
@@ -79,6 +81,7 @@ const commandBook = {
     'curl http://127.0.0.1:3697/fields',
     'curl http://127.0.0.1:3697/cadial',
     `curl -X POST http://127.0.0.1:3697/core -H 'content-type: application/json' -d '{"texto":"Integrar 432Hz + tetraedros Sierpiński","seal":true}'`,
+    `curl -X POST 'http://127.0.0.1:3697/patch-phi?store=0' -H 'content-type: application/json' -d '{"texto":"Transformar intenção em patch verificável"}'`,
     `curl -X POST http://127.0.0.1:3697/phi?store=0 -H 'content-type: application/json' -d '{"texto":"∆³ conversar no Φ sem armazenar"}'`
   ],
   warning: 'Não cole blocos de contexto diretamente no shell. Use npm run --silent context, npm run phi, curl /context ou salve em arquivo.'
@@ -168,6 +171,7 @@ function buildContext() {
     phi: `http://${HOST}:${PORT}/phi`,
     logs: path.relative(ROOT, LOG_FILE),
     core: `http://${HOST}:${PORT}/core`,
+    patchPhi: `http://${HOST}:${PORT}/patch-phi`,
     cadial: `http://${HOST}:${PORT}/cadial`,
     objetivo: 'expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus, FitLux e a Roda Viva CADIAL como camadas organizacionais',
     aviso: 'Isto é contexto para copiar em conversa, não é uma sequência de comandos do shell.'
@@ -190,6 +194,7 @@ function buildPhiResponse(pulse) {
         : '∆³ detectar, integrar, expandir e selar.',
       comando_seguro: 'npm run --silent phi -- --no-store "sua mensagem aqui"',
       core_sugerido: 'npm run --silent core -- "sua semente aqui"',
+      patch_phi_sugerido: 'npm run --silent patch:phi -- --no-store "sua intenção aqui"',
       token_estimate: approximateTokens(text)
     }
   };
@@ -311,6 +316,23 @@ async function handle(req, res) {
     return;
   }
 
+  if (req.method === 'POST' && url.pathname === '/patch-phi') {
+    const payload = await parseRequestPayload(req);
+    const input = payload.texto || payload.text || payload.input || '';
+    const result = buildPhiPatch(input, {
+      title: payload.title,
+      target: payload.target,
+      before: payload.before
+    });
+    if (shouldStore(url, payload)) {
+      const event = appendPulse({ input, patch_phi: { target: result.target, seal_sha256: result.seal_sha256 } }, 'patch-phi');
+      sendJson(res, 201, { ...result, event });
+      return;
+    }
+    sendJson(res, 200, { ...result, armazenado: false });
+    return;
+  }
+
   if (req.method === 'POST' && url.pathname === '/pulse') {
     const pulse = await parseRequestPayload(req);
     const event = appendPulse(pulse, 'pulse');
@@ -404,6 +426,34 @@ async function runCli() {
     }
     const event = appendPulse({ input: text.trim(), core: result.log }, 'core');
     printJson({ ...result, event });
+    return;
+  }
+
+  if (process.argv.includes('--patch-phi')) {
+    const stdinMode = process.argv.includes('--stdin');
+    const noStore = process.argv.includes('--no-store');
+    const printPatch = process.argv.includes('--print-patch');
+    const targetArg = process.argv.find(arg => arg.startsWith('--target='));
+    const titleArg = process.argv.find(arg => arg.startsWith('--title='));
+    const args = process.argv
+      .slice(process.argv.indexOf('--patch-phi') + 1)
+      .filter(arg => !['--stdin', '--no-store', '--print-patch'].includes(arg))
+      .filter(arg => !arg.startsWith('--target=') && !arg.startsWith('--title='));
+    const text = stdinMode ? await readStdin() : args.join(' ');
+    const result = buildPhiPatch(text.trim(), {
+      target: targetArg && targetArg.slice('--target='.length),
+      title: titleArg && titleArg.slice('--title='.length)
+    });
+    if (!noStore) {
+      result.event = appendPulse({ input: text.trim(), patch_phi: { target: result.target, seal_sha256: result.seal_sha256 } }, 'patch-phi');
+    } else {
+      result.armazenado = false;
+    }
+    if (printPatch) {
+      process.stdout.write(result.patch);
+      return;
+    }
+    printJson(result);
     return;
   }
 

@@ -13,7 +13,9 @@
     "phi": "node src/node-fields-server.js --phi",
     "build": "node scripts/build-node-fields.js",
     "cadial": "node src/node-fields-server.js --cadial",
-    "core": "node src/node-fields-server.js --core"
+    "core": "node src/node-fields-server.js --core",
+    "cloud:termux": "bash scripts/termux-cloud-0x01.sh",
+    "call:context": "bash scripts/call-kobllux-context.sh"
   },
   "keywords": [
     "kobllux",

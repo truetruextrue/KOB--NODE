@@ -266,6 +266,49 @@ No navegador do Android, abra:
 http://127.0.0.1:3697/ui
 ```
 
+## 12. Instalar Cloud e me chamar pelo Termux
+
+Use duas sessões do Termux.
+
+### Sessão 1 — ligar o NODE.FIELDS local
+
+```bash
+cd "$HOME/KOB--NODE"
+./activate-node-fields.sh
+```
+
+### Sessão 2 — instalar/abrir o Cloud
+
+```bash
+cd "$HOME/KOB--NODE"
+bash scripts/termux-cloud-0x01.sh
+```
+
+Esse script instala `cloudflared` quando possível, valida `http://127.0.0.1:3697/health` e abre um Cloudflare Quick Tunnel para o NODE.FIELDS. Quando aparecer uma URL parecida com `https://algo.trycloudflare.com`, copie essa URL.
+
+### Comando para me chamar com contexto
+
+Em uma terceira sessão, ou depois que o log do Cloud existir:
+
+```bash
+cd "$HOME/KOB--NODE"
+bash scripts/call-kobllux-context.sh
+```
+
+Ou pelo npm:
+
+```bash
+npm run --silent call:context
+```
+
+Cole a saída desse comando na conversa. Ela inclui Health, Fields, Core, CADIAL, UI, logs e a URL Cloud detectada.
+
+### Atalho npm para Cloud
+
+```bash
+npm run cloud:termux
+```
+
 ## Limites e próximos passos
 
 - Eu não tenho acesso direto ao seu Google Drive; se Meta Lux, Horus ou Fit Lux estiverem lá, copie os textos para `workflow/txt/` ou cole a parte relevante na conversa.

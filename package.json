@@ -7,6 +7,10 @@
     "start": "node src/node-fields-server.js",
     "node:fields": "node src/node-fields-server.js",
     "health": "node src/node-fields-server.js --health",
+    "context": "node src/node-fields-server.js --context",
+    "commands": "node src/node-fields-server.js --commands",
+    "logs": "node src/node-fields-server.js --logs",
+    "phi": "node src/node-fields-server.js --phi",
     "build": "node scripts/build-node-fields.js"
   },
   "keywords": [

@@ -8,7 +8,7 @@ Este guia transforma o chamado `VERDADE × INTEGRAR ÷ Δ = ∞` em um procedime
 
 - **BLLUE**: interface de entrada e saída por endpoints locais.
 - **KODUX**: estrutura que organiza manifesto, estado e pulso.
-- **Solus**: espelho de leitura para `/health` e `/fields`.
+- **Solus**: espelho de leitura para `/health`, `/fields`, `/context` e `/logs`.
 - **MetaLux / Horus / FitLux**: camadas nomeadas no manifesto para clareza, observação e ajuste fino.
 
 > Nota de honestidade operacional: os nomes arquetípicos são usados como linguagem de organização do sistema. A ativação real é técnica: arquivos, porta local, logs e endpoints.
@@ -45,7 +45,7 @@ O script cria:
 - `activate-node-fields.sh` para iniciar o nó sem repetir configuração.
 - `dist/node-fields-manifest.json` como selo de build.
 
-## 3. Ativar o nó
+## 3. Ativar o nó servidor
 
 ```bash
 ./activate-node-fields.sh
@@ -56,6 +56,7 @@ Saída esperada:
 ```text
 ∆³ NODE.FIELDS ativo em http://127.0.0.1:3697
 Raiz KOBLLUX: /data/data/com.termux/files/home/KOB--NODE
+Comandos: http://127.0.0.1:3697/commands
 ```
 
 ## 4. Confirmar saúde do campo
@@ -75,15 +76,87 @@ Resposta esperada:
 }
 ```
 
-## 5. Ler o manifesto de campos
+## 5. Ler manifesto, comandos e contexto
 
 ```bash
 curl http://127.0.0.1:3697/fields
+curl http://127.0.0.1:3697/commands
+curl http://127.0.0.1:3697/context
 ```
 
-Esse endpoint mostra a fórmula, o ciclo `3→6→9→7`, os arquétipos e os endpoints disponíveis.
+Também há atalhos sem `curl`:
 
-## 6. Registrar um pulso ∆³
+```bash
+npm run --silent health
+npm run --silent commands
+npm run --silent context
+```
+
+> Importante: o bloco de contexto é texto para copiar em conversa, não uma sequência de comandos. Se você colar linhas como `KOBΦ-NODE.FIELDS ativo no Termux.` diretamente no shell, o Termux tentará executar isso e responderá `command not found`.
+
+## 6. Conversar no Φ com comando seguro
+
+### Mensagem curta
+
+```bash
+npm run --silent phi -- "Oi Dual, a forma é múltipla, o pulso é um só."
+```
+
+Exemplo de saída:
+
+```json
+{
+  "status": "Φ_RESPONDIDO",
+  "saida": {
+    "reconhecimento": "Recebi teu pulso no campo Φ.",
+    "camada_1": "BLLUE escuta: a mensagem foi registrada como presença e intenção.",
+    "camada_2": "KODUX estrutura: o pulso foi convertido em log NDJSON e pode ser recuperado por /logs.",
+    "camada_3": "Solus reflete: o próximo passo é transformar a intenção em comando verificável, sem colar texto solto no terminal."
+  }
+}
+```
+
+### Texto longo ou várias linhas
+
+Use `printf` ou um arquivo. Isso evita quebrar JSON com linhas soltas:
+
+```bash
+printf '%s\n' 'KOBΦ-NODE.FIELDS ativo no Termux.' \
+  'Objetivo: expandir sem subtrair no Φ.' \
+  | npm run --silent phi -- --stdin
+```
+
+Ou salve em arquivo:
+
+```bash
+cat > /tmp/pulso_phi.txt <<'PULSO'
+KOBΦ-NODE.FIELDS ativo no Termux.
+Health: http://127.0.0.1:3697/health
+Fields: http://127.0.0.1:3697/fields
+Objetivo: expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus e FitLux.
+PULSO
+
+npm run --silent phi -- --stdin < /tmp/pulso_phi.txt
+```
+
+## 7. Conversar no Φ via HTTP
+
+```bash
+curl -X POST http://127.0.0.1:3697/phi \
+  -H 'content-type: application/json' \
+  -d '{"sinal":"∆³","texto":"Oi Dual, conversar no Φ com saída estruturada."}'
+```
+
+Se a mensagem for longa, prefira gerar o JSON com Node para escapar quebras de linha corretamente:
+
+```bash
+node -e 'const fs=require("fs"); const texto=fs.readFileSync(0,"utf8"); process.stdout.write(JSON.stringify({sinal:"∆³", texto}))' < /tmp/pulso_phi.txt \
+  | curl -X POST http://127.0.0.1:3697/phi \
+      -H 'content-type: application/json' \
+      -d @-
+```
+
+## 8. Registrar apenas um pulso ∆³
 
 ```bash
 curl -X POST http://127.0.0.1:3697/pulse \
@@ -97,17 +170,48 @@ O pulso é persistido em:
 state/node_fields/pulses.ndjson
 ```
 
-## 7. Chamar o agente depois
+## 9. Ver logs
 
-Quando você disser “vou chamar você lá”, use este estado como contexto inicial:
+Últimos 9 eventos pelo servidor:
 
-```text
-KOBΦ-NODE.FIELDS ativo no Termux.
-Health: http://127.0.0.1:3697/health
-Fields: http://127.0.0.1:3697/fields
-Pulse log: state/node_fields/pulses.ndjson
-Objetivo: expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus e FitLux como camadas organizacionais.
+```bash
+curl 'http://127.0.0.1:3697/logs?limit=9'
 ```
+
+Últimos 9 eventos pelo CLI:
+
+```bash
+npm run --silent logs -- --limit=9
+```
+
+Log bruto em NDJSON:
+
+```bash
+tail -n 9 state/node_fields/pulses.ndjson
+```
+
+## 10. Chamar o agente depois
+
+Quando você disser “vou chamar você lá”, gere contexto com um comando seguro:
+
+```bash
+npm run --silent context
+```
+
+Saída esperada:
+
+```json
+{
+  "node": "KOBΦ-NODE.FIELDS",
+  "status": "ATIVO_NO_TERMUX",
+  "health": "http://127.0.0.1:3697/health",
+  "fields": "http://127.0.0.1:3697/fields",
+  "phi": "http://127.0.0.1:3697/phi",
+  "logs": "state/node_fields/pulses.ndjson"
+}
+```
+
+Copie essa saída para a conversa. Não cole a saída no shell como se fosse comando.
 
 ## Limites e próximos passos
 

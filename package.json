@@ -11,7 +11,9 @@
     "commands": "node src/node-fields-server.js --commands",
     "logs": "node src/node-fields-server.js --logs",
     "phi": "node src/node-fields-server.js --phi",
-    "build": "node scripts/build-node-fields.js"
+    "build": "node scripts/build-node-fields.js",
+    "cadial": "node src/node-fields-server.js --cadial",
+    "core": "node src/node-fields-server.js --core"
   },
   "keywords": [
     "kobllux",

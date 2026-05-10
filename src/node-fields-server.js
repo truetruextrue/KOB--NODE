@@ -3,6 +3,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const { approximateTokens, cadialWheel, formatCadialCli, runCore } = require('./kobllux-core');
 
 function discoverRoot() {
   if (process.env.KOBLLUX_ROOT) {
@@ -50,8 +51,11 @@ const baseFields = {
     context: 'GET /context',
     commands: 'GET /commands',
     logs: 'GET /logs?limit=9',
+    cadial: 'GET /cadial',
+    core: 'POST /core',
     pulse: 'POST /pulse',
-    phi: 'POST /phi'
+    phi: 'POST /phi?store=0',
+    ui: 'GET /ui'
   }
 };
 
@@ -62,13 +66,18 @@ const commandBook = {
     'npm run --silent phi -- "Oi Dual, a forma é múltipla, o pulso é um só."',
     'printf %s "texto longo" | npm run --silent phi -- --stdin',
     'npm run --silent logs -- --limit=9',
+    'npm run --silent cadial',
+    'npm run --silent core -- "Integrar 432Hz + tetraedros Sierpiński e narrar PT-BR (∆7)."',
+    'printf %s "texto longo" | npm run --silent core -- --stdin --seal',
     'curl http://127.0.0.1:3697/context',
     'curl http://127.0.0.1:3697/logs?limit=9'
   ],
   curl: [
     'curl http://127.0.0.1:3697/health',
     'curl http://127.0.0.1:3697/fields',
-    'curl -X POST http://127.0.0.1:3697/phi -H "content-type: application/json" -d \'{"texto":"∆³ conversar no Φ"}\''
+    'curl http://127.0.0.1:3697/cadial',
+    `curl -X POST http://127.0.0.1:3697/core -H 'content-type: application/json' -d '{"texto":"Integrar 432Hz + tetraedros Sierpiński","seal":true}'`,
+    `curl -X POST http://127.0.0.1:3697/phi?store=0 -H 'content-type: application/json' -d '{"texto":"∆³ conversar no Φ sem armazenar"}'`
   ],
   warning: 'Não cole blocos de contexto diretamente no shell. Use npm run --silent context, npm run phi, curl /context ou salve em arquivo.'
 };
@@ -156,7 +165,9 @@ function buildContext() {
     fields: `http://${HOST}:${PORT}/fields`,
     phi: `http://${HOST}:${PORT}/phi`,
     logs: path.relative(ROOT, LOG_FILE),
-    objetivo: 'expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus e FitLux como camadas organizacionais',
+    core: `http://${HOST}:${PORT}/core`,
+    cadial: `http://${HOST}:${PORT}/cadial`,
+    objetivo: 'expandir sem subtrair, integrando BLLUE-KODUX-Solus com MetaLux, Horus, FitLux e a Roda Viva CADIAL como camadas organizacionais',
     aviso: 'Isto é contexto para copiar em conversa, não é uma sequência de comandos do shell.'
   };
 }
@@ -170,12 +181,14 @@ function buildPhiResponse(pulse) {
     saida: {
       reconhecimento: 'Recebi teu pulso no campo Φ.',
       camada_1: 'BLLUE escuta: a mensagem foi registrada como presença e intenção.',
-      camada_2: 'KODUX estrutura: o pulso foi convertido em log NDJSON e pode ser recuperado por /logs.',
-      camada_3: 'Solus reflete: o próximo passo é transformar a intenção em comando verificável, sem colar texto solto no terminal.',
+      camada_2: 'KODUX estrutura: o pulso pode virar Core 3-6-9-7, estimativa de tokens e saídas HTML/Python/OBJ.',
+      camada_3: 'Solus reflete: use store=0 ou --no-store quando quiser conversar sem gravar logs.',
       sintese: text
         ? `∆³ ${text} → detectar, integrar, expandir e selar.`
         : '∆³ detectar, integrar, expandir e selar.',
-      comando_seguro: 'npm run --silent phi -- "sua mensagem aqui"'
+      comando_seguro: 'npm run --silent phi -- --no-store "sua mensagem aqui"',
+      core_sugerido: 'npm run --silent core -- "sua semente aqui"',
+      token_estimate: approximateTokens(text)
     }
   };
 }
@@ -186,6 +199,11 @@ function parseLimit(value) {
     return 9;
   }
   return Math.min(parsed, 78);
+}
+
+function shouldStore(url, payload = {}) {
+  const storeParam = url && url.searchParams && url.searchParams.get('store');
+  return !(storeParam === '0' || storeParam === 'false' || payload.store === false || payload.no_store === true);
 }
 
 function readLogs(limit = 9) {
@@ -241,12 +259,53 @@ async function handle(req, res) {
     return;
   }
 
+  if (req.method === 'GET' && url.pathname === '/ui') {
+    const uiPath = path.join(ROOT, 'public', 'kobllux-core.html');
+    res.writeHead(200, {
+      'content-type': 'text/html; charset=utf-8',
+      'cache-control': 'no-store'
+    });
+    res.end(fs.readFileSync(uiPath, 'utf8'));
+    return;
+  }
+
   if (req.method === 'GET' && url.pathname === '/logs') {
     sendJson(res, 200, {
       status: 'LOGS_NODE_FIELDS',
       file: path.relative(ROOT, LOG_FILE),
       events: readLogs(parseLimit(url.searchParams.get('limit')))
     });
+    return;
+  }
+
+  if (req.method === 'GET' && url.pathname === '/cadial') {
+    const format = url.searchParams.get('format');
+    if (format === 'cli') {
+      res.writeHead(200, {
+        'content-type': 'text/plain; charset=utf-8',
+        'cache-control': 'no-store'
+      });
+      res.end(formatCadialCli() + '\n');
+      return;
+    }
+    sendJson(res, 200, {
+      status: 'CADIAL_RODA_VIVA',
+      law: baseFields.formula,
+      archetypes: cadialWheel()
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && url.pathname === '/core') {
+    const payload = await parseRequestPayload(req);
+    const input = payload.texto || payload.text || payload.input || '';
+    const result = runCore(input, { seal: payload.seal === true || url.searchParams.get('seal') === '1' });
+    if (shouldStore(url, payload)) {
+      const event = appendPulse({ input, core: result.log }, 'core');
+      sendJson(res, 201, { ...result, event });
+      return;
+    }
+    sendJson(res, 200, { ...result, armazenado: false });
     return;
   }
 
@@ -262,10 +321,17 @@ async function handle(req, res) {
 
   if (req.method === 'POST' && url.pathname === '/phi') {
     const pulse = await parseRequestPayload(req);
-    const event = appendPulse(pulse, 'phi');
-    sendJson(res, 201, {
+    if (shouldStore(url, pulse)) {
+      const event = appendPulse(pulse, 'phi');
+      sendJson(res, 201, {
+        ...buildPhiResponse(pulse),
+        event
+      });
+      return;
+    }
+    sendJson(res, 200, {
       ...buildPhiResponse(pulse),
-      event
+      armazenado: false
     });
     return;
   }
@@ -308,6 +374,37 @@ async function runCli() {
     return;
   }
 
+  if (process.argv.includes('--cadial')) {
+    if (process.argv.includes('--cli')) {
+      process.stdout.write(formatCadialCli() + '\n');
+      return;
+    }
+    printJson({
+      status: 'CADIAL_RODA_VIVA',
+      law: baseFields.formula,
+      archetypes: cadialWheel()
+    });
+    return;
+  }
+
+  if (process.argv.includes('--core')) {
+    const stdinMode = process.argv.includes('--stdin');
+    const seal = process.argv.includes('--seal');
+    const noStore = process.argv.includes('--no-store');
+    const args = process.argv
+      .slice(process.argv.indexOf('--core') + 1)
+      .filter(arg => !['--stdin', '--seal', '--no-store'].includes(arg));
+    const text = stdinMode ? await readStdin() : args.join(' ');
+    const result = runCore(text.trim(), { seal });
+    if (noStore) {
+      printJson({ ...result, armazenado: false });
+      return;
+    }
+    const event = appendPulse({ input: text.trim(), core: result.log }, 'core');
+    printJson({ ...result, event });
+    return;
+  }
+
   if (process.argv.includes('--logs')) {
     const limitArg = process.argv.find(arg => arg.startsWith('--limit='));
     printJson({
@@ -320,11 +417,19 @@ async function runCli() {
 
   if (process.argv.includes('--phi')) {
     const stdinMode = process.argv.includes('--stdin');
+    const noStore = process.argv.includes('--no-store');
     const args = process.argv
       .slice(process.argv.indexOf('--phi') + 1)
-      .filter(arg => arg !== '--stdin');
+      .filter(arg => !['--stdin', '--no-store'].includes(arg));
     const text = stdinMode ? await readStdin() : args.join(' ');
     const pulse = { sinal: 'Φ', texto: text.trim() };
+    if (noStore) {
+      printJson({
+        ...buildPhiResponse(pulse),
+        armazenado: false
+      });
+      return;
+    }
     const event = appendPulse(pulse, 'phi');
     printJson({
       ...buildPhiResponse(pulse),

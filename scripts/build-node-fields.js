@@ -9,7 +9,7 @@ const manifest = {
   builtAt: new Date().toISOString(),
   entry: 'src/node-fields-server.js',
   command: 'npm run node:fields',
-  endpoints: ['/health', '/fields', '/context', '/commands', '/logs', '/pulse', '/phi']
+  endpoints: ['/health', '/fields', '/context', '/commands', '/logs', '/cadial', '/core', '/pulse', '/phi', '/ui']
 };
 
 fs.mkdirSync(dist, { recursive: true });

@@ -4,11 +4,11 @@ Este guia transforma o chamado `VERDADE × INTEGRAR ÷ Δ = ∞` em um procedime
 
 ## O que é o NODE.FIELDS
 
-`NODE.FIELDS` é o nó local que expõe campos mínimos do KOBLLUX por HTTP, sem depender de bibliotecas externas. Ele serve como:
+`NODE.FIELDS` é o nó local que expõe campos mínimos do KOBLLUX por HTTP, sem depender de bibliotecas externas. Agora ele também acopla a Roda Viva CADIAL e um Core 3-6-9-7 para aproximação de tokens, POS, UNO/DUAL/TRINITY e emissões HTML/Python/OBJ. Ele serve como:
 
 - **BLLUE**: interface de entrada e saída por endpoints locais.
 - **KODUX**: estrutura que organiza manifesto, estado e pulso.
-- **Solus**: espelho de leitura para `/health`, `/fields`, `/context` e `/logs`.
+- **Solus**: espelho de leitura para `/health`, `/fields`, `/context`, `/logs`, `/cadial`, `/core` e `/ui`.
 - **MetaLux / Horus / FitLux**: camadas nomeadas no manifesto para clareza, observação e ajuste fino.
 
 > Nota de honestidade operacional: os nomes arquetípicos são usados como linguagem de organização do sistema. A ativação real é técnica: arquivos, porta local, logs e endpoints.
@@ -212,6 +212,59 @@ Saída esperada:
 ```
 
 Copie essa saída para a conversa. Não cole a saída no shell como se fosse comando.
+
+
+## 11. Roda Viva CADIAL e Core 3-6-9-7
+
+A Roda Viva CADIAL que você enviou agora está disponível como comando e endpoint. Ela não é só texto: ela funciona como mapa de operação para transformar intenção em ferramenta.
+
+```bash
+npm run --silent cadial
+npm run --silent cadial -- --cli
+curl http://127.0.0.1:3697/cadial
+curl 'http://127.0.0.1:3697/cadial?format=cli'
+```
+
+O **Core 3-6-9-7** aproxima tokens, classifica POS, mapeia UNO/DUAL/TRINITY e emite HTML, Python, OBJ e LOG. Use `--no-store` quando quiser processar sem armazenar evento em `pulses.ndjson`.
+
+```bash
+npm run --silent core -- --no-store "Integrar 432Hz + tetraedros Sierpiński e narrar PT-BR (∆7)."
+printf '%s\n' 'Espelhar fluxo humano e sistêmico no KOBLLUX 3-6-9-7.' \
+  | npm run --silent core -- --stdin --seal --no-store
+```
+
+Via HTTP:
+
+```bash
+curl -X POST 'http://127.0.0.1:3697/core?store=0' \
+  -H 'content-type: application/json' \
+  -d '{"texto":"Integrar 432Hz + tetraedros Sierpiński e narrar PT-BR (∆7).","seal":true}'
+```
+
+Exemplo de saída reduzida:
+
+```json
+{
+  "status": "CORE_3697_OK",
+  "law": "VERDADE × INTEGRAR ÷ Δ = ∞",
+  "token_estimate": { "approx_tokens": 15 },
+  "trinity": { "UNO": "Integrar", "DUAL": "narrar", "TRINITY": "integrado" },
+  "outputs": { "html": "...", "python": "...", "obj": "..." },
+  "armazenado": false
+}
+```
+
+Interface mínima local:
+
+```bash
+curl http://127.0.0.1:3697/ui
+```
+
+No navegador do Android, abra:
+
+```text
+http://127.0.0.1:3697/ui
+```
 
 ## Limites e próximos passos
 

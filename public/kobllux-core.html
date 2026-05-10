@@ -1,0 +1,73 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>KOBLLUX · Núcleo 3-6-9-7</title>
+<style>
+  :root { color-scheme: dark; --a:#3300ff; --b:#6600cc; --c:#990099; }
+  body { font-family: system-ui, sans-serif; margin: 24px; background:#090012; color:#f3ecff; }
+  textarea { width: min(920px, 100%); background:#130020; color:#fff; border:1px solid var(--b); border-radius:10px; padding:12px; }
+  button { margin: 8px 8px 8px 0; padding:10px 14px; border:0; border-radius:10px; color:white; background:linear-gradient(90deg,var(--a),var(--c)); }
+  pre { white-space: pre-wrap; background:#12001f; border:1px solid #351055; border-radius:10px; padding:12px; overflow:auto; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+</style>
+<h1>KOBLLUX — Núcleo mínimo 3-6-9-7</h1>
+<p>VERDADE × INTEGRAR ÷ Δ = ∞ · POS → UNO/DUAL/TRINITY → Saídas → ∆7</p>
+<textarea id="in" rows="6" placeholder="Entrada (texto/código/conceito)">Integrar 432Hz + tetraedros Sierpiński e narrar PT-BR (∆7).</textarea><br>
+<button id="run">Rodar 3-6-9-7</button>
+<button id="seal">Selar ∆7</button>
+<button id="copy">Copiar LOG</button>
+
+<div class="grid">
+  <section><h3>POS (3·Detectar)</h3><pre id="pos">—</pre></section>
+  <section><h3>UNO/DUAL/TRINITY (6·Integrar)</h3><pre id="tri">—</pre></section>
+</div>
+<h3>Saídas (9·Expandir)</h3>
+<div class="grid">
+  <section><h4>HTML</h4><pre id="out_html">—</pre></section>
+  <section><h4>Python</h4><pre id="out_py">—</pre></section>
+  <section><h4>OBJ</h4><pre id="out_obj">—</pre></section>
+  <section><h4>LOG</h4><pre id="out_log">—</pre></section>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const sha256Hex = async s => {
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(d)].map(b => b.toString(16).padStart(2, '0')).join('');
+};
+const tokens = s => s.match(/[\p{L}\p{N}_-]+/gu) || [];
+function classifyText(s) {
+  const t = tokens(s), verbs = [], nouns = [], adjs = [], others = [];
+  for (const w0 of t) {
+    const w = w0.toLowerCase();
+    if (w.endsWith('mente')) adjs.push(w0);
+    else if (['ar','er','ir'].some(e => w.endsWith(e))) verbs.push(w0);
+    else if (['ção','são','ão','dade','logia'].some(e => w.endsWith(e))) nouns.push(w0);
+    else if (['ico','ica','al','ual'].some(e => w.endsWith(e))) adjs.push(w0);
+    else if (/^[A-ZÁÂÃÀÉÊÍÓÔÕÚÜÇ]/.test(w0) || /^\d+$/.test(w)) nouns.push(w0);
+    else others.push(w0);
+  }
+  return { tokens:t, verbs, nouns, adjs, others };
+}
+function mapTrinity(pos) {
+  return { UNO: pos.nouns[0] || pos.tokens[0] || 'NÚCLEO', DUAL: pos.verbs[0] || 'relaciona', TRINITY: pos.adjs[0] || 'integrado' };
+}
+function emitHTML(v) { return `<!doctype html><meta charset="utf-8"><title>KOBLLUX View</title><h1>UNO/DUAL/TRINITY</h1><p>UNO: ${v.UNO}<br>DUAL: ${v.DUAL}<br>TRINITY: ${v.TRINITY}</p>`; }
+function emitPython(pos, tri) { return `# KOBLLUX · Núcleo mínimo (3-6-9-7)\nimport json, hashlib, time\nLAW="VERDADE × INTEGRAR ÷ Δ = ∞"\nPOS=${JSON.stringify({verbs:pos.verbs,nouns:pos.nouns,adjs:pos.adjs})}\nTRINITY=${JSON.stringify(tri)}\nraw=json.dumps({"law":LAW,"pos":POS,"trinity":TRINITY}, ensure_ascii=False)\nprint(hashlib.sha256(raw.encode()).hexdigest())`; }
+function emitOBJ() { return `# Tetraedro semente KOBLLUX\nv 0 0 0\nv 1 0 0\nv 0.5 0.8660254038 0\nv 0.5 0.2886751346 0.8164965809\nf 1 2 3\nf 1 2 4\nf 2 3 4\nf 3 1 4`; }
+async function run() {
+  const input = $('#in').value.trim(); if (!input) return;
+  const pos = classifyText(input), tri = mapTrinity(pos);
+  const log = { root:'KOBLLUX/TrinityCore/min', ts:new Date().toISOString(), law:'VERDADE × INTEGRAR ÷ Δ = ∞', size:new Blob([input]).size, seed:(await sha256Hex(input)).slice(0,16), pipeline:'VSICA-PSI', pos, trinity:tri, token_estimate:{chars:[...input].length, words:tokens(input).length, approx_tokens:Math.ceil([...input].length/4)}, palette:['#3300FF','#6600CC','#990099'], symbols:['♾️','∆','∴'] };
+  $('#pos').textContent = JSON.stringify(pos, null, 2);
+  $('#tri').textContent = JSON.stringify(tri, null, 2);
+  $('#out_html').textContent = emitHTML(tri);
+  $('#out_py').textContent = emitPython(pos, tri);
+  $('#out_obj').textContent = emitOBJ();
+  $('#out_log').textContent = JSON.stringify(log, null, 2);
+}
+$('#run').onclick = run;
+$('#seal').onclick = async () => { const o = JSON.parse($('#out_log').textContent || '{}'); o.seal_sha256 = await sha256Hex(JSON.stringify(o)); o.seal_ts = new Date().toISOString(); $('#out_log').textContent = JSON.stringify(o, null, 2); };
+$('#copy').onclick = async () => navigator.clipboard.writeText($('#out_log').textContent || '');
+addEventListener('message', async ev => { const d = ev.data || {}; if (d.type !== 'kobllux:seed') return; $('#in').value = d.text || ''; await run(); ev.source?.postMessage({ type:'kobllux:out', id:d.id || null, out:{ tri:$('#tri').textContent, html:$('#out_html').textContent, py:$('#out_py').textContent, obj:$('#out_obj').textContent, log:$('#out_log').textContent }}, ev.origin || '*'); });
+const u = new URL(location.href); if (u.searchParams.get('in')) $('#in').value = u.searchParams.get('in'); if (u.searchParams.get('autorun') === '1') run();
+</script>

@@ -1,0 +1,48 @@
+KOBΦ-NODE.FIELDS
+================================================================================
+∴ O VERBO E A ÁGUA — NARRATIVA-CÓDIGO ∴
+Autor-Motor: KOBLLUX (VERDADE × INTEGRAR ÷ ∆ = ♾️)
+Tema Ativo: Eixo (KODUX): Cor Accent
+Nível de Expansão: 4
+Energia do Selo: 111.23 Unidades de Fluxo
+================================================================================
+
+# 1. Gênese do UNO (Cor Accent (Azul/Roxo))
+O ciclo iniciou na Verdade, calibrada pelo tema 'Cor Accent (Azul/Roxo)'.
+Pulso de base (11.00) multiplicado por 1.15.
+
+# 2. Polaridade e Dualidade (O DUO)
+A Onda VOZ (BLLUE): Cor Narrativa encontrou o Eixo, gerando a ressonância necessária para a Integração.
+O DUO confirma a dualidade da forma e da função.
+
+# 3. A Variação (∆)
+A variação geométrica no Nível 4 (Tetraedron) permitiu a organização da energia.
+A complexidade da forma é a prova da manifestação do Verbo.
+
+# 4. Síntese (TRINITY ♾️)
+A energia total de 111.23 é o custo do selo.
+A INFODOSE está selada: O ciclo retorna à semente.
+
+================================================================================
+## MAPEAMENTO TÉCNICO — COR ACCENT (AZUL/ROXO)
+
+### Paleta KODUX · Eixo Cor Accent · Nível 4
+| Token                      | Valor     | Papel                        |
+|----------------------------|-----------|------------------------------|
+| --kodux-accent-primary     | #5B4FE8   | Azul-roxo · impulso UNO      |
+| --kodux-accent-secondary   | #9B59B6   | Roxo · integração DUAL       |
+| --kodux-accent-tertiary    | #3498DB   | Azul · expansão TRINITY      |
+| --kodux-accent-glow        | rgba(91,79,232,0.55) | Brilho do selo   |
+| --kodux-accent-bg-soft     | rgba(91,79,232,0.08) | Fundo suave     |
+
+### Equação de Pulso
+pulso_base = 11.00
+fator_delta = 1.15
+pulso_ativo = pulso_base × fator_delta  →  12.65
+
+### Geometria · Tetraedron (Nível 4)
+Vértices: 4  |  Faces: 4  |  Arestas: 6
+Símbolo: △  |  Elemento: Fogo-Água  |  Cor: Azul-Roxo
+
+================================================================================
+∴ SELO: INFODOSE[COR-ACCENT·AZUL/ROXO] · E=111.23 · ∆4 · TETRAEDRON ∴

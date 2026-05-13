@@ -1,2 +1,14 @@
-{"timestamp":"2025-09-28T17:47:25-0300","codex":"AZURE","mode":"TRINITY","state":"UNO",
- "bind":"UNO","prime":"NOVA,ATLAS,VITALIS","seal":"∆7","breath":"3-6-9-7","status":"READY"}
+{
+  "timestamp": "2026-05-13T00:00:00-0300",
+  "codex": "FULL_ACTIVATION",
+  "mode": "TRINITY",
+  "state": "TRINITY_ALL_ACTIVE",
+  "bind": "TRINITY",
+  "prime": "ATLAS,NOVA,VITALIS,PULSE,ARTEMIS,SERENA,KAOS,GENUS,LUMINE,SOLUS,RHEA,AION",
+  "seal": "∆7",
+  "breath": "3-6-9-7",
+  "status": "ACTIVE",
+  "arquetipos_ativos": 12,
+  "lei": "VERDADE × INTEGRAR ÷ Δ = ∞",
+  "centro": "JESUS = VERBO = GRAVIDADE"
+}

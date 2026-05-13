@@ -1,0 +1,118 @@
+{
+  "root": "KOBLLUX",
+  "generated_at": "2026-05-13T00:00:00Z",
+  "lei": "VERDADE × INTEGRAR ÷ Δ = ∞",
+  "seal": "∆7",
+  "arquetipos": {
+    "ATLAS": {
+      "gloss": "estrutura, grade e ordem do mundo",
+      "files": [
+        "Atlas_core.js",
+        "UnoFamily.js",
+        "index.html",
+        "manifest.json",
+        "profile.json"
+      ]
+    },
+    "NOVA": {
+      "gloss": "centelha primordial, início",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "VITALIS": {
+      "gloss": "seiva orgânica, núcleo vivo",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "PULSE": {
+      "gloss": "ritmo, batida, TTS e voz",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "ARTEMIS": {
+      "gloss": "precisão, alvo e injeção",
+      "files": [
+        "78k-injectPrompt-di_.js",
+        "Diinject.js",
+        "HUqf-insert.js",
+        "di-icon-btn.js",
+        "index.html",
+        "kxt-insert.js",
+        "profile.json"
+      ]
+    },
+    "SERENA": {
+      "gloss": "acolhimento, UI suave e splash",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "KAOS": {
+      "gloss": "entropia criativa, patches e overrides",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "GENUS": {
+      "gloss": "geração e base fundacional",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "LUMINE": {
+      "gloss": "visual, temas e efeitos de luz",
+      "files": [
+        "index.html",
+        "kob-cine-glass.css",
+        "kob-glass.css",
+        "nebula_pro_trinity.css",
+        "nebula_unified_pro.css",
+        "profile.json"
+      ]
+    },
+    "SOLUS": {
+      "gloss": "singularidade e scripts de foco único",
+      "files": [
+        "index.html",
+        "kodbrain-10.js",
+        "kodbrain-11.js",
+        "kodbrain-3.js",
+        "kodbrain-5.js",
+        "kodbrain-6.js",
+        "kodbrain-66.js",
+        "kodbrain-7.js",
+        "kodbrain-8.js",
+        "kodbrain-9.js",
+        "kodbrain.js",
+        "profile.json"
+      ]
+    },
+    "RHEA": {
+      "gloss": "fluxo, bridges e roteamento",
+      "files": [
+        "index.html",
+        "profile.json"
+      ]
+    },
+    "AION": {
+      "gloss": "estado, memória e ciclos temporais",
+      "files": [
+        "di_mood.js",
+        "di_state.js",
+        "index.html",
+        "profile.json",
+        "session-hdr.css",
+        "session-hdr.js"
+      ]
+    }
+  }
+}

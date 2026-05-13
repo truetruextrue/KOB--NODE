@@ -1,0 +1,7 @@
+# NODE.FIELDS generated runtime/build artifacts
+/dist/
+/state/node_fields/
+
+# Generated Claude Code local context/launcher
+/CLAUDE.md
+/call-claude-kobllux.sh

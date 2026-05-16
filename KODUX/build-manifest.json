@@ -1,0 +1,15 @@
+{
+  "built_at": "2026-05-16T05:58:15.991Z",
+  "codex_hash": "f544e7482b2c8426",
+  "equation": "VERDADE × INTEGRAR ÷ Δ = ∞",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "5175985b6bb66f3100550d8ba59af90b752db5ff2e50d14bc7c455d522fa7d33"
+    },
+    {
+      "path": "src/node-fields-server.js",
+      "sha256": "3521d60ca5bf734c379f24b5cc7dbb023ad3d01c1109d280b1c808e4be1368e2"
+    }
+  ]
+}

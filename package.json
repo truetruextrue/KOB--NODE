@@ -1,0 +1,28 @@
+{
+  "name": "kob-node-fields",
+  "version": "0.1.0",
+  "description": "KOBLLUX NODE.FIELDS runtime for Termux activation and local pulse logging.",
+  "main": "src/node-fields-server.js",
+  "scripts": {
+    "start": "node src/node-fields-server.js",
+    "node:fields": "node src/node-fields-server.js",
+    "health": "node src/node-fields-server.js --health",
+    "context": "node src/node-fields-server.js --context",
+    "commands": "node src/node-fields-server.js --commands",
+    "logs": "node src/node-fields-server.js --logs",
+    "phi": "node src/node-fields-server.js --phi",
+    "build": "node scripts/build-node-fields.js",
+    "cadial": "node src/node-fields-server.js --cadial",
+    "core": "node src/node-fields-server.js --core",
+    "claude:termux": "bash scripts/termux-claude-code-0x01.sh",
+    "claude:context": "bash scripts/call-claude-context.sh",
+    "patch:phi": "node src/node-fields-server.js --patch-phi"
+  },
+  "keywords": [
+    "kobllux",
+    "node-fields",
+    "termux",
+    "infodose"
+  ],
+  "license": "UNLICENSED"
+}

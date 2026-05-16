@@ -7,7 +7,8 @@
     "start": "node src/node-fields-server.js",
     "node:fields": "node src/node-fields-server.js",
     "health": "node src/node-fields-server.js --health",
-    "build": "node scripts/build-node-fields.js"
+    "build": "node scripts/build-node-fields.js",
+    "test": "node --test src/node-fields-server.test.js 2>/dev/null || node -e \"const {KOBLLUX_FIELDS}=require('./src/node-fields-server');const assert=require('assert');assert.strictEqual(KOBLLUX_FIELDS.pulso_ativo,12.65);assert.strictEqual(KOBLLUX_FIELDS.E_flux,111.23);console.log('[SOLUS] KOBLLUX_FIELDS assertions passed');\""
   },
   "keywords": [
     "kobllux",

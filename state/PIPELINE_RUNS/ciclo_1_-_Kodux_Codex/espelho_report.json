@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-06T03:23:17.507411",
+  "counts": {
+    "direct": {
+      "letters": 92681,
+      "words": 17366,
+      "sentences": 679
+    },
+    "mirror": {
+      "letters": 92681,
+      "words": 17366,
+      "sentences": 3
+    }
+  },
+  "patterns": {
+    "direct": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "mirror": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    }
+  },
+  "thesis_antithesis": {
+    "direct": {
+      "thesis": 0,
+      "antithesis": 0
+    },
+    "mirror": {
+      "thesis": 0,
+      "antithesis": 0
+    }
+  },
+  "synthesis": {
+    "UNO": {
+      "law": "VERDADE × INTEGRAR ÷ Δ = ♾",
+      "focus": [
+        "9…9²",
+        "repunits",
+        "palíndromos"
+      ],
+      "purpose": "O que permanece verdade após remover todo ruído?"
+    },
+    "DUAL": {
+      "mirror": true,
+      "invariants": [
+        "múltiplos de 9",
+        "palíndromos",
+        "repunits"
+      ],
+      "essence": "Espelho e direto preservam estrutura"
+    },
+    "TRINITY": {
+      "procedure": [
+        "detectar A/B/C/D",
+        "contar métricas",
+        "selar ∆⁷",
+        "loop 3×9×7"
+      ],
+      "synthesis_focus": "Lei + Espelho + Procedimento"
+    }
+  },
+  "seal": "∆7",
+  "loop": "3×9×7"
+}

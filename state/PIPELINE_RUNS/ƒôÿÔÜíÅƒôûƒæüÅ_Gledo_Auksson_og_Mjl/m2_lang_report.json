@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-06-06T03:23:15.921864",
+  "m1_context": {
+    "words_direct": 6311
+  },
+  "language_score": {
+    "pt_score": 35,
+    "token_count": 6311
+  },
+  "integration_focus": "Correlacionar camadas e unir sentido (KODUX ETL Engine)",
+  "seal": "∆7_INTEGRAR"
+}

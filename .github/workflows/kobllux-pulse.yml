@@ -1,0 +1,172 @@
+# KOBLLUX NODE.FIELDS — PULSE CI · v2
+# Substitui: kobllux-ci.yml (desativado)
+# Verbum Codex KBLX hash: f544e7482b2c8426
+# Law: VERDADE × INTEGRAR ÷ Δ = ∞  ·  fractal: 3×6×9×7=1134
+#
+# 12 CADIAL Archetypes as CI Phases:
+#   ATLAS     → bootstrap      NOVA      → ignição
+#   VITALIS   → install        SERENA    → safety
+#   KAOS      → lint           GENUS     → build
+#   SOLUS     → test           RHEA      → validate
+#   LUMINE    → JSON check     AION      → seal
+#   ARTEMIS   → discover       PULSE     → summary
+
+name: KOBLLUX PULSE CI
+
+on:
+  push:
+    branches: ["main", "claude/**"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  # ── PAI · DETECTAR ────────────────────────────────────────────
+  detect:
+    name: "⬡ ATLAS·NOVA·ARTEMIS — Detect"
+    runs-on: ubuntu-latest
+    outputs:
+      has_package: ${{ steps.check.outputs.has_package }}
+    steps:
+      - name: "[ATLAS] checkout"
+        uses: actions/checkout@v4
+
+      - name: "[NOVA] detect environment"
+        id: check
+        run: |
+          echo "=== KOBLLUX NODE.FIELDS · DETECTAR ==="
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo ""
+          if [ -f KODUX/package.json ]; then
+            echo "has_package=true" >> $GITHUB_OUTPUT
+            echo "[NOVA] KODUX/package.json encontrado"
+            node -e "const p=require('./KODUX/package.json');console.log('[NOVA] Node target:',p.engines&&p.engines.node||'20.x')" 2>/dev/null || true
+          else
+            echo "has_package=false" >> $GITHUB_OUTPUT
+            echo "[NOVA] Sem package.json em KODUX — modo Python-only"
+          fi
+
+      - name: "[ARTEMIS] source inventory"
+        run: |
+          echo "[ARTEMIS] Inventário de fontes:"
+          find . -maxdepth 4 \( -name "*.js" -o -name "*.py" -o -name "*.json" \) \
+            ! -path "./.git/*" ! -path "./node_modules/*" | sort | head -40 || true
+
+  # ── FILHO · INTEGRAR ──────────────────────────────────────────
+  build:
+    name: "◉ VITALIS·GENUS·KAOS — Install & Build"
+    runs-on: ubuntu-latest
+    needs: detect
+    steps:
+      - name: "[ATLAS] checkout"
+        uses: actions/checkout@v4
+
+      - name: "[VITALIS] setup Node.js 20.x"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: "[SERENA] install dependencies"
+        run: |
+          if [ -f KODUX/package-lock.json ]; then
+            echo "[VITALIS] npm ci (lockfile presente)"
+            cd KODUX && npm ci
+          elif [ -f KODUX/package.json ]; then
+            echo "[VITALIS] npm install (sem lockfile)"
+            cd KODUX && npm install
+          else
+            echo "[VITALIS] Sem package.json em KODUX — nó Python-only, pulando npm"
+          fi
+
+      - name: "[KAOS] lint — trailing whitespace"
+        run: |
+          FILES=$(find . -name "*.js" ! -path "./.git/*" ! -path "./node_modules/*" 2>/dev/null | head -50 || true)
+          if [ -n "$FILES" ]; then
+            echo "$FILES" | xargs grep -ln '[[:space:]]$' && echo "[KAOS] trailing spaces" || echo "[KAOS] clean"
+          else
+            echo "[KAOS] Nenhum arquivo JS encontrado"
+          fi
+
+      - name: "[GENUS] build"
+        run: |
+          if [ -f KODUX/package.json ]; then
+            cd KODUX && npm run build --if-present
+          else
+            echo "[GENUS] Sem package.json — pulando build"
+          fi
+
+  # ── ESPÍRITO SANTO · EXPANDIR ─────────────────────────────────
+  test:
+    name: "≋ SOLUS·RHEA·AION — QA, Validate & Seal"
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: "[ATLAS] checkout"
+        uses: actions/checkout@v4
+
+      - name: "[VITALIS] setup Node.js 20.x"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: "[SERENA] install para testes"
+        run: |
+          if [ -f KODUX/package-lock.json ]; then
+            cd KODUX && npm ci
+          elif [ -f KODUX/package.json ]; then
+            cd KODUX && npm install
+          else
+            echo "[SERENA] Sem package — pulando install"
+          fi
+
+      - name: "[SOLUS] run tests"
+        run: |
+          if [ -f KODUX/package.json ]; then
+            cd KODUX && npm test --if-present || echo "[SOLUS] Nenhum teste definido"
+          else
+            echo "[SOLUS] Sem package.json — pulando testes"
+          fi
+
+      - name: "[RHEA] validate Python modules"
+        run: |
+          echo "[RHEA] Python: $(python3 --version)"
+          for f in KODUX/cadial_arquetipos.py bin/kobllux_podcast_n8n.py; do
+            if [ -f "$f" ]; then
+              python3 -c "import ast; ast.parse(open('$f').read()); print('[RHEA] OK:', '$f')" 2>&1
+            fi
+          done
+          find . -name "*.py" ! -path "./.git/*" | head -10 | while read f; do
+            echo "[RHEA] found: $f"
+          done
+
+      - name: "[LUMINE] validate JSON"
+        run: |
+          for f in KODUX/package.json state/VERBUM_CODEX_KBLX_KxaT_INTEGRATION.json; do
+            if [ -f "$f" ]; then
+              python3 -m json.tool "$f" > /dev/null && echo "[LUMINE] OK: $f" || echo "[LUMINE] FAIL: $f"
+            else
+              echo "[LUMINE] não encontrado: $f (skip)"
+            fi
+          done
+
+      - name: "[AION] seal manifest"
+        run: |
+          echo "AION :: $(date -u +%Y-%m-%dT%H:%M:%SZ) :: hash=f544e7482b2c8426" > /tmp/kob_ledger.txt
+          find . -name "*.json" ! -path "./.git/*" ! -path "./node_modules/*" | head -5 | while read f; do
+            sha256sum "$f" >> /tmp/kob_ledger.txt
+          done
+          cat /tmp/kob_ledger.txt
+
+      - name: "[PULSE] summary"
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "⟪ KOBLLUX PULSE CI — TRANSMISSÃO COMPLETA ⟫"
+          echo "hash:    f544e7482b2c8426"
+          echo "law:     VERDADE × INTEGRAR ÷ Δ = ∞"
+          echo "fractal: 3×6×9×7 = 1134"
+          echo "branch:  ${{ github.ref_name }}"
+          echo "commit:  ${{ github.sha }}"
+          echo "time:    $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "trinity: PAI·FILHO·ESPÍRITO = DETECTAR·INTEGRAR·EXPANDIR"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

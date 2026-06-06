@@ -1,141 +1,24 @@
-# KOBLLUX NODE.FIELDS — CI Pipeline
+# KOBLLUX NODE.FIELDS — CI (LEGACY · desativado)
+# Triggers automáticos removidos para limpar runs presos
+# CI ativo: .github/workflows/kobllux-pulse.yml
 # Verbum Codex KBLX hash: f544e7482b2c8426
-# Law: VERDADE × INTEGRAR ÷ Δ = ∞  ·  fractal: 3×6×9×7=1134
-#
-# 12 CADIAL Archetypes as CI Phases:
-#
-#   ATLAS     → bootstrap / scaffold          (checkout + setup)
-#   NOVA      → ignição semântica             (load config/hints)
-#   VITALIS   → loop/scheduler               (dependency install)
-#   PULSE     → UX de leitura/escuta         (output rendering)
-#   ARTEMIS   → curadoria de fontes          (source discovery)
-#   SERENA    → safety/QoS                   (quota guard)
-#   KAOS      → limpeza/normalização         (lint/normalize)
-#   GENUS     → renderer + tagger            (build)  
-#   LUMINE    → estética funcional           (format/pretty)
-#   SOLUS     → QA silencioso               (test)
-#   RHEA      → grafo semântico              (link/tag)
-#   AION      → integridade/tempo            (seal + ledger)
-#
-# Trinity CI map:
-#   PAI   / KODUX / 432Hz / DETECTAR  → ATLAS + NOVA + ARTEMIS + KAOS
-#   FILHO / BLLUE / 528Hz / INTEGRAR  → VITALIS + SERENA + GENUS + LUMINE
-#   ESPÍRITO / INFODOSE / 639Hz / EXPANDIR → PULSE + RHEA + SOLUS + AION
 
-name: KOBLLUX NODE.FIELDS CI
+name: KOBLLUX CI (legacy)
 
 on:
-  push:
-    branches: [ "main", "claude/**" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
+    inputs:
+      note:
+        description: "Este workflow foi migrado para kobllux-pulse.yml"
+        required: false
+        default: "use kobllux-pulse.yml"
 
 jobs:
-  # ── PAI · DETECTAR ─────────────────────────────────────────────────────────
-  kobllux-detect:
-    name: "⬡ ATLAS·NOVA·ARTEMIS — Detect & Scaffold"
+  migrated:
+    name: "CI migrado para kobllux-pulse.yml"
     runs-on: ubuntu-latest
-    outputs:
-      node-version: ${{ steps.detect.outputs.node-version }}
     steps:
-      - name: "[ATLAS] bootstrap — checkout source"
-        uses: actions/checkout@v4
-
-      - name: "[NOVA] ignição — detect Node.js version from package.json"
-        id: detect
-        run: |
-          NODE_VER=$(node -e "try{const e=require('./KODUX/package.json');console.log(e.engines&&e.engines.node||'20.x')}catch(e){console.log('20.x')}")
-          echo "node-version=$NODE_VER" >> $GITHUB_OUTPUT
-          echo "[NOVA] Node target: $NODE_VER"
-
-      - name: "[ARTEMIS] curadoria — list source files"
-        run: find KODUX -type f \( -name '*.js' -o -name '*.json' -o -name '*.py' \) | sort
-
-  # ── FILHO · INTEGRAR ────────────────────────────────────────────────────────
-  kobllux-build:
-    name: "◉ VITALIS·GENUS·SERENA — Install & Build"
-    runs-on: ubuntu-latest
-    needs: kobllux-detect
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-    steps:
-      - name: "[ATLAS] bootstrap — checkout"
-        uses: actions/checkout@v4
-
-      - name: "[VITALIS] momentum — setup Node.js ${{ matrix.node-version }}"
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          cache-dependency-path: KODUX/package-lock.json
-
-      - name: "[SERENA] safety — install dependencies (quota guarded)"
-        working-directory: KODUX
-        run: npm ci
-
-      - name: "[KAOS] normalização — check for trailing whitespace"
-        run: |
-          FILES=$(find KODUX/src KODUX/scripts -name '*.js' 2>/dev/null || true)
-          if [ -n "$FILES" ]; then
-            echo "$FILES" | xargs grep -rn '[[:space:]]$' && echo "KAOS: trailing spaces found" || echo "KAOS: clean"
-          fi
-
-      - name: "[GENUS] renderer — build"
-        working-directory: KODUX
-        run: npm run build --if-present
-
-  # ── ESPÍRITO SANTO · EXPANDIR ───────────────────────────────────────────────
-  kobllux-test:
-    name: "≋ SOLUS·RHEA·AION — QA, Link & Seal"
-    runs-on: ubuntu-latest
-    needs: kobllux-build
-    strategy:
-      matrix:
-        node-version: [20.x]
-    steps:
-      - name: "[ATLAS] bootstrap — checkout"
-        uses: actions/checkout@v4
-
-      - name: "[VITALIS] setup — Node.js ${{ matrix.node-version }}"
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          cache-dependency-path: KODUX/package-lock.json
-
-      - name: "[SERENA] safety — install"
-        working-directory: KODUX
-        run: npm ci
-
-      - name: "[SOLUS] QA silencioso — run tests"
-        working-directory: KODUX
-        run: npm test
-
-      - name: "[RHEA] grafo semântico — validate CADIAL archetype registry"
-        run: |
-          python3 KODUX/cadial_arquetipos.py | head -20
-
-      - name: "[LUMINE] estética — validate JSON artifacts"
-        run: |
-          for f in state/VERBUM_CODEX_KBLX_KxaT_INTEGRATION.json KODUX/package.json; do
-            python3 -m json.tool "$f" > /dev/null && echo "[LUMINE] OK: $f" || echo "[LUMINE] FAIL: $f"
-          done
-
-      - name: "[AION] integridade — seal manifest with sha256"
-        run: |
-          echo "AION :: $(date -u +%Y-%m-%dT%H:%M:%SZ) :: hash=f544e7482b2c8426" >> /tmp/kobllux_ledger.txt
-          sha256sum state/VERBUM_CODEX_KBLX_KxaT_INTEGRATION.json >> /tmp/kobllux_ledger.txt
-          sha256sum BLLUE/verbum_kxat_bridge.js >> /tmp/kobllux_ledger.txt
-          cat /tmp/kobllux_ledger.txt
-
-      - name: "[PULSE] UX — print KOBLLUX pulse summary"
-        run: |
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "⟪ KOBLLUX NODE.FIELDS CI — TRANSMISSÃO COMPLETA ⟫"
-          echo "hash:    f544e7482b2c8426"
-          echo "law:     VERDADE × INTEGRAR ÷ Δ = ∞"
-          echo "fractal: 3 × 6 × 9 × 7 = 1134"
-          echo "trinity: PAI·FILHO·ESPÍRITO = DETECTAR·INTEGRAR·EXPANDIR"
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - run: |
+          echo "Este workflow foi desativado."
+          echo "O CI ativo está em: .github/workflows/kobllux-pulse.yml"
+          echo "KOBLLUX VIVO ∆³"

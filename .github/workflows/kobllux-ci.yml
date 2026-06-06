@@ -26,9 +26,10 @@ name: KOBLLUX NODE.FIELDS CI
 
 on:
   push:
-    branches: [ "main", "claude/access-kobo-codex-cHowu" ]
+    branches: [ "main", "claude/**" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   # ── PAI · DETECTAR ─────────────────────────────────────────────────────────

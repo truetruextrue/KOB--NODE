@@ -7,4 +7,4 @@
 **Padrões A/B/C/D:** {'A': False, 'B': False, 'C': False, 'D': False}
 **Ativos:** nenhum
 
-> Selo: ∆⁷ · Seed: `7819444798132842168` · DR=6
+> Selo: ∆⁷ · Seed: `7192335351576669737` · DR=5

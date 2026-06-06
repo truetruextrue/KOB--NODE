@@ -1,9 +1,14 @@
 {
-  "timestamp": "2026-06-06T03:23:17.491634",
+  "timestamp": "2026-06-06T03:44:15.234163",
   "size": 33,
-  "seed": 8134283676943007236,
-  "digital_root": 1,
-  "output_format": "TRI TXT (0/1/2)",
+  "seed": 416003012754519725,
+  "digital_root": 8,
+  "output_format": "TRI TXT (0/1/2) + ASCII ART (█▒ )",
+  "encoding": {
+    "0": "PAI( )",
+    "1": "FILHO(█)",
+    "2": "ESPÍRITO(▒)"
+  },
   "manifestation": "Forma Viva (GENUS)",
   "pal_h": true,
   "pal_v": true,

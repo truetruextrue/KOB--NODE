@@ -161,25 +161,32 @@ def gen_trinary_grid(size, rng):
             final[size - 1 - r] = grid[r]
     return final
 
+TRI_CHARS = {0: " ", 1: "█", 2: "▒"}
+
+def grid_to_ascii(grid):
+    return "\n".join("".join(TRI_CHARS[v] for v in row) for row in grid)
+
 def run_m4(src_d, src_m, m1_json, m2_json, size=33):
     seed = seed_from_text(src_d, src_m,
                           json.dumps(m1_json), json.dumps(m2_json))
     rng  = random.Random(seed)
     grid = gen_trinary_grid(size, rng)
     tri  = "\n".join(" ".join(map(str, row)) for row in grid)
+    ascii_art = grid_to_ascii(grid)
     report = {
         "timestamp":     datetime.now().isoformat(),
         "size":          size,
         "seed":          seed,
         "digital_root":  _digital_root(seed),
-        "output_format": "TRI TXT (0/1/2)",
+        "output_format": "TRI TXT (0/1/2) + ASCII ART (█▒ )",
+        "encoding":      {"0": "PAI( )", "1": "FILHO(█)", "2": "ESPÍRITO(▒)"},
         "manifestation": "Forma Viva (GENUS)",
         "pal_h":         True,
         "pal_v":         True,
         "seal":          "∆7_EXPANDIR",
         "loop":          "3×6×9×7",
     }
-    return report, tri
+    return report, tri, ascii_art
 
 def _digital_root(n):
     while n >= 10:
@@ -266,7 +273,7 @@ def process_one(json_path, root, size=33):
     m1 = run_m1(src_d, src_m)
     m2 = run_m2(src_d, m1)
     m3 = run_m3(src_d, src_m)
-    m4_rep, tri = run_m4(src_d, src_m, m1, m2, size)
+    m4_rep, tri, ascii_art = run_m4(src_d, src_m, m1, m2, size)
     m5 = run_m5(src_d)
 
     # Salvar JSONs
@@ -280,6 +287,8 @@ def process_one(json_path, root, size=33):
 
     with open(os.path.join(state_dir, "m4_sci_art.tri.txt"), "w", encoding="utf-8") as f:
         f.write(tri)
+    with open(os.path.join(state_dir, "m4_sci_art.ascii.txt"), "w", encoding="utf-8") as f:
+        f.write(ascii_art)
 
     # Cards MD
     pat_d  = m3["patterns"]["direct"]
@@ -309,6 +318,15 @@ def process_one(json_path, root, size=33):
         f.write(f"- **Lei:** {m5['synthesis']['UNO']['law']}\n")
         f.write(f"- **Espelho:** preserva estrutura = {cnt_d['letters'] == cnt_m['letters']}\n")
         f.write(f"\n> Selo: ∆⁷ • Loop: 3×9×7\n")
+
+    with open(os.path.join(cards_dir, "M4_SCIART_CARD.md"), "w", encoding="utf-8") as f:
+        f.write(f"# M4 • SCI-ART ASCII — {sname}\n\n")
+        f.write(f"**Seed:** `{m4_rep['seed']}` · **DR:** {m4_rep['digital_root']}\n\n")
+        f.write("**Encoding:** `0`=PAI( ) · `1`=FILHO(█) · `2`=ESPÍRITO(▒)\n\n")
+        f.write("```\n")
+        f.write(ascii_art)
+        f.write("\n```\n\n")
+        f.write(f"> pal_h=True · pal_v=True · {size}×{size} · ∆7\n")
 
     return {
         "file":         fname,

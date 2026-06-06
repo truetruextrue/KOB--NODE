@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-06T03:23:17.552474",
+  "timestamp": "2026-06-06T03:44:15.277188",
   "total": 35,
   "processed": 35,
   "runs": [
@@ -10,8 +10,8 @@
       "letters": 4461,
       "lang_pt": 35,
       "patterns": [],
-      "seed": 4805716570630355729,
-      "digital_root": 2,
+      "seed": 2784203177302366572,
+      "digital_root": 3,
       "invariant": true
     },
     {
@@ -21,7 +21,7 @@
       "letters": 8543,
       "lang_pt": 34,
       "patterns": [],
-      "seed": 1442332551273885454,
+      "seed": 6426221284918240267,
       "digital_root": 4,
       "invariant": true
     },
@@ -32,8 +32,8 @@
       "letters": 115648,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 3609518893212126528,
-      "digital_root": 9,
+      "seed": 2034245588867563823,
+      "digital_root": 8,
       "invariant": true
     },
     {
@@ -43,8 +43,8 @@
       "letters": 23886,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 7534624999752430993,
-      "digital_root": 1,
+      "seed": 1296677628210540256,
+      "digital_root": 7,
       "invariant": true
     },
     {
@@ -54,7 +54,7 @@
       "letters": 43319,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 3429852186206838979,
+      "seed": 2776774661666834842,
       "digital_root": 1,
       "invariant": true
     },
@@ -65,8 +65,8 @@
       "letters": 3691,
       "lang_pt": 35,
       "patterns": [],
-      "seed": 2006029682666400827,
-      "digital_root": 2,
+      "seed": 5642451059558283658,
+      "digital_root": 1,
       "invariant": true
     },
     {
@@ -76,8 +76,8 @@
       "letters": 5866,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 5268075869692484326,
-      "digital_root": 1,
+      "seed": 6758116783495700652,
+      "digital_root": 9,
       "invariant": true
     },
     {
@@ -87,8 +87,8 @@
       "letters": 40528,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 6356429752386245542,
-      "digital_root": 7,
+      "seed": 4725458394184592281,
+      "digital_root": 1,
       "invariant": true
     },
     {
@@ -98,8 +98,8 @@
       "letters": 48017,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 4172469163073751500,
-      "digital_root": 8,
+      "seed": 1716998597752089888,
+      "digital_root": 9,
       "invariant": true
     },
     {
@@ -109,8 +109,8 @@
       "letters": 4988,
       "lang_pt": 34,
       "patterns": [],
-      "seed": 4828904572715259349,
-      "digital_root": 4,
+      "seed": 383772549706390727,
+      "digital_root": 8,
       "invariant": true
     },
     {
@@ -120,8 +120,8 @@
       "letters": 113,
       "lang_pt": 9,
       "patterns": [],
-      "seed": 3956169486942254246,
-      "digital_root": 5,
+      "seed": 6845637906208817561,
+      "digital_root": 2,
       "invariant": true
     },
     {
@@ -131,8 +131,8 @@
       "letters": 7525,
       "lang_pt": 33,
       "patterns": [],
-      "seed": 7819444798132842168,
-      "digital_root": 6,
+      "seed": 7192335351576669737,
+      "digital_root": 5,
       "invariant": true
     },
     {
@@ -142,8 +142,8 @@
       "letters": 32184,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 6143268907763660759,
-      "digital_root": 5,
+      "seed": 5409907903493714739,
+      "digital_root": 3,
       "invariant": true
     },
     {
@@ -153,8 +153,8 @@
       "letters": 20750,
       "lang_pt": 35,
       "patterns": [],
-      "seed": 9036735109049338246,
-      "digital_root": 1,
+      "seed": 5901574700501344141,
+      "digital_root": 7,
       "invariant": true
     },
     {
@@ -164,8 +164,8 @@
       "letters": 56078,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 1480782901662902653,
-      "digital_root": 7,
+      "seed": 4133476115549944681,
+      "digital_root": 4,
       "invariant": true
     },
     {
@@ -175,8 +175,8 @@
       "letters": 9771,
       "lang_pt": 36,
       "patterns": [],
-      "seed": 4577605643976236946,
-      "digital_root": 9,
+      "seed": 6675752810480320034,
+      "digital_root": 8,
       "invariant": true
     },
     {
@@ -186,8 +186,8 @@
       "letters": 2044,
       "lang_pt": 29,
       "patterns": [],
-      "seed": 6310894075580450417,
-      "digital_root": 5,
+      "seed": 6768807370720294492,
+      "digital_root": 1,
       "invariant": true
     },
     {
@@ -197,8 +197,8 @@
       "letters": 12794,
       "lang_pt": 36,
       "patterns": [],
-      "seed": 4272471601204615738,
-      "digital_root": 7,
+      "seed": 9072728520247447004,
+      "digital_root": 2,
       "invariant": true
     },
     {
@@ -208,8 +208,8 @@
       "letters": 22124,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 5066627565755418673,
-      "digital_root": 4,
+      "seed": 7279058280030755781,
+      "digital_root": 3,
       "invariant": true
     },
     {
@@ -219,8 +219,8 @@
       "letters": 22985,
       "lang_pt": 36,
       "patterns": [],
-      "seed": 1225972353509570355,
-      "digital_root": 6,
+      "seed": 1794532482058810480,
+      "digital_root": 7,
       "invariant": true
     },
     {
@@ -230,8 +230,8 @@
       "letters": 3578,
       "lang_pt": 32,
       "patterns": [],
-      "seed": 5628832275726818285,
-      "digital_root": 5,
+      "seed": 9198815634281341023,
+      "digital_root": 6,
       "invariant": true
     },
     {
@@ -241,7 +241,7 @@
       "letters": 117858,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 366815338645830675,
+      "seed": 1846160714020190973,
       "digital_root": 6,
       "invariant": true
     },
@@ -252,8 +252,8 @@
       "letters": 7881,
       "lang_pt": 35,
       "patterns": [],
-      "seed": 3886964830044809990,
-      "digital_root": 8,
+      "seed": 2412148741557524067,
+      "digital_root": 3,
       "invariant": true
     },
     {
@@ -263,8 +263,8 @@
       "letters": 56937,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 5614365299901179081,
-      "digital_root": 5,
+      "seed": 5796127391115565525,
+      "digital_root": 4,
       "invariant": true
     },
     {
@@ -274,8 +274,8 @@
       "letters": 40985,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 7079778287463925426,
-      "digital_root": 4,
+      "seed": 1778562206582625860,
+      "digital_root": 5,
       "invariant": true
     },
     {
@@ -285,8 +285,8 @@
       "letters": 12420,
       "lang_pt": 36,
       "patterns": [],
-      "seed": 6947686691595513665,
-      "digital_root": 8,
+      "seed": 1754159342687482053,
+      "digital_root": 3,
       "invariant": true
     },
     {
@@ -296,8 +296,8 @@
       "letters": 42469,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 5280991523764317706,
-      "digital_root": 4,
+      "seed": 4283748864883739375,
+      "digital_root": 8,
       "invariant": true
     },
     {
@@ -307,8 +307,8 @@
       "letters": 11845,
       "lang_pt": 33,
       "patterns": [],
-      "seed": 3707003364840204479,
-      "digital_root": 8,
+      "seed": 2881620310574101060,
+      "digital_root": 1,
       "invariant": true
     },
     {
@@ -318,8 +318,8 @@
       "letters": 33142,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 7843210094327234856,
-      "digital_root": 6,
+      "seed": 5255816022758793718,
+      "digital_root": 1,
       "invariant": true
     },
     {
@@ -329,8 +329,8 @@
       "letters": 15833,
       "lang_pt": 33,
       "patterns": [],
-      "seed": 5791987987773281349,
-      "digital_root": 6,
+      "seed": 6295757166848918744,
+      "digital_root": 8,
       "invariant": true
     },
     {
@@ -340,7 +340,7 @@
       "letters": 66168,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 2520858925490551869,
+      "seed": 8227203934779897951,
       "digital_root": 3,
       "invariant": true
     },
@@ -351,8 +351,8 @@
       "letters": 44313,
       "lang_pt": 35,
       "patterns": [],
-      "seed": 7504961026534462805,
-      "digital_root": 5,
+      "seed": 1312763135248918784,
+      "digital_root": 2,
       "invariant": true
     },
     {
@@ -362,8 +362,8 @@
       "letters": 53053,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 3749997133734641079,
-      "digital_root": 6,
+      "seed": 6153640732651151970,
+      "digital_root": 9,
       "invariant": true
     },
     {
@@ -373,8 +373,8 @@
       "letters": 86675,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 6087728204273222033,
-      "digital_root": 5,
+      "seed": 5327818222684481800,
+      "digital_root": 7,
       "invariant": true
     },
     {
@@ -384,8 +384,8 @@
       "letters": 86227,
       "lang_pt": 37,
       "patterns": [],
-      "seed": 8134283676943007236,
-      "digital_root": 1,
+      "seed": 416003012754519725,
+      "digital_root": 8,
       "invariant": true
     }
   ],

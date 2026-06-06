@@ -11,7 +11,7 @@
 #   ARTEMIS   → curadoria de fontes          (source discovery)
 #   SERENA    → safety/QoS                   (quota guard)
 #   KAOS      → limpeza/normalização         (lint/normalize)
-#   GENUS     → renderer + tagger            (build)
+#   GENUS     → renderer + tagger            (build)  
 #   LUMINE    → estética funcional           (format/pretty)
 #   SOLUS     → QA silencioso               (test)
 #   RHEA      → grafo semântico              (link/tag)

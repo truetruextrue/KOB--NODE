@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-06T03:23:16.778349",
+  "direct": {
+    "letters": 33142,
+    "digits": 381,
+    "words": 8138,
+    "lines": 270,
+    "sentences": 186
+  },
+  "mirror": {
+    "letters": 33142,
+    "digits": 381,
+    "words": 8138,
+    "lines": 270,
+    "sentences": 17
+  },
+  "seal": "∆7_DETECTAR"
+}

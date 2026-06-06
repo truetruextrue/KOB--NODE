@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-06-06T03:23:16.069947",
+  "symbols": {
+    "direct": {
+      "math": 39
+    },
+    "mirror": {
+      "math": 39
+    }
+  },
+  "patterns": {
+    "direct": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "mirror": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    }
+  },
+  "seal": "∆7",
+  "synthesis": {
+    "law": "VERDADE × INTEGRAR ÷ Δ = ♾️",
+    "interdependence": [
+      "M1→M2→M3 selam ∆⁷"
+    ]
+  }
+}

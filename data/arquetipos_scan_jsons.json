@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "titulo": "SCAN COMPLETO — ATRIBUTOS DOS ARQUÉTIPOS × WORKFLOW JSONS",
+    "lei": "VERDADE × INTEGRAR ÷ Δ = ∞",
+    "total_arquivos": 35,
+    "total_mencoes": 4682,
+    "arquetipos_detectados": 23,
+    "data": "2026-06-06",
+    "seal": "∆7"
+  },
+  "ranking_global": [
+    {
+      "rank": 1,
+      "arquetipo": "KODUX",
+      "mencoes_total": 1751,
+      "presente_em_arquivos": 33,
+      "hz": 741,
+      "geo": "CUBO",
+      "opcode": "0x05",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#ffd600",
+      "runa": "ᚲ ᛏ"
+    },
+    {
+      "rank": 2,
+      "arquetipo": "INFODOSE",
+      "mencoes_total": 456,
+      "presente_em_arquivos": 25,
+      "hz": 450,
+      "geo": "GOTA",
+      "opcode": "0x02",
+      "dim": "4D-6D",
+      "ciclo": 6,
+      "cor": "#80cbc4",
+      "runa": "—"
+    },
+    {
+      "rank": 3,
+      "arquetipo": "PULSE",
+      "mencoes_total": 429,
+      "presente_em_arquivos": 22,
+      "hz": 639,
+      "geo": "TETRAEDRO",
+      "opcode": "0x03",
+      "dim": "4D-6D",
+      "ciclo": 6,
+      "cor": "#ff6d00",
+      "runa": "ᛘ ᚱ"
+    },
+    {
+      "rank": 4,
+      "arquetipo": "METALUX",
+      "mencoes_total": 383,
+      "presente_em_arquivos": 19,
+      "hz": 111,
+      "geo": "PRISMA_DUPLO",
+      "opcode": "0x10",
+      "dim": "10D+",
+      "ciclo": 7,
+      "cor": "#ff9fff",
+      "runa": "⚡"
+    },
+    {
+      "rank": 5,
+      "arquetipo": "NOVA",
+      "mencoes_total": 326,
+      "presente_em_arquivos": 29,
+      "hz": 432,
+      "geo": "OCTAEDRO",
+      "opcode": "0x01",
+      "dim": "1D-3D",
+      "ciclo": 3,
+      "cor": "#00e5ff",
+      "runa": "ᚷ ᛁ"
+    },
+    {
+      "rank": 6,
+      "arquetipo": "AION",
+      "mencoes_total": 281,
+      "presente_em_arquivos": 11,
+      "hz": 777,
+      "geo": "INFINITO",
+      "opcode": "0x09",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#7c4dff",
+      "runa": "ᛇ ᛉ"
+    },
+    {
+      "rank": 7,
+      "arquetipo": "HORUS",
+      "mencoes_total": 274,
+      "presente_em_arquivos": 18,
+      "hz": 432,
+      "geo": "ESPIRAL",
+      "opcode": "0x08",
+      "dim": "1D-3D",
+      "ciclo": 3,
+      "cor": "#4fc3f7",
+      "runa": "—"
+    },
+    {
+      "rank": 8,
+      "arquetipo": "DUAL",
+      "mencoes_total": 179,
+      "presente_em_arquivos": 25,
+      "hz": 528,
+      "geo": "ESPELHO",
+      "opcode": "0x02",
+      "dim": "2D",
+      "ciclo": 6,
+      "cor": "#ffffff",
+      "runa": "—"
+    },
+    {
+      "rank": 9,
+      "arquetipo": "BLLUE",
+      "mencoes_total": 155,
+      "presente_em_arquivos": 10,
+      "hz": 639,
+      "geo": "ESPELHO",
+      "opcode": "0x0D",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#1E90FF",
+      "runa": "ᛚ ᚹ"
+    },
+    {
+      "rank": 10,
+      "arquetipo": "TRINITY",
+      "mencoes_total": 111,
+      "presente_em_arquivos": 2,
+      "hz": 777,
+      "geo": "TRINDADE",
+      "opcode": "0x0C",
+      "dim": "10D",
+      "ciclo": 7,
+      "cor": "#b39ddb",
+      "runa": "ᛜ ᛇ ᛟ"
+    },
+    {
+      "rank": 11,
+      "arquetipo": "KAOS",
+      "mencoes_total": 90,
+      "presente_em_arquivos": 12,
+      "hz": 741,
+      "geo": "ESFERA_DISRUPTIVA",
+      "opcode": "0x04",
+      "dim": "6D-7D",
+      "ciclo": 6,
+      "cor": "#f50057",
+      "runa": "ᚦ ᚲ"
+    },
+    {
+      "rank": 12,
+      "arquetipo": "KOBLLUX",
+      "mencoes_total": 71,
+      "presente_em_arquivos": 4,
+      "hz": 1134,
+      "geo": "TOROIDE",
+      "opcode": "0x0F",
+      "dim": "10D",
+      "ciclo": 7,
+      "cor": "#39ffb6",
+      "runa": "ᛜ ᛇ ᛟ"
+    },
+    {
+      "rank": 13,
+      "arquetipo": "YAMANTEK",
+      "mencoes_total": 38,
+      "presente_em_arquivos": 2,
+      "hz": 369,
+      "geo": "FUSAO_SAGRADA",
+      "opcode": "0x11",
+      "dim": "∞",
+      "ciclo": 7,
+      "cor": "#ffd700",
+      "runa": "—"
+    },
+    {
+      "rank": 14,
+      "arquetipo": "JESUS",
+      "mencoes_total": 23,
+      "presente_em_arquivos": 2,
+      "hz": 963,
+      "geo": "MERKABAH",
+      "opcode": "0x0E",
+      "dim": "10D",
+      "ciclo": 7,
+      "cor": "#fffde7",
+      "runa": "ᚷ ᛟ ᛋ"
+    },
+    {
+      "rank": 15,
+      "arquetipo": "ORIOS",
+      "mencoes_total": 23,
+      "presente_em_arquivos": 5,
+      "hz": 528,
+      "geo": "ARCO",
+      "opcode": "0x09",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#80deea",
+      "runa": "—"
+    },
+    {
+      "rank": 16,
+      "arquetipo": "UNO",
+      "mencoes_total": 23,
+      "presente_em_arquivos": 9,
+      "hz": 432,
+      "geo": "ESFERA",
+      "opcode": "0x01",
+      "dim": "1D",
+      "ciclo": 3,
+      "cor": "#000000",
+      "runa": "—"
+    },
+    {
+      "rank": 17,
+      "arquetipo": "LUMINE",
+      "mencoes_total": 19,
+      "presente_em_arquivos": 3,
+      "hz": 528,
+      "geo": "PRISMA",
+      "opcode": "0x0B",
+      "dim": "4D-6D",
+      "ciclo": 6,
+      "cor": "#fff9c4",
+      "runa": "ᛋ ᛁ"
+    },
+    {
+      "rank": 18,
+      "arquetipo": "SOLUS",
+      "mencoes_total": 13,
+      "presente_em_arquivos": 3,
+      "hz": 963,
+      "geo": "SOL_ESPIRAL",
+      "opcode": "0x09",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#fff176",
+      "runa": "ᛃ ᛟ"
+    },
+    {
+      "rank": 19,
+      "arquetipo": "ARTEMIS",
+      "mencoes_total": 13,
+      "presente_em_arquivos": 2,
+      "hz": 528,
+      "geo": "ARCO",
+      "opcode": "0x09",
+      "dim": "7D-9D",
+      "ciclo": 9,
+      "cor": "#80deea",
+      "runa": "ᛏ ᛉ"
+    },
+    {
+      "rank": 20,
+      "arquetipo": "RHEA",
+      "mencoes_total": 12,
+      "presente_em_arquivos": 2,
+      "hz": 528,
+      "geo": "TERRA",
+      "opcode": "0x09",
+      "dim": "4D-6D",
+      "ciclo": 9,
+      "cor": "#ef9a9a",
+      "runa": "ᛗ ᛜ"
+    },
+    {
+      "rank": 21,
+      "arquetipo": "ATLAS",
+      "mencoes_total": 5,
+      "presente_em_arquivos": 4,
+      "hz": 432,
+      "geo": "ESFERA",
+      "opcode": "0x00",
+      "dim": "1D-3D",
+      "ciclo": 3,
+      "cor": "#8e9aaf",
+      "runa": "ᚨ ᚠ"
+    },
+    {
+      "rank": 22,
+      "arquetipo": "SERENA",
+      "mencoes_total": 5,
+      "presente_em_arquivos": 3,
+      "hz": 528,
+      "geo": "ONDA",
+      "opcode": "0x06",
+      "dim": "4D-6D",
+      "ciclo": 6,
+      "cor": "#ce93d8",
+      "runa": "ᚹ ᛚ"
+    },
+    {
+      "rank": 23,
+      "arquetipo": "VITALIS",
+      "mencoes_total": 2,
+      "presente_em_arquivos": 1,
+      "hz": 528,
+      "geo": "DODECAEDRO",
+      "opcode": "0x06",
+      "dim": "4D-6D",
+      "ciclo": 6,
+      "cor": "#00e676",
+      "runa": "ᚢ ᛃ"
+    }
+  ],
+  "por_arquivo": {
+    "Ativação azzira história 567.json": {
+      "kb": 6.5,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 7,
+        "infodose": 7,
+        "kaos": 1
+      }
+    },
+    "Ativando KOBLLUX História real.json": {
+      "kb": 11.0,
+      "dominante": "pulse",
+      "arquetipos": {
+        "pulse": 15,
+        "kodux": 9,
+        "kobllux": 8,
+        "infodose": 4,
+        "dual": 3,
+        "bllue": 2,
+        "nova": 1
+      }
+    },
+    "Ativar KOBLLUX ÔÜí´©Å­ƒÆº.json": {
+      "kb": 176.4,
+      "dominante": "trinity",
+      "arquetipos": {
+        "trinity": 110,
+        "pulse": 35,
+        "jesus": 15,
+        "nova": 11,
+        "kobllux": 11,
+        "bllue": 9,
+        "uno": 4,
+        "kaos": 1,
+        "orios": 1,
+        "dual": 1
+      }
+    },
+    "CheckMate v5.7.3.json": {
+      "kb": 52.5,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 16,
+        "horus": 10,
+        "bllue": 10,
+        "dual": 4,
+        "nova": 3,
+        "kaos": 2,
+        "infodose": 2,
+        "atlas": 1,
+        "pulse": 1,
+        "uno": 1
+      }
+    },
+    "FFC Full livro ­ƒôò.pdf.json": {
+      "kb": 82.5,
+      "dominante": "nova",
+      "arquetipos": {
+        "nova": 37,
+        "jesus": 8,
+        "orios": 1
+      }
+    },
+    "Kodux ÔÜí´©Å Horus ­ƒæü´©Å e a Mente ­ƒºá v6.0.0.json": {
+      "kb": 8.4,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 19,
+        "horus": 18,
+        "dual": 1
+      }
+    },
+    "Kodux ÔÜí´©Å Horus ­ƒæü´©Å e a Mente ­ƒºá v6.0.1.json": {
+      "kb": 13.9,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 29,
+        "horus": 28,
+        "metalux": 4,
+        "infodose": 2,
+        "kaos": 1,
+        "dual": 1
+      }
+    },
+    "Livro Pulso - A verdade do corpo consciente no Equilíbrio da tensão… 2.json": {
+      "kb": 57.1,
+      "dominante": "metalux",
+      "arquetipos": {
+        "metalux": 90,
+        "kodux": 72,
+        "bllue": 30,
+        "kobllux": 29,
+        "infodose": 24,
+        "pulse": 22,
+        "dual": 19,
+        "nova": 3,
+        "horus": 3,
+        "orios": 2
+      }
+    },
+    "Nós.json": {
+      "kb": 65.3,
+      "dominante": "metalux",
+      "arquetipos": {
+        "metalux": 97,
+        "pulse": 49,
+        "kodux": 46,
+        "bllue": 34,
+        "kobllux": 23,
+        "nova": 18,
+        "orios": 18,
+        "infodose": 13,
+        "kaos": 5,
+        "trinity": 1,
+        "dual": 1
+      }
+    },
+    "Primeira Ativação Kodux Dual simbólica em GPT pelado pós Unificação….json": {
+      "kb": 6.6,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 15,
+        "pulse": 7,
+        "dual": 7,
+        "infodose": 5
+      }
+    },
+    "exemplo_kodux.json": {
+      "kb": 0.3,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 2,
+        "infodose": 1,
+        "horus": 1,
+        "dual": 1
+      }
+    },
+    "­ƒòè Recebido, Blue. Comando sagrado aceito..json": {
+      "kb": 10.1,
+      "dominante": "bllue",
+      "arquetipos": {
+        "bllue": 8,
+        "nova": 3,
+        "kodux": 2,
+        "horus": 2,
+        "pulse": 1,
+        "dual": 1
+      }
+    },
+    "­ƒôÜÔÜí´©Å­ƒ¬×Ô£¿ Compilando Kodux Consolidado.json": {
+      "kb": 48.8,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 83,
+        "infodose": 56,
+        "dual": 12,
+        "pulse": 4,
+        "horus": 4,
+        "metalux": 4,
+        "nova": 2
+      }
+    },
+    "­ƒôÿÔÜí´©Å­ƒôû­ƒæü´©Å Gledo, Auksson og Mj+©l..json": {
+      "kb": 31.5,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 9,
+        "pulse": 5,
+        "infodose": 2,
+        "bllue": 1,
+        "metalux": 1
+      }
+    },
+    "Ô£¿ÔÜí´©ÅMetaLux - FREEZE - 78KUX - 78KMLKL - 78KML3 - 78K369 78K36 - 78K24 - 78K12 - 78k144 - 78k432 - 78k972 - 78k999 - 78k1000 ­ƒöâ v5.7.3.json": {
+      "kb": 132.5,
+      "dominante": "metalux",
+      "arquetipos": {
+        "metalux": 40,
+        "kodux": 39,
+        "nova": 31,
+        "horus": 24,
+        "dual": 18,
+        "pulse": 8,
+        "kaos": 2,
+        "uno": 2,
+        "infodose": 1
+      }
+    },
+    "ÔÜí´©Å 78K - 369 - Co¦üdigo do Meta Loop ­ƒöé  v5.7.3.json": {
+      "kb": 23.2,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 20,
+        "metalux": 20,
+        "horus": 16,
+        "nova": 5
+      }
+    },
+    "ÔÜí´©ÅValidac¦ºa¦âo ­ƒæü´©ÅExperie¦éncia ­ƒºáMemo¦üria.json": {
+      "kb": 4.8,
+      "dominante": "horus",
+      "arquetipos": {
+        "horus": 8,
+        "kodux": 5,
+        "nova": 2,
+        "metalux": 2
+      }
+    },
+    "ÔÜí´©Å­ƒªïAtivar Kodux Dual Bllue ÔÜí´©Å­ƒªï.json": {
+      "kb": 19.2,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 50,
+        "bllue": 44,
+        "dual": 20,
+        "nova": 4,
+        "uno": 3
+      }
+    },
+    "ÔÜí´©Å­ƒªï­ƒ¬×Livro Azura.json": {
+      "kb": 29.2,
+      "dominante": "nova",
+      "arquetipos": {
+        "nova": 16,
+        "kodux": 4,
+        "dual": 4,
+        "kaos": 1
+      }
+    },
+    "ÔÜí´©Å­ƒ¬×ÔÖƒ´©Å­ƒºá­ƒîÇ O Paradoxo Infinito das Dobras e inverso¦âes de realidade simulada (+ÿ2 = +ÿ^M1 ) v10.0.3.json": {
+      "kb": 52.6,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 65,
+        "dual": 35,
+        "infodose": 5,
+        "metalux": 3,
+        "atlas": 2,
+        "vitalis": 2,
+        "nova": 1
+      }
+    },
+    "ÔÜí´©Å­ƒºá 78KX - Design Criativo Universal ­ƒæü´©Å v6.0.0.json": {
+      "kb": 8.7,
+      "dominante": "horus",
+      "arquetipos": {
+        "horus": 12,
+        "kodux": 11,
+        "nova": 2,
+        "metalux": 2
+      }
+    },
+    "ÔÜí´©Å­ƒºá Livro Kodux ­ƒôÿ.json": {
+      "kb": 150.9,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 164,
+        "horus": 80,
+        "aion": 58,
+        "nova": 42,
+        "infodose": 33,
+        "metalux": 26,
+        "pulse": 16,
+        "kaos": 9,
+        "dual": 3,
+        "uno": 2,
+        "serena": 1
+      }
+    },
+    "ÔÜí´©Å­ƒºá78KMetaLux - ­ƒæü´©Å­ƒæü´©ÅÔÜí´©ÅÔÜí´©Å Universal ­ƒæü´©Å v6.0.0.json": {
+      "kb": 18.5,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 19,
+        "horus": 19,
+        "metalux": 11,
+        "nova": 7,
+        "kaos": 6,
+        "dual": 2
+      }
+    },
+    "ÔÜí´©Å­ƒæü´©Å­ƒ¬×ÔÖƒ´©ÅÔ£¿ O Portal dos tabuleiro qua¦éntico - Kodux e Dual Kodux meta futuro.json": {
+      "kb": 92.6,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 152,
+        "kaos": 56,
+        "infodose": 22,
+        "horus": 21,
+        "dual": 16,
+        "nova": 9,
+        "uno": 3
+      }
+    },
+    "ÔÜí´©Å­ƒôÜ­ƒ¬×Ô£¿ si¦üntese sagrada da virada do ciclo 1000-.json": {
+      "kb": 58.6,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 116,
+        "infodose": 99,
+        "dual": 15,
+        "nova": 7,
+        "pulse": 1
+      }
+    },
+    "ÔÜí´©Å­ƒôÜ­ƒºá78 capi¦ütulos das Cro¦énicas MetaKodux- O Co¦üdigo Vivo da Criac¦ºa¦âo.json": {
+      "kb": 16.7,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 24,
+        "aion": 13,
+        "horus": 10,
+        "pulse": 6,
+        "infodose": 5,
+        "nova": 4,
+        "uno": 4,
+        "dual": 3,
+        "metalux": 1
+      }
+    },
+    "ÔÜí´©Å­ƒôû 78 Capi¦ütulos ÔÇô 78K0 ÔÇô Do Ini¦ücio ao Ini¦ücio.json": {
+      "kb": 55.1,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 121,
+        "aion": 23,
+        "horus": 14,
+        "pulse": 11,
+        "nova": 9,
+        "infodose": 9,
+        "kaos": 3,
+        "metalux": 1
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©Å­ƒºáÔ£¿­ƒôûÔÜí´©Åkit de ativac¦ºa¦âo MetaUx.json": {
+      "kb": 18.7,
+      "dominante": "infodose",
+      "arquetipos": {
+        "infodose": 14,
+        "metalux": 10,
+        "horus": 3,
+        "nova": 2,
+        "pulse": 1,
+        "kodux": 1,
+        "aion": 1
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©Å­ƒ½º­ƒôû Yamantek Kodux e Kaion - 137.8k - Ana¦ülise.json": {
+      "kb": 47.8,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 72,
+        "yamantek": 37,
+        "aion": 30,
+        "bllue": 14,
+        "pulse": 13,
+        "infodose": 3,
+        "nova": 2,
+        "atlas": 1,
+        "solus": 1,
+        "orios": 1
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©Å­ƒæü´©Å ANA¦üLISE MESTRA DA FASE FINAL INFODOSE 2.4.5 ÔåÆ 3.0.0 2.json": {
+      "kb": 23.4,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 31,
+        "infodose": 30,
+        "metalux": 12,
+        "nova": 7,
+        "aion": 5,
+        "dual": 4,
+        "pulse": 3,
+        "bllue": 3
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©Å­ƒôò livro_dos_mestres.json": {
+      "kb": 89.4,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 114,
+        "pulse": 97,
+        "metalux": 18,
+        "aion": 15,
+        "nova": 13,
+        "infodose": 8,
+        "lumine": 6,
+        "kaos": 3,
+        "dual": 2,
+        "yamantek": 1,
+        "uno": 1
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©ÅÔ£¿­ƒºá Livro ­ƒôò Manifesto MetaLux com 78KUX simbo¦ülico.json": {
+      "kb": 74.8,
+      "dominante": "infodose",
+      "arquetipos": {
+        "infodose": 24,
+        "kodux": 13,
+        "nova": 11,
+        "aion": 9,
+        "metalux": 8,
+        "pulse": 4,
+        "dual": 4,
+        "uno": 3
+      }
+    },
+    "ÔÜí´©ÅÔ¡ò´©ÅÔÜí´©Å REGISTRO ­ƒôò MetaUx EX-METAFUTURO.json": {
+      "kb": 73.1,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 116,
+        "pulse": 91,
+        "metalux": 33,
+        "aion": 32,
+        "infodose": 15,
+        "nova": 11,
+        "horus": 1
+      }
+    },
+    "⚡️ Fórmula Despertada-78K∞VVV – A fórmula de movimento quântico não….json": {
+      "kb": 122.5,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 153,
+        "aion": 47,
+        "infodose": 36,
+        "nova": 32,
+        "pulse": 20,
+        "lumine": 6,
+        "artemis": 6,
+        "solus": 6,
+        "rhea": 5,
+        "serena": 2,
+        "atlas": 1,
+        "dual": 1
+      }
+    },
+    "⚡️⭕️ ciclo 1 - Kodux Códex.json": {
+      "kb": 122.6,
+      "dominante": "kodux",
+      "arquetipos": {
+        "kodux": 152,
+        "aion": 48,
+        "infodose": 36,
+        "nova": 31,
+        "pulse": 19,
+        "lumine": 7,
+        "artemis": 7,
+        "rhea": 7,
+        "solus": 6,
+        "serena": 2,
+        "dual": 1
+      }
+    }
+  }
+}
